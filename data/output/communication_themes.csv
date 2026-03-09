@@ -1,0 +1,25 @@
+segment_id,segment_name,lifecycle_stage,primary_theme,secondary_theme,theme_rationale
+0,Ecommerce Needs Attention,trial,unpredictability,epic_meaning,Activeness=0.25 → needs discovery triggers; Secondary 'epic_meaning' for complementary motivation
+0,Ecommerce Needs Attention,paid,unpredictability,epic_meaning,Activeness=0.25 → needs discovery triggers; Secondary 'epic_meaning' for complementary motivation
+0,Ecommerce Needs Attention,churned,unpredictability,epic_meaning,Activeness=0.25 → needs discovery triggers; Secondary 'epic_meaning' for complementary motivation
+0,Ecommerce Needs Attention,inactive,unpredictability,epic_meaning,Activeness=0.25 → needs discovery triggers; Secondary 'epic_meaning' for complementary motivation
+1,Ecommerce Needs Attention,trial,accomplishment,unpredictability,Gamification=0.37 → achievement drive; Secondary 'unpredictability' for complementary motivation
+1,Ecommerce Needs Attention,paid,accomplishment,ownership,Gamification=0.37 → achievement drive; Secondary 'ownership' for complementary motivation
+1,Ecommerce Needs Attention,churned,loss_avoidance,unpredictability,Churn=0.53 → retention urgency; Secondary 'unpredictability' for complementary motivation
+1,Ecommerce Needs Attention,inactive,unpredictability,empowerment,Activeness=0.41 → needs discovery triggers; Secondary 'empowerment' for complementary motivation
+2,Ecommerce Social Engagers,trial,accomplishment,ownership,Gamification=0.70 → achievement drive; Secondary 'ownership' for complementary motivation
+2,Ecommerce Social Engagers,paid,accomplishment,ownership,Gamification=0.70 → achievement drive; Secondary 'ownership' for complementary motivation
+2,Ecommerce Social Engagers,churned,accomplishment,ownership,Gamification=0.70 → achievement drive; Secondary 'ownership' for complementary motivation
+2,Ecommerce Social Engagers,inactive,accomplishment,ownership,Gamification=0.70 → achievement drive; Secondary 'ownership' for complementary motivation
+3,Ecommerce At-Risk Users,trial,loss_avoidance,scarcity,Churn=0.73 → retention urgency; Secondary 'scarcity' for complementary motivation
+3,Ecommerce At-Risk Users,paid,loss_avoidance,scarcity,Churn=0.73 → retention urgency; Secondary 'scarcity' for complementary motivation
+3,Ecommerce At-Risk Users,churned,loss_avoidance,scarcity,Churn=0.73 → retention urgency; Secondary 'scarcity' for complementary motivation
+3,Ecommerce At-Risk Users,inactive,loss_avoidance,scarcity,Churn=0.73 → retention urgency; Secondary 'scarcity' for complementary motivation
+4,Ecommerce Social Engagers,trial,accomplishment,ownership,Gamification=0.76 → achievement drive; Secondary 'ownership' for complementary motivation
+4,Ecommerce Social Engagers,paid,accomplishment,ownership,Gamification=0.76 → achievement drive; Secondary 'ownership' for complementary motivation
+4,Ecommerce Social Engagers,churned,accomplishment,ownership,Gamification=0.76 → achievement drive; Secondary 'ownership' for complementary motivation
+4,Ecommerce Social Engagers,inactive,accomplishment,ownership,Gamification=0.76 → achievement drive; Secondary 'ownership' for complementary motivation
+5,Ecommerce At-Risk Users,trial,loss_avoidance,scarcity,Churn=0.76 → retention urgency; Secondary 'scarcity' for complementary motivation
+5,Ecommerce At-Risk Users,paid,loss_avoidance,scarcity,Churn=0.76 → retention urgency; Secondary 'scarcity' for complementary motivation
+5,Ecommerce At-Risk Users,churned,loss_avoidance,scarcity,Churn=0.76 → retention urgency; Secondary 'scarcity' for complementary motivation
+5,Ecommerce At-Risk Users,inactive,loss_avoidance,scarcity,Churn=0.76 → retention urgency; Secondary 'scarcity' for complementary motivation

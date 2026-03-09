@@ -19,6 +19,7 @@ Usage:
 
 import sys
 import os
+import json
 
 # Force UTF-8 encoding for Windows console
 if sys.platform == 'win32':
@@ -129,6 +130,9 @@ def run_iteration_0(user_data_path: str, kb_text: str = None, kb_pdf: str = None
     kb_data = kb_engine.process_knowledge_bank(kb_source)
     kb_engine.save_outputs(output_dir)
     
+    # --- Rich KB Terminal Output ---
+    _display_kb_intelligence(kb_data)
+    
     # Step 2: Data Ingestion
     print("\n" + "=" * 80)
     print("STEP 2:  DATA INGESTION")
@@ -136,6 +140,14 @@ def run_iteration_0(user_data_path: str, kb_text: str = None, kb_pdf: str = None
     
     ingestion_engine = DataIngestionEngine(knowledge_bank=kb_data)
     user_data = ingestion_engine.load_and_validate(user_data_path)
+    
+    # Display identified mapping if available
+    if ingestion_engine.schema_map:
+        print("\n[Brain] Identified Schema Mapping:")
+        for role, col in ingestion_engine.schema_map.items():
+            if col:
+                print(f"   • {role:20}: {col}")
+
     user_data = ingestion_engine.engineer_features(user_data)
     
     stats = ingestion_engine.get_summary_stats(user_data)
@@ -148,7 +160,7 @@ def run_iteration_0(user_data_path: str, kb_text: str = None, kb_pdf: str = None
     print("STEP 3:  SEGMENTATION (RFM + Hierarchical)")
     print("=" * 80)
     
-    seg_engine = SegmentationEngine()
+    seg_engine = SegmentationEngine(kb_data=kb_data, schema_map=ingestion_engine.schema_map)
     user_data = seg_engine.create_segments(user_data)
     seg_engine.save_segments(user_data, output_dir)
     
@@ -157,7 +169,7 @@ def run_iteration_0(user_data_path: str, kb_text: str = None, kb_pdf: str = None
     print("STEP 4: TRAINING ML PROPENSITY MODELS")
     print("=" * 80)
     
-    ml_engine = PropensityModelEngine()
+    ml_engine = PropensityModelEngine(schema_map=ingestion_engine.schema_map)
     
     # Train churn model
     ml_engine.train_churn_model(user_data)
@@ -185,7 +197,7 @@ def run_iteration_0(user_data_path: str, kb_text: str = None, kb_pdf: str = None
     print("STEP 6: BEHAVIORAL THEME MAPPING")
     print("=" * 80)
     
-    theme_engine = ThemeEngine(kb_data['tone_hook_matrix'])
+    theme_engine = ThemeEngine(kb_data['tone_hook_matrix'], kb_data=kb_data)
     themes = theme_engine.generate_themes(seg_engine.segment_profiles)
     theme_engine.save_themes(output_dir)
     
@@ -251,6 +263,62 @@ def run_iteration_0(user_data_path: str, kb_text: str = None, kb_pdf: str = None
     print("=" * 80)
     print(f"\nOutputs saved to: {output_dir}/")
     print("\nNext: Run Iteration 1 with experiment results for learning")
+
+
+def _display_kb_intelligence(kb_data: dict):
+    """Display extracted KB intelligence in the terminal."""
+    print("\n   ╔══════════════════════════════════════════════════════════════════════╗")
+    print("   ║  KNOWLEDGE BANK — EXTRACTED INTELLIGENCE                            ║")
+    print("   ╠══════════════════════════════════════════════════════════════════════╣")
+
+    # Domain
+    domain = kb_data.get('detected_domain', 'unknown')
+    print(f"   ║  Domain: {domain.upper()}")
+
+    # North Star Metric
+    ns = kb_data.get('north_star', {})
+    nsm_name = ns.get('north_star_metric', 'N/A')
+    nsm_def = ns.get('definition', 'N/A')
+    nsm_evidence = ns.get('evidence', 'N/A')
+    print(f"   ║")
+    print(f"   ║  📊 North Star Metric: {nsm_name}")
+    print(f"   ║     Definition: {nsm_def[:100]}")
+    if nsm_evidence and nsm_evidence != 'N/A':
+        print(f"   ║     Evidence: {nsm_evidence[:100]}")
+
+    # Feature-Goal Mappings
+    fgm = kb_data.get('feature_goal_map', {})
+    features = fgm.get('features', [])
+    print(f"   ║")
+    print(f"   ║  🎯 Feature → Goal Mappings ({len(features)} features):")
+    for f in features[:6]:
+        fname = f.get('feature_name', 'N/A')
+        fgoal = f.get('primary_goal', 'N/A')
+        print(f"   ║     • {fname} → {fgoal[:80]}")
+    if len(features) > 6:
+        print(f"   ║     ... and {len(features) - 6} more")
+
+    # Allowed Tones
+    thm = kb_data.get('tone_hook_matrix', {})
+    tones = thm.get('allowed_tones', [])
+    print(f"   ║")
+    print(f"   ║  🎵 Allowed Tones: {', '.join(tones) if tones else 'N/A'}")
+
+    # Octalysis Hooks
+    hooks = thm.get('octalysis_hooks', {})
+    print(f"   ║")
+    print(f"   ║  🎮 Behavioral Hooks (Octalysis):")
+    for drive, info in hooks.items():
+        if isinstance(info, dict) and 'hooks' in info:
+            hook_list = info['hooks']
+            if hook_list:
+                triggers = [h.get('trigger', '?') for h in hook_list[:2]]
+                print(f"   ║     {drive}: {', '.join(triggers)}")
+        elif isinstance(info, str):
+            print(f"   ║     {drive}: {info[:60]}")
+
+    print(f"   ║")
+    print("   ╚══════════════════════════════════════════════════════════════════════╝")
 
 
 def run_iteration_1(user_data_path: str, experiment_results_path: str):

@@ -147,7 +147,12 @@ class KnowledgeBankEngine:
         return self._process_rag_lite_from_text(raw_text)
 
     def _process_rag_lite_from_text(self, raw_text: str) -> Dict[str, Any]:
-        """RAG-lite pipeline from raw text."""
+        """RAG-lite pipeline from raw text.
+
+        Two-step LLM pipeline:
+          Step 1: Domain detection + vocabulary extraction (VOCAB_PROMPT)
+          Step 2: Full intelligence extraction using top TF-IDF chunks (SYSTEM_PROMPT + USER_PROMPT)
+        """
         self.rag_mode_used = True
 
         # Step 2: Semantic chunking
@@ -165,12 +170,13 @@ class KnowledgeBankEngine:
         print(f"   [RAG] Selected top {len(top_chunks)} relevant chunks")
 
         # Step 5: LLM Call 2 — Structured intelligence extraction
-        extracted = self._llm_extract_intelligence(top_chunks, domain)
+        #         Uses detected domain + vocabulary from Step 3
+        extracted = self._llm_extract_intelligence(top_chunks, domain, vocab)
 
         # Build structured outputs from LLM extraction
         self.north_star = self._build_north_star_from_rag(extracted)
         self.feature_goal_map = self._build_feature_goal_map_from_rag(extracted)
-        self.tone_hook_matrix = self._extract_tone_hook_matrix(raw_text)
+        self.tone_hook_matrix = self._build_tone_hook_matrix_from_rag(extracted, raw_text)
 
         return {
             'north_star': self.north_star,
@@ -203,16 +209,30 @@ class KnowledgeBankEngine:
         return chunks
 
     def _llm_extract_domain_vocab(self, text: str) -> tuple:
-        """LLM Call 1: Extract domain and dynamic vocabulary."""
+        """LLM Call 1: Extract domain and dynamic vocabulary using VOCAB_PROMPT."""
         if not self.groq_client:
             return self._detect_domain(text), []
 
-        prompt = f'''Extract JSON from this document text:
-1. "domain": Specific business domain (1-3 words, e.g. "EdTech", "FinTech", "Health & Fitness").
-2. "vocabulary": Array of exactly {self.rag_vocab_size} business/KPI phrases specific to this document.
+        VOCAB_TERMS = self.rag_vocab_size
+        # Use first ~3000 chars as document abstract for vocab extraction
+        doc_abstract = text[:3000]
 
-Return ONLY valid JSON.
-TEXT: {text[:2000]}'''
+        prompt = f"""You are a business analyst smart intelligence product manager.
+Tailor your thinking as follows:
+-Create a thinking and mind map of the product/industry/firm/profit-based institution from the details provided
+-make your understanding of the working model from the institution
+-use these to comprehend further
+-for domain recognition take instances of real world companies that frequently use these particular approaches like zomato for food delivery,blinkit for ecommerce,bookmyshow for entertainment,ola for cab services,etc
+Read the document abstract below and return ONLY a JSON object containing two keys:
+1. "domain": A tailor-made, highly specific 1-3 word business domain or industry for this document (e.g. 'B2B SaaS', 'Telemedicine Gamification', 'Consumer Fintech').
+2. "vocabulary": A JSON array of exactly {VOCAB_TERMS} short business/KPI phrases (1-4 words each) that are the most analytically relevant for this specific document — metrics, strategic themes, behavioral concepts, or research variables.
+
+No generic words. No markdown. Just the JSON object.
+
+ABSTRACT:
+{doc_abstract}
+
+Example format: {{"domain": "EdTech Engagement", "vocabulary": ["brand awareness", "retention"]}}"""
 
         try:
             resp = self.groq_client.chat.completions.create(
@@ -226,7 +246,7 @@ TEXT: {text[:2000]}'''
             vocab = data.get('vocabulary', [])
             # Normalize domain to our standard categories
             domain_normalized = self._normalize_domain(domain)
-            return domain_normalized, vocab[:self.rag_vocab_size]
+            return domain_normalized, vocab[:VOCAB_TERMS]
         except Exception as e:
             print(f"   [WARN] LLM vocab extraction failed: {e}")
             return self._detect_domain(text), []
@@ -238,14 +258,16 @@ TEXT: {text[:2000]}'''
             return 'edtech'
         elif any(kw in d for kw in ['fintech', 'finance', 'banking', 'payment']):
             return 'fintech'
-        elif any(kw in d for kw in ['health', 'fitness', 'wellness', 'medical']):
+        elif any(kw in d for kw in ['health', 'fitness', 'wellness', 'medical', 'telemedicine']):
             return 'health'
         elif any(kw in d for kw in ['entertainment', 'streaming', 'media', 'video']):
             return 'entertainment'
-        elif any(kw in d for kw in ['ecommerce', 'commerce', 'shopping', 'retail']):
+        elif any(kw in d for kw in ['ecommerce', 'commerce', 'shopping', 'retail', 'delivery', 'food']):
             return 'ecommerce'
         elif any(kw in d for kw in ['social', 'community', 'network']):
             return 'social'
+        elif any(kw in d for kw in ['saas', 'b2b', 'enterprise']):
+            return 'saas'
         return 'generic'
 
     def _rank_chunks_cosine(self, chunks: List[str], vocab: List[str]) -> List[Dict]:
@@ -264,26 +286,279 @@ TEXT: {text[:2000]}'''
         except Exception:
             return [{"text": c, "score": 0.5} for c in chunks[:self.rag_top_chunks]]
 
-    def _llm_extract_intelligence(self, top_chunks: List[Dict], domain: str) -> Dict:
-        """LLM Call 2: Extract structured intelligence from top-ranked chunks."""
+    def _llm_extract_intelligence(self, top_chunks: List[Dict], detected_domain: str, dynamic_vocab: List[str] = None) -> Dict:
+        """LLM Call 2: Extract structured intelligence from top-ranked chunks.
+
+        Uses the comprehensive SYSTEM_PROMPT + USER_PROMPT provided by the user.
+        Extracts: North Star Metric, Feature→Goal Mapping, Allowed Tones, Behavioral Hooks (Octalysis).
+        """
         if not self.groq_client:
             return {}
 
+        if dynamic_vocab is None:
+            dynamic_vocab = []
+
         context = "\n---\n".join([c['text'] for c in top_chunks])
 
-        system_prompt = f"Domain: {domain}. Extract intelligence ONLY from the following text chunks."
-        user_prompt = f'''Extract JSON with these fields:
+        # Mark chunks that contain statistics
+        context_with_markers = ""
+        for c in top_chunks:
+            txt = c['text']
+            has_stats = bool(re.search(r'\d+%|\d+\.\d+|statistics|data|metric', txt, re.IGNORECASE))
+            prefix = "📊 " if has_stats else ""
+            context_with_markers += f"{prefix}{txt}\n========================\n"
+
+        system_prompt = f"""You are a senior business intelligence analyst and product strategist.
+Structure your thinking strictly as folllows:
+-stick strictly to the domain and supplement from the information given below
+-Think like an owner of the company to get layman metrics, the most simple yet most effective metrics demanded below.The metrics whichever you give must be quantifiable by the product/company realistically(use real world simililar products/domain products to structure your thinking)
+-Create your perspective of the working of the company/product strictly with respect to only the data given below
+-use all of the above to give conclusions which must be enriched with the thinking and synopsis
+Domain: [{detected_domain.upper()}].
+Key document themes identified: {', '.join(dynamic_vocab[:12])}
+
+Rules:
+1. Extract ONLY information explicitly stated or directly implied in the chunks as evidence,dont add information but you can create your thinking to fill the missing pieces without assumptions.
+2. NEVER hallucinate metrics, features, or findings not in the text.
+3. When making a claim, include an 'evidence' key with a verbatim quote from the chunk,the evidence should not be the full chunk but only a short crisp summary of the core evidence.
+4. If a field is absent in the text, use null — never guess.
+5. Respond with a single valid JSON object only. No markdown, no prose.
+
+WHAT TO EXTRACT
+----------------------------------------
+
+1️ NORTH STAR METRIC
+
+The North Star Metric is the single most important metric the company optimizes for.
+It represents the core value delivered to users.
+Think as an owner of the company to get layman metrics, the most simple yet most effective metrics demanded below.The metrics whichever you give must be quantifiable by the product/company realistically(use real world simililar products/domain products to structure your thinking)
+
+If no clear North Star metric exists, return null values.
+-Never give abstract wordings which seem important,even if you feel something very important,express it as quantifiable easily using the companys framework.Prefer numbers,rates,expressions or entities quantifiable which most importantly influences the performances
+-strictly return only in the form of counts,numbers,rates entities or maximixable quantities which can be computed(think thrice that your view matches this)
+-i strictly dont want abstract capabilities or ablilities
+----------------------------------------
+
+2️ FEATURE → GOAL MAPPING
+
+Extract product or marketing features and the user goal they serve,this list should be exhaustive of the pdf.
+Strictly dont extract architecture,data pipelines and and datasets,we need goals not capabilities of the system
+If a feature description only explains technical capability,rewrite the goal as the user or business outcome it enables.I strictly dont want any technical pipeline elements,backend engines,architectures,pipelines ingesters or anything heavily technical in the goal section
+It should be strictly the features catering to user not any developer or technician.Think as a user consuming the product/firm
+
+Feature examples:
+- tools
+- dashboards
+- algorithms
+- services
+- product capabilities
+
+Goal examples:
+- reduce fraud
+- improve diagnostic accuracy
+- increase engagement
+- enable faster decisions
+
+Each mapping should connect:
+
+FEATURE → USER VALUE / BUSINESS GOAL
+
+----------------------------------------
+
+3️ ALLOWED TONES
+
+Based on the domain and language used in the document, infer 3–5 communication tones suitable for the brand.
+Tone refers to the **style of language used when communicating with users**.
+Here think like a psychological and linguistic expert extracting information from features,goals and language expressions 
+Do NOT infer tone purely from the industry domain-this is very important.
+
+Instead, determine tone by analyzing **how the company writes**, based on:
+
+• sentence structure  
+• vocabulary  
+• claims style  
+• use of statistics or research  
+• emotional vs factual language  
+
+Examples of tones include:
+
+scientific  
+professional  
+authoritative  
+educational  
+supportive  
+analytical  
+data-driven  
+friendly  
+reassuring  
+
+Return tones which suits a notification platform for the specific product/domain inferred from the context
+
+----------------------------------------
+
+You are analyzing product documentation to identify **behavioral hooks** using the **Octalysis Framework**.
+
+The Octalysis framework, created by Yu-kai Chou, explains **why users repeatedly engage with a product** by identifying the **core motivations that drive user behavior**.
+
+Your goal is to detect **product behaviors that activate these motivations**.
+
+A behavioral hook represents a **repeatable user interaction with a product feature that triggers motivation and produces value or feedback**.
+
+Hooks must describe **user behavior**, not internal system operations.
+
+-------------------------------------------------
+OCTALYSIS FRAMEWORK — 8 MOTIVATIONAL DRIVES
+-------------------------------------------------
+
+1. Epic Meaning & Calling  
+Users feel they are contributing to a greater purpose, mission, or impact.
+
+2. Development & Accomplishment  
+Users feel progress, mastery, achievement, or improvement in their performance.
+
+3. Empowerment of Creativity & Feedback  
+Users experiment, explore strategies, simulate options, and receive feedback on their actions.
+
+4. Ownership & Possession  
+Users control, customize, manage, or improve something they perceive as theirs (data, dashboards, assets).
+
+5. Social Influence & Relatedness  
+Users interact with others through collaboration, recognition, mentorship, competition, or belonging.
+
+6. Scarcity & Impatience  
+Users are motivated by limited access, exclusivity, or waiting to unlock something valuable.
+
+7. Unpredictability & Curiosity  
+Users explore unknown information, discover insights, or investigate patterns.
+
+8. Loss & Avoidance  
+Users act to prevent negative outcomes, risks, missed opportunities, or deterioration.
+
+-------------------------------------------------
+DRIVE CLASSIFICATION GUIDELINES
+-------------------------------------------------
+
+Use the following reasoning rules when mapping behaviors to motivational drives:
+
+• If the behavior prevents risk, failure, or deterioration → **Loss & Avoidance**
+
+• If the behavior involves discovering patterns, exploring unknown data, or investigating information → **Unpredictability & Curiosity**
+
+• If the behavior involves testing strategies, experimenting with scenarios, or comparing outcomes → **Empowerment of Creativity & Feedback**
+
+• If the behavior improves skill, mastery, performance, or measurable progress → **Development & Accomplishment**
+
+-------------------------------------------------
+WHAT YOU MUST EXTRACT
+-------------------------------------------------
+
+Identify **behavioral hooks** present in the product documentation.
+
+Each hook must contain:
+
+• octalysis_drive  
+• hook_name  
+• trigger  
+• reward  
+• feature_source  
+• evidence
+
+Definitions:
+
+trigger  
+The **event experienced by the user** that initiates engagement.
+
+reward  
+The **value, insight, or feedback** the user gains from the interaction.
+
+feature_source  
+The **product feature or capability** that enables the behavior.
+
+evidence  
+A **verbatim quote from the document** that supports the hook.
+
+-------------------------------------------------
+IMPORTANT EXTRACTION RULES
+-------------------------------------------------
+
+• Hooks must describe **user behavior**, not backend system operations.  
+• Avoid technical descriptions such as model processing or data pipelines.  
+• Triggers must represent **events experienced by the user** (alerts, dashboards, simulations, insights).  
+• Rewards must represent **user-perceived value or feedback**.  
+• Only include hooks that are **clearly supported by text evidence**.  
+• If the motivational drive cannot be confidently determined, **exclude the hook**.  
+
+Return minimum 4 to maximum 6 hooks.
+
+-------------------------------------------------
+INTERNAL REASONING PROCESS (DO NOT OUTPUT)
+-------------------------------------------------
+
+Perform the following reasoning steps internally before generating the answer:
+
+1. Scan the document for **motivational signals** indicating user engagement with product features.
+
+2. Identify the **product feature** responsible for enabling the behavior.
+
+3. Determine the **behavioral loop**:
+   feature → trigger → user action → reward.
+
+4. Map the behavior to the **most appropriate Octalysis motivational drive** using the classification rules.
+
+5. Validate that the behavior represents a **clear user interaction** rather than a technical system function.
+
+6. Confirm that a **verbatim evidence quote** from the text supports the hook.
+
+7. Discard weak, speculative, or unsupported hooks.
+
+
+Before returning the final answer, verify that each hook follows this logic:
+
+feature → trigger → reward → motivational drive
+
+Triggers must describe events experienced by the user 
+(e.g., alerts, dashboards, simulations, explanations).
+
+System inputs such as sensor data, data ingestion, or model processing 
+must never be used as triggers.
+
+DOCUMENT CHUNKS
+
+{context}
+"""
+
+        user_prompt = f"""Extract a complete PM + analyst intelligence report from the chunks below.
+
+JSON schema:
 {{
-  "north_star_metric": {{"name": "...", "definition": "..."}},
-  "feature_goal_mapping": [{{"feature": "...", "goal": "..."}}],
-  "allowed_tones": ["tone1", "tone2", "tone3"],
+  "company_name": "string or null",
+  "domain": "{detected_domain}",
+  "north_star_metric": {{
+    "name": "string or null",
+    "definition": "string or null",
+    "why_it_matters": "string or null",
+    "evidence": "verbatim quote from chunks"
+  }},
+  "feature_goal_mapping": [
+    {{"feature": "product or marketing feature", "goal": "user need it serves","evidence": "verbatim quote from document"}}
+  ],
+  "allowed_tones": ["tone1","tone2","tone3","tone4"],
   "behavioral_hooks": [
-    {{"hook": "MUST be one of: Epic Meaning, Accomplishment, Empowerment, Ownership, Social Influence, Scarcity, Unpredictability, Loss Avoidance",
-      "trigger": "...", "reward": "..."}}
+    {{
+      "hook": "name of behavior pattern (Octolysis)",
+      "octolysis": "actual octolysis metric",
+      "trigger": "what initiates behavior",
+      "reward": "what value user receives",
+      "evidence": "verbatim quote"
+    }}
   ]
 }}
-TEXT CHUNKS:
-{context}'''
+
+DOCUMENT CHUNKS (📊 = contains statistics):
+========================
+{context_with_markers}
+========================
+Return JSON only:"""
 
         try:
             resp = self.groq_client.chat.completions.create(
@@ -295,36 +570,71 @@ TEXT CHUNKS:
                 temperature=0.1,
                 response_format={"type": "json_object"}
             )
-            return json.loads(resp.choices[0].message.content)
+            result = json.loads(resp.choices[0].message.content)
+            print(f"   [RAG] LLM extraction complete — company: {result.get('company_name', 'N/A')}")
+            return result
         except Exception as e:
             print(f"   [WARN] LLM intelligence extraction failed: {e}")
             return {}
 
     def _build_north_star_from_rag(self, extracted: Dict) -> Dict:
-        """Build north_star dict from RAG-extracted data."""
+        """Build north_star dict from RAG-extracted data (richer schema with evidence)."""
         ns = extracted.get('north_star_metric', {})
-        name = ns.get('name', 'Daily Active Users')
-        definition = ns.get('definition', 'Primary success metric measuring product-market fit')
+        if not ns:
+            ns = {}
+
+        name = ns.get('name', None)
+        definition = ns.get('definition', None)
+        why = ns.get('why_it_matters', None)
+        evidence = ns.get('evidence', None)
+
+        # Fallback to domain-based defaults if LLM returned nulls
+        if not name:
+            domain = self.detected_domain or 'generic'
+            domain_metrics = {
+                'edtech': "Weekly Active Learners",
+                'fintech': "Monthly Transaction Volume",
+                'health': "Daily Active Health Users",
+                'entertainment': "Content Engagement Hours",
+                'ecommerce': "Purchase Conversion Rate",
+                'social': "Daily Active Connections",
+                'saas': "Monthly Recurring Revenue",
+                'generic': "Daily Active Users"
+            }
+            name = domain_metrics.get(domain, "Daily Active Users")
+
+        if not definition:
+            definition = f"Primary success metric measuring {self.detected_domain or 'product'} performance"
+
+        if not why:
+            why = f"Core indicator of {self.detected_domain or 'product'} success and value delivery"
+
+        # Extract key drivers from feature_goal_mapping
+        features = extracted.get('feature_goal_mapping', [])
+        key_drivers = [f.get('feature', 'Core Feature') for f in features[:5]] if features else ["User engagement", "Feature adoption", "Retention"]
 
         return {
             "north_star_metric": name,
             "definition": definition,
-            "why_it_matters": f"Core indicator of {self.detected_domain or 'product'} success",
+            "why_it_matters": why,
+            "evidence": evidence,
             "measurement": f"Metric tracking for {name}",
-            "key_drivers": [f.get('feature', 'Core Feature') for f in extracted.get('feature_goal_mapping', [])[:5]]
+            "key_drivers": key_drivers
         }
 
     def _build_feature_goal_map_from_rag(self, extracted: Dict) -> Dict:
-        """Build feature_goal_map dict from RAG-extracted data."""
+        """Build feature_goal_map dict from RAG-extracted data (richer schema with evidence)."""
         features = []
         for idx, item in enumerate(extracted.get('feature_goal_mapping', [])):
             fname = item.get('feature', f'Feature_{idx}')
             fgoal = item.get('goal', 'user_engagement')
+            fevidence = item.get('evidence', '')
             fid = re.sub(r'[^a-z0-9_]', '', fname.lower().replace(' ', '_'))
             features.append({
                 "feature_name": fname,
                 "feature_id": fid,
                 "primary_goal": fgoal,
+                "evidence": fevidence,
                 "secondary_goals": ["engagement", "retention", "satisfaction"],
                 "user_segments_most_relevant": ["all"],
                 "engagement_driver_score": round(0.75 + (idx * 0.03), 2),
@@ -335,6 +645,109 @@ TEXT CHUNKS:
             features = self._get_default_features("")
 
         return {"features": features}
+
+    def _build_tone_hook_matrix_from_rag(self, extracted: Dict, raw_text: str) -> Dict[str, Any]:
+        """Build the tone/hook matrix from LLM-extracted data.
+
+        Uses the LLM-extracted allowed_tones and behavioral_hooks instead of
+        static config-based generation.
+        """
+        domain = getattr(self, 'detected_domain', 'generic')
+
+        # Get LLM-inferred tones, fall back to config
+        llm_tones = extracted.get('allowed_tones', [])
+        if llm_tones and len(llm_tones) >= 3:
+            allowed_tones = llm_tones
+        else:
+            allowed_tones = self.allowed_tones
+
+        # Build Octalysis hooks from LLM extraction
+        llm_hooks = extracted.get('behavioral_hooks', [])
+        octalysis_hooks = {}
+
+        # Map LLM hooks into the standard Octalysis structure
+        drive_map = {
+            'epic meaning': 'epic_meaning', 'epic meaning & calling': 'epic_meaning',
+            'accomplishment': 'accomplishment', 'development & accomplishment': 'accomplishment',
+            'development and accomplishment': 'accomplishment',
+            'empowerment': 'empowerment', 'empowerment of creativity & feedback': 'empowerment',
+            'empowerment of creativity and feedback': 'empowerment',
+            'ownership': 'ownership', 'ownership & possession': 'ownership',
+            'ownership and possession': 'ownership',
+            'social influence': 'social_influence', 'social influence & relatedness': 'social_influence',
+            'social influence and relatedness': 'social_influence',
+            'scarcity': 'scarcity', 'scarcity & impatience': 'scarcity',
+            'scarcity and impatience': 'scarcity',
+            'unpredictability': 'unpredictability', 'unpredictability & curiosity': 'unpredictability',
+            'unpredictability and curiosity': 'unpredictability',
+            'loss avoidance': 'loss_avoidance', 'loss & avoidance': 'loss_avoidance',
+            'loss and avoidance': 'loss_avoidance',
+        }
+
+        for hook in llm_hooks:
+            octolysis = hook.get('octolysis', hook.get('hook', ''))
+            drive_key = drive_map.get(octolysis.lower().strip(), None)
+            if not drive_key:
+                # Try partial match
+                for k, v in drive_map.items():
+                    if k in octolysis.lower():
+                        drive_key = v
+                        break
+            if not drive_key:
+                continue
+
+            if drive_key not in octalysis_hooks:
+                octalysis_hooks[drive_key] = {
+                    "description": octolysis,
+                    "hooks": [],
+                    "best_for_segments": ["all"]
+                }
+
+            octalysis_hooks[drive_key]["hooks"].append({
+                "hook_name": hook.get('hook', ''),
+                "trigger": hook.get('trigger', ''),
+                "reward": hook.get('reward', ''),
+                "feature_source": hook.get('feature_source', ''),
+                "evidence": hook.get('evidence', '')
+            })
+
+        # Fill in any missing Octalysis drives with generic defaults
+        all_drives = {
+            'epic_meaning': 'Be part of something bigger',
+            'accomplishment': 'Make progress and achieve',
+            'empowerment': 'Have control and experiment',
+            'ownership': 'Build something valuable',
+            'social_influence': 'Others are doing it',
+            'scarcity': 'Limited time or availability',
+            'unpredictability': 'What will happen next',
+            'loss_avoidance': "Don't lose what you have"
+        }
+        hook_examples = self._generate_hook_examples(domain)
+
+        for drive, desc in all_drives.items():
+            if drive not in octalysis_hooks:
+                octalysis_hooks[drive] = {
+                    "description": desc,
+                    "examples": hook_examples.get(drive, []),
+                    "best_for_segments": ["all"]
+                }
+
+        matrix = {
+            "allowed_tones": allowed_tones,
+            "forbidden_tones": self.forbidden_tones,
+            "tone_by_lifecycle": self.tone_by_lifecycle,
+            "detected_domain": domain,
+            "octalysis_hooks": octalysis_hooks,
+            "hooks_by_segment": {
+                "achievers": ["accomplishment", "ownership", "loss_avoidance"],
+                "social_competitors": ["social_influence", "accomplishment", "scarcity"],
+                "casual_learners": ["unpredictability", "empowerment", "epic_meaning"],
+                "at_risk_churners": ["loss_avoidance", "scarcity", "social_influence"],
+                "dormant_users": ["unpredictability", "epic_meaning", "empowerment"]
+            }
+        }
+
+        return matrix
 
     # ===================================================================
     # REGEX FALLBACK PIPELINE (original logic)

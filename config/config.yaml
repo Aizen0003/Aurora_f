@@ -66,8 +66,8 @@ knowledge_bank:
   mode: "auto"               # auto | rag | regex
   pdf_path: "data/input/knowledge_bank.pdf"
   llm_provider: "groq"
-  llm_model: "llama-3.1-8b-instant"
-  rag_top_chunks: 15
+  llm_model: "llama-3.3-70b-versatile"
+  rag_top_chunks: 8
   rag_vocab_size: 25
   secondary_language: "hi"   # Language code for second language column
 

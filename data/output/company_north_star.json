@@ -1,0 +1,12 @@
+{
+  "north_star_metric": "Purchase Conversion Rate",
+  "definition": "Primary success metric measuring ecommerce performance",
+  "why_it_matters": "Core indicator of ecommerce success and value delivery",
+  "evidence": null,
+  "measurement": "Metric tracking for Purchase Conversion Rate",
+  "key_drivers": [
+    "User engagement",
+    "Feature adoption",
+    "Retention"
+  ]
+}

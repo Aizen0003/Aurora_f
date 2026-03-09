@@ -1,4 +1,4 @@
-﻿"""
+"""
 Timing Optimization with Survival Analysis
 - Survival analysis for optimal send times
 - Time-to-event modeling
@@ -134,6 +134,11 @@ class TimingOptimizer:
         
         self.optimal_timings = pd.DataFrame(timing_recs)
         
+        # Ensure mandatory columns exist
+        for col in ['segment_id', 'time_window', 'priority']:
+            if col not in self.optimal_timings.columns:
+                self.optimal_timings[col] = None
+
         print(f"   [OK] Generated {len(timing_recs)} timing recommendations")
         
         return self.optimal_timings
@@ -198,6 +203,11 @@ class TimingOptimizer:
         
         self.optimal_timings = pd.DataFrame(timing_recs)
         
+        # Ensure mandatory columns exist
+        for col in ['segment_id', 'time_window', 'priority']:
+            if col not in self.optimal_timings.columns:
+                self.optimal_timings[col] = None
+
         print(f"   [OK] Generated {len(timing_recs)} timing recommendations")
         
         return self.optimal_timings
@@ -224,9 +234,16 @@ class TimingOptimizer:
             seg_users = user_data[user_data['segment_id'] == segment_id]
             
             # Calculate segment characteristics
-            avg_activeness = seg_users['activeness'].mean()
-            avg_churn_risk = seg_users['churn_risk'].mean()
-            avg_notif_open = seg_users['notif_open_rate_30d'].mean()
+            avg_activeness = seg_users['activeness'].mean() if 'activeness' in seg_users.columns else 0.5
+            avg_churn_risk = seg_users['churn_risk'].mean() if 'churn_risk' in seg_users.columns else 0.5
+            
+            # Use notif_open_rate_30d or proxy
+            notif_col = 'notif_open_rate_30d'
+            if notif_col not in seg_users.columns:
+                 # Try to find a proxy in schema_map or just use default
+                 notif_col = next((c for c in seg_users.columns if 'open' in c.lower() or 'ctr' in c.lower()), None)
+            
+            avg_notif_open = seg_users[notif_col].mean() if notif_col else 0.05
             
             # Check uninstall rate from experiments if available
             uninstall_risk = 0.0

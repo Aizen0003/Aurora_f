@@ -1,0 +1,18 @@
+{
+  "features": [
+    {
+      "feature_name": "Core Feature",
+      "feature_id": "core_feature",
+      "primary_goal": "user_engagement",
+      "secondary_goals": [
+        "retention",
+        "satisfaction"
+      ],
+      "user_segments_most_relevant": [
+        "all"
+      ],
+      "engagement_driver_score": 0.8,
+      "description": "Primary product feature"
+    }
+  ]
+}

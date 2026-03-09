@@ -1,0 +1,162 @@
+{
+  "allowed_tones": [
+    "encouraging",
+    "friendly",
+    "aspirational",
+    "urgent",
+    "celebratory",
+    "motivational",
+    "supportive"
+  ],
+  "forbidden_tones": [
+    "aggressive",
+    "desperate",
+    "salesy",
+    "guilt-tripping",
+    "condescending",
+    "pushy"
+  ],
+  "tone_by_lifecycle": {
+    "trial": [
+      "encouraging",
+      "friendly",
+      "aspirational",
+      "supportive"
+    ],
+    "paid": [
+      "celebratory",
+      "friendly",
+      "aspirational",
+      "motivational"
+    ],
+    "churned": [
+      "friendly",
+      "urgent",
+      "aspirational",
+      "curious"
+    ],
+    "inactive": [
+      "curious",
+      "friendly",
+      "inviting"
+    ]
+  },
+  "detected_domain": "ecommerce",
+  "octalysis_hooks": {
+    "epic_meaning": {
+      "description": "Be part of something bigger",
+      "examples": [
+        "Shop smart, save big",
+        "Join happy shoppers",
+        "Best deals await"
+      ],
+      "best_for_segments": [
+        "all"
+      ]
+    },
+    "accomplishment": {
+      "description": "Make progress and achieve",
+      "examples": [
+        "100 orders placed",
+        "Platinum member",
+        "Top reviewer"
+      ],
+      "best_for_segments": [
+        "all"
+      ]
+    },
+    "empowerment": {
+      "description": "Have control and experiment",
+      "examples": [
+        "Shop your way",
+        "Easy returns",
+        "Your choices"
+      ],
+      "best_for_segments": [
+        "all"
+      ]
+    },
+    "ownership": {
+      "description": "Build something valuable",
+      "examples": [
+        "Your wishlist",
+        "Your rewards",
+        "Your savings"
+      ],
+      "best_for_segments": [
+        "all"
+      ]
+    },
+    "social_influence": {
+      "description": "Others are doing it",
+      "examples": [
+        "Best seller",
+        "Highly rated",
+        "Others bought"
+      ],
+      "best_for_segments": [
+        "all"
+      ]
+    },
+    "scarcity": {
+      "description": "Limited time or availability",
+      "examples": [
+        "Only 3 left",
+        "Sale ends soon",
+        "Flash deal"
+      ],
+      "best_for_segments": [
+        "all"
+      ]
+    },
+    "unpredictability": {
+      "description": "What will happen next",
+      "examples": [
+        "Mystery discount",
+        "Surprise offer",
+        "Lucky coupon"
+      ],
+      "best_for_segments": [
+        "all"
+      ]
+    },
+    "loss_avoidance": {
+      "description": "Don't lose what you have",
+      "examples": [
+        "Price drop alert",
+        "Cart expiring",
+        "Almost sold out"
+      ],
+      "best_for_segments": [
+        "all"
+      ]
+    }
+  },
+  "hooks_by_segment": {
+    "achievers": [
+      "accomplishment",
+      "ownership",
+      "loss_avoidance"
+    ],
+    "social_competitors": [
+      "social_influence",
+      "accomplishment",
+      "scarcity"
+    ],
+    "casual_learners": [
+      "unpredictability",
+      "empowerment",
+      "epic_meaning"
+    ],
+    "at_risk_churners": [
+      "loss_avoidance",
+      "scarcity",
+      "social_influence"
+    ],
+    "dormant_users": [
+      "unpredictability",
+      "epic_meaning",
+      "empowerment"
+    ]
+  }
+}

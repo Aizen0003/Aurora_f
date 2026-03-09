@@ -1,4 +1,4 @@
-﻿"""
+"""
 Schedule Generator - Creates user-wise notification schedules
 """
 
@@ -57,7 +57,12 @@ class ScheduleGenerator:
             
             # Generate schedule for next 7 days
             for day in range(7):
-                lifecycle_day = f"D{user.get('days_since_signup', 0) + day}"
+                user_signup_days = user.get('days_since_signup')
+                if user_signup_days is None:
+                     # Heuristic: look for other date-related columns or just use 0
+                     user_signup_days = 0
+                
+                lifecycle_day = f"D{int(user_signup_days) + day}"
                 
                 # Get goal for this day
                 goal = self._get_goal_for_day(user, day, segment_goals)
@@ -90,7 +95,7 @@ class ScheduleGenerator:
                 schedule_row = {
                     'user_id': user['user_id'],
                     'segment_id': user['segment_id'],
-                    'segment_name': user['segment_name'],
+                    'segment_name': user.get('segment_name', f"Segment {user['segment_id']}"),
                     'lifecycle_stage': user['lifecycle_stage'],
                     'lifecycle_day': lifecycle_day,
                     'day_offset': day
