@@ -17,6 +17,7 @@ class ScheduleGenerator:
         with open(config_path, 'r') as f:
             self.config = yaml.safe_load(f)
         
+        random.seed(self.config.get('segmentation', {}).get('random_state', 42))
         self.schedules = None
     
     def generate_schedules(self, user_data: pd.DataFrame, segments: pd.DataFrame = None,

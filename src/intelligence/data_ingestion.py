@@ -58,7 +58,7 @@ class DataIngestionEngine:
         
         # Step 4: Clean
         print("\n🧹 Cleaning data...")
-        df = self.validator.clean_user_data(df)
+        df = self.validator.clean_user_data(df, schema_map=self.schema_map)
         
         print("[OK] Data ingestion complete")
         self.user_data = df
@@ -107,6 +107,19 @@ Map these columns to my internal roles.
             print("   [Warn] LLM schema mapping failed. Falling back to default heuristics.")
             return self._fallback_schema_mapping(headers)
 
+        # Normalize scalar fields — LLM sometimes returns ['user_id'] instead of 'user_id'
+        for key in ['user_id', 'lifecycle_stage']:
+            val = mapping.get(key)
+            if isinstance(val, list):
+                mapping[key] = val[0] if val else None
+        # Ensure list fields are always lists
+        for key in ['activeness_metrics', 'value_metrics', 'retention_metrics', 'feature_flags']:
+            val = mapping.get(key)
+            if val is None:
+                mapping[key] = []
+            elif isinstance(val, str):
+                mapping[key] = [val]
+
         print(f"   [OK] Identified roles: ID={mapping.get('user_id')}, Features={len(mapping.get('feature_flags', []))}")
         
         # Update feature_columns based on mapping
@@ -131,12 +144,20 @@ Map these columns to my internal roles.
         df = df.copy()
         m = self.schema_map
         
+        # Helper: get scalar value from mapping (LLM may return list or string)
+        def _scalar(val):
+            if isinstance(val, list):
+                return val[0] if val else None
+            return val
+        
         # Rename essential columns to internal standard names for the rest of the pipeline
         rename_map = {}
-        if m.get('user_id') and m.get('user_id') in df.columns:
-            rename_map[m.get('user_id')] = 'user_id'
-        if m.get('lifecycle_stage') and m.get('lifecycle_stage') in df.columns:
-            rename_map[m.get('lifecycle_stage')] = 'lifecycle_stage'
+        uid = _scalar(m.get('user_id'))
+        if uid and uid in df.columns and uid != 'user_id':
+            rename_map[uid] = 'user_id'
+        lcs = _scalar(m.get('lifecycle_stage'))
+        if lcs and lcs in df.columns and lcs != 'lifecycle_stage':
+            rename_map[lcs] = 'lifecycle_stage'
             
         if rename_map:
             df = df.rename(columns=rename_map)

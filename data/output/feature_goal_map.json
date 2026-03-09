@@ -1,10 +1,11 @@
 {
   "features": [
     {
-      "feature_name": "Core Feature",
-      "feature_id": "core_feature",
-      "primary_goal": "user_engagement",
+      "feature_name": "Ai Tutor",
+      "feature_id": "ai_tutor",
+      "primary_goal": "skill_development",
       "secondary_goals": [
+        "engagement",
         "retention",
         "satisfaction"
       ],
@@ -12,7 +13,82 @@
         "all"
       ],
       "engagement_driver_score": 0.8,
-      "description": "Primary product feature"
+      "description": "AI-powered tutoring for personalized learning"
+    },
+    {
+      "feature_name": "Leaderboard",
+      "feature_id": "leaderboard",
+      "primary_goal": "competitive_engagement",
+      "secondary_goals": [
+        "engagement",
+        "retention",
+        "satisfaction"
+      ],
+      "user_segments_most_relevant": [
+        "all"
+      ],
+      "engagement_driver_score": 0.8,
+      "description": "Competitive ranking to motivate users"
+    },
+    {
+      "feature_name": "Streak System",
+      "feature_id": "streak_system",
+      "primary_goal": "habit_formation",
+      "secondary_goals": [
+        "engagement",
+        "retention",
+        "satisfaction"
+      ],
+      "user_segments_most_relevant": [
+        "all"
+      ],
+      "engagement_driver_score": 0.78,
+      "description": "Daily engagement tracking to build habits"
+    },
+    {
+      "feature_name": "Rewards System",
+      "feature_id": "rewards_system",
+      "primary_goal": "gamification_engagement",
+      "secondary_goals": [
+        "engagement",
+        "retention",
+        "satisfaction"
+      ],
+      "user_segments_most_relevant": [
+        "all"
+      ],
+      "engagement_driver_score": 0.78,
+      "description": "Incentive system to drive engagement"
+    },
+    {
+      "feature_name": "Practice Exercises",
+      "feature_id": "practice_exercises",
+      "primary_goal": "skill_development",
+      "secondary_goals": [
+        "engagement",
+        "retention",
+        "satisfaction"
+      ],
+      "user_segments_most_relevant": [
+        "all"
+      ],
+      "engagement_driver_score": 0.78,
+      "description": "Feature enabling practice exercises functionality"
+    },
+    {
+      "feature_name": "Gamification",
+      "feature_id": "gamification",
+      "primary_goal": "competitive_engagement",
+      "secondary_goals": [
+        "engagement",
+        "retention",
+        "satisfaction"
+      ],
+      "user_segments_most_relevant": [
+        "all"
+      ],
+      "engagement_driver_score": 0.78,
+      "description": "Feature enabling gamification functionality"
     }
   ]
 }

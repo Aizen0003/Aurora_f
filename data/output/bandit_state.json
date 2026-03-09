@@ -1,13 +1,13 @@
 {
   "TPL_0001": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 22,
+    "beta": 480,
+    "total_sends": 500,
+    "total_clicks": 21,
+    "total_engagements": 6,
+    "estimated_ctr": 0.043824701195219126,
+    "ci_lower": 0.02772091510193554,
+    "ci_upper": 0.06336164724857261
   },
   "TPL_0002": {
     "alpha": 1,
@@ -50,14 +50,14 @@
     "ci_upper": 1.0
   },
   "TPL_0006": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 63,
+    "beta": 939,
+    "total_sends": 1000,
+    "total_clicks": 62,
+    "total_engagements": 30,
+    "estimated_ctr": 0.06287425149700598,
+    "ci_lower": 0.04869788671561337,
+    "ci_upper": 0.07870195502156217
   },
   "TPL_0007": {
     "alpha": 1,
@@ -100,14 +100,14 @@
     "ci_upper": 1.0
   },
   "TPL_0011": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 163,
+    "beta": 839,
+    "total_sends": 1000,
+    "total_clicks": 162,
+    "total_engagements": 65,
+    "estimated_ctr": 0.1626746506986028,
+    "ci_lower": 0.14048327600276497,
+    "ci_upper": 0.18614123572752295
   },
   "TPL_0012": {
     "alpha": 1,
@@ -150,14 +150,14 @@
     "ci_upper": 1.0
   },
   "TPL_0016": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 244,
+    "beta": 758,
+    "total_sends": 1000,
+    "total_clicks": 243,
+    "total_engagements": 125,
+    "estimated_ctr": 0.2435129740518962,
+    "ci_lower": 0.21744483424621647,
+    "ci_upper": 0.2705508602602771
   },
   "TPL_0017": {
     "alpha": 1,
@@ -200,14 +200,14 @@
     "ci_upper": 1.0
   },
   "TPL_0021": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 54,
+    "beta": 448,
+    "total_sends": 500,
+    "total_clicks": 53,
+    "total_engagements": 31,
+    "estimated_ctr": 0.10756972111553785,
+    "ci_lower": 0.08201419077821213,
+    "ci_upper": 0.13608451992805176
   },
   "TPL_0022": {
     "alpha": 1,
@@ -250,14 +250,14 @@
     "ci_upper": 1.0
   },
   "TPL_0026": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 29,
+    "beta": 173,
+    "total_sends": 200,
+    "total_clicks": 28,
+    "total_engagements": 8,
+    "estimated_ctr": 0.14356435643564355,
+    "ci_lower": 0.09880303366084461,
+    "ci_upper": 0.19500253712434426
   },
   "TPL_0027": {
     "alpha": 1,
@@ -300,14 +300,14 @@
     "ci_upper": 1.0
   },
   "TPL_0031": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 120,
+    "beta": 682,
+    "total_sends": 800,
+    "total_clicks": 119,
+    "total_engagements": 34,
+    "estimated_ctr": 0.14962593516209477,
+    "ci_lower": 0.1257984710725832,
+    "ci_upper": 0.17510809340073186
   },
   "TPL_0032": {
     "alpha": 1,
@@ -350,14 +350,14 @@
     "ci_upper": 1.0
   },
   "TPL_0036": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 89,
+    "beta": 413,
+    "total_sends": 500,
+    "total_clicks": 88,
+    "total_engagements": 28,
+    "estimated_ctr": 0.17729083665338646,
+    "ci_lower": 0.14516314480742012,
+    "ci_upper": 0.21185329755980897
   },
   "TPL_0037": {
     "alpha": 1,
@@ -400,14 +400,14 @@
     "ci_upper": 1.0
   },
   "TPL_0041": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 16,
+    "beta": 186,
+    "total_sends": 200,
+    "total_clicks": 15,
+    "total_engagements": 6,
+    "estimated_ctr": 0.07920792079207921,
+    "ci_lower": 0.046183145691709844,
+    "ci_upper": 0.1200987689974657
   },
   "TPL_0042": {
     "alpha": 1,
@@ -450,14 +450,14 @@
     "ci_upper": 1.0
   },
   "TPL_0046": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 61,
+    "beta": 741,
+    "total_sends": 800,
+    "total_clicks": 60,
+    "total_engagements": 26,
+    "estimated_ctr": 0.07605985037406483,
+    "ci_lower": 0.058750190769980434,
+    "ci_upper": 0.0953704750897786
   },
   "TPL_0047": {
     "alpha": 1,
@@ -500,14 +500,14 @@
     "ci_upper": 1.0
   },
   "TPL_0051": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 34,
+    "beta": 268,
+    "total_sends": 300,
+    "total_clicks": 33,
+    "total_engagements": 18,
+    "estimated_ctr": 0.11258278145695365,
+    "ci_lower": 0.079506342154747,
+    "ci_upper": 0.1505132146249369
   },
   "TPL_0052": {
     "alpha": 1,
@@ -550,14 +550,14 @@
     "ci_upper": 1.0
   },
   "TPL_0056": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 46,
+    "beta": 256,
+    "total_sends": 300,
+    "total_clicks": 45,
+    "total_engagements": 5,
+    "estimated_ctr": 0.152317880794702,
+    "ci_lower": 0.11410984274632441,
+    "ci_upper": 0.19488447289593977
   },
   "TPL_0057": {
     "alpha": 1,
@@ -600,14 +600,14 @@
     "ci_upper": 1.0
   },
   "TPL_0061": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 155,
+    "beta": 847,
+    "total_sends": 1000,
+    "total_clicks": 154,
+    "total_engagements": 89,
+    "estimated_ctr": 0.15469061876247506,
+    "ci_lower": 0.13297630408701866,
+    "ci_upper": 0.17771029742576067
   },
   "TPL_0062": {
     "alpha": 1,
@@ -650,14 +650,14 @@
     "ci_upper": 1.0
   },
   "TPL_0066": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 25,
+    "beta": 777,
+    "total_sends": 800,
+    "total_clicks": 24,
+    "total_engagements": 6,
+    "estimated_ctr": 0.03117206982543641,
+    "ci_lower": 0.020297857455510666,
+    "ci_upper": 0.044255282600995885
   },
   "TPL_0067": {
     "alpha": 1,
@@ -700,14 +700,14 @@
     "ci_upper": 1.0
   },
   "TPL_0071": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 14,
+    "beta": 188,
+    "total_sends": 200,
+    "total_clicks": 13,
+    "total_engagements": 1,
+    "estimated_ctr": 0.06930693069306931,
+    "ci_lower": 0.038599880295142636,
+    "ci_upper": 0.1080596999543949
   },
   "TPL_0072": {
     "alpha": 1,
@@ -750,14 +750,14 @@
     "ci_upper": 1.0
   },
   "TPL_0076": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 18,
+    "beta": 184,
+    "total_sends": 200,
+    "total_clicks": 17,
+    "total_engagements": 3,
+    "estimated_ctr": 0.0891089108910891,
+    "ci_lower": 0.05394004637645928,
+    "ci_upper": 0.13196276950951893
   },
   "TPL_0077": {
     "alpha": 1,
@@ -800,14 +800,14 @@
     "ci_upper": 1.0
   },
   "TPL_0081": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 47,
+    "beta": 155,
+    "total_sends": 200,
+    "total_clicks": 46,
+    "total_engagements": 24,
+    "estimated_ctr": 0.23267326732673269,
+    "ci_lower": 0.17715552011990607,
+    "ci_upper": 0.2932033007367985
   },
   "TPL_0082": {
     "alpha": 1,
@@ -850,14 +850,14 @@
     "ci_upper": 1.0
   },
   "TPL_0086": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 101,
+    "beta": 401,
+    "total_sends": 500,
+    "total_clicks": 100,
+    "total_engagements": 40,
+    "estimated_ctr": 0.20119521912350596,
+    "ci_lower": 0.16731653565063875,
+    "ci_upper": 0.23732852524920806
   },
   "TPL_0087": {
     "alpha": 1,
@@ -900,14 +900,14 @@
     "ci_upper": 1.0
   },
   "TPL_0091": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 24,
+    "beta": 478,
+    "total_sends": 500,
+    "total_clicks": 23,
+    "total_engagements": 10,
+    "estimated_ctr": 0.04780876494023904,
+    "ci_lower": 0.030930822133514144,
+    "ci_upper": 0.06809084276711916
   },
   "TPL_0092": {
     "alpha": 1,
@@ -950,14 +950,14 @@
     "ci_upper": 1.0
   },
   "TPL_0096": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 188,
+    "beta": 814,
+    "total_sends": 1000,
+    "total_clicks": 187,
+    "total_engagements": 78,
+    "estimated_ctr": 0.18762475049900199,
+    "ci_lower": 0.16406437649045194,
+    "ci_upper": 0.21236608108898927
   },
   "TPL_0097": {
     "alpha": 1,
@@ -1000,14 +1000,14 @@
     "ci_upper": 1.0
   },
   "TPL_0101": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 71,
+    "beta": 431,
+    "total_sends": 500,
+    "total_clicks": 70,
+    "total_engagements": 21,
+    "estimated_ctr": 0.14143426294820718,
+    "ci_lower": 0.11236900966794777,
+    "ci_upper": 0.17320427422667212
   },
   "TPL_0102": {
     "alpha": 1,
@@ -1050,14 +1050,14 @@
     "ci_upper": 1.0
   },
   "TPL_0106": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 14,
+    "beta": 488,
+    "total_sends": 500,
+    "total_clicks": 13,
+    "total_engagements": 5,
+    "estimated_ctr": 0.027888446215139442,
+    "ci_lower": 0.015359714269220259,
+    "ci_upper": 0.043963329228853605
   },
   "TPL_0107": {
     "alpha": 1,
@@ -1100,14 +1100,14 @@
     "ci_upper": 1.0
   },
   "TPL_0111": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 78,
+    "beta": 924,
+    "total_sends": 1000,
+    "total_clicks": 77,
+    "total_engagements": 23,
+    "estimated_ctr": 0.07784431137724551,
+    "ci_lower": 0.06207863661336889,
+    "ci_upper": 0.0952051245880405
   },
   "TPL_0112": {
     "alpha": 1,
@@ -1150,14 +1150,14 @@
     "ci_upper": 1.0
   },
   "TPL_0116": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 38,
+    "beta": 964,
+    "total_sends": 1000,
+    "total_clicks": 37,
+    "total_engagements": 9,
+    "estimated_ctr": 0.03792415169660679,
+    "ci_lower": 0.027001674823919665,
+    "ci_upper": 0.05059089186220847
   },
   "TPL_0117": {
     "alpha": 1,
@@ -1200,14 +1200,14 @@
     "ci_upper": 1.0
   },
   "TPL_0121": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 62,
+    "beta": 240,
+    "total_sends": 300,
+    "total_clicks": 61,
+    "total_engagements": 25,
+    "estimated_ctr": 0.2052980132450331,
+    "ci_lower": 0.16172567764544885,
+    "ci_upper": 0.2525661905904755
   },
   "TPL_0122": {
     "alpha": 1,
@@ -1250,14 +1250,14 @@
     "ci_upper": 1.0
   },
   "TPL_0126": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 51,
+    "beta": 751,
+    "total_sends": 800,
+    "total_clicks": 50,
+    "total_engagements": 27,
+    "estimated_ctr": 0.06359102244389027,
+    "ci_lower": 0.04777061799654102,
+    "ci_upper": 0.08147076318664732
   },
   "TPL_0127": {
     "alpha": 1,
@@ -1300,14 +1300,14 @@
     "ci_upper": 1.0
   },
   "TPL_0131": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 82,
+    "beta": 720,
+    "total_sends": 800,
+    "total_clicks": 81,
+    "total_engagements": 44,
+    "estimated_ctr": 0.10224438902743142,
+    "ci_lower": 0.08224954254272078,
+    "ci_upper": 0.12411718020194834
   },
   "TPL_0132": {
     "alpha": 1,
@@ -1350,14 +1350,14 @@
     "ci_upper": 1.0
   },
   "TPL_0136": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 42,
+    "beta": 160,
+    "total_sends": 200,
+    "total_clicks": 41,
+    "total_engagements": 21,
+    "estimated_ctr": 0.2079207920792079,
+    "ci_lower": 0.15494136470103256,
+    "ci_upper": 0.2663756661980142
   },
   "TPL_0137": {
     "alpha": 1,
@@ -1400,14 +1400,14 @@
     "ci_upper": 1.0
   },
   "TPL_0141": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 27,
+    "beta": 175,
+    "total_sends": 200,
+    "total_clicks": 26,
+    "total_engagements": 11,
+    "estimated_ctr": 0.13366336633663367,
+    "ci_lower": 0.09042490712334876,
+    "ci_upper": 0.1837628820780474
   },
   "TPL_0142": {
     "alpha": 1,
@@ -1450,14 +1450,14 @@
     "ci_upper": 1.0
   },
   "TPL_0146": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 23,
+    "beta": 179,
+    "total_sends": 200,
+    "total_clicks": 22,
+    "total_engagements": 2,
+    "estimated_ctr": 0.11386138613861387,
+    "ci_lower": 0.0739363396466506,
+    "ci_upper": 0.1610149507793866
   },
   "TPL_0147": {
     "alpha": 1,
@@ -1500,14 +1500,14 @@
     "ci_upper": 1.0
   },
   "TPL_0151": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 56,
+    "beta": 246,
+    "total_sends": 300,
+    "total_clicks": 55,
+    "total_engagements": 9,
+    "estimated_ctr": 0.18543046357615894,
+    "ci_lower": 0.1437060708250878,
+    "ci_upper": 0.23109938654437973
   },
   "TPL_0152": {
     "alpha": 1,
@@ -1550,14 +1550,14 @@
     "ci_upper": 1.0
   },
   "TPL_0156": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 49,
+    "beta": 153,
+    "total_sends": 200,
+    "total_clicks": 48,
+    "total_engagements": 14,
+    "estimated_ctr": 0.24257425742574257,
+    "ci_lower": 0.18612160560536037,
+    "ci_upper": 0.3038538335659771
   },
   "TPL_0157": {
     "alpha": 1,
@@ -1600,14 +1600,14 @@
     "ci_upper": 1.0
   },
   "TPL_0161": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 16,
+    "beta": 186,
+    "total_sends": 200,
+    "total_clicks": 15,
+    "total_engagements": 2,
+    "estimated_ctr": 0.07920792079207921,
+    "ci_lower": 0.046183145691709844,
+    "ci_upper": 0.1200987689974657
   },
   "TPL_0162": {
     "alpha": 1,
@@ -1650,14 +1650,14 @@
     "ci_upper": 1.0
   },
   "TPL_0166": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 31,
+    "beta": 771,
+    "total_sends": 800,
+    "total_clicks": 30,
+    "total_engagements": 8,
+    "estimated_ctr": 0.03865336658354115,
+    "ci_lower": 0.026444633840563947,
+    "ci_upper": 0.053037094901407
   },
   "TPL_0167": {
     "alpha": 1,
@@ -1700,14 +1700,14 @@
     "ci_upper": 1.0
   },
   "TPL_0171": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 166,
+    "beta": 836,
+    "total_sends": 1000,
+    "total_clicks": 165,
+    "total_engagements": 68,
+    "estimated_ctr": 0.1656686626746507,
+    "ci_lower": 0.14330351974696207,
+    "ci_upper": 0.1892977072451585
   },
   "TPL_0172": {
     "alpha": 1,
@@ -1750,14 +1750,14 @@
     "ci_upper": 1.0
   },
   "TPL_0176": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 19,
+    "beta": 183,
+    "total_sends": 200,
+    "total_clicks": 18,
+    "total_engagements": 3,
+    "estimated_ctr": 0.09405940594059406,
+    "ci_lower": 0.057875206996665006,
+    "ci_upper": 0.13783766611521667
   },
   "TPL_0177": {
     "alpha": 1,
@@ -1800,14 +1800,14 @@
     "ci_upper": 1.0
   },
   "TPL_0181": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 141,
+    "beta": 661,
+    "total_sends": 800,
+    "total_clicks": 140,
+    "total_engagements": 15,
+    "estimated_ctr": 0.17581047381546136,
+    "ci_lower": 0.15026280555228838,
+    "ci_upper": 0.20288930830826546
   },
   "TPL_0182": {
     "alpha": 1,
@@ -1850,14 +1850,14 @@
     "ci_upper": 1.0
   },
   "TPL_0186": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 135,
+    "beta": 667,
+    "total_sends": 800,
+    "total_clicks": 134,
+    "total_engagements": 25,
+    "estimated_ctr": 0.16832917705735662,
+    "ci_lower": 0.1432491914372196,
+    "ci_upper": 0.1949756292984592
   },
   "TPL_0187": {
     "alpha": 1,
@@ -1900,14 +1900,14 @@
     "ci_upper": 1.0
   },
   "TPL_0191": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 36,
+    "beta": 166,
+    "total_sends": 200,
+    "total_clicks": 35,
+    "total_engagements": 16,
+    "estimated_ctr": 0.1782178217821782,
+    "ci_lower": 0.12870779878446736,
+    "ci_upper": 0.23375845057610256
   },
   "TPL_0192": {
     "alpha": 1,
@@ -1950,14 +1950,14 @@
     "ci_upper": 1.0
   },
   "TPL_0196": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 24,
+    "beta": 278,
+    "total_sends": 300,
+    "total_clicks": 23,
+    "total_engagements": 9,
+    "estimated_ctr": 0.07947019867549669,
+    "ci_lower": 0.05175382802912031,
+    "ci_upper": 0.11245069780372877
   },
   "TPL_0197": {
     "alpha": 1,
@@ -2000,14 +2000,14 @@
     "ci_upper": 1.0
   },
   "TPL_0201": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 114,
+    "beta": 688,
+    "total_sends": 800,
+    "total_clicks": 113,
+    "total_engagements": 24,
+    "estimated_ctr": 0.14214463840399003,
+    "ci_lower": 0.11885451138123224,
+    "ci_upper": 0.16712473895877053
   },
   "TPL_0202": {
     "alpha": 1,
@@ -2050,14 +2050,14 @@
     "ci_upper": 1.0
   },
   "TPL_0206": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 228,
+    "beta": 774,
+    "total_sends": 1000,
+    "total_clicks": 227,
+    "total_engagements": 94,
+    "estimated_ctr": 0.2275449101796407,
+    "ci_lower": 0.20212340490659736,
+    "ci_upper": 0.25399651580196886
   },
   "TPL_0207": {
     "alpha": 1,
@@ -2100,14 +2100,14 @@
     "ci_upper": 1.0
   },
   "TPL_0211": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 94,
+    "beta": 408,
+    "total_sends": 500,
+    "total_clicks": 93,
+    "total_engagements": 51,
+    "estimated_ctr": 0.18725099601593626,
+    "ci_lower": 0.15436830023364778,
+    "ci_upper": 0.22249341109415477
   },
   "TPL_0212": {
     "alpha": 1,
@@ -2150,14 +2150,14 @@
     "ci_upper": 1.0
   },
   "TPL_0216": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 32,
+    "beta": 770,
+    "total_sends": 800,
+    "total_clicks": 31,
+    "total_engagements": 5,
+    "estimated_ctr": 0.0399002493765586,
+    "ci_lower": 0.027483489683154876,
+    "ci_upper": 0.0544862874121406
   },
   "TPL_0217": {
     "alpha": 1,
@@ -2200,14 +2200,14 @@
     "ci_upper": 1.0
   },
   "TPL_0221": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 53,
+    "beta": 449,
+    "total_sends": 500,
+    "total_clicks": 52,
+    "total_engagements": 29,
+    "estimated_ctr": 0.10557768924302789,
+    "ci_lower": 0.08025205595340645,
+    "ci_upper": 0.13387753776200148
   },
   "TPL_0222": {
     "alpha": 1,
@@ -2250,14 +2250,14 @@
     "ci_upper": 1.0
   },
   "TPL_0226": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 40,
+    "beta": 262,
+    "total_sends": 300,
+    "total_clicks": 39,
+    "total_engagements": 12,
+    "estimated_ctr": 0.13245033112582782,
+    "ci_lower": 0.09666393872428955,
+    "ci_upper": 0.1728432637389236
   },
   "TPL_0227": {
     "alpha": 1,
@@ -2300,14 +2300,14 @@
     "ci_upper": 1.0
   },
   "TPL_0231": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 5,
+    "beta": 197,
+    "total_sends": 200,
+    "total_clicks": 4,
+    "total_engagements": 1,
+    "estimated_ctr": 0.024752475247524754,
+    "ci_lower": 0.008125294719809698,
+    "ci_upper": 0.050166704300102775
   },
   "TPL_0232": {
     "alpha": 1,
@@ -2350,14 +2350,14 @@
     "ci_upper": 1.0
   },
   "TPL_0236": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 19,
+    "beta": 183,
+    "total_sends": 200,
+    "total_clicks": 18,
+    "total_engagements": 6,
+    "estimated_ctr": 0.09405940594059406,
+    "ci_lower": 0.057875206996665006,
+    "ci_upper": 0.13783766611521667
   },
   "TPL_0237": {
     "alpha": 1,
@@ -2400,14 +2400,14 @@
     "ci_upper": 1.0
   },
   "TPL_0241": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 132,
+    "beta": 870,
+    "total_sends": 1000,
+    "total_clicks": 131,
+    "total_engagements": 72,
+    "estimated_ctr": 0.1317365269461078,
+    "ci_lower": 0.11151526109246757,
+    "ci_upper": 0.1533498194142746
   },
   "TPL_0242": {
     "alpha": 1,
@@ -2450,14 +2450,14 @@
     "ci_upper": 1.0
   },
   "TPL_0246": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 31,
+    "beta": 171,
+    "total_sends": 200,
+    "total_clicks": 30,
+    "total_engagements": 10,
+    "estimated_ctr": 0.15346534653465346,
+    "ci_lower": 0.10725992725414964,
+    "ci_upper": 0.20616319494597868
   },
   "TPL_0247": {
     "alpha": 1,
@@ -2500,14 +2500,14 @@
     "ci_upper": 1.0
   },
   "TPL_0251": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 76,
+    "beta": 426,
+    "total_sends": 500,
+    "total_clicks": 75,
+    "total_engagements": 36,
+    "estimated_ctr": 0.15139442231075698,
+    "ci_lower": 0.12141948758408361,
+    "ci_upper": 0.18399915514771234
   },
   "TPL_0252": {
     "alpha": 1,
@@ -2550,14 +2550,14 @@
     "ci_upper": 1.0
   },
   "TPL_0256": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 103,
+    "beta": 699,
+    "total_sends": 800,
+    "total_clicks": 102,
+    "total_engagements": 24,
+    "estimated_ctr": 0.128428927680798,
+    "ci_lower": 0.10618425198807453,
+    "ci_upper": 0.15242823309958084
   },
   "TPL_0257": {
     "alpha": 1,
@@ -2600,14 +2600,14 @@
     "ci_upper": 1.0
   },
   "TPL_0261": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 48,
+    "beta": 154,
+    "total_sends": 200,
+    "total_clicks": 47,
+    "total_engagements": 12,
+    "estimated_ctr": 0.2376237623762376,
+    "ci_lower": 0.18163307648715776,
+    "ci_upper": 0.29853405959511
   },
   "TPL_0262": {
     "alpha": 1,
@@ -2650,14 +2650,14 @@
     "ci_upper": 1.0
   },
   "TPL_0266": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 173,
+    "beta": 629,
+    "total_sends": 800,
+    "total_clicks": 172,
+    "total_engagements": 42,
+    "estimated_ctr": 0.21571072319201995,
+    "ci_lower": 0.18794672961665565,
+    "ci_upper": 0.2448175517777802
   },
   "TPL_0267": {
     "alpha": 1,
@@ -2700,14 +2700,14 @@
     "ci_upper": 1.0
   },
   "TPL_0271": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 30,
+    "beta": 472,
+    "total_sends": 500,
+    "total_clicks": 29,
+    "total_engagements": 10,
+    "estimated_ctr": 0.05976095617529881,
+    "ci_lower": 0.0407619183627394,
+    "ci_upper": 0.08207619531691067
   },
   "TPL_0272": {
     "alpha": 1,
@@ -2750,14 +2750,14 @@
     "ci_upper": 1.0
   },
   "TPL_0276": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 76,
+    "beta": 426,
+    "total_sends": 500,
+    "total_clicks": 75,
+    "total_engagements": 11,
+    "estimated_ctr": 0.15139442231075698,
+    "ci_lower": 0.12141948758408361,
+    "ci_upper": 0.18399915514771234
   },
   "TPL_0277": {
     "alpha": 1,
@@ -2800,14 +2800,14 @@
     "ci_upper": 1.0
   },
   "TPL_0281": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 24,
+    "beta": 278,
+    "total_sends": 300,
+    "total_clicks": 23,
+    "total_engagements": 5,
+    "estimated_ctr": 0.07947019867549669,
+    "ci_lower": 0.05175382802912031,
+    "ci_upper": 0.11245069780372877
   },
   "TPL_0282": {
     "alpha": 1,
@@ -2850,14 +2850,14 @@
     "ci_upper": 1.0
   },
   "TPL_0286": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 37,
+    "beta": 165,
+    "total_sends": 200,
+    "total_clicks": 36,
+    "total_engagements": 10,
+    "estimated_ctr": 0.18316831683168316,
+    "ci_lower": 0.13304488978831353,
+    "ci_upper": 0.23922988453367158
   },
   "TPL_0287": {
     "alpha": 1,
@@ -2900,14 +2900,14 @@
     "ci_upper": 1.0
   },
   "TPL_0291": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 40,
+    "beta": 462,
+    "total_sends": 500,
+    "total_clicks": 39,
+    "total_engagements": 15,
+    "estimated_ctr": 0.0796812749003984,
+    "ci_lower": 0.05764956156432003,
+    "ci_upper": 0.10488107026717568
   },
   "TPL_0292": {
     "alpha": 1,
@@ -2950,14 +2950,14 @@
     "ci_upper": 1.0
   },
   "TPL_0296": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 163,
+    "beta": 639,
+    "total_sends": 800,
+    "total_clicks": 162,
+    "total_engagements": 68,
+    "estimated_ctr": 0.20324189526184538,
+    "ci_lower": 0.17612365923191015,
+    "ci_upper": 0.23176182913475282
   },
   "TPL_0297": {
     "alpha": 1,
@@ -3000,14 +3000,14 @@
     "ci_upper": 1.0
   },
   "TPL_0301": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 180,
+    "beta": 622,
+    "total_sends": 800,
+    "total_clicks": 179,
+    "total_engagements": 20,
+    "estimated_ctr": 0.22443890274314215,
+    "ci_lower": 0.1962460513024155,
+    "ci_upper": 0.25393338128318726
   },
   "TPL_0302": {
     "alpha": 1,
@@ -3050,14 +3050,14 @@
     "ci_upper": 1.0
   },
   "TPL_0306": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 64,
+    "beta": 438,
+    "total_sends": 500,
+    "total_clicks": 63,
+    "total_engagements": 23,
+    "estimated_ctr": 0.12749003984063745,
+    "ci_lower": 0.09978582841591493,
+    "ci_upper": 0.1580038863032051
   },
   "TPL_0307": {
     "alpha": 1,
@@ -3100,14 +3100,14 @@
     "ci_upper": 1.0
   },
   "TPL_0311": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 25,
+    "beta": 477,
+    "total_sends": 500,
+    "total_clicks": 24,
+    "total_engagements": 8,
+    "estimated_ctr": 0.049800796812749,
+    "ci_lower": 0.03254955673741312,
+    "ci_upper": 0.07044159487105153
   },
   "TPL_0312": {
     "alpha": 1,
@@ -3150,14 +3150,14 @@
     "ci_upper": 1.0
   },
   "TPL_0316": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
+    "alpha": 9,
+    "beta": 293,
+    "total_sends": 300,
+    "total_clicks": 8,
     "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "estimated_ctr": 0.029801324503311258,
+    "ci_lower": 0.013761645022331353,
+    "ci_upper": 0.051695740292945956
   },
   "TPL_0317": {
     "alpha": 1,
@@ -3200,14 +3200,14 @@
     "ci_upper": 1.0
   },
   "TPL_0321": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 131,
+    "beta": 671,
+    "total_sends": 800,
+    "total_clicks": 130,
+    "total_engagements": 18,
+    "estimated_ctr": 0.1633416458852868,
+    "ci_lower": 0.13858367178987738,
+    "ci_upper": 0.18968961747108776
   },
   "TPL_0322": {
     "alpha": 1,
@@ -3250,14 +3250,14 @@
     "ci_upper": 1.0
   },
   "TPL_0326": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 84,
+    "beta": 418,
+    "total_sends": 500,
+    "total_clicks": 83,
+    "total_engagements": 38,
+    "estimated_ctr": 0.16733067729083664,
+    "ci_lower": 0.13599701321144872,
+    "ci_upper": 0.2011741408277835
   },
   "TPL_0327": {
     "alpha": 1,
@@ -3300,14 +3300,14 @@
     "ci_upper": 1.0
   },
   "TPL_0331": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 29,
+    "beta": 273,
+    "total_sends": 300,
+    "total_clicks": 28,
+    "total_engagements": 13,
+    "estimated_ctr": 0.09602649006622517,
+    "ci_lower": 0.06547701259336014,
+    "ci_upper": 0.13163552373832965
   },
   "TPL_0332": {
     "alpha": 1,
@@ -3350,14 +3350,14 @@
     "ci_upper": 1.0
   },
   "TPL_0336": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 12,
+    "beta": 290,
+    "total_sends": 300,
+    "total_clicks": 11,
+    "total_engagements": 1,
+    "estimated_ctr": 0.039735099337748346,
+    "ci_lower": 0.020766786559578657,
+    "ci_upper": 0.0644468425299521
   },
   "TPL_0337": {
     "alpha": 1,
@@ -3400,14 +3400,14 @@
     "ci_upper": 1.0
   },
   "TPL_0341": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 92,
+    "beta": 710,
+    "total_sends": 800,
+    "total_clicks": 91,
+    "total_engagements": 16,
+    "estimated_ctr": 0.11471321695760599,
+    "ci_lower": 0.09360128963141548,
+    "ci_upper": 0.13764439185167626
   },
   "TPL_0342": {
     "alpha": 1,
@@ -3450,14 +3450,14 @@
     "ci_upper": 1.0
   },
   "TPL_0346": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 35,
+    "beta": 167,
+    "total_sends": 200,
+    "total_clicks": 34,
+    "total_engagements": 8,
+    "estimated_ctr": 0.17326732673267325,
+    "ci_lower": 0.12438582245135509,
+    "ci_upper": 0.22827187236407767
   },
   "TPL_0347": {
     "alpha": 1,
@@ -3500,14 +3500,14 @@
     "ci_upper": 1.0
   },
   "TPL_0351": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 117,
+    "beta": 885,
+    "total_sends": 1000,
+    "total_clicks": 116,
+    "total_engagements": 25,
+    "estimated_ctr": 0.11676646706586827,
+    "ci_lower": 0.09763036794166746,
+    "ci_upper": 0.1373510793807153
   },
   "TPL_0352": {
     "alpha": 1,
@@ -3550,14 +3550,14 @@
     "ci_upper": 1.0
   },
   "TPL_0356": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 20,
+    "beta": 182,
+    "total_sends": 200,
+    "total_clicks": 19,
+    "total_engagements": 2,
+    "estimated_ctr": 0.09900990099009901,
+    "ci_lower": 0.06184457260689047,
+    "ci_upper": 0.14367814888787322
   },
   "TPL_0357": {
     "alpha": 1,
@@ -3600,14 +3600,14 @@
     "ci_upper": 1.0
   },
   "TPL_0361": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 49,
+    "beta": 753,
+    "total_sends": 800,
+    "total_clicks": 48,
+    "total_engagements": 5,
+    "estimated_ctr": 0.06109725685785536,
+    "ci_lower": 0.04559554341395521,
+    "ci_upper": 0.07866995354376122
   },
   "TPL_0362": {
     "alpha": 1,
@@ -3650,14 +3650,14 @@
     "ci_upper": 1.0
   },
   "TPL_0366": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 48,
+    "beta": 754,
+    "total_sends": 800,
+    "total_clicks": 47,
+    "total_engagements": 14,
+    "estimated_ctr": 0.059850374064837904,
+    "ci_lower": 0.04451092619229794,
+    "ci_upper": 0.07726662431034817
   },
   "TPL_0367": {
     "alpha": 1,
@@ -3700,14 +3700,14 @@
     "ci_upper": 1.0
   },
   "TPL_0371": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 224,
+    "beta": 778,
+    "total_sends": 1000,
+    "total_clicks": 223,
+    "total_engagements": 51,
+    "estimated_ctr": 0.22355289421157684,
+    "ci_lower": 0.19830127141436574,
+    "ci_upper": 0.24984970499141076
   },
   "TPL_0372": {
     "alpha": 1,
@@ -3750,14 +3750,14 @@
     "ci_upper": 1.0
   },
   "TPL_0376": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 41,
+    "beta": 261,
+    "total_sends": 300,
+    "total_clicks": 40,
+    "total_engagements": 14,
+    "estimated_ctr": 0.1357615894039735,
+    "ci_lower": 0.09955304043906947,
+    "ci_upper": 0.17653537814039957
   },
   "TPL_0377": {
     "alpha": 1,
@@ -3800,14 +3800,14 @@
     "ci_upper": 1.0
   },
   "TPL_0381": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 44,
+    "beta": 158,
+    "total_sends": 200,
+    "total_clicks": 43,
+    "total_engagements": 17,
+    "estimated_ctr": 0.21782178217821782,
+    "ci_lower": 0.16379119373641932,
+    "ci_upper": 0.27714259995590135
   },
   "TPL_0382": {
     "alpha": 1,
@@ -3850,14 +3850,14 @@
     "ci_upper": 1.0
   },
   "TPL_0386": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 46,
+    "beta": 256,
+    "total_sends": 300,
+    "total_clicks": 45,
+    "total_engagements": 7,
+    "estimated_ctr": 0.152317880794702,
+    "ci_lower": 0.11410984274632441,
+    "ci_upper": 0.19488447289593977
   },
   "TPL_0387": {
     "alpha": 1,
@@ -3900,14 +3900,14 @@
     "ci_upper": 1.0
   },
   "TPL_0391": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 164,
+    "beta": 838,
+    "total_sends": 1000,
+    "total_clicks": 163,
+    "total_engagements": 83,
+    "estimated_ctr": 0.16367265469061876,
+    "ci_lower": 0.1414230533302608,
+    "ci_upper": 0.18719369688187454
   },
   "TPL_0392": {
     "alpha": 1,
@@ -3950,14 +3950,14 @@
     "ci_upper": 1.0
   },
   "TPL_0396": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 67,
+    "beta": 735,
+    "total_sends": 800,
+    "total_clicks": 66,
+    "total_engagements": 13,
+    "estimated_ctr": 0.08354114713216958,
+    "ci_lower": 0.06540997416171819,
+    "ci_upper": 0.10363818283668459
   },
   "TPL_0397": {
     "alpha": 1,
@@ -4000,14 +4000,14 @@
     "ci_upper": 1.0
   },
   "TPL_0401": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 82,
+    "beta": 420,
+    "total_sends": 500,
+    "total_clicks": 81,
+    "total_engagements": 21,
+    "estimated_ctr": 0.16334661354581673,
+    "ci_lower": 0.13234209689169224,
+    "ci_upper": 0.1968909355869206
   },
   "TPL_0402": {
     "alpha": 1,
@@ -4050,14 +4050,14 @@
     "ci_upper": 1.0
   },
   "TPL_0406": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 54,
+    "beta": 248,
+    "total_sends": 300,
+    "total_clicks": 53,
+    "total_engagements": 14,
+    "estimated_ctr": 0.17880794701986755,
+    "ci_lower": 0.1377406552870644,
+    "ci_upper": 0.22390262633317357
   },
   "TPL_0407": {
     "alpha": 1,
@@ -4100,14 +4100,14 @@
     "ci_upper": 1.0
   },
   "TPL_0411": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 41,
+    "beta": 161,
+    "total_sends": 200,
+    "total_clicks": 40,
+    "total_engagements": 9,
+    "estimated_ctr": 0.20297029702970298,
+    "ci_lower": 0.15053528679225064,
+    "ci_upper": 0.2609733357539593
   },
   "TPL_0412": {
     "alpha": 1,
@@ -4150,14 +4150,14 @@
     "ci_upper": 1.0
   },
   "TPL_0416": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 55,
+    "beta": 247,
+    "total_sends": 300,
+    "total_clicks": 54,
+    "total_engagements": 22,
+    "estimated_ctr": 0.18211920529801323,
+    "ci_lower": 0.14072066926805643,
+    "ci_upper": 0.2275037029668326
   },
   "TPL_0417": {
     "alpha": 1,
@@ -4200,14 +4200,14 @@
     "ci_upper": 1.0
   },
   "TPL_0421": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 124,
+    "beta": 378,
+    "total_sends": 500,
+    "total_clicks": 123,
+    "total_engagements": 37,
+    "estimated_ctr": 0.24701195219123506,
+    "ci_lower": 0.21030220036247063,
+    "ci_upper": 0.2856308513314903
   },
   "TPL_0422": {
     "alpha": 1,
@@ -4250,14 +4250,14 @@
     "ci_upper": 1.0
   },
   "TPL_0426": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 75,
+    "beta": 927,
+    "total_sends": 1000,
+    "total_clicks": 74,
+    "total_engagements": 32,
+    "estimated_ctr": 0.0748502994011976,
+    "ci_lower": 0.05938627688680813,
+    "ci_upper": 0.09192071390151078
   },
   "TPL_0427": {
     "alpha": 1,
@@ -4300,14 +4300,14 @@
     "ci_upper": 1.0
   },
   "TPL_0431": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 22,
+    "beta": 180,
+    "total_sends": 200,
+    "total_clicks": 21,
+    "total_engagements": 7,
+    "estimated_ctr": 0.10891089108910891,
+    "ci_lower": 0.06987704450519408,
+    "ci_upper": 0.15526486307372692
   },
   "TPL_0432": {
     "alpha": 1,
@@ -4350,14 +4350,14 @@
     "ci_upper": 1.0
   },
   "TPL_0436": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 226,
+    "beta": 776,
+    "total_sends": 1000,
+    "total_clicks": 225,
+    "total_engagements": 66,
+    "estimated_ctr": 0.22554890219560877,
+    "ci_lower": 0.2002119156167295,
+    "ci_upper": 0.2519235329866336
   },
   "TPL_0437": {
     "alpha": 1,
@@ -4400,14 +4400,14 @@
     "ci_upper": 1.0
   },
   "TPL_0441": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 21,
+    "beta": 481,
+    "total_sends": 500,
+    "total_clicks": 20,
+    "total_engagements": 5,
+    "estimated_ctr": 0.04183266932270916,
+    "ci_lower": 0.02613093988408013,
+    "ci_upper": 0.06098199411936037
   },
   "TPL_0442": {
     "alpha": 1,
@@ -4450,14 +4450,14 @@
     "ci_upper": 1.0
   },
   "TPL_0446": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 67,
+    "beta": 435,
+    "total_sends": 500,
+    "total_clicks": 66,
+    "total_engagements": 9,
+    "estimated_ctr": 0.13346613545816732,
+    "ci_lower": 0.10516542991575274,
+    "ci_upper": 0.1645315395741471
   },
   "TPL_0447": {
     "alpha": 1,
@@ -4500,14 +4500,14 @@
     "ci_upper": 1.0
   },
   "TPL_0451": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 30,
+    "beta": 172,
+    "total_sends": 200,
+    "total_clicks": 29,
+    "total_engagements": 5,
+    "estimated_ctr": 0.1485148514851485,
+    "ci_lower": 0.10302205175844721,
+    "ci_upper": 0.20059232057894516
   },
   "TPL_0452": {
     "alpha": 1,
@@ -4550,14 +4550,14 @@
     "ci_upper": 1.0
   },
   "TPL_0456": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 235,
+    "beta": 767,
+    "total_sends": 1000,
+    "total_clicks": 234,
+    "total_engagements": 137,
+    "estimated_ctr": 0.2345309381237525,
+    "ci_lower": 0.2088201604814899,
+    "ci_upper": 0.2612454119029962
   },
   "TPL_0457": {
     "alpha": 1,
@@ -4600,14 +4600,14 @@
     "ci_upper": 1.0
   },
   "TPL_0461": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 190,
+    "beta": 812,
+    "total_sends": 1000,
+    "total_clicks": 189,
+    "total_engagements": 70,
+    "estimated_ctr": 0.18962075848303392,
+    "ci_lower": 0.16595822425572404,
+    "ci_upper": 0.21445670773594389
   },
   "TPL_0462": {
     "alpha": 1,
@@ -4650,14 +4650,14 @@
     "ci_upper": 1.0
   },
   "TPL_0466": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 40,
+    "beta": 162,
+    "total_sends": 200,
+    "total_clicks": 39,
+    "total_engagements": 15,
+    "estimated_ctr": 0.19801980198019803,
+    "ci_lower": 0.1461422203977742,
+    "ci_upper": 0.2555579739698107
   },
   "TPL_0467": {
     "alpha": 1,
@@ -4700,14 +4700,14 @@
     "ci_upper": 1.0
   },
   "TPL_0471": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 72,
+    "beta": 930,
+    "total_sends": 1000,
+    "total_clicks": 71,
+    "total_engagements": 21,
+    "estimated_ctr": 0.0718562874251497,
+    "ci_lower": 0.05670155287586346,
+    "ci_upper": 0.08862866160654365
   },
   "TPL_0472": {
     "alpha": 1,
@@ -4750,14 +4750,14 @@
     "ci_upper": 1.0
   },
   "TPL_0476": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 139,
+    "beta": 863,
+    "total_sends": 1000,
+    "total_clicks": 138,
+    "total_engagements": 29,
+    "estimated_ctr": 0.13872255489021956,
+    "ci_lower": 0.1180264742416161,
+    "ci_upper": 0.1607842919443162
   },
   "TPL_0477": {
     "alpha": 1,
@@ -4800,14 +4800,14 @@
     "ci_upper": 1.0
   },
   "TPL_0481": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 45,
+    "beta": 157,
+    "total_sends": 200,
+    "total_clicks": 44,
+    "total_engagements": 9,
+    "estimated_ctr": 0.22277227722772278,
+    "ci_lower": 0.16823431374701428,
+    "ci_upper": 0.28250783685843184
   },
   "TPL_0482": {
     "alpha": 1,
@@ -4850,14 +4850,14 @@
     "ci_upper": 1.0
   },
   "TPL_0486": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 81,
+    "beta": 721,
+    "total_sends": 800,
+    "total_clicks": 80,
+    "total_engagements": 36,
+    "estimated_ctr": 0.10099750623441396,
+    "ci_lower": 0.08111945657410044,
+    "ci_upper": 0.1227593672035865
   },
   "TPL_0487": {
     "alpha": 1,
@@ -4900,14 +4900,14 @@
     "ci_upper": 1.0
   },
   "TPL_0491": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 39,
+    "beta": 463,
+    "total_sends": 500,
+    "total_clicks": 38,
+    "total_engagements": 10,
+    "estimated_ctr": 0.07768924302788845,
+    "ci_lower": 0.055938095443575905,
+    "ci_upper": 0.10262333836727676
   },
   "TPL_0492": {
     "alpha": 1,
@@ -4950,14 +4950,14 @@
     "ci_upper": 1.0
   },
   "TPL_0496": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 114,
+    "beta": 888,
+    "total_sends": 1000,
+    "total_clicks": 113,
+    "total_engagements": 43,
+    "estimated_ctr": 0.11377245508982035,
+    "ci_lower": 0.09486545635547856,
+    "ci_upper": 0.1341392601320476
   },
   "TPL_0497": {
     "alpha": 1,
@@ -5000,14 +5000,14 @@
     "ci_upper": 1.0
   },
   "TPL_0501": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 39,
+    "beta": 163,
+    "total_sends": 200,
+    "total_clicks": 38,
+    "total_engagements": 16,
+    "estimated_ctr": 0.19306930693069307,
+    "ci_lower": 0.14176253316587759,
+    "ci_upper": 0.2501292116270757
   },
   "TPL_0502": {
     "alpha": 1,
@@ -5050,14 +5050,14 @@
     "ci_upper": 1.0
   },
   "TPL_0506": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 69,
+    "beta": 733,
+    "total_sends": 800,
+    "total_clicks": 68,
+    "total_engagements": 36,
+    "estimated_ctr": 0.08603491271820449,
+    "ci_lower": 0.0676403811450842,
+    "ci_upper": 0.10638359643849901
   },
   "TPL_0507": {
     "alpha": 1,
@@ -5100,14 +5100,14 @@
     "ci_upper": 1.0
   },
   "TPL_0511": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 7,
+    "beta": 295,
+    "total_sends": 300,
+    "total_clicks": 6,
+    "total_engagements": 3,
+    "estimated_ctr": 0.023178807947019868,
+    "ci_lower": 0.009400000025566837,
+    "ci_upper": 0.042879840335294225
   },
   "TPL_0512": {
     "alpha": 1,
@@ -5150,14 +5150,14 @@
     "ci_upper": 1.0
   },
   "TPL_0516": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 249,
+    "beta": 753,
+    "total_sends": 1000,
+    "total_clicks": 248,
+    "total_engagements": 33,
+    "estimated_ctr": 0.24850299401197604,
+    "ci_lower": 0.2222431863874538,
+    "ci_upper": 0.27571368642772404
   },
   "TPL_0517": {
     "alpha": 1,
@@ -5200,14 +5200,14 @@
     "ci_upper": 1.0
   },
   "TPL_0521": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 29,
+    "beta": 173,
+    "total_sends": 200,
+    "total_clicks": 28,
+    "total_engagements": 11,
+    "estimated_ctr": 0.14356435643564355,
+    "ci_lower": 0.09880303366084461,
+    "ci_upper": 0.19500253712434426
   },
   "TPL_0522": {
     "alpha": 1,
@@ -5250,14 +5250,14 @@
     "ci_upper": 1.0
   },
   "TPL_0526": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 181,
+    "beta": 821,
+    "total_sends": 1000,
+    "total_clicks": 180,
+    "total_engagements": 52,
+    "estimated_ctr": 0.18063872255489022,
+    "ci_lower": 0.15744416116957685,
+    "ci_upper": 0.20504063464993896
   },
   "TPL_0527": {
     "alpha": 1,
@@ -5300,14 +5300,14 @@
     "ci_upper": 1.0
   },
   "TPL_0531": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 193,
+    "beta": 609,
+    "total_sends": 800,
+    "total_clicks": 192,
+    "total_engagements": 24,
+    "estimated_ctr": 0.24064837905236908,
+    "ci_lower": 0.2117067241165608,
+    "ci_upper": 0.27081512489987436
   },
   "TPL_0532": {
     "alpha": 1,
@@ -5350,14 +5350,14 @@
     "ci_upper": 1.0
   },
   "TPL_0536": {
-    "alpha": 1,
-    "beta": 1,
-    "total_sends": 0,
-    "total_clicks": 0,
-    "total_engagements": 0,
-    "estimated_ctr": 0.5,
-    "ci_lower": 0.0,
-    "ci_upper": 1.0
+    "alpha": 84,
+    "beta": 918,
+    "total_sends": 1000,
+    "total_clicks": 83,
+    "total_engagements": 16,
+    "estimated_ctr": 0.08383233532934131,
+    "ci_lower": 0.06748469102551173,
+    "ci_upper": 0.10175259586124484
   },
   "TPL_0537": {
     "alpha": 1,
@@ -5390,6 +5390,606 @@
     "ci_upper": 1.0
   },
   "TPL_0540": {
+    "alpha": 1,
+    "beta": 1,
+    "total_sends": 0,
+    "total_clicks": 0,
+    "total_engagements": 0,
+    "estimated_ctr": 0.5,
+    "ci_lower": 0.0,
+    "ci_upper": 1.0
+  },
+  "TPL_0541": {
+    "alpha": 124,
+    "beta": 678,
+    "total_sends": 800,
+    "total_clicks": 123,
+    "total_engagements": 17,
+    "estimated_ctr": 0.1546134663341646,
+    "ci_lower": 0.13043973168332054,
+    "ci_upper": 0.1804183715232848
+  },
+  "TPL_0542": {
+    "alpha": 1,
+    "beta": 1,
+    "total_sends": 0,
+    "total_clicks": 0,
+    "total_engagements": 0,
+    "estimated_ctr": 0.5,
+    "ci_lower": 0.0,
+    "ci_upper": 1.0
+  },
+  "TPL_0543": {
+    "alpha": 1,
+    "beta": 1,
+    "total_sends": 0,
+    "total_clicks": 0,
+    "total_engagements": 0,
+    "estimated_ctr": 0.5,
+    "ci_lower": 0.0,
+    "ci_upper": 1.0
+  },
+  "TPL_0544": {
+    "alpha": 1,
+    "beta": 1,
+    "total_sends": 0,
+    "total_clicks": 0,
+    "total_engagements": 0,
+    "estimated_ctr": 0.5,
+    "ci_lower": 0.0,
+    "ci_upper": 1.0
+  },
+  "TPL_0545": {
+    "alpha": 1,
+    "beta": 1,
+    "total_sends": 0,
+    "total_clicks": 0,
+    "total_engagements": 0,
+    "estimated_ctr": 0.5,
+    "ci_lower": 0.0,
+    "ci_upper": 1.0
+  },
+  "TPL_0546": {
+    "alpha": 17,
+    "beta": 185,
+    "total_sends": 200,
+    "total_clicks": 16,
+    "total_engagements": 4,
+    "estimated_ctr": 0.08415841584158416,
+    "ci_lower": 0.05004169564170239,
+    "ci_upper": 0.12605081652458588
+  },
+  "TPL_0547": {
+    "alpha": 1,
+    "beta": 1,
+    "total_sends": 0,
+    "total_clicks": 0,
+    "total_engagements": 0,
+    "estimated_ctr": 0.5,
+    "ci_lower": 0.0,
+    "ci_upper": 1.0
+  },
+  "TPL_0548": {
+    "alpha": 1,
+    "beta": 1,
+    "total_sends": 0,
+    "total_clicks": 0,
+    "total_engagements": 0,
+    "estimated_ctr": 0.5,
+    "ci_lower": 0.0,
+    "ci_upper": 1.0
+  },
+  "TPL_0549": {
+    "alpha": 1,
+    "beta": 1,
+    "total_sends": 0,
+    "total_clicks": 0,
+    "total_engagements": 0,
+    "estimated_ctr": 0.5,
+    "ci_lower": 0.0,
+    "ci_upper": 1.0
+  },
+  "TPL_0550": {
+    "alpha": 1,
+    "beta": 1,
+    "total_sends": 0,
+    "total_clicks": 0,
+    "total_engagements": 0,
+    "estimated_ctr": 0.5,
+    "ci_lower": 0.0,
+    "ci_upper": 1.0
+  },
+  "TPL_0551": {
+    "alpha": 230,
+    "beta": 772,
+    "total_sends": 1000,
+    "total_clicks": 229,
+    "total_engagements": 117,
+    "estimated_ctr": 0.22954091816367264,
+    "ci_lower": 0.20403573141619924,
+    "ci_upper": 0.2560686613076792
+  },
+  "TPL_0552": {
+    "alpha": 1,
+    "beta": 1,
+    "total_sends": 0,
+    "total_clicks": 0,
+    "total_engagements": 0,
+    "estimated_ctr": 0.5,
+    "ci_lower": 0.0,
+    "ci_upper": 1.0
+  },
+  "TPL_0553": {
+    "alpha": 1,
+    "beta": 1,
+    "total_sends": 0,
+    "total_clicks": 0,
+    "total_engagements": 0,
+    "estimated_ctr": 0.5,
+    "ci_lower": 0.0,
+    "ci_upper": 1.0
+  },
+  "TPL_0554": {
+    "alpha": 1,
+    "beta": 1,
+    "total_sends": 0,
+    "total_clicks": 0,
+    "total_engagements": 0,
+    "estimated_ctr": 0.5,
+    "ci_lower": 0.0,
+    "ci_upper": 1.0
+  },
+  "TPL_0555": {
+    "alpha": 1,
+    "beta": 1,
+    "total_sends": 0,
+    "total_clicks": 0,
+    "total_engagements": 0,
+    "estimated_ctr": 0.5,
+    "ci_lower": 0.0,
+    "ci_upper": 1.0
+  },
+  "TPL_0556": {
+    "alpha": 24,
+    "beta": 178,
+    "total_sends": 200,
+    "total_clicks": 23,
+    "total_engagements": 13,
+    "estimated_ctr": 0.1188118811881188,
+    "ci_lower": 0.07802214191484694,
+    "ci_upper": 0.1667384149667203
+  },
+  "TPL_0557": {
+    "alpha": 1,
+    "beta": 1,
+    "total_sends": 0,
+    "total_clicks": 0,
+    "total_engagements": 0,
+    "estimated_ctr": 0.5,
+    "ci_lower": 0.0,
+    "ci_upper": 1.0
+  },
+  "TPL_0558": {
+    "alpha": 1,
+    "beta": 1,
+    "total_sends": 0,
+    "total_clicks": 0,
+    "total_engagements": 0,
+    "estimated_ctr": 0.5,
+    "ci_lower": 0.0,
+    "ci_upper": 1.0
+  },
+  "TPL_0559": {
+    "alpha": 1,
+    "beta": 1,
+    "total_sends": 0,
+    "total_clicks": 0,
+    "total_engagements": 0,
+    "estimated_ctr": 0.5,
+    "ci_lower": 0.0,
+    "ci_upper": 1.0
+  },
+  "TPL_0560": {
+    "alpha": 1,
+    "beta": 1,
+    "total_sends": 0,
+    "total_clicks": 0,
+    "total_engagements": 0,
+    "estimated_ctr": 0.5,
+    "ci_lower": 0.0,
+    "ci_upper": 1.0
+  },
+  "TPL_0561": {
+    "alpha": 27,
+    "beta": 975,
+    "total_sends": 1000,
+    "total_clicks": 26,
+    "total_engagements": 7,
+    "estimated_ctr": 0.02694610778443114,
+    "ci_lower": 0.017848982548673106,
+    "ci_upper": 0.037827526129560335
+  },
+  "TPL_0562": {
+    "alpha": 1,
+    "beta": 1,
+    "total_sends": 0,
+    "total_clicks": 0,
+    "total_engagements": 0,
+    "estimated_ctr": 0.5,
+    "ci_lower": 0.0,
+    "ci_upper": 1.0
+  },
+  "TPL_0563": {
+    "alpha": 1,
+    "beta": 1,
+    "total_sends": 0,
+    "total_clicks": 0,
+    "total_engagements": 0,
+    "estimated_ctr": 0.5,
+    "ci_lower": 0.0,
+    "ci_upper": 1.0
+  },
+  "TPL_0564": {
+    "alpha": 1,
+    "beta": 1,
+    "total_sends": 0,
+    "total_clicks": 0,
+    "total_engagements": 0,
+    "estimated_ctr": 0.5,
+    "ci_lower": 0.0,
+    "ci_upper": 1.0
+  },
+  "TPL_0565": {
+    "alpha": 1,
+    "beta": 1,
+    "total_sends": 0,
+    "total_clicks": 0,
+    "total_engagements": 0,
+    "estimated_ctr": 0.5,
+    "ci_lower": 0.0,
+    "ci_upper": 1.0
+  },
+  "TPL_0566": {
+    "alpha": 79,
+    "beta": 423,
+    "total_sends": 500,
+    "total_clicks": 78,
+    "total_engagements": 22,
+    "estimated_ctr": 0.15737051792828685,
+    "ci_lower": 0.12687268995780696,
+    "ci_upper": 0.19045315264833623
+  },
+  "TPL_0567": {
+    "alpha": 1,
+    "beta": 1,
+    "total_sends": 0,
+    "total_clicks": 0,
+    "total_engagements": 0,
+    "estimated_ctr": 0.5,
+    "ci_lower": 0.0,
+    "ci_upper": 1.0
+  },
+  "TPL_0568": {
+    "alpha": 1,
+    "beta": 1,
+    "total_sends": 0,
+    "total_clicks": 0,
+    "total_engagements": 0,
+    "estimated_ctr": 0.5,
+    "ci_lower": 0.0,
+    "ci_upper": 1.0
+  },
+  "TPL_0569": {
+    "alpha": 1,
+    "beta": 1,
+    "total_sends": 0,
+    "total_clicks": 0,
+    "total_engagements": 0,
+    "estimated_ctr": 0.5,
+    "ci_lower": 0.0,
+    "ci_upper": 1.0
+  },
+  "TPL_0570": {
+    "alpha": 1,
+    "beta": 1,
+    "total_sends": 0,
+    "total_clicks": 0,
+    "total_engagements": 0,
+    "estimated_ctr": 0.5,
+    "ci_lower": 0.0,
+    "ci_upper": 1.0
+  },
+  "TPL_0571": {
+    "alpha": 43,
+    "beta": 159,
+    "total_sends": 200,
+    "total_clicks": 42,
+    "total_engagements": 14,
+    "estimated_ctr": 0.21287128712871287,
+    "ci_lower": 0.15936010868047557,
+    "ci_upper": 0.2717653121692947
+  },
+  "TPL_0572": {
+    "alpha": 1,
+    "beta": 1,
+    "total_sends": 0,
+    "total_clicks": 0,
+    "total_engagements": 0,
+    "estimated_ctr": 0.5,
+    "ci_lower": 0.0,
+    "ci_upper": 1.0
+  },
+  "TPL_0573": {
+    "alpha": 1,
+    "beta": 1,
+    "total_sends": 0,
+    "total_clicks": 0,
+    "total_engagements": 0,
+    "estimated_ctr": 0.5,
+    "ci_lower": 0.0,
+    "ci_upper": 1.0
+  },
+  "TPL_0574": {
+    "alpha": 1,
+    "beta": 1,
+    "total_sends": 0,
+    "total_clicks": 0,
+    "total_engagements": 0,
+    "estimated_ctr": 0.5,
+    "ci_lower": 0.0,
+    "ci_upper": 1.0
+  },
+  "TPL_0575": {
+    "alpha": 1,
+    "beta": 1,
+    "total_sends": 0,
+    "total_clicks": 0,
+    "total_engagements": 0,
+    "estimated_ctr": 0.5,
+    "ci_lower": 0.0,
+    "ci_upper": 1.0
+  },
+  "TPL_0576": {
+    "alpha": 33,
+    "beta": 969,
+    "total_sends": 1000,
+    "total_clicks": 32,
+    "total_engagements": 17,
+    "estimated_ctr": 0.03293413173652695,
+    "ci_lower": 0.022799476006970115,
+    "ci_upper": 0.04483137071022372
+  },
+  "TPL_0577": {
+    "alpha": 1,
+    "beta": 1,
+    "total_sends": 0,
+    "total_clicks": 0,
+    "total_engagements": 0,
+    "estimated_ctr": 0.5,
+    "ci_lower": 0.0,
+    "ci_upper": 1.0
+  },
+  "TPL_0578": {
+    "alpha": 1,
+    "beta": 1,
+    "total_sends": 0,
+    "total_clicks": 0,
+    "total_engagements": 0,
+    "estimated_ctr": 0.5,
+    "ci_lower": 0.0,
+    "ci_upper": 1.0
+  },
+  "TPL_0579": {
+    "alpha": 1,
+    "beta": 1,
+    "total_sends": 0,
+    "total_clicks": 0,
+    "total_engagements": 0,
+    "estimated_ctr": 0.5,
+    "ci_lower": 0.0,
+    "ci_upper": 1.0
+  },
+  "TPL_0580": {
+    "alpha": 1,
+    "beta": 1,
+    "total_sends": 0,
+    "total_clicks": 0,
+    "total_engagements": 0,
+    "estimated_ctr": 0.5,
+    "ci_lower": 0.0,
+    "ci_upper": 1.0
+  },
+  "TPL_0581": {
+    "alpha": 74,
+    "beta": 428,
+    "total_sends": 500,
+    "total_clicks": 73,
+    "total_engagements": 35,
+    "estimated_ctr": 0.14741035856573706,
+    "ci_lower": 0.11779340878923854,
+    "ci_upper": 0.17968709452821063
+  },
+  "TPL_0582": {
+    "alpha": 1,
+    "beta": 1,
+    "total_sends": 0,
+    "total_clicks": 0,
+    "total_engagements": 0,
+    "estimated_ctr": 0.5,
+    "ci_lower": 0.0,
+    "ci_upper": 1.0
+  },
+  "TPL_0583": {
+    "alpha": 1,
+    "beta": 1,
+    "total_sends": 0,
+    "total_clicks": 0,
+    "total_engagements": 0,
+    "estimated_ctr": 0.5,
+    "ci_lower": 0.0,
+    "ci_upper": 1.0
+  },
+  "TPL_0584": {
+    "alpha": 1,
+    "beta": 1,
+    "total_sends": 0,
+    "total_clicks": 0,
+    "total_engagements": 0,
+    "estimated_ctr": 0.5,
+    "ci_lower": 0.0,
+    "ci_upper": 1.0
+  },
+  "TPL_0585": {
+    "alpha": 1,
+    "beta": 1,
+    "total_sends": 0,
+    "total_clicks": 0,
+    "total_engagements": 0,
+    "estimated_ctr": 0.5,
+    "ci_lower": 0.0,
+    "ci_upper": 1.0
+  },
+  "TPL_0586": {
+    "alpha": 39,
+    "beta": 463,
+    "total_sends": 500,
+    "total_clicks": 38,
+    "total_engagements": 12,
+    "estimated_ctr": 0.07768924302788845,
+    "ci_lower": 0.055938095443575905,
+    "ci_upper": 0.10262333836727676
+  },
+  "TPL_0587": {
+    "alpha": 1,
+    "beta": 1,
+    "total_sends": 0,
+    "total_clicks": 0,
+    "total_engagements": 0,
+    "estimated_ctr": 0.5,
+    "ci_lower": 0.0,
+    "ci_upper": 1.0
+  },
+  "TPL_0588": {
+    "alpha": 1,
+    "beta": 1,
+    "total_sends": 0,
+    "total_clicks": 0,
+    "total_engagements": 0,
+    "estimated_ctr": 0.5,
+    "ci_lower": 0.0,
+    "ci_upper": 1.0
+  },
+  "TPL_0589": {
+    "alpha": 1,
+    "beta": 1,
+    "total_sends": 0,
+    "total_clicks": 0,
+    "total_engagements": 0,
+    "estimated_ctr": 0.5,
+    "ci_lower": 0.0,
+    "ci_upper": 1.0
+  },
+  "TPL_0590": {
+    "alpha": 1,
+    "beta": 1,
+    "total_sends": 0,
+    "total_clicks": 0,
+    "total_engagements": 0,
+    "estimated_ctr": 0.5,
+    "ci_lower": 0.0,
+    "ci_upper": 1.0
+  },
+  "TPL_0591": {
+    "alpha": 160,
+    "beta": 842,
+    "total_sends": 1000,
+    "total_clicks": 159,
+    "total_engagements": 34,
+    "estimated_ctr": 0.1596806387225549,
+    "ci_lower": 0.13766579478215485,
+    "ci_upper": 0.18298200112123814
+  },
+  "TPL_0592": {
+    "alpha": 1,
+    "beta": 1,
+    "total_sends": 0,
+    "total_clicks": 0,
+    "total_engagements": 0,
+    "estimated_ctr": 0.5,
+    "ci_lower": 0.0,
+    "ci_upper": 1.0
+  },
+  "TPL_0593": {
+    "alpha": 1,
+    "beta": 1,
+    "total_sends": 0,
+    "total_clicks": 0,
+    "total_engagements": 0,
+    "estimated_ctr": 0.5,
+    "ci_lower": 0.0,
+    "ci_upper": 1.0
+  },
+  "TPL_0594": {
+    "alpha": 1,
+    "beta": 1,
+    "total_sends": 0,
+    "total_clicks": 0,
+    "total_engagements": 0,
+    "estimated_ctr": 0.5,
+    "ci_lower": 0.0,
+    "ci_upper": 1.0
+  },
+  "TPL_0595": {
+    "alpha": 1,
+    "beta": 1,
+    "total_sends": 0,
+    "total_clicks": 0,
+    "total_engagements": 0,
+    "estimated_ctr": 0.5,
+    "ci_lower": 0.0,
+    "ci_upper": 1.0
+  },
+  "TPL_0596": {
+    "alpha": 66,
+    "beta": 736,
+    "total_sends": 800,
+    "total_clicks": 65,
+    "total_engagements": 7,
+    "estimated_ctr": 0.08229426433915212,
+    "ci_lower": 0.06429666740398847,
+    "ci_upper": 0.1022635776053597
+  },
+  "TPL_0597": {
+    "alpha": 1,
+    "beta": 1,
+    "total_sends": 0,
+    "total_clicks": 0,
+    "total_engagements": 0,
+    "estimated_ctr": 0.5,
+    "ci_lower": 0.0,
+    "ci_upper": 1.0
+  },
+  "TPL_0598": {
+    "alpha": 1,
+    "beta": 1,
+    "total_sends": 0,
+    "total_clicks": 0,
+    "total_engagements": 0,
+    "estimated_ctr": 0.5,
+    "ci_lower": 0.0,
+    "ci_upper": 1.0
+  },
+  "TPL_0599": {
+    "alpha": 1,
+    "beta": 1,
+    "total_sends": 0,
+    "total_clicks": 0,
+    "total_engagements": 0,
+    "estimated_ctr": 0.5,
+    "ci_lower": 0.0,
+    "ci_upper": 1.0
+  },
+  "TPL_0600": {
     "alpha": 1,
     "beta": 1,
     "total_sends": 0,

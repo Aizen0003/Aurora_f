@@ -200,31 +200,42 @@ class SegmentationEngine:
     def _engineer_clustering_features(self, df: pd.DataFrame) -> Tuple[pd.DataFrame, np.ndarray]:
         """Engineer comprehensive features for clustering dynamically"""
         
-        # Proxies for intensity and consistency
-        recency_col = 'days_since_signup' if 'days_since_signup' in df.columns else 'rfm_recency'
-        freq_col = 'sessions_last_7d' if 'sessions_last_7d' in df.columns else 'rfm_frequency'
+        # Proxies for intensity and consistency — use schema_map for dynamic column names
+        ret_metrics = list(self.schema_map.get('retention_metrics') or [])
+        act_metrics = list(self.schema_map.get('activeness_metrics') or [])
         
-        df['engagement_intensity'] = (
-            df[freq_col].astype(float) * 
-            (df['exercises_completed_7d'] if 'exercises_completed_7d' in df.columns else 1.0)
-        ) / (df[recency_col].astype(float) + 1)
+        recency_col = next((c for c in ['days_since_signup'] + ret_metrics if c in df.columns), None)
+        freq_col = next((c for c in ['sessions_last_7d'] + act_metrics if c in df.columns), None)
+        
+        if recency_col and freq_col:
+            # Use second activeness metric (or freq itself) for intensity
+            intensity_col = act_metrics[1] if len(act_metrics) > 1 and act_metrics[1] in df.columns else freq_col
+            df['engagement_intensity'] = (
+                df[freq_col].astype(float) * df[intensity_col].astype(float)
+            ) / (df[recency_col].astype(float) + 1)
+        else:
+            df['engagement_intensity'] = 0.0
 
-        df['streak_consistency'] = (
-            df['streak_current'] if 'streak_current' in df.columns else 0.0
-        ) / (df[recency_col].astype(float) + 1)
+        if recency_col and 'streak_current' in df.columns:
+            df['streak_consistency'] = df['streak_current'].astype(float) / (df[recency_col].astype(float) + 1)
+        elif recency_col:
+            df['streak_consistency'] = 0.0
+        else:
+            df['streak_consistency'] = 0.0
         
         df['notification_engagement'] = df['notif_open_rate_30d'] if 'notif_open_rate_30d' in df.columns else 0.5
 
         # Feature diversity from feature flags
         feat_cols = list(self.schema_map.get('feature_flags') or [])
         if feat_cols:
-            df['feature_diversity'] = df[feat_cols].astype(int).mean(axis=1)
+            existing_feat_cols = [c for c in feat_cols if c in df.columns]
+            df['feature_diversity'] = df[existing_feat_cols].astype(float).mean(axis=1) if existing_feat_cols else 0.0
         else:
             df['feature_diversity'] = 0.0
 
         df['activity_pattern'] = df.apply(
-            lambda row: 'morning' if (row['preferred_hour'] if 'preferred_hour' in row else 12) < 12
-            else ('afternoon' if (row['preferred_hour'] if 'preferred_hour' in row else 12) < 18 else 'evening'),
+            lambda row: 'morning' if row.get('preferred_hour', 12) < 12
+            else ('afternoon' if row.get('preferred_hour', 12) < 18 else 'evening'),
             axis=1
         )
 
@@ -472,13 +483,16 @@ class SegmentationEngine:
         """Save segment outputs"""
         Path(output_dir).mkdir(parents=True, exist_ok=True)
 
-        segment_output = df[[
-            'user_id', 'segment_id', 'segment_name',
+        cols = [
+            'user_id', 'lifecycle_stage', 'segment_id', 'segment_name',
             'activeness', 'gamification_propensity', 'social_propensity',
             'ai_tutor_propensity', 'leaderboard_propensity', 'churn_risk',
             'rfm_score', 'rfm_segment',
             'engagement_intensity', 'streak_consistency', 'feature_diversity'
-        ]].copy()
+        ]
+        # Only include columns that exist in the DataFrame
+        cols = [c for c in cols if c in df.columns]
+        segment_output = df[cols].copy()
 
         segment_output.to_csv(f"{output_dir}/user_segments.csv", index=False)
         print(f"\n✅ Saved: {output_dir}/user_segments.csv")

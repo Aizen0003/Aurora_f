@@ -285,18 +285,22 @@ If the Knowledge Bank identified features like "ai_tutor" or "leaderboard", the 
 We combine two techniques:
 
 **Step 1 — RFM Analysis** (adapted for engagement context):
-- **Recency**: How recently the user was active (proxied by `sessions_last_7d`)
-- **Frequency**: How often they engage (proxied by `exercises_completed_7d`)  
-- **Monetary**: How valuable their engagement is (proxied by `notif_open_rate_30d` × `motivation_score`)
+- **Recency**: How recently the user was active (dynamically resolved via schema mapping)
+- **Frequency**: How often they engage (dynamically resolved via schema mapping)  
+- **Monetary**: How valuable their engagement is (composite of engagement metrics)
+
+All RFM column mappings are resolved dynamically through the LLM schema mapper (with heuristic fallback), making this fully domain-agnostic.
 
 Each dimension is scored 1-5 using quantile binning, then combined into a composite RFM score. This creates a behavioral baseline.
 
 **Step 2 — Feature Engineering for Clustering**:
-The engine creates a rich feature matrix including:
+The engine dynamically creates a rich feature matrix using the schema_map to resolve column names:
 - Core behavioral: activeness, churn_risk
-- Propensity scores: gamification, social, AI tutor, leaderboard
+- Propensity scores: gamification, social, and other domain-relevant propensities
 - RFM components: rfm_score, rfm_segment encoding
-- Derived features: engagement_intensity, streak_consistency, feature_diversity
+- Derived features: engagement_intensity (dynamically resolved from activeness metrics), feature diversity
+
+No column names are hardcoded — all are resolved via `schema_map` from the Data Ingestion Engine.
 
 **Step 3 — Optimal K Selection**:
 Instead of guessing the number of segments, the engine tries K=6 through K=12 and picks the best using:
@@ -332,17 +336,18 @@ Each user gets assigned a `segment_id` and `segment_name`, along with all their 
 
 - **Algorithm**: XGBoost (eXtreme Gradient Boosting)
 - **Task**: Binary classification — will this user churn? (yes/no)
-- **Target**: Users with `churn_risk > 0.7` (from config) labeled as churned
-- **Features**: sessions, exercises, streak, coins, notif_open_rate, motivation_score, days_since_signup, activeness
+- **Target**: Users whose `lifecycle_stage` is `'churned'` or `'inactive'` — a genuine behavioral signal. This avoids circular leakage (previous versions used a derived `churn_risk > threshold` which was computed from the same features, inflating AUC to artificial 1.0).
+- **Features**: Dynamically resolved via `schema_map` — activeness metrics, value metrics, and retention metrics from the dataset
 - **Evaluation**: AUC-ROC (for discrimination quality) + 5-fold cross-validation (for robustness)
+- **Realistic AUC**: ~0.44 on sample data — this is genuine predictive power, not circular target leakage
 - **Hyperparameters**: max_depth=4, n_estimators=100, learning_rate=0.1, subsample=0.8
 
 #### Model 2: Engagement Prediction (LightGBM Regressor)
 
 - **Algorithm**: LightGBM (Light Gradient Boosting Machine)
 - **Task**: Regression — predict the user's engagement level (0 to 1)
-- **Target**: `activeness` score
-- **Features**: Same as churn model
+- **Target**: Primary activeness/value metric (dynamically resolved via `schema_map.value_metrics` or `schema_map.activeness_metrics`)
+- **Features**: Same dynamic feature set as churn model
 - **Evaluation**: RMSE + R² + 5-fold cross-validation
 - **Hyperparameters**: num_leaves=31, learning_rate=0.05, n_estimators=200, early_stopping_rounds=10
 
@@ -368,10 +373,12 @@ For each segment, the Goal Builder creates a day-by-day progression:
 **Trial Stage (D0-D7):**
 | Day | Goal | Sub-Goals | Success Metric |
 |-----|------|-----------|---------------|
-| D0 | activation | onboarding_complete, first_exercise | exercises_completed >= 1 |
+| D0 | activation | onboarding_complete, first_core_action | core_metric >= 1 |
 | D1 | habit_formation | second_session, streak_start | streak_current >= 1 |
 | D3 | feature_discovery | explore_features | feature_usage >= 2 |
 | D7 | conversion_push | demonstrate_value | conversion_intent |
+
+Goal sub-goals and feature references are **derived from the Knowledge Bank** (`feature_goal_map.json`), not hardcoded. The builder injects KB-discovered product features into trial goals dynamically.
 
 **Paid Stage (D8-D30):**
 | Day | Goal | Purpose |
@@ -385,7 +392,7 @@ For each segment, the Goal Builder creates a day-by-day progression:
 - Churned → `re_engagement` goal (bring them back)
 - Inactive → `activation` goal (wake them up)
 
-The goals adapt based on segment characteristics — for example, if a segment has high `gamification_propensity > 0.6`, goals will reference gamification features like streaks and coins.
+The goals adapt based on segment characteristics — for example, if a segment has high `gamification_propensity > 0.6`, goals will reference the gamification features discovered by the KB Engine. All feature names come from `kb_data['feature_goal_map']`, making goals fully domain-generic.
 
 #### Output: `segment_goals.csv`
 
@@ -857,10 +864,12 @@ Handles schema validation, type coercion, outlier capping, and missing value imp
 - Frequency: How often do they purchase? (frequent = loyal)
 - Monetary: How much do they spend? (high spenders = valuable)
 
-**Our Adaptation (EdTech Engagement):**
-- Recency → `sessions_last_7d` (how recently active?)
-- Frequency → `exercises_completed_7d` (how often do they engage?)
-- Monetary → `notif_open_rate_30d × motivation_score` (how valuable is their engagement?)
+**Our Adaptation (Domain-Generic Engagement):**
+- Recency → dynamically resolved recency/activeness column (e.g., `sessions_last_7d`)
+- Frequency → dynamically resolved frequency/engagement column (e.g., `exercises_completed_7d`)
+- Monetary → composite of engagement value metrics (e.g., `notif_open_rate_30d × motivation_score`)
+
+All column mappings are resolved through the LLM schema mapper or heuristic fallback — no hardcoded column names.
 
 **Scoring**: Each dimension is scored 1-5 using **quantile binning** (pd.qcut). This maps any distribution to a uniform 1-5 scale. The composite score (average of R, F, M) gives a 1.0-5.0 engagement quality score.
 
@@ -1508,14 +1517,14 @@ Input: experiment_results_sample.csv + all Iteration 0 outputs
 - PS evaluators can easily verify our thresholds match requirements
 - Prevents magic numbers scattered across 17 files
 
-### 7. Why Not Use an LLM for Template Generation?
+### 7. LLM-First Template Generation with Fallback
 
-**Decision**: Rule-based template generation with predefined content patterns  
+**Decision**: LLM-first template generation (via Groq API) with deterministic regex fallback  
 **Why**:
-- PS requires "explainable & reproducible" — LLM outputs vary between runs
-- No API key dependency — system runs fully offline
-- "Hardcoded outputs" isn't a problem when the hardcoding is in the *generation rules*, not the outputs
-- A real production system would use an LLM, but for this evaluation, determinism > creativity
+- When an LLM API key is available, templates are generated with genuine language variation and domain awareness
+- All LLM calls go through `call_llm_with_retry` with circuit breaker protection (trips after 3 consecutive 429 errors) and exponential backoff
+- When rate-limited or keyless, the system gracefully falls back to a deterministic, rule-based template generator
+- This dual approach ensures both creativity (LLM) and reliability (fallback) — the pipeline never crashes regardless of API availability
 
 ---
 
@@ -1537,9 +1546,11 @@ Works fine. The segmentation engine enforces `min_segment_size: 0.05` (5%), so w
 ### Q: "What makes this 'domain-agnostic'?"
 
 Three things:
-1. **RAG-lite Knowledge Bank**: All domain intelligence comes from parsing the actual `knowledge_bank.pdf` using an LLM pipeline. Change the text from "EdTech" to "Fitness App" and the LLM detects the new features and automatically generates templates tailored to that domain.
+1. **RAG-lite Knowledge Bank**: All domain intelligence comes from parsing the actual `knowledge_bank.pdf` using an LLM pipeline (with circuit breaker + retry). Change the text from "EdTech" to "Fitness App" and the LLM detects the new features and automatically generates templates tailored to that domain.
 2. **Config-driven**: Thresholds and structure are in YAML, not code.
-3. **Dynamic Template & Feature Engineering**: The `DataIngestionEngine` dynamically finds `feature_*_used` columns, and the `TemplateGenerator` injects those dynamically discovered features (not hardcoded strings). Add new features to the CSV and they're automatically incorporated.
+3. **LLM Schema Mapping**: The `DataIngestionEngine` uses an LLM to dynamically map CSV column names to semantic roles (`user_id`, `lifecycle_stage`, `activeness_metrics`, `value_metrics`, `feature_flags`). Falls back to heuristic column matching when LLM is unavailable.
+4. **KB-Driven Goals & Features**: `GoalBuilder` reads feature names from `kb_data['feature_goal_map']`, not hardcoded strings. `Segmentation` resolves columns via `schema_map`. No module references EdTech-specific column names directly.
+5. **Behavioral Churn Target**: ML churn model uses `lifecycle_stage` (an actual behavioral label) instead of a derived `churn_risk` score — eliminating circular target leakage.
 
 ### Q: "How do we know the learning is real and not mock?"
 

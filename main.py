@@ -28,6 +28,16 @@ if sys.platform == 'win32':
     sys.stderr = codecs.getwriter('utf-8')(sys.stderr.buffer, 'strict')
     os.environ['PYTHONIOENCODING'] = 'utf-8'
 
+# Load .env file if present (for GROQ_API_KEY etc.)
+_env_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), '.env')
+if os.path.exists(_env_path):
+    with open(_env_path, 'r') as _f:
+        for _line in _f:
+            _line = _line.strip()
+            if _line and not _line.startswith('#') and '=' in _line:
+                _key, _val = _line.split('=', 1)
+                os.environ.setdefault(_key.strip(), _val.strip().strip("'").strip('"'))
+
 import argparse
 from pathlib import Path
 import pandas as pd
@@ -155,6 +165,16 @@ def run_iteration_0(user_data_path: str, kb_text: str = None, kb_pdf: str = None
           f"Avg Active: {stats['avg_activeness']:.2f} | "
           f"Avg Churn Risk: {stats['avg_churn_risk']:.2f}")
     
+    # Enrich KB features from data columns (feature_* columns + behavioral signals)
+    kb_engine.enrich_features_from_data(list(user_data.columns))
+    kb_data = {
+        'north_star': kb_engine.north_star,
+        'feature_goal_map': kb_engine.feature_goal_map,
+        'tone_hook_matrix': kb_engine.tone_hook_matrix,
+        'detected_domain': kb_engine.detected_domain
+    }
+    kb_engine.save_outputs(output_dir)
+    
     # Step 3: ML-POWERED Segmentation
     print("\n" + "=" * 80)
     print("STEP 3:  SEGMENTATION (RFM + Hierarchical)")
@@ -188,7 +208,7 @@ def run_iteration_0(user_data_path: str, kb_text: str = None, kb_pdf: str = None
     print("STEP 5: INTELLIGENT GOAL BUILDING")
     print("=" * 80)
     
-    goal_builder = GoalBuilder()
+    goal_builder = GoalBuilder(kb_data=kb_data)
     segment_goals = goal_builder.build_goals(seg_engine.segment_profiles)
     goal_builder.save_goals(output_dir)
     
@@ -258,10 +278,19 @@ def run_iteration_0(user_data_path: str, kb_text: str = None, kb_pdf: str = None
     bandit_engine.initialize_bandits(templates)
     bandit_engine.save_bandit_state(output_dir)
     
+    # Step 11: Auto-generate experiment results for demo/testing
+    print("\n" + "=" * 80)
+    print("STEP 11: GENERATING SYNTHETIC EXPERIMENT RESULTS")
+    print("=" * 80)
+    
+    from src.utils.experiment_generator import generate_experiment_results
+    generate_experiment_results(output_dir=output_dir, sample_dir="data/sample")
+    
     print("\n" + "=" * 80)
     print("ITERATION 0 COMPLETE - ML MODELS TRAINED")
     print("=" * 80)
     print(f"\nOutputs saved to: {output_dir}/")
+    print(f"\nExperiment results generated: data/sample/experiment_results_sample.csv")
     print("\nNext: Run Iteration 1 with experiment results for learning")
 
 
@@ -345,9 +374,20 @@ def run_iteration_1(user_data_path: str, experiment_results_path: str):
 
     # Load Knowledge Bank from saved outputs
     import json
-    with open(f"{output_dir}/feature_goal_map.json", 'r') as f:
-        feature_goal_map = json.load(f)
-    kb_data = {'feature_goal_map': feature_goal_map}
+    kb_data = {}
+    for kb_file, kb_key in [('feature_goal_map.json', 'feature_goal_map'),
+                             ('company_north_star.json', 'north_star'),
+                             ('allowed_tone_hook_matrix.json', 'tone_hook_matrix'),
+                             ('kb_metadata.json', '_meta')]:
+        kb_path = f"{output_dir}/{kb_file}"
+        try:
+            with open(kb_path, 'r') as f:
+                kb_data[kb_key] = json.load(f)
+        except FileNotFoundError:
+            kb_data[kb_key] = {}
+    # Flatten metadata
+    meta = kb_data.pop('_meta', {})
+    kb_data['detected_domain'] = meta.get('detected_domain', 'generic')
     
     # Load experiment results
     print(f"\nLoading experiment results from: {experiment_results_path}")

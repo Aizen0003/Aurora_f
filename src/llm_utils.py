@@ -8,8 +8,18 @@ on 413/rate-limit errors, plus a consistent JSON parsing helper.
 import json
 import os
 import re
+import time
 import yaml
 from typing import Optional, Dict, Any
+
+# Global throttle: minimum seconds between LLM calls to avoid rate limits
+_LLM_MIN_INTERVAL = 2.0
+_last_llm_call_time = 0.0
+
+# Circuit breaker: after N consecutive rate-limit failures, skip LLM for the rest of the session
+_CIRCUIT_BREAKER_THRESHOLD = 3
+_consecutive_rate_limit_failures = 0
+_circuit_open = False
 
 try:
     from groq import Groq
@@ -29,7 +39,7 @@ def call_llm_with_retry(
     system_prompt: str,
     user_prompt: str,
     config_path: str = 'config/config.yaml',
-    max_retries: int = 2,
+    max_retries: int = 5,
     temperature: float = 0.4,
 ) -> Optional[str]:
     """Call Groq LLM with automatic retry on context overflow.
@@ -41,6 +51,10 @@ def call_llm_with_retry(
     """
     if not GROQ_AVAILABLE:
         print("   [WARN] Groq SDK not available — skipping LLM call")
+        return None
+
+    global _circuit_open, _consecutive_rate_limit_failures, _last_llm_call_time
+    if _circuit_open:
         return None
 
     api_key = os.environ.get('GROQ_API_KEY', '')
@@ -71,6 +85,12 @@ def call_llm_with_retry(
 
     for attempt in range(1, max_retries + 1):
         try:
+            # Throttle: wait if needed to respect rate limits
+            elapsed = time.time() - _last_llm_call_time
+            if elapsed < _LLM_MIN_INTERVAL:
+                time.sleep(_LLM_MIN_INTERVAL - elapsed)
+            _last_llm_call_time = time.time()
+
             response = client.chat.completions.create(
                 model=model,
                 messages=[
@@ -80,20 +100,34 @@ def call_llm_with_retry(
                 temperature=temperature,
                 max_tokens=4096,
             )
+            _consecutive_rate_limit_failures = 0  # Reset on success
             return response.choices[0].message.content.strip()
 
         except Exception as e:
             err_str = str(e).lower()
             is_retryable = any(kw in err_str for kw in [
                 '413', 'rate_limit', 'token', 'context_length', 'too long',
-                'request too large',
+                'request too large', '429',
             ])
+            is_rate_limit = '429' in err_str or 'rate_limit' in err_str
+
+            if is_rate_limit:
+                _consecutive_rate_limit_failures += 1
+                if _consecutive_rate_limit_failures >= _CIRCUIT_BREAKER_THRESHOLD:
+                    print(f"   [WARN] Circuit breaker OPEN — {_consecutive_rate_limit_failures} consecutive rate-limit failures. Skipping all LLM calls.")
+                    _circuit_open = True
+                    return None
 
             if is_retryable and attempt < max_retries:
-                # Halve the user prompt to reduce tokens
-                half = len(current_user_prompt) // 2
-                current_user_prompt = current_user_prompt[:half]
-                print(f"   [WARN] LLM context too large — reducing prompt to {half} chars and retrying (attempt {attempt + 1}/{max_retries})")
+                if is_rate_limit:
+                    wait = 10 * attempt  # 10s, 20s, 30s... exponential backoff
+                    print(f"   [WARN] Rate limited — waiting {wait}s before retry (attempt {attempt + 1}/{max_retries})")
+                    time.sleep(wait)
+                else:
+                    # Context too long — halve the user prompt
+                    half = len(current_user_prompt) // 2
+                    current_user_prompt = current_user_prompt[:half]
+                    print(f"   [WARN] LLM context too large — reducing prompt to {half} chars and retrying (attempt {attempt + 1}/{max_retries})")
             else:
                 print(f"   [WARN] LLM call failed: {str(e)[:120]}")
                 return None

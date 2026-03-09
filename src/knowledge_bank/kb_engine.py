@@ -17,6 +17,10 @@ from typing import Dict, List, Any, Optional
 from pathlib import Path
 import yaml
 
+import sys
+sys.path.insert(0, str(Path(__file__).parent.parent.parent))
+from src.llm_utils import call_llm_with_retry, parse_json_response
+
 # Optional RAG-lite dependencies
 try:
     from sklearn.feature_extraction.text import TfidfVectorizer
@@ -235,13 +239,16 @@ ABSTRACT:
 Example format: {{"domain": "EdTech Engagement", "vocabulary": ["brand awareness", "retention"]}}"""
 
         try:
-            resp = self.groq_client.chat.completions.create(
-                model=self.llm_model,
-                messages=[{"role": "user", "content": prompt}],
+            raw = call_llm_with_retry(
+                system_prompt="You are a business analyst. Return valid JSON only.",
+                user_prompt=prompt,
                 temperature=0.3,
-                response_format={"type": "json_object"}
             )
-            data = json.loads(resp.choices[0].message.content)
+            if not raw:
+                return self._detect_domain(text), []
+            data = parse_json_response(raw)
+            if not data:
+                data = json.loads(raw)
             domain = data.get('domain', 'Generic')
             vocab = data.get('vocabulary', [])
             # Normalize domain to our standard categories
@@ -561,16 +568,16 @@ DOCUMENT CHUNKS (📊 = contains statistics):
 Return JSON only:"""
 
         try:
-            resp = self.groq_client.chat.completions.create(
-                model=self.llm_model,
-                messages=[
-                    {"role": "system", "content": system_prompt},
-                    {"role": "user", "content": user_prompt}
-                ],
+            raw = call_llm_with_retry(
+                system_prompt=system_prompt,
+                user_prompt=user_prompt,
                 temperature=0.1,
-                response_format={"type": "json_object"}
             )
-            result = json.loads(resp.choices[0].message.content)
+            if not raw:
+                return {}
+            result = parse_json_response(raw)
+            if not result:
+                result = json.loads(raw)
             print(f"   [RAG] LLM extraction complete — company: {result.get('company_name', 'N/A')}")
             return result
         except Exception as e:
@@ -1161,6 +1168,60 @@ Return JSON only:"""
             }
         ]
 
+    def enrich_features_from_data(self, columns: List[str]) -> None:
+        """Enrich feature_goal_map using feature columns detected in user data CSV."""
+        if not self.feature_goal_map:
+            self.feature_goal_map = {"features": []}
+
+        existing_ids = {f['feature_id'] for f in self.feature_goal_map.get('features', [])}
+        has_only_default = existing_ids == {'core_feature'}
+
+        # Map explicit feature_* columns
+        new_features = []
+        for col in columns:
+            if not col.startswith('feature_'):
+                continue
+            fname = col.replace('feature_', '').replace('_used', '').replace('_viewed', '').replace('_', ' ').title()
+            fid = col.replace('feature_', '').replace('_used', '').replace('_viewed', '')
+            if fid not in existing_ids:
+                new_features.append({
+                    "feature_name": fname,
+                    "feature_id": fid,
+                    "primary_goal": self._infer_goal_from_feature(fname, ""),
+                    "secondary_goals": ["engagement", "retention", "satisfaction"],
+                    "user_segments_most_relevant": ["all"],
+                    "engagement_driver_score": 0.80,
+                    "description": self._generate_feature_description(fname, "")
+                })
+                existing_ids.add(fid)
+
+        # Infer features from behavioral columns
+        behavioral_map = {
+            'streak': ('Streak System', 'streak_system', 'habit_formation'),
+            'coins': ('Rewards System', 'rewards_system', 'gamification_engagement'),
+            'exercise': ('Practice Exercises', 'practice_exercises', 'skill_development'),
+            'gamification': ('Gamification', 'gamification', 'competitive_engagement'),
+        }
+        for keyword, (fname, fid, goal) in behavioral_map.items():
+            if any(keyword in c.lower() for c in columns) and fid not in existing_ids:
+                new_features.append({
+                    "feature_name": fname,
+                    "feature_id": fid,
+                    "primary_goal": goal,
+                    "secondary_goals": ["engagement", "retention", "satisfaction"],
+                    "user_segments_most_relevant": ["all"],
+                    "engagement_driver_score": 0.78,
+                    "description": self._generate_feature_description(fname, "")
+                })
+                existing_ids.add(fid)
+
+        if new_features:
+            if has_only_default:
+                self.feature_goal_map['features'] = new_features
+            else:
+                self.feature_goal_map['features'].extend(new_features)
+            print(f"   [OK] Enriched feature map with {len(new_features)} features from data columns")
+
     def _extract_tone_hook_matrix(self, text: str) -> Dict[str, Any]:
         """
         Extract allowed tones and behavioral hooks.
@@ -1308,6 +1369,11 @@ Return JSON only:"""
 
         with open(output_path / 'allowed_tone_hook_matrix.json', 'w', encoding='utf-8') as f:
             json.dump(self.tone_hook_matrix, f, indent=2, ensure_ascii=False)
+
+        # Save detected domain for iteration1 to reload
+        kb_meta = {'detected_domain': self.detected_domain or 'generic'}
+        with open(output_path / 'kb_metadata.json', 'w', encoding='utf-8') as f:
+            json.dump(kb_meta, f, indent=2, ensure_ascii=False)
 
         mode_label = "RAG-lite" if self.rag_mode_used else "Regex"
         print(f"[OK] Knowledge Bank outputs saved to {output_dir} (mode: {mode_label})")

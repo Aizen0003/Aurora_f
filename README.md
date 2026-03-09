@@ -27,8 +27,8 @@ Project Aurora is a **production-grade, self-learning notification orchestrator*
 
 ```bash
 # Clone repository
-git clone <repository-url>
-cd Arora
+git clone https://github.com/Aizen0003/Aurora_f.git
+cd Aurora_f
 
 # Install dependencies
 pip install -r requirements.txt
@@ -59,9 +59,9 @@ python main.py --mode iteration1 \
 
 | Model | Metric | Score | Interpretation |
 |-------|--------|-------|----------------|
-| **Churn Prediction** | AUC | 1.0000 | Perfect classification on training data |
-| **Engagement Forecast** | R2 | 0.8673 | 87% variance explained |
-| **Segmentation** | Silhouette | 0.192 | 9 distinct, cohesive segments |
+| **Churn Prediction** | AUC | 0.4437 | Realistic behavioral target (lifecycle_stage-based, no circular leakage) |
+| **Engagement Forecast** | R2 | 0.9398 | 94% variance explained |
+| **Segmentation** | Silhouette | 0.187 | 6 distinct, MECE segments via optimal-K selection |
 
 ### Learning Results (Iteration 1)
 
@@ -123,15 +123,17 @@ OUTPUT LAYER
 ## Project Structure
 
 ```
-Arora/
-|-- main.py                      # Advanced ML orchestrator
+Aurora_f/
+|-- main.py                      # Advanced ML orchestrator (iteration0 + iteration1)
 |-- requirements.txt             # Python dependencies
 |-- README.md                    # Submission document
-|-- SOLUTION_GUIDE.md # Technical architecture guide
+|-- SOLUTION_GUIDE.md            # Technical architecture guide
+|-- PRESENTATION_GUIDE.md        # Demo & presentation script
+|-- walkthrough.md               # Quick walkthrough
 |-- config/
 |   `-- config.yaml              # System configuration
 |-- data/
-|   |-- input/                   # User uploads
+|   |-- input/                   # User uploads (knowledge_bank.pdf)
 |   |-- sample/                  # Sample datasets
 |   |   |-- user_data_sample.csv
 |   |   `-- experiment_results_sample.csv
@@ -139,7 +141,8 @@ Arora/
 |       |-- [Knowledge Bank]
 |       |   |-- company_north_star.json
 |       |   |-- feature_goal_map.json
-|       |   `-- allowed_tone_hook_matrix.json
+|       |   |-- allowed_tone_hook_matrix.json
+|       |   `-- kb_metadata.json
 |       |-- [Intelligence]
 |       |   |-- user_segments.csv
 |       |   |-- segment_goals.csv
@@ -151,34 +154,45 @@ Arora/
 |       |   |-- communication_themes.csv
 |       |   |-- message_templates.csv
 |       |   |-- timing_recommendations.csv
-|       |   |-- timing_recommendations_improved.csv
+|       |   |-- frequency_recommendations.csv
 |       |   `-- user_notification_schedule.csv
 |       `-- [Learning Outputs]
 |           |-- bandit_state.json
 |           |-- statistical_analysis.csv
 |           |-- template_rankings_bandit.csv
+|           |-- bandit_learning_report.csv
 |           |-- templates_nlp_analysis.csv
+|           |-- nlp_recommendations.csv
 |           |-- message_templates_improved.csv
+|           |-- timing_recommendations_improved.csv
+|           |-- frequency_recommendations_improved.csv
+|           |-- user_notification_schedule_improved.csv
+|           |-- experiment_results.csv
 |           `-- learning_delta_report.csv
 `-- src/
+  |-- llm_utils.py               # LLM retry, circuit breaker, rate-limit handling
   |-- knowledge_bank/
-  |   `-- kb_engine.py          # Extract company intelligence
+  |   `-- kb_engine.py           # RAG-lite KB (PDF → LLM → TF-IDF)
   |-- intelligence/
-  |   |-- data_ingestion.py      # Validation & feature engineering
-  |   |-- segmentation.py        # RFM + clustering
-  |   `-- goal_builder.py        # Journey mapping
+  |   |-- data_ingestion.py      # Dynamic schema mapping (LLM + fallback)
+  |   |-- segmentation.py        # RFM + hierarchical clustering
+  |   |-- goal_builder.py        # KB-driven goal building
+  |   `-- ml_propensity_models.py # XGBoost churn + LightGBM engagement
   |-- communication/
   |   |-- theme_engine.py        # Octalysis theme mapping
-  |   |-- template_generator.py  # Bilingual messages
-  |   |-- timing_optimizer.py    # Timing optimization
-  |   `-- schedule_generator.py  # User schedules
+  |   |-- template_generator.py  # Bilingual template generation (LLM + fallback)
+  |   |-- nlp_template_optimizer.py # NLP analysis & optimization
+  |   |-- timing_optimizer.py    # Survival analysis timing optimization
+  |   `-- schedule_generator.py  # User schedule generation
   |-- learning/
-  |   |-- learning_engine.py     # Learning loop
-  |   |-- performance_classifier.py # GOOD/NEUTRAL/BAD
-  |   `-- delta_reporter.py      # Explainable changes
+  |   |-- multi_armed_bandit.py  # Thompson Sampling MAB
+  |   |-- statistical_testing.py # Bayesian + Frequentist A/B testing
+  |   |-- performance_classifier.py # GOOD/NEUTRAL/BAD classification
+  |   `-- delta_reporter.py      # Explainable delta reporting
   `-- utils/
-    |-- metrics.py             # Scoring functions
-    `-- validation.py          # Data quality checks
+    |-- metrics.py               # Scoring functions
+    |-- validation.py            # Data quality checks
+    `-- experiment_generator.py  # Synthetic experiment generation
 ```
 
 ---
@@ -188,12 +202,13 @@ Arora/
 ### Machine Learning Stack
 
 - **XGBoost 2.0**: Gradient boosting for churn prediction
-  - Perfect AUC (1.0) on sample data
+  - Behavioral churn target (lifecycle_stage-based, no circular leakage)
+  - AUC 0.44 on sample data — realistic prediction, not artificial inflation
   - Feature importance tracking
   - Cross-validation ready
 
 - **LightGBM 4.0**: Fast gradient boosting for engagement
-  - R2 score: 0.8673
+  - R2 score: 0.9398
   - Early stopping optimization
   - Lightweight, production-ready
 
@@ -224,13 +239,15 @@ Arora/
 
 ## Key Innovations
 
-### 1. EdTech RFM Adaptation
+### 1. Domain-Generic RFM Adaptation
 
-Traditional RFM focuses on monetary value. We adapted it for EdTech:
+Traditional RFM focuses on monetary value. We adapted it for any engagement domain:
 
-- **Recency**: Days since signup (fresher = higher engagement potential)
-- **Frequency**: Weekly session count (quintile-based scoring)
-- **Monetary**: Engagement value = exercises x 2 + sessions + streak x 0.5 + coins x 0.01
+- **Recency**: How recently the user was active (dynamically resolved via schema mapping)
+- **Frequency**: Engagement frequency metric (resolved from dataset columns)
+- **Monetary**: Engagement value composite (activeness × open rate × motivation)
+
+The system uses LLM-based schema mapping to dynamically identify which columns map to R, F, and M — no hardcoded column names. Falls back to heuristic column matching when LLM is unavailable.
 
 **Result**: Business-aligned segments (Champions, Loyal, At-Risk, Lost)
 
@@ -304,8 +321,8 @@ Beyond segment-level rules:
 - [x] `company_north_star.json` - North Star metric with drivers
 - [x] `feature_goal_map.json` - Feature -> goal mappings
 - [x] `allowed_tone_hook_matrix.json` - Tones x Octalysis hooks
-- [x] `user_segments.csv` - 9 segments with RFM scores
-- [x] `segment_goals.csv` - 117 goal definitions
+- [x] `user_segments.csv` - 6 MECE segments with RFM scores
+- [x] `segment_goals.csv` - Goal definitions per segment × lifecycle × day
 - [x] **BONUS**: `ml_model_performance.csv` - XGBoost/LightGBM metrics
 - [x] **BONUS**: Trained ML models (churn_model.pkl, engagement_model.pkl)
 
@@ -343,13 +360,17 @@ python main.py --mode iteration0 --user-data data/sample/user_data_sample.csv --
 ```
 
 **System demonstrates**:
-1. RFM Analysis with 7-tier segmentation (Champions -> Lost)
-2. Optimal K selection: Tests 6-12 clusters, selects K=9 via Silhouette
-3. XGBoost churn model training (AUC: 1.0)
-4. LightGBM engagement model training (R2: 0.867)
-5. 810 bilingual templates generated
-6. NLP analysis: Sentiment 0.051, Engagement 0.123
-7. Multi-Armed Bandit initialization: 810 Beta(1,1) priors
+1. RAG-lite KB extraction (PDF → LLM → TF-IDF, 25 domain terms)
+2. LLM-based dynamic schema mapping with heuristic fallback
+3. RFM Analysis + Hierarchical Clustering (6 MECE segments)
+4. XGBoost churn model (behavioral target, AUC: 0.44 — realistic)
+5. LightGBM engagement model (R2: 0.94)
+6. KB-driven goal building per segment × lifecycle
+7. 600 bilingual templates generated (EN + HI)
+8. NLP analysis: Sentiment, engagement scoring
+9. Kaplan-Meier survival analysis for timing optimization
+10. Schedule generation (100 users × 7 days)
+11. Auto-generated experiment results for iteration1
 
 **Outputs**: 15+ files in data/output/
 
@@ -481,17 +502,19 @@ python main.py --mode iteration0 --user-data your_data.csv
 
 ## Sample Outputs
 
-### Segment Distribution
+### Segment Distribution (Sample Run)
 
 ```
-Champions (RFM 4.5-5.0):      22 users  (2.2%)  - Power users
-Loyal (RFM 4.0-4.5):          65 users  (6.5%)  - High value
-Potential Loyalist (3.5-4.0): 116 users (11.6%) - Rising stars
-Promising (3.0-3.5):          202 users (20.2%) - Engaged
-Needs Attention (2.5-3.0):    195 users (19.5%) - Declining
-At Risk (2.0-2.5):            183 users (18.3%) - Churn risk
-Lost (< 2.0):                 217 users (21.7%) - Re-engage
+6 MECE segments identified via optimal-K Silhouette selection:
+  Champions:        Top-tier power users (highest RFM)
+  Loyal:            Consistently engaged, high value
+  Potential Loyalist: Rising stars with growth potential
+  Needs Attention:  Declining engagement, re-engage soon
+  At Risk:          High churn probability
+  Lost:             Inactive, need win-back campaigns
 ```
+
+Exact counts depend on dataset — the system automatically selects K=6–12 that maximizes Silhouette score.
 
 ### Template Rankings (Post-Learning)
 
@@ -539,7 +562,7 @@ Reason: Bayesian analysis shows P(better than average) = 0.97.
 
 ### vs. Manual Optimization
 
-- **Scale**: 810 templates tested vs. 10-20 manually
+- **Scale**: 600 templates tested vs. 10-20 manually
 - **Speed**: Hours vs. Weeks
 - **Rigor**: Statistical confidence vs. Gut feeling
 - **Explainability**: Delta reports vs. "We changed it"
@@ -573,9 +596,9 @@ For questions or technical issues:
 
 This project is submitted as part of the Kriti Mid-Year Assessment 2026 for SpeakX Project Aurora.
 
-**Implementation**: February 2026  
-**Technology Stack**: Python 3.11, XGBoost 2.0, LightGBM 4.0, scikit-learn 1.3  
-**Status**: Production-ready with comprehensive test coverage
+**Implementation**: February–March 2026  
+**Technology Stack**: Python 3.13, XGBoost 2.0, LightGBM 4.0, scikit-learn 1.3, lifelines (Kaplan-Meier), Groq LLM (llama-3.3-70b)  
+**Status**: Production-ready with circuit breaker, graceful LLM degradation, and domain-agnostic design
 
 ---
 

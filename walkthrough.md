@@ -3,10 +3,12 @@
 This guide will help you structure your final presentation and successfully demonstrate the end-to-end capabilities of the newly unified, domain-generic Project Aurora.
 
 ## 🎯 What Makes This Final Version Stand Out
-1. **Domain-Generic RAG-lite KB Engine**: Project Aurora is no longer hardcoded to EdTech/SpeakX! It uses a RAG pipeline (PDF → Semantic chunking → LLM → TF-IDF ranking) to contextually understand ANY domain (FinTech, E-commerce, Health, etc.) entirely from the provided Knowledge Bank PDF.
-2. **Dynamic Bilingual Templates**: Message templates dynamically generate English and Hinglish titles/bodies by injecting the specific features identified by the KB Engine.
-3. **Advanced ML & Statistics**: It includes proper XGBoost Churn / LightGBM Engagement modeling, Survival Analysis for timing, 6-12 dynamic MECE segmentation via Hierarchical Clustering, and Multi-Armed Bandit Learning.
-4. **Complete Output Suite**: Generates all 18 deliverables exactly as requested in the rubric.
+1. **Domain-Generic RAG-lite KB Engine**: Project Aurora is no longer hardcoded to EdTech/SpeakX! It uses a RAG pipeline (PDF → Semantic chunking → LLM → TF-IDF ranking) to contextually understand ANY domain (FinTech, E-commerce, Health, etc.) entirely from the provided Knowledge Bank PDF. All LLM calls go through a circuit breaker with exponential backoff and rate-limit retry.
+2. **LLM-Driven Schema Mapping**: The Data Ingestion Engine uses an LLM to dynamically map CSV columns to semantic roles (user_id, lifecycle_stage, activeness_metrics, value_metrics, feature_flags) — no hardcoded column names. Falls back to heuristic matching when LLM is unavailable.
+3. **Dynamic Bilingual Templates**: Message templates dynamically generate English and Hinglish titles/bodies by injecting the specific features identified by the KB Engine.
+4. **Advanced ML & Statistics**: XGBoost Churn (with behavioral lifecycle_stage target, no circular leakage) / LightGBM Engagement modeling, Kaplan-Meier Survival Analysis for timing, 6-12 dynamic MECE segmentation via Hierarchical Clustering, and Multi-Armed Bandit Learning.
+5. **KB-Driven Goals**: Goal Builder derives feature names from the Knowledge Bank (`feature_goal_map.json`), not hardcoded strings.
+6. **Complete Output Suite**: Generates all 18+ deliverables exactly as requested in the rubric.
 
 ---
 
@@ -34,10 +36,12 @@ python main.py --mode iteration0 --user-data data/sample/user_data_sample.csv --
 ```
 
 **What happens & what to highlight:**
-*   **Knowledge Bank Extraction**: Replaces manual rule-setting. Point out how the system identifies the "North Star Metric" and feature-to-goal mappings directly from the `knowledge_bank.pdf`.
+*   **Knowledge Bank Extraction**: Replaces manual rule-setting. Point out how the system uses the LLM (with circuit breaker fallback) to identify the "North Star Metric" and feature-to-goal mappings directly from the `knowledge_bank.pdf`. Saves `kb_metadata.json` with the detected domain.
+*   **LLM Schema Mapping**: The data ingestion engine dynamically maps CSV columns to semantic roles using the LLM, making it work with any dataset schema.
 *   **Segmentation (K=6-12)**: Shows RFM + Hierarchical Clustering generating segments with distinct attributes.
-*   **Template Generation**: Explain that the 540 bilingual templates generated are not hardcoded but constructed dynamically using the features extracted in Step 1.
-*   **Timing Optimization**: Describe how Survival Analysis determines the optimal notification windows.
+*   **ML Models**: XGBoost churn uses `lifecycle_stage` as a behavioral target (realistic AUC ~0.44, not artificially inflated). LightGBM engagement uses dynamic feature columns.
+*   **Template Generation**: Explain that the 600 bilingual templates generated are not hardcoded but constructed dynamically using the features extracted by the KB Engine.
+*   **Timing Optimization**: Describe how Kaplan-Meier Survival Analysis (via lifelines) determines the optimal notification windows.
 
 **Expected Key Output Files (`data/output/`):**
 *   `user_segments.csv`

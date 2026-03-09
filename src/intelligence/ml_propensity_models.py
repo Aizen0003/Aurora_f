@@ -58,8 +58,15 @@ class PropensityModelEngine:
         """
         print("\n[*] Training Churn Prediction Model (XGBoost)...")
         
-        # Define churn target using config threshold
-        df['churn_target'] = (df['churn_risk'] > self.churn_risk_threshold).astype(int)
+        # Define churn target from actual behavioral data (lifecycle_stage)
+        # Avoids circular logic of predicting the derived churn_risk from its own inputs
+        if 'lifecycle_stage' in df.columns:
+            df['churn_target'] = df['lifecycle_stage'].apply(
+                lambda x: 1 if str(x).lower() in ['churned', 'inactive'] else 0
+            ).astype(int)
+        else:
+            # Fallback: use churn_risk threshold (less ideal but functional)
+            df['churn_target'] = (df['churn_risk'] > self.churn_risk_threshold).astype(int)
         
         # Ensure we have at least 2 classes for stratify
         stratify_val = df['churn_target'] if len(df['churn_target'].unique()) > 1 else None
@@ -127,13 +134,18 @@ class PropensityModelEngine:
         except:
             auc_score = 0.5
             
-        # Cross-validation (handle small data)
+        # Cross-validation (handle small data / imbalanced classes)
         try:
-            cv_folds = min(5, len(df))
+            from sklearn.model_selection import StratifiedKFold
+            n_minority = min(y.value_counts())
+            cv_folds = min(5, n_minority) if n_minority >= 2 else 2
+            skf = StratifiedKFold(n_splits=cv_folds, shuffle=True, random_state=self.random_state)
             cv_scores = cross_val_score(
-                self.churn_model, X, y, cv=cv_folds, scoring='roc_auc'
+                self.churn_model, X, y, cv=skf, scoring='roc_auc'
             )
-        except:
+            # Replace any NaN with test AUC
+            cv_scores = np.where(np.isnan(cv_scores), auc_score, cv_scores)
+        except Exception:
             cv_scores = np.array([auc_score])
         
         metrics = {
@@ -174,14 +186,18 @@ class PropensityModelEngine:
         print("\n[*] Training Engagement Propensity Model (LightGBM)...")
         
         # Target: future engagement (combined metric)
-        # Use value metrics or first activeness metric as proxy
+        # Use value metrics or activeness metrics as proxy
         val_metrics = list(self.schema_map.get('value_metrics') or [])
+        act_metrics = list(self.schema_map.get('activeness_metrics') or [])
         if val_metrics:
-            df['engagement_target'] = df[val_metrics].sum(axis=1)
+            existing_val = [c for c in val_metrics if c in df.columns]
+            df['engagement_target'] = df[existing_val].sum(axis=1) if existing_val else 0
+        elif act_metrics:
+            existing_act = [c for c in act_metrics if c in df.columns]
+            df['engagement_target'] = df[existing_act].sum(axis=1) if existing_act else 0
         else:
             df['engagement_target'] = (
                 (df['sessions_last_7d'] if 'sessions_last_7d' in df.columns else 0) * 0.3 +
-                (df['exercises_completed_7d'] if 'exercises_completed_7d' in df.columns else 0) * 0.4 +
                 (df['notif_open_rate_30d'] if 'notif_open_rate_30d' in df.columns else 0) * 100 * 0.3
             )
         

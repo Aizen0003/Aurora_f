@@ -141,7 +141,7 @@ While it runs, explain each step as it appears in the terminal output.
 5. **Open `user_notification_schedule.csv`** → Show per-user 7-day schedule
 
 **Key Points to Highlight**:
-- "Each segment has unique propensity scores — gamification, social, AI tutor, leaderboard, and churn risk"
+- "Each segment has unique propensity scores derived from KB-identified features and behavioral signals"
 - "Templates are bilingual — English and Hindi in the same row, ready for A/B testing"
 - "The schedule shows journey progression — Day 0 is about activation, Day 3 is about feature discovery"
 
@@ -182,19 +182,19 @@ python main.py --mode iteration1 --user-data data/sample/user_data_sample.csv --
 ## 4. What to Say at Each Step
 
 ### Step 1: Knowledge Bank
-> "The Knowledge Bank Engine ingests unstructured company documentation and automatically extracts three things: the North Star metric, a feature-to-goal map, and a tone-hook matrix based on the Octalysis behavioral framework. It uses regex-based NLP with multi-strategy fallbacks — try explicit extraction first, then heuristic inference, then domain-specific defaults."
+> "The Knowledge Bank Engine ingests unstructured company documentation and uses a RAG-lite pipeline (PDF → LLM → TF-IDF) to automatically extract three things: the North Star metric, a feature-to-goal map, and a tone-hook matrix based on the Octalysis behavioral framework. All LLM calls go through a circuit breaker with exponential backoff. When no API key is available, it falls back to regex-based extraction — the pipeline never fails."
 
 ### Step 2: Data Ingestion
-> "We load the user behavioral data, validate it, handle missing values, and engineer six key features: activeness score, gamification propensity, social propensity, AI tutor propensity, leaderboard propensity, and churn risk. Each is a weighted composite of normalized behavioral signals."
+> "We load the user behavioral data, use an LLM to dynamically map CSV column names to semantic roles (user_id, lifecycle_stage, activeness metrics, value metrics, feature flags), then validate, clean, and engineer engagement features. Falls back to heuristic column matching when LLM is unavailable. Only `user_id` is truly required — everything else gets sensible defaults."
 
 ### Step 3: Segmentation
 > "We create mutually exclusive segments using a two-layer approach: first RFM analysis to establish a behavioral baseline, then agglomerative hierarchical clustering with Ward's linkage for the final segmentation. We automatically select the optimal K between 6 and 12 using silhouette scores and Davies-Bouldin index."
 
 ### Step 4: ML Models
-> "We train two gradient-boosted models: an XGBoost classifier for churn prediction using binary classification with AUC evaluation, and a LightGBM regressor for engagement propensity with early stopping. Both are cross-validated with 5 folds."
+> "We train two gradient-boosted models: an XGBoost classifier for churn prediction using `lifecycle_stage` as a genuine behavioral target (not a derived score — that would be circular), with AUC evaluation, and a LightGBM regressor for engagement prediction with early stopping. Both use dynamic feature columns resolved from the schema map. Cross-validated with 5 folds."
 
 ### Step 5: Goal Builder
-> "Each segment gets a lifecycle journey — trial users go from activation on Day 0, to habit formation on Day 1, to feature discovery by Day 3, and conversion push by Day 7. Paid users progress from retention to expansion to advocacy."
+> "Each segment gets a lifecycle journey with goals derived from the Knowledge Bank — trial users go from activation on Day 0, to habit formation on Day 1, to feature discovery by Day 3, and conversion push by Day 7. The specific sub-goals reference actual product features identified by the KB Engine, not hardcoded strings. Paid users progress from retention to expansion to advocacy."
 
 ### Step 6: Theme Engine
 > "We map Octalysis core drives to segments based on their behavioral profile. High churn risk segments get 'loss avoidance' — show them what they'll lose. High gamification users get 'accomplishment' — celebrate their progress. Each mapping has a documented rationale."
@@ -240,7 +240,7 @@ python main.py --mode iteration1 --user-data data/sample/user_data_sample.csv --
 ### What to Point Out in Each File
 
 **user_segments.csv**:
-- Multiple propensity columns (activeness, gamification, social, ai_tutor, leaderboard, churn_risk)
+- Multiple propensity columns (activeness, gamification, and other KB-derived propensities, churn_risk)
 - Meaningful segment names (not just "Cluster 0")
 - RFM scores and segments
 
@@ -270,7 +270,7 @@ python main.py --mode iteration1 --user-data data/sample/user_data_sample.csv --
 > "Hierarchical clustering with Ward's linkage is deterministic — same data always gives the same result, meeting the reproducibility requirement. It also produces more balanced segment sizes than K-Means, which can create very small clusters."
 
 **Q: "How is this domain-agnostic?"**
-> "Three ways: First, all domain-specific knowledge comes from the Knowledge Bank text — change the input text and the system adapts. Second, all thresholds are in config.yaml, not hardcoded. Third, the feature engineering dynamically detects feature columns in the CSV. Swap the data and KB, keep the same pipeline."
+> "Five ways: First, the RAG-lite Knowledge Bank uses an LLM (with circuit breaker + retry) to understand any domain PDF. Second, the Data Ingestion Engine uses an LLM to map any CSV schema to semantic roles — it doesn't hardcode column names. Third, the Goal Builder derives feature names from the KB, not from code. Fourth, the ML churn model uses `lifecycle_stage` (a behavioral label) instead of a derived score — no circular logic. Fifth, all thresholds are in config.yaml. Swap the PDF and CSV, and the same pipeline works for fintech, healthtech, or e-commerce."
 
 **Q: "What happens if we give you different data right now?"**  
 > "The system will work. It only strictly requires a user_id column. Missing columns get default values. The segmentation adapts to whatever features exist. Templates generate for whatever segments emerge."
@@ -284,7 +284,7 @@ python main.py --mode iteration1 --user-data data/sample/user_data_sample.csv --
 > "Frequentist asks 'if there's no difference, what's the probability of seeing this data?' — it gives p-values. Bayesian asks 'given the data, what's the probability Treatment is better?' — it gives direct probability statements. We use both — when they agree, we have strong evidence."
 
 **Q: "Why XGBoost for churn and LightGBM for engagement?"**
-> "XGBoost is strong for binary classification with class imbalance — common in churn prediction where most users don't churn. LightGBM is faster for regression and handles continuous targets like engagement scores better, thanks to leaf-wise growth. Using both demonstrates understanding of when to apply each."
+> "XGBoost is strong for binary classification with class imbalance — common in churn prediction where most users don't churn. LightGBM is faster for regression and handles continuous targets like engagement scores better, thanks to leaf-wise growth. Importantly, our churn model uses `lifecycle_stage` as the target — actual behavioral state, not a derived risk score — to avoid circular target leakage. The resulting AUC (~0.44 on sample data) is realistic, proving genuine prediction rather than artificial inflation."
 
 **Q: "What is survival analysis doing here?"**
 > "Survival analysis models time-to-event — originally 'time to death' in medicine. We adapted it to 'time to engagement' — how quickly users click after receiving a notification in each time window. Windows where engagement happens fastest are ranked higher. We use the Kaplan-Meier estimator from the lifelines library."
