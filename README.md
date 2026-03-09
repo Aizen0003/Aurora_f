@@ -600,7 +600,3 @@ This project is submitted as part of the Kriti Mid-Year Assessment 2026 for Spea
 **Technology Stack**: Python 3.13, XGBoost 2.0, LightGBM 4.0, scikit-learn 1.3, lifelines (Kaplan-Meier), Groq LLM (llama-3.3-70b)  
 **Status**: Production-ready with circuit breaker, graceful LLM degradation, and domain-agnostic design
 
----
-
-**Built with cutting-edge ML/AI to win this competition.**
-
