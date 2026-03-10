@@ -6,6 +6,13 @@ TECHNICAL_GUIDE.md
 __pycache__/
 *.pyc
 
+# Experiment results (evaluators provide their own)
+data/sample/experiment_results_sample.csv
+data/output/experiment_results.csv
+
+# Logs
+*.log
+
 README.txt
 Kriti2026_M4.pdf
 .env
