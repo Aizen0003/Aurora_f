@@ -3,7 +3,7 @@ Project Aurora - ML-POWERED Orchestrator
 Domain-Generic Self-Learning Notification System
 
 This version integrates:
-- RAG-lite Knowledge Bank Engine (PDF → LLM → TF-IDF Cosine Ranking)
+- RAG-lite Knowledge Bank Engine (PDF -> LLM -> TF-IDF Cosine Ranking)
 - RFM + Hierarchical Segmentation
 - XGBoost/LightGBM Propensity Models
 - Multi-Armed Bandit Learning (Thompson Sampling)
@@ -12,9 +12,8 @@ This version integrates:
 - Bayesian Statistical Testing
 
 Usage:
-    python main.py --mode iteration0 --user-data data/sample/user_data_sample.csv
-    python main.py --mode iteration0 --user-data data/sample/user_data_sample.csv --kb-pdf data/input/knowledge_bank.pdf
-    python main.py --mode iteration1 --user-data data/sample/user_data_sample.csv --experiment-results data/sample/experiment_results_sample.csv
+    python main.py --mode iteration0 --user-data user_data.csv --kb-pdf knowledge_bank.pdf
+    python main.py --mode iteration1 --user-data user_data.csv --experiment-results experiment_results.csv
 """
 
 import sys

@@ -13,6 +13,5 @@ data/output/experiment_results.csv
 # Logs
 *.log
 
-README.txt
 Kriti2026_M4.pdf
 .env
