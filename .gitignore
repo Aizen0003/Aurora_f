@@ -15,3 +15,5 @@ data/output/experiment_results.csv
 
 Kriti2026_M4.pdf
 .env
+build_zip.py
+audit.py
