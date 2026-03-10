@@ -1,701 +1,701 @@
 user_id,segment_id,segment_name,lifecycle_stage,lifecycle_day,day_offset,goal,journey_stage,daily_frequency,notif_1_template_id,notif_1_time,notif_1_channel,notif_2_template_id,notif_2_time,notif_2_channel,notif_3_template_id,notif_3_time,notif_3_channel,notif_4_template_id,notif_4_time,notif_4_channel
-U0000,5,Low Engagement Users,trial,D46,0,activation,1_activation,4,TPL_0568,11:00,push,TPL_0569,15:30,push,TPL_0566,09:15,push,TPL_0565,15:00,push
-U0000,5,Low Engagement Users,trial,D47,1,habit_formation,1_activation,4,TPL_0592,11:00,push,TPL_0597,17:45,push,TPL_0600,09:00,push,TPL_0593,15:15,push
-U0000,5,Low Engagement Users,trial,D48,2,habit_formation,2_habit_formation,4,TPL_0593,09:00,push,TPL_0594,17:15,push,TPL_0595,11:45,push,TPL_0596,15:45,push
-U0000,5,Low Engagement Users,trial,D49,3,feature_discovery,2_habit_formation,4,TPL_0585,11:30,push,TPL_0587,15:15,push,TPL_0588,11:45,push,TPL_0583,16:30,push
-U0000,5,Low Engagement Users,trial,D50,4,feature_discovery,2_habit_formation,4,TPL_0590,09:15,push,TPL_0589,16:00,push,TPL_0581,09:45,push,TPL_0587,15:30,push
-U0000,5,Low Engagement Users,trial,D51,5,feature_discovery,3_feature_discovery,4,TPL_0589,10:30,push,TPL_0586,15:45,push,TPL_0585,11:00,push,TPL_0590,16:00,push
-U0000,5,Low Engagement Users,trial,D52,6,conversion_readiness,3_feature_discovery,4,TPL_0578,11:30,push,TPL_0572,17:30,push,TPL_0573,11:15,push,TPL_0575,17:00,push
-U0001,2,Casual Solo Users,inactive,D11,0,activation,11_gentle_nudge,2,TPL_0213,21:15,push,TPL_0217,13:00,push,,,,,,
-U0001,2,Casual Solo Users,inactive,D12,1,activation,11_gentle_nudge,2,TPL_0212,21:00,push,TPL_0211,13:30,push,,,,,,
-U0001,2,Casual Solo Users,inactive,D13,2,activation,11_gentle_nudge,2,TPL_0212,22:30,push,TPL_0215,12:30,push,,,,,,
-U0001,2,Casual Solo Users,inactive,D14,3,activation,12_last_chance,2,TPL_0220,22:15,push,TPL_0212,14:30,push,,,,,,
-U0001,2,Casual Solo Users,inactive,D15,4,activation,12_last_chance,2,TPL_0211,23:00,push,TPL_0220,14:15,push,,,,,,
-U0001,2,Casual Solo Users,inactive,D16,5,activation,12_last_chance,2,TPL_0218,23:15,push,TPL_0212,12:45,push,,,,,,
-U0001,2,Casual Solo Users,inactive,D17,6,activation,12_last_chance,2,TPL_0219,22:30,push,TPL_0215,14:15,push,,,,,,
-U0002,5,Low Engagement Users,paid,D61,0,retention,5_early_retention,4,TPL_0559,11:30,push,TPL_0551,15:15,push,TPL_0554,09:30,push,TPL_0553,16:30,push
-U0002,5,Low Engagement Users,paid,D62,1,retention,5_early_retention,4,TPL_0559,09:15,push,TPL_0557,17:30,push,TPL_0553,09:45,push,TPL_0555,16:45,push
-U0002,5,Low Engagement Users,paid,D63,2,retention,5_early_retention,4,TPL_0560,09:30,push,TPL_0556,15:15,push,TPL_0552,11:30,push,TPL_0557,17:45,push
-U0002,5,Low Engagement Users,paid,D64,3,retention,5_early_retention,4,TPL_0557,11:45,push,TPL_0559,16:15,push,TPL_0553,09:45,push,TPL_0554,15:00,push
-U0002,5,Low Engagement Users,paid,D65,4,retention,5_early_retention,4,TPL_0556,09:15,push,TPL_0559,17:15,push,TPL_0557,11:45,push,TPL_0555,17:00,push
-U0002,5,Low Engagement Users,paid,D66,5,retention,5_early_retention,4,TPL_0556,10:45,push,TPL_0553,17:45,push,TPL_0557,11:30,push,TPL_0560,17:00,push
-U0002,5,Low Engagement Users,paid,D67,6,retention,5_early_retention,4,TPL_0551,11:00,push,TPL_0554,17:30,push,TPL_0555,11:30,push,TPL_0560,15:30,push
-U0003,1,Social Gamifiers,paid,D79,0,retention,5_early_retention,2,TPL_0159,07:15,push,TPL_0157,10:00,push,,,,,,
-U0003,1,Social Gamifiers,paid,D80,1,retention,5_early_retention,2,TPL_0155,08:30,push,TPL_0159,11:15,push,,,,,,
-U0003,1,Social Gamifiers,paid,D81,2,retention,5_early_retention,2,TPL_0156,08:00,push,TPL_0155,11:30,push,,,,,,
-U0003,1,Social Gamifiers,paid,D82,3,retention,5_early_retention,2,TPL_0156,08:15,push,TPL_0154,09:30,push,,,,,,
-U0003,1,Social Gamifiers,paid,D83,4,retention,5_early_retention,2,TPL_0157,06:00,push,TPL_0151,11:30,push,,,,,,
-U0003,1,Social Gamifiers,paid,D84,5,retention,5_early_retention,2,TPL_0156,07:00,push,TPL_0158,09:30,push,,,,,,
-U0003,1,Social Gamifiers,paid,D85,6,retention,5_early_retention,2,TPL_0154,07:15,push,TPL_0159,09:15,push,,,,,,
-U0004,3,Engaged Free Triers,trial,D87,0,activation,1_activation,4,TPL_0361,11:00,push,TPL_0363,06:45,push,TPL_0370,09:15,push,TPL_0364,06:45,push
-U0004,3,Engaged Free Triers,trial,D88,1,habit_formation,1_activation,4,TPL_0393,11:15,push,TPL_0397,07:45,push,TPL_0396,09:15,push,TPL_0395,08:30,push
-U0004,3,Engaged Free Triers,trial,D89,2,habit_formation,2_habit_formation,4,TPL_0392,10:30,push,TPL_0395,07:45,push,TPL_0397,09:15,push,TPL_0391,06:00,push
-U0004,3,Engaged Free Triers,trial,D90,3,feature_discovery,2_habit_formation,4,TPL_0384,10:00,push,TPL_0381,08:15,push,TPL_0390,11:15,push,TPL_0389,06:00,push
-U0004,3,Engaged Free Triers,trial,D91,4,feature_discovery,2_habit_formation,4,TPL_0390,11:00,push,TPL_0389,06:00,push,TPL_0385,09:30,push,TPL_0381,06:15,push
-U0004,3,Engaged Free Triers,trial,D92,5,feature_discovery,3_feature_discovery,4,TPL_0388,10:45,push,TPL_0383,06:15,push,TPL_0382,11:45,push,TPL_0384,06:45,push
-U0004,3,Engaged Free Triers,trial,D93,6,conversion_readiness,3_feature_discovery,4,TPL_0371,10:15,push,TPL_0380,06:00,push,TPL_0375,11:45,push,TPL_0374,07:45,push
-U0005,1,Social Gamifiers,trial,D82,0,activation,1_activation,2,TPL_0167,07:45,push,TPL_0169,11:00,push,,,,,,
-U0005,1,Social Gamifiers,trial,D83,1,habit_formation,1_activation,2,TPL_0191,08:00,push,TPL_0194,09:45,push,,,,,,
-U0005,1,Social Gamifiers,trial,D84,2,habit_formation,2_habit_formation,2,TPL_0194,08:30,push,TPL_0198,09:15,push,,,,,,
-U0005,1,Social Gamifiers,trial,D85,3,feature_discovery,2_habit_formation,2,TPL_0188,06:15,push,TPL_0187,11:45,push,,,,,,
-U0005,1,Social Gamifiers,trial,D86,4,feature_discovery,2_habit_formation,2,TPL_0189,06:45,push,TPL_0181,09:30,push,,,,,,
-U0005,1,Social Gamifiers,trial,D87,5,feature_discovery,3_feature_discovery,2,TPL_0183,07:15,push,TPL_0187,09:45,push,,,,,,
-U0005,1,Social Gamifiers,trial,D88,6,conversion_readiness,3_feature_discovery,2,TPL_0175,08:00,push,TPL_0180,09:00,push,,,,,,
-U0006,4,Social Power Users,trial,D7,0,activation,1_activation,4,TPL_0462,06:15,push,TPL_0469,12:45,push,TPL_0463,07:45,push,TPL_0470,12:45,push
-U0006,4,Social Power Users,trial,D8,1,habit_formation,1_activation,4,TPL_0498,06:15,push,TPL_0494,13:00,push,TPL_0491,07:30,push,TPL_0497,13:30,push
-U0006,4,Social Power Users,trial,D9,2,habit_formation,2_habit_formation,4,TPL_0500,07:45,push,TPL_0499,12:15,push,TPL_0492,07:15,push,TPL_0494,12:00,push
-U0006,4,Social Power Users,trial,D10,3,feature_discovery,2_habit_formation,4,TPL_0484,08:30,push,TPL_0481,12:00,push,TPL_0485,08:45,push,TPL_0482,14:15,push
-U0006,4,Social Power Users,trial,D11,4,feature_discovery,2_habit_formation,4,TPL_0483,06:00,push,TPL_0490,12:00,push,TPL_0481,08:00,push,TPL_0487,14:15,push
-U0006,4,Social Power Users,trial,D12,5,feature_discovery,3_feature_discovery,4,TPL_0484,07:00,push,TPL_0487,14:15,push,TPL_0481,08:00,push,TPL_0488,14:00,push
-U0006,4,Social Power Users,trial,D13,6,conversion_readiness,3_feature_discovery,4,TPL_0478,07:30,push,TPL_0476,13:15,push,TPL_0474,08:30,push,TPL_0472,12:30,push
-U0007,2,Casual Solo Users,churned,D20,0,re_engagement,9_win_back,2,TPL_0209,22:15,push,TPL_0210,14:30,push,,,,,,
-U0007,2,Casual Solo Users,churned,D21,1,re_engagement,9_win_back,2,TPL_0202,22:30,push,TPL_0205,12:00,push,,,,,,
-U0007,2,Casual Solo Users,churned,D22,2,re_engagement,9_win_back,2,TPL_0207,22:00,push,TPL_0204,12:15,push,,,,,,
-U0007,2,Casual Solo Users,churned,D23,3,re_engagement,10_re_activation,2,TPL_0201,23:30,push,TPL_0202,12:30,push,,,,,,
-U0007,2,Casual Solo Users,churned,D24,4,re_engagement,10_re_activation,2,TPL_0207,21:15,push,TPL_0205,13:30,push,,,,,,
-U0007,2,Casual Solo Users,churned,D25,5,re_engagement,10_re_activation,2,TPL_0202,21:45,push,TPL_0208,14:30,push,,,,,,
-U0007,2,Casual Solo Users,churned,D26,6,re_engagement,10_re_activation,2,TPL_0207,23:00,push,TPL_0203,14:30,push,,,,,,
-U0008,3,Engaged Free Triers,paid,D80,0,retention,5_early_retention,4,TPL_0355,11:00,push,TPL_0356,06:30,push,TPL_0358,09:00,push,TPL_0359,08:15,push
-U0008,3,Engaged Free Triers,paid,D81,1,retention,5_early_retention,4,TPL_0360,10:30,push,TPL_0353,08:15,push,TPL_0357,11:30,push,TPL_0355,06:30,push
-U0008,3,Engaged Free Triers,paid,D82,2,retention,5_early_retention,4,TPL_0359,11:45,push,TPL_0355,07:00,push,TPL_0351,09:45,push,TPL_0356,07:00,push
-U0008,3,Engaged Free Triers,paid,D83,3,retention,5_early_retention,4,TPL_0360,09:30,push,TPL_0357,06:30,push,TPL_0352,09:45,push,TPL_0353,08:45,push
-U0008,3,Engaged Free Triers,paid,D84,4,retention,5_early_retention,4,TPL_0357,11:00,push,TPL_0354,06:00,push,TPL_0359,11:15,push,TPL_0352,08:00,push
-U0008,3,Engaged Free Triers,paid,D85,5,retention,5_early_retention,4,TPL_0354,10:15,push,TPL_0359,07:15,push,TPL_0353,09:30,push,TPL_0355,07:00,push
-U0008,3,Engaged Free Triers,paid,D86,6,retention,5_early_retention,4,TPL_0357,10:15,push,TPL_0358,08:15,push,TPL_0356,11:00,push,TPL_0359,07:45,push
-U0009,5,Low Engagement Users,paid,D86,0,retention,5_early_retention,4,TPL_0557,11:15,push,TPL_0552,15:15,push,TPL_0556,09:45,push,TPL_0553,15:15,push
-U0009,5,Low Engagement Users,paid,D87,1,retention,5_early_retention,4,TPL_0553,11:30,push,TPL_0558,16:15,push,TPL_0556,10:15,push,TPL_0559,17:00,push
-U0009,5,Low Engagement Users,paid,D88,2,retention,5_early_retention,4,TPL_0560,10:00,push,TPL_0555,16:15,push,TPL_0559,09:45,push,TPL_0554,16:30,push
-U0009,5,Low Engagement Users,paid,D89,3,retention,5_early_retention,4,TPL_0552,09:15,push,TPL_0557,15:15,push,TPL_0556,10:30,push,TPL_0553,16:00,push
-U0009,5,Low Engagement Users,paid,D90,4,retention,5_early_retention,4,TPL_0555,10:30,push,TPL_0554,17:45,push,TPL_0560,11:30,push,TPL_0551,15:00,push
-U0009,5,Low Engagement Users,paid,D91,5,retention,5_early_retention,4,TPL_0553,10:15,push,TPL_0552,17:30,push,TPL_0554,09:00,push,TPL_0556,17:45,push
-U0009,5,Low Engagement Users,paid,D92,6,retention,5_early_retention,4,TPL_0555,10:30,push,TPL_0553,16:00,push,TPL_0559,10:15,push,TPL_0551,16:00,push
-U0010,2,Casual Solo Users,trial,D79,0,activation,1_activation,2,TPL_0265,23:45,push,TPL_0262,12:15,push,,,,,,
-U0010,2,Casual Solo Users,trial,D80,1,habit_formation,1_activation,2,TPL_0292,22:45,push,TPL_0293,12:30,push,,,,,,
-U0010,2,Casual Solo Users,trial,D81,2,habit_formation,2_habit_formation,2,TPL_0296,23:30,push,TPL_0295,14:00,push,,,,,,
-U0010,2,Casual Solo Users,trial,D82,3,feature_discovery,2_habit_formation,2,TPL_0283,23:30,push,TPL_0284,14:30,push,,,,,,
-U0010,2,Casual Solo Users,trial,D83,4,feature_discovery,2_habit_formation,2,TPL_0289,23:45,push,TPL_0287,13:45,push,,,,,,
-U0010,2,Casual Solo Users,trial,D84,5,feature_discovery,3_feature_discovery,2,TPL_0284,23:30,push,TPL_0288,14:15,push,,,,,,
-U0010,2,Casual Solo Users,trial,D85,6,conversion_readiness,3_feature_discovery,2,TPL_0271,21:45,push,TPL_0273,14:45,push,,,,,,
-U0011,3,Engaged Free Triers,inactive,D69,0,activation,11_gentle_nudge,4,TPL_0312,11:15,push,TPL_0320,08:30,push,TPL_0319,10:00,push,TPL_0317,07:30,push
-U0011,3,Engaged Free Triers,inactive,D70,1,activation,11_gentle_nudge,4,TPL_0316,09:45,push,TPL_0318,08:30,push,TPL_0313,10:45,push,TPL_0314,07:15,push
-U0011,3,Engaged Free Triers,inactive,D71,2,activation,11_gentle_nudge,4,TPL_0313,11:45,push,TPL_0317,08:15,push,TPL_0315,11:00,push,TPL_0314,07:30,push
-U0011,3,Engaged Free Triers,inactive,D72,3,activation,12_last_chance,4,TPL_0314,09:15,push,TPL_0312,08:30,push,TPL_0319,09:15,push,TPL_0318,06:00,push
-U0011,3,Engaged Free Triers,inactive,D73,4,activation,12_last_chance,4,TPL_0313,09:15,push,TPL_0312,07:00,push,TPL_0314,10:45,push,TPL_0311,08:15,push
-U0011,3,Engaged Free Triers,inactive,D74,5,activation,12_last_chance,4,TPL_0312,11:45,push,TPL_0311,07:45,push,TPL_0314,09:15,push,TPL_0316,08:00,push
-U0011,3,Engaged Free Triers,inactive,D75,6,activation,12_last_chance,4,TPL_0315,09:45,push,TPL_0320,06:15,push,TPL_0311,11:45,push,TPL_0316,06:15,push
-U0012,3,Engaged Free Triers,churned,D71,0,re_engagement,9_win_back,4,TPL_0306,09:45,push,TPL_0308,06:45,push,TPL_0305,11:30,push,TPL_0304,07:45,push
-U0012,3,Engaged Free Triers,churned,D72,1,re_engagement,9_win_back,4,TPL_0306,11:45,push,TPL_0304,06:45,push,TPL_0310,10:30,push,TPL_0302,06:30,push
-U0012,3,Engaged Free Triers,churned,D73,2,re_engagement,9_win_back,4,TPL_0306,11:45,push,TPL_0310,08:15,push,TPL_0307,10:45,push,TPL_0303,06:30,push
-U0012,3,Engaged Free Triers,churned,D74,3,re_engagement,10_re_activation,4,TPL_0310,09:30,push,TPL_0302,07:30,push,TPL_0301,11:00,push,TPL_0309,06:15,push
-U0012,3,Engaged Free Triers,churned,D75,4,re_engagement,10_re_activation,4,TPL_0305,09:45,push,TPL_0302,08:15,push,TPL_0306,11:15,push,TPL_0308,06:45,push
-U0012,3,Engaged Free Triers,churned,D76,5,re_engagement,10_re_activation,4,TPL_0301,10:30,push,TPL_0308,08:45,push,TPL_0304,10:00,push,TPL_0303,06:45,push
-U0012,3,Engaged Free Triers,churned,D77,6,re_engagement,10_re_activation,4,TPL_0304,10:00,push,TPL_0301,08:45,push,TPL_0308,10:00,push,TPL_0302,07:30,push
-U0013,1,Social Gamifiers,trial,D24,0,activation,1_activation,2,TPL_0162,07:45,push,TPL_0163,11:15,push,,,,,,
-U0013,1,Social Gamifiers,trial,D25,1,habit_formation,1_activation,2,TPL_0197,07:15,push,TPL_0193,10:45,push,,,,,,
-U0013,1,Social Gamifiers,trial,D26,2,habit_formation,2_habit_formation,2,TPL_0196,07:00,push,TPL_0195,10:30,push,,,,,,
-U0013,1,Social Gamifiers,trial,D27,3,feature_discovery,2_habit_formation,2,TPL_0189,08:45,push,TPL_0186,11:15,push,,,,,,
-U0013,1,Social Gamifiers,trial,D28,4,feature_discovery,2_habit_formation,2,TPL_0184,07:15,push,TPL_0186,11:00,push,,,,,,
-U0013,1,Social Gamifiers,trial,D29,5,feature_discovery,3_feature_discovery,2,TPL_0182,07:00,push,TPL_0184,09:45,push,,,,,,
-U0013,1,Social Gamifiers,trial,D30,6,conversion_readiness,3_feature_discovery,2,TPL_0177,06:45,push,TPL_0180,09:00,push,,,,,,
-U0014,1,Social Gamifiers,trial,D81,0,activation,1_activation,2,TPL_0170,07:45,push,TPL_0169,10:15,push,,,,,,
-U0014,1,Social Gamifiers,trial,D82,1,habit_formation,1_activation,2,TPL_0193,07:30,push,TPL_0191,10:45,push,,,,,,
-U0014,1,Social Gamifiers,trial,D83,2,habit_formation,2_habit_formation,2,TPL_0195,07:45,push,TPL_0196,10:00,push,,,,,,
-U0014,1,Social Gamifiers,trial,D84,3,feature_discovery,2_habit_formation,2,TPL_0188,07:00,push,TPL_0189,11:00,push,,,,,,
-U0014,1,Social Gamifiers,trial,D85,4,feature_discovery,2_habit_formation,2,TPL_0184,07:15,push,TPL_0189,11:00,push,,,,,,
-U0014,1,Social Gamifiers,trial,D86,5,feature_discovery,3_feature_discovery,2,TPL_0181,08:00,push,TPL_0186,09:15,push,,,,,,
-U0014,1,Social Gamifiers,trial,D87,6,conversion_readiness,3_feature_discovery,2,TPL_0178,06:00,push,TPL_0172,11:15,push,,,,,,
-U0015,2,Casual Solo Users,trial,D88,0,activation,1_activation,2,TPL_0264,21:15,push,TPL_0269,13:00,push,,,,,,
-U0015,2,Casual Solo Users,trial,D89,1,habit_formation,1_activation,2,TPL_0294,23:15,push,TPL_0298,13:30,push,,,,,,
-U0015,2,Casual Solo Users,trial,D90,2,habit_formation,2_habit_formation,2,TPL_0295,22:15,push,TPL_0298,14:00,push,,,,,,
-U0015,2,Casual Solo Users,trial,D91,3,feature_discovery,2_habit_formation,2,TPL_0290,21:30,push,TPL_0288,12:00,push,,,,,,
-U0015,2,Casual Solo Users,trial,D92,4,feature_discovery,2_habit_formation,2,TPL_0290,22:45,push,TPL_0281,13:15,push,,,,,,
-U0015,2,Casual Solo Users,trial,D93,5,feature_discovery,3_feature_discovery,2,TPL_0285,21:15,push,TPL_0281,12:30,push,,,,,,
-U0015,2,Casual Solo Users,trial,D94,6,conversion_readiness,3_feature_discovery,2,TPL_0276,23:00,push,TPL_0280,14:00,push,,,,,,
-U0016,2,Casual Solo Users,trial,D11,0,activation,1_activation,2,TPL_0265,22:45,push,TPL_0270,14:30,push,,,,,,
-U0016,2,Casual Solo Users,trial,D12,1,habit_formation,1_activation,2,TPL_0299,21:30,push,TPL_0295,12:45,push,,,,,,
-U0016,2,Casual Solo Users,trial,D13,2,habit_formation,2_habit_formation,2,TPL_0300,22:00,push,TPL_0291,13:30,push,,,,,,
-U0016,2,Casual Solo Users,trial,D14,3,feature_discovery,2_habit_formation,2,TPL_0288,23:45,push,TPL_0285,14:15,push,,,,,,
-U0016,2,Casual Solo Users,trial,D15,4,feature_discovery,2_habit_formation,2,TPL_0283,22:15,push,TPL_0285,14:30,push,,,,,,
-U0016,2,Casual Solo Users,trial,D16,5,feature_discovery,3_feature_discovery,2,TPL_0290,23:45,push,TPL_0281,13:45,push,,,,,,
-U0016,2,Casual Solo Users,trial,D17,6,conversion_readiness,3_feature_discovery,2,TPL_0277,23:30,push,TPL_0279,13:15,push,,,,,,
-U0017,1,Social Gamifiers,paid,D14,0,retention,5_early_retention,2,TPL_0154,06:30,push,TPL_0160,10:15,push,,,,,,
-U0017,1,Social Gamifiers,paid,D15,1,retention,5_early_retention,2,TPL_0151,07:45,push,TPL_0158,10:00,push,,,,,,
-U0017,1,Social Gamifiers,paid,D16,2,retention,5_early_retention,2,TPL_0154,07:30,push,TPL_0152,09:45,push,,,,,,
-U0017,1,Social Gamifiers,paid,D17,3,retention,5_early_retention,2,TPL_0152,06:30,push,TPL_0156,10:30,push,,,,,,
-U0017,1,Social Gamifiers,paid,D18,4,retention,5_early_retention,2,TPL_0160,07:30,push,TPL_0155,11:00,push,,,,,,
-U0017,1,Social Gamifiers,paid,D19,5,retention,5_early_retention,2,TPL_0160,08:15,push,TPL_0158,09:15,push,,,,,,
-U0017,1,Social Gamifiers,paid,D20,6,retention,5_early_retention,2,TPL_0155,08:45,push,TPL_0160,10:15,push,,,,,,
-U0018,4,Social Power Users,paid,D58,0,retention,5_early_retention,4,TPL_0452,08:45,push,TPL_0455,14:45,push,TPL_0460,07:00,push,TPL_0457,12:30,push
-U0018,4,Social Power Users,paid,D59,1,retention,5_early_retention,4,TPL_0455,06:45,push,TPL_0459,14:15,push,TPL_0452,07:30,push,TPL_0456,13:30,push
-U0018,4,Social Power Users,paid,D60,2,retention,5_early_retention,4,TPL_0454,07:30,push,TPL_0455,13:45,push,TPL_0451,07:30,push,TPL_0453,13:15,push
-U0018,4,Social Power Users,paid,D61,3,retention,5_early_retention,4,TPL_0453,06:15,push,TPL_0456,13:00,push,TPL_0455,08:15,push,TPL_0457,12:15,push
-U0018,4,Social Power Users,paid,D62,4,retention,5_early_retention,4,TPL_0452,08:45,push,TPL_0453,13:30,push,TPL_0455,06:15,push,TPL_0459,13:15,push
-U0018,4,Social Power Users,paid,D63,5,retention,5_early_retention,4,TPL_0460,07:15,push,TPL_0456,13:00,push,TPL_0455,08:15,push,TPL_0451,13:00,push
-U0018,4,Social Power Users,paid,D64,6,retention,5_early_retention,4,TPL_0457,06:30,push,TPL_0451,14:15,push,TPL_0460,08:45,push,TPL_0456,12:00,push
-U0019,2,Casual Solo Users,trial,D25,0,activation,1_activation,2,TPL_0264,23:30,push,TPL_0270,13:45,push,,,,,,
-U0019,2,Casual Solo Users,trial,D26,1,habit_formation,1_activation,2,TPL_0295,22:30,push,TPL_0300,12:00,push,,,,,,
-U0019,2,Casual Solo Users,trial,D27,2,habit_formation,2_habit_formation,2,TPL_0300,22:45,push,TPL_0299,12:00,push,,,,,,
-U0019,2,Casual Solo Users,trial,D28,3,feature_discovery,2_habit_formation,2,TPL_0290,22:45,push,TPL_0288,12:00,push,,,,,,
-U0019,2,Casual Solo Users,trial,D29,4,feature_discovery,2_habit_formation,2,TPL_0284,21:15,push,TPL_0285,14:30,push,,,,,,
-U0019,2,Casual Solo Users,trial,D30,5,feature_discovery,3_feature_discovery,2,TPL_0284,21:15,push,TPL_0288,12:45,push,,,,,,
-U0019,2,Casual Solo Users,trial,D31,6,conversion_readiness,3_feature_discovery,2,TPL_0278,23:15,push,TPL_0275,14:45,push,,,,,,
-U0020,2,Casual Solo Users,paid,D25,0,retention,5_early_retention,2,TPL_0260,22:45,push,TPL_0256,13:45,push,,,,,,
-U0020,2,Casual Solo Users,paid,D26,1,retention,5_early_retention,2,TPL_0254,22:00,push,TPL_0258,14:00,push,,,,,,
-U0020,2,Casual Solo Users,paid,D27,2,retention,5_early_retention,2,TPL_0255,21:15,push,TPL_0258,13:00,push,,,,,,
-U0020,2,Casual Solo Users,paid,D28,3,retention,5_early_retention,2,TPL_0260,21:15,push,TPL_0258,12:00,push,,,,,,
-U0020,2,Casual Solo Users,paid,D29,4,retention,5_early_retention,2,TPL_0257,21:00,push,TPL_0256,13:45,push,,,,,,
-U0020,2,Casual Solo Users,paid,D30,5,retention,5_early_retention,2,TPL_0257,23:45,push,TPL_0258,13:00,push,,,,,,
-U0020,2,Casual Solo Users,paid,D31,6,retention,5_early_retention,2,TPL_0259,21:30,push,TPL_0255,14:30,push,,,,,,
-U0021,2,Casual Solo Users,trial,D46,0,activation,1_activation,2,TPL_0265,23:45,push,TPL_0269,12:15,push,,,,,,
-U0021,2,Casual Solo Users,trial,D47,1,habit_formation,1_activation,2,TPL_0300,22:15,push,TPL_0299,13:00,push,,,,,,
-U0021,2,Casual Solo Users,trial,D48,2,habit_formation,2_habit_formation,2,TPL_0299,23:15,push,TPL_0296,14:15,push,,,,,,
-U0021,2,Casual Solo Users,trial,D49,3,feature_discovery,2_habit_formation,2,TPL_0287,22:15,push,TPL_0289,12:00,push,,,,,,
-U0021,2,Casual Solo Users,trial,D50,4,feature_discovery,2_habit_formation,2,TPL_0283,21:30,push,TPL_0282,14:30,push,,,,,,
-U0021,2,Casual Solo Users,trial,D51,5,feature_discovery,3_feature_discovery,2,TPL_0287,22:00,push,TPL_0289,13:30,push,,,,,,
-U0021,2,Casual Solo Users,trial,D52,6,conversion_readiness,3_feature_discovery,2,TPL_0275,23:45,push,TPL_0279,13:45,push,,,,,,
-U0022,3,Engaged Free Triers,trial,D31,0,activation,1_activation,4,TPL_0367,10:00,push,TPL_0369,08:00,push,TPL_0365,10:30,push,TPL_0362,08:30,push
-U0022,3,Engaged Free Triers,trial,D32,1,habit_formation,1_activation,4,TPL_0400,09:00,push,TPL_0399,06:00,push,TPL_0393,11:30,push,TPL_0395,08:00,push
-U0022,3,Engaged Free Triers,trial,D33,2,habit_formation,2_habit_formation,4,TPL_0395,09:45,push,TPL_0391,08:45,push,TPL_0394,10:15,push,TPL_0397,08:45,push
-U0022,3,Engaged Free Triers,trial,D34,3,feature_discovery,2_habit_formation,4,TPL_0387,11:45,push,TPL_0383,06:45,push,TPL_0390,10:45,push,TPL_0389,07:30,push
-U0022,3,Engaged Free Triers,trial,D35,4,feature_discovery,2_habit_formation,4,TPL_0382,11:00,push,TPL_0385,06:30,push,TPL_0389,10:45,push,TPL_0388,07:45,push
-U0022,3,Engaged Free Triers,trial,D36,5,feature_discovery,3_feature_discovery,4,TPL_0385,11:00,push,TPL_0390,07:00,push,TPL_0387,10:30,push,TPL_0386,07:00,push
-U0022,3,Engaged Free Triers,trial,D37,6,conversion_readiness,3_feature_discovery,4,TPL_0377,10:00,push,TPL_0378,08:45,push,TPL_0379,10:00,push,TPL_0380,06:30,push
-U0023,4,Social Power Users,trial,D9,0,activation,1_activation,4,TPL_0465,08:45,push,TPL_0467,14:45,push,TPL_0464,06:15,push,TPL_0463,13:15,push
-U0023,4,Social Power Users,trial,D10,1,habit_formation,1_activation,4,TPL_0492,07:45,push,TPL_0495,14:45,push,TPL_0491,06:00,push,TPL_0498,14:15,push
-U0023,4,Social Power Users,trial,D11,2,habit_formation,2_habit_formation,4,TPL_0492,08:15,push,TPL_0494,13:00,push,TPL_0493,08:45,push,TPL_0495,12:15,push
-U0023,4,Social Power Users,trial,D12,3,feature_discovery,2_habit_formation,4,TPL_0484,06:45,push,TPL_0487,12:15,push,TPL_0481,07:30,push,TPL_0490,14:30,push
-U0023,4,Social Power Users,trial,D13,4,feature_discovery,2_habit_formation,4,TPL_0487,07:45,push,TPL_0490,13:15,push,TPL_0485,07:15,push,TPL_0481,13:15,push
-U0023,4,Social Power Users,trial,D14,5,feature_discovery,3_feature_discovery,4,TPL_0489,08:15,push,TPL_0485,12:30,push,TPL_0490,07:30,push,TPL_0484,14:30,push
-U0023,4,Social Power Users,trial,D15,6,conversion_readiness,3_feature_discovery,4,TPL_0475,06:30,push,TPL_0479,14:30,push,TPL_0478,08:45,push,TPL_0472,12:45,push
-U0024,5,Low Engagement Users,paid,D15,0,retention,5_early_retention,4,TPL_0560,11:45,push,TPL_0554,16:30,push,TPL_0557,11:45,push,TPL_0553,16:30,push
-U0024,5,Low Engagement Users,paid,D16,1,retention,5_early_retention,4,TPL_0557,09:15,push,TPL_0552,17:45,push,TPL_0555,09:45,push,TPL_0556,15:30,push
-U0024,5,Low Engagement Users,paid,D17,2,retention,5_early_retention,4,TPL_0558,11:45,push,TPL_0556,17:45,push,TPL_0559,10:15,push,TPL_0554,16:00,push
-U0024,5,Low Engagement Users,paid,D18,3,retention,5_early_retention,4,TPL_0551,09:30,push,TPL_0559,15:45,push,TPL_0558,09:45,push,TPL_0557,15:15,push
-U0024,5,Low Engagement Users,paid,D19,4,retention,5_early_retention,4,TPL_0553,10:15,push,TPL_0557,15:45,push,TPL_0554,10:30,push,TPL_0556,17:45,push
-U0024,5,Low Engagement Users,paid,D20,5,retention,5_early_retention,4,TPL_0553,11:00,push,TPL_0556,16:45,push,TPL_0559,10:45,push,TPL_0557,17:00,push
-U0024,5,Low Engagement Users,paid,D21,6,retention,5_early_retention,4,TPL_0559,11:00,push,TPL_0551,15:30,push,TPL_0558,09:00,push,TPL_0557,16:00,push
-U0025,5,Low Engagement Users,churned,D70,0,re_engagement,9_win_back,4,TPL_0504,11:00,push,TPL_0509,16:15,push,TPL_0510,11:30,push,TPL_0501,15:00,push
-U0025,5,Low Engagement Users,churned,D71,1,re_engagement,9_win_back,4,TPL_0501,10:00,push,TPL_0508,16:30,push,TPL_0507,10:45,push,TPL_0506,15:15,push
-U0025,5,Low Engagement Users,churned,D72,2,re_engagement,9_win_back,4,TPL_0506,11:45,push,TPL_0508,17:15,push,TPL_0507,09:15,push,TPL_0503,15:45,push
-U0025,5,Low Engagement Users,churned,D73,3,re_engagement,10_re_activation,4,TPL_0508,11:15,push,TPL_0503,16:15,push,TPL_0509,09:45,push,TPL_0504,17:30,push
-U0025,5,Low Engagement Users,churned,D74,4,re_engagement,10_re_activation,4,TPL_0503,10:30,push,TPL_0510,17:00,push,TPL_0506,10:30,push,TPL_0508,17:15,push
-U0025,5,Low Engagement Users,churned,D75,5,re_engagement,10_re_activation,4,TPL_0509,09:45,push,TPL_0505,16:30,push,TPL_0508,11:45,push,TPL_0507,17:30,push
-U0025,5,Low Engagement Users,churned,D76,6,re_engagement,10_re_activation,4,TPL_0503,10:30,push,TPL_0507,15:45,push,TPL_0510,10:00,push,TPL_0506,15:45,push
-U0026,4,Social Power Users,trial,D16,0,activation,1_activation,4,TPL_0468,08:30,push,TPL_0467,14:30,push,TPL_0463,08:30,push,TPL_0470,12:45,push
-U0026,4,Social Power Users,trial,D17,1,habit_formation,1_activation,4,TPL_0498,07:00,push,TPL_0497,14:00,push,TPL_0499,08:45,push,TPL_0500,13:15,push
-U0026,4,Social Power Users,trial,D18,2,habit_formation,2_habit_formation,4,TPL_0492,08:30,push,TPL_0491,12:15,push,TPL_0499,08:30,push,TPL_0493,14:15,push
-U0026,4,Social Power Users,trial,D19,3,feature_discovery,2_habit_formation,4,TPL_0488,08:00,push,TPL_0484,14:00,push,TPL_0483,07:45,push,TPL_0490,12:30,push
-U0026,4,Social Power Users,trial,D20,4,feature_discovery,2_habit_formation,4,TPL_0484,08:15,push,TPL_0482,12:30,push,TPL_0481,07:45,push,TPL_0483,12:15,push
-U0026,4,Social Power Users,trial,D21,5,feature_discovery,3_feature_discovery,4,TPL_0481,06:30,push,TPL_0482,14:30,push,TPL_0487,06:30,push,TPL_0483,13:30,push
-U0026,4,Social Power Users,trial,D22,6,conversion_readiness,3_feature_discovery,4,TPL_0477,08:30,push,TPL_0480,12:45,push,TPL_0479,06:15,push,TPL_0475,12:45,push
-U0027,5,Low Engagement Users,paid,D22,0,retention,5_early_retention,4,TPL_0557,11:30,push,TPL_0553,15:45,push,TPL_0551,09:30,push,TPL_0552,17:00,push
-U0027,5,Low Engagement Users,paid,D23,1,retention,5_early_retention,4,TPL_0556,10:30,push,TPL_0559,17:30,push,TPL_0555,11:45,push,TPL_0553,17:30,push
-U0027,5,Low Engagement Users,paid,D24,2,retention,5_early_retention,4,TPL_0557,09:15,push,TPL_0555,16:00,push,TPL_0553,11:30,push,TPL_0554,17:15,push
-U0027,5,Low Engagement Users,paid,D25,3,retention,5_early_retention,4,TPL_0559,11:00,push,TPL_0555,17:45,push,TPL_0556,11:30,push,TPL_0558,17:45,push
-U0027,5,Low Engagement Users,paid,D26,4,retention,5_early_retention,4,TPL_0558,09:15,push,TPL_0552,15:00,push,TPL_0554,10:45,push,TPL_0560,15:00,push
-U0027,5,Low Engagement Users,paid,D27,5,retention,5_early_retention,4,TPL_0560,09:15,push,TPL_0559,16:45,push,TPL_0554,10:45,push,TPL_0555,17:15,push
-U0027,5,Low Engagement Users,paid,D28,6,retention,5_early_retention,4,TPL_0556,10:00,push,TPL_0554,16:45,push,TPL_0557,10:00,push,TPL_0560,17:30,push
-U0028,3,Engaged Free Triers,paid,D25,0,retention,5_early_retention,4,TPL_0351,09:45,push,TPL_0360,07:15,push,TPL_0353,10:00,push,TPL_0359,08:30,push
-U0028,3,Engaged Free Triers,paid,D26,1,retention,5_early_retention,4,TPL_0354,11:30,push,TPL_0358,06:45,push,TPL_0356,10:15,push,TPL_0351,06:45,push
-U0028,3,Engaged Free Triers,paid,D27,2,retention,5_early_retention,4,TPL_0360,09:15,push,TPL_0352,08:00,push,TPL_0353,09:30,push,TPL_0351,06:15,push
-U0028,3,Engaged Free Triers,paid,D28,3,retention,5_early_retention,4,TPL_0360,11:15,push,TPL_0358,06:15,push,TPL_0352,11:15,push,TPL_0355,06:30,push
-U0028,3,Engaged Free Triers,paid,D29,4,retention,5_early_retention,4,TPL_0356,09:00,push,TPL_0357,07:15,push,TPL_0355,09:30,push,TPL_0352,06:00,push
-U0028,3,Engaged Free Triers,paid,D30,5,retention,5_early_retention,4,TPL_0356,11:00,push,TPL_0360,06:00,push,TPL_0357,10:15,push,TPL_0358,08:30,push
-U0028,3,Engaged Free Triers,paid,D31,6,retention,5_early_retention,4,TPL_0358,09:15,push,TPL_0351,07:00,push,TPL_0359,09:45,push,TPL_0352,08:00,push
-U0029,2,Casual Solo Users,trial,D84,0,activation,1_activation,2,TPL_0270,23:00,push,TPL_0265,13:45,push,,,,,,
-U0029,2,Casual Solo Users,trial,D85,1,habit_formation,1_activation,2,TPL_0291,22:00,push,TPL_0292,13:15,push,,,,,,
-U0029,2,Casual Solo Users,trial,D86,2,habit_formation,2_habit_formation,2,TPL_0300,23:00,push,TPL_0299,14:30,push,,,,,,
-U0029,2,Casual Solo Users,trial,D87,3,feature_discovery,2_habit_formation,2,TPL_0287,22:00,push,TPL_0282,12:45,push,,,,,,
-U0029,2,Casual Solo Users,trial,D88,4,feature_discovery,2_habit_formation,2,TPL_0285,22:45,push,TPL_0290,14:00,push,,,,,,
-U0029,2,Casual Solo Users,trial,D89,5,feature_discovery,3_feature_discovery,2,TPL_0285,22:45,push,TPL_0283,12:00,push,,,,,,
-U0029,2,Casual Solo Users,trial,D90,6,conversion_readiness,3_feature_discovery,2,TPL_0280,22:15,push,TPL_0276,12:15,push,,,,,,
-U0030,4,Social Power Users,paid,D85,0,retention,5_early_retention,4,TPL_0456,07:30,push,TPL_0451,13:30,push,TPL_0459,07:45,push,TPL_0457,12:00,push
-U0030,4,Social Power Users,paid,D86,1,retention,5_early_retention,4,TPL_0451,08:15,push,TPL_0453,13:45,push,TPL_0456,06:45,push,TPL_0454,13:45,push
-U0030,4,Social Power Users,paid,D87,2,retention,5_early_retention,4,TPL_0456,07:45,push,TPL_0454,14:00,push,TPL_0459,07:45,push,TPL_0457,13:30,push
-U0030,4,Social Power Users,paid,D88,3,retention,5_early_retention,4,TPL_0451,07:15,push,TPL_0455,14:45,push,TPL_0459,06:00,push,TPL_0453,12:00,push
-U0030,4,Social Power Users,paid,D89,4,retention,5_early_retention,4,TPL_0456,07:00,push,TPL_0455,14:30,push,TPL_0452,06:00,push,TPL_0459,14:30,push
-U0030,4,Social Power Users,paid,D90,5,retention,5_early_retention,4,TPL_0451,08:00,push,TPL_0453,13:30,push,TPL_0458,08:45,push,TPL_0459,14:00,push
-U0030,4,Social Power Users,paid,D91,6,retention,5_early_retention,4,TPL_0454,07:30,push,TPL_0457,13:00,push,TPL_0451,08:15,push,TPL_0460,12:45,push
-U0031,2,Casual Solo Users,trial,D6,0,activation,1_activation,2,TPL_0268,21:00,push,TPL_0264,13:30,push,,,,,,
-U0031,2,Casual Solo Users,trial,D7,1,habit_formation,1_activation,2,TPL_0291,21:30,push,TPL_0292,14:15,push,,,,,,
-U0031,2,Casual Solo Users,trial,D8,2,habit_formation,2_habit_formation,2,TPL_0291,22:00,push,TPL_0298,14:30,push,,,,,,
-U0031,2,Casual Solo Users,trial,D9,3,feature_discovery,2_habit_formation,2,TPL_0289,21:15,push,TPL_0287,13:30,push,,,,,,
-U0031,2,Casual Solo Users,trial,D10,4,feature_discovery,2_habit_formation,2,TPL_0285,22:30,push,TPL_0283,12:15,push,,,,,,
-U0031,2,Casual Solo Users,trial,D11,5,feature_discovery,3_feature_discovery,2,TPL_0284,21:45,push,TPL_0282,12:15,push,,,,,,
-U0031,2,Casual Solo Users,trial,D12,6,conversion_readiness,3_feature_discovery,2,TPL_0274,23:00,push,TPL_0276,12:15,push,,,,,,
-U0032,2,Casual Solo Users,trial,D13,0,activation,1_activation,2,TPL_0267,22:45,push,TPL_0265,13:30,push,,,,,,
-U0032,2,Casual Solo Users,trial,D14,1,habit_formation,1_activation,2,TPL_0299,21:30,push,TPL_0292,13:30,push,,,,,,
-U0032,2,Casual Solo Users,trial,D15,2,habit_formation,2_habit_formation,2,TPL_0291,23:00,push,TPL_0295,12:15,push,,,,,,
-U0032,2,Casual Solo Users,trial,D16,3,feature_discovery,2_habit_formation,2,TPL_0290,21:00,push,TPL_0283,14:00,push,,,,,,
-U0032,2,Casual Solo Users,trial,D17,4,feature_discovery,2_habit_formation,2,TPL_0284,22:45,push,TPL_0287,14:45,push,,,,,,
-U0032,2,Casual Solo Users,trial,D18,5,feature_discovery,3_feature_discovery,2,TPL_0290,22:45,push,TPL_0283,13:30,push,,,,,,
-U0032,2,Casual Solo Users,trial,D19,6,conversion_readiness,3_feature_discovery,2,TPL_0278,21:00,push,TPL_0273,13:45,push,,,,,,
-U0033,3,Engaged Free Triers,inactive,D78,0,activation,11_gentle_nudge,4,TPL_0312,09:30,push,TPL_0318,08:45,push,TPL_0319,11:30,push,TPL_0313,06:15,push
-U0033,3,Engaged Free Triers,inactive,D79,1,activation,11_gentle_nudge,4,TPL_0317,10:00,push,TPL_0312,06:15,push,TPL_0314,10:15,push,TPL_0316,06:30,push
-U0033,3,Engaged Free Triers,inactive,D80,2,activation,11_gentle_nudge,4,TPL_0317,10:30,push,TPL_0314,06:00,push,TPL_0316,10:45,push,TPL_0312,06:15,push
-U0033,3,Engaged Free Triers,inactive,D81,3,activation,12_last_chance,4,TPL_0311,10:15,push,TPL_0319,08:30,push,TPL_0320,09:45,push,TPL_0313,08:00,push
-U0033,3,Engaged Free Triers,inactive,D82,4,activation,12_last_chance,4,TPL_0314,10:00,push,TPL_0316,07:00,push,TPL_0319,10:45,push,TPL_0315,08:45,push
-U0033,3,Engaged Free Triers,inactive,D83,5,activation,12_last_chance,4,TPL_0311,11:45,push,TPL_0318,07:00,push,TPL_0312,10:00,push,TPL_0319,07:15,push
-U0033,3,Engaged Free Triers,inactive,D84,6,activation,12_last_chance,4,TPL_0316,11:45,push,TPL_0313,08:30,push,TPL_0315,09:45,push,TPL_0312,06:15,push
-U0034,1,Social Gamifiers,inactive,D6,0,activation,11_gentle_nudge,2,TPL_0112,07:45,push,TPL_0120,11:00,push,,,,,,
-U0034,1,Social Gamifiers,inactive,D7,1,activation,11_gentle_nudge,2,TPL_0115,07:30,push,TPL_0120,11:30,push,,,,,,
-U0034,1,Social Gamifiers,inactive,D8,2,activation,11_gentle_nudge,2,TPL_0112,06:30,push,TPL_0116,09:00,push,,,,,,
-U0034,1,Social Gamifiers,inactive,D9,3,activation,12_last_chance,2,TPL_0117,08:00,push,TPL_0111,11:15,push,,,,,,
-U0034,1,Social Gamifiers,inactive,D10,4,activation,12_last_chance,2,TPL_0117,07:30,push,TPL_0111,11:15,push,,,,,,
-U0034,1,Social Gamifiers,inactive,D11,5,activation,12_last_chance,2,TPL_0116,06:00,push,TPL_0115,09:30,push,,,,,,
-U0034,1,Social Gamifiers,inactive,D12,6,activation,12_last_chance,2,TPL_0119,06:15,push,TPL_0118,11:15,push,,,,,,
-U0035,2,Casual Solo Users,churned,D8,0,re_engagement,9_win_back,2,TPL_0207,23:00,push,TPL_0209,12:45,push,,,,,,
-U0035,2,Casual Solo Users,churned,D9,1,re_engagement,9_win_back,2,TPL_0202,22:45,push,TPL_0205,14:30,push,,,,,,
-U0035,2,Casual Solo Users,churned,D10,2,re_engagement,9_win_back,2,TPL_0205,23:30,push,TPL_0204,12:45,push,,,,,,
-U0035,2,Casual Solo Users,churned,D11,3,re_engagement,10_re_activation,2,TPL_0201,21:45,push,TPL_0203,13:30,push,,,,,,
-U0035,2,Casual Solo Users,churned,D12,4,re_engagement,10_re_activation,2,TPL_0207,22:00,push,TPL_0206,13:00,push,,,,,,
-U0035,2,Casual Solo Users,churned,D13,5,re_engagement,10_re_activation,2,TPL_0205,22:45,push,TPL_0203,13:00,push,,,,,,
-U0035,2,Casual Solo Users,churned,D14,6,re_engagement,10_re_activation,2,TPL_0204,21:30,push,TPL_0203,13:00,push,,,,,,
-U0036,2,Casual Solo Users,trial,D47,0,activation,1_activation,2,TPL_0270,23:00,push,TPL_0269,14:45,push,,,,,,
-U0036,2,Casual Solo Users,trial,D48,1,habit_formation,1_activation,2,TPL_0297,22:00,push,TPL_0298,13:15,push,,,,,,
-U0036,2,Casual Solo Users,trial,D49,2,habit_formation,2_habit_formation,2,TPL_0294,22:45,push,TPL_0292,14:15,push,,,,,,
-U0036,2,Casual Solo Users,trial,D50,3,feature_discovery,2_habit_formation,2,TPL_0285,21:45,push,TPL_0282,12:30,push,,,,,,
-U0036,2,Casual Solo Users,trial,D51,4,feature_discovery,2_habit_formation,2,TPL_0285,23:00,push,TPL_0287,14:15,push,,,,,,
-U0036,2,Casual Solo Users,trial,D52,5,feature_discovery,3_feature_discovery,2,TPL_0289,21:15,push,TPL_0283,14:45,push,,,,,,
-U0036,2,Casual Solo Users,trial,D53,6,conversion_readiness,3_feature_discovery,2,TPL_0271,22:15,push,TPL_0272,13:30,push,,,,,,
-U0037,4,Social Power Users,trial,D71,0,activation,1_activation,4,TPL_0469,07:45,push,TPL_0470,13:30,push,TPL_0462,08:00,push,TPL_0467,14:30,push
-U0037,4,Social Power Users,trial,D72,1,habit_formation,1_activation,4,TPL_0495,06:30,push,TPL_0494,12:45,push,TPL_0492,07:30,push,TPL_0498,14:15,push
-U0037,4,Social Power Users,trial,D73,2,habit_formation,2_habit_formation,4,TPL_0500,07:00,push,TPL_0495,14:15,push,TPL_0498,07:30,push,TPL_0499,14:45,push
-U0037,4,Social Power Users,trial,D74,3,feature_discovery,2_habit_formation,4,TPL_0490,06:00,push,TPL_0488,13:45,push,TPL_0483,08:30,push,TPL_0484,12:00,push
-U0037,4,Social Power Users,trial,D75,4,feature_discovery,2_habit_formation,4,TPL_0489,08:45,push,TPL_0487,14:30,push,TPL_0485,06:30,push,TPL_0490,13:15,push
-U0037,4,Social Power Users,trial,D76,5,feature_discovery,3_feature_discovery,4,TPL_0483,06:30,push,TPL_0490,13:15,push,TPL_0488,06:15,push,TPL_0487,12:00,push
-U0037,4,Social Power Users,trial,D77,6,conversion_readiness,3_feature_discovery,4,TPL_0480,07:00,push,TPL_0473,14:00,push,TPL_0477,08:30,push,TPL_0475,14:15,push
-U0038,4,Social Power Users,paid,D58,0,retention,5_early_retention,4,TPL_0455,08:45,push,TPL_0458,12:15,push,TPL_0457,06:15,push,TPL_0451,14:45,push
-U0038,4,Social Power Users,paid,D59,1,retention,5_early_retention,4,TPL_0452,06:45,push,TPL_0457,13:15,push,TPL_0459,07:30,push,TPL_0453,14:45,push
-U0038,4,Social Power Users,paid,D60,2,retention,5_early_retention,4,TPL_0460,06:15,push,TPL_0459,13:45,push,TPL_0451,06:30,push,TPL_0453,14:45,push
-U0038,4,Social Power Users,paid,D61,3,retention,5_early_retention,4,TPL_0452,07:30,push,TPL_0451,13:45,push,TPL_0456,06:15,push,TPL_0458,14:15,push
-U0038,4,Social Power Users,paid,D62,4,retention,5_early_retention,4,TPL_0454,07:00,push,TPL_0451,14:45,push,TPL_0458,07:00,push,TPL_0457,14:00,push
-U0038,4,Social Power Users,paid,D63,5,retention,5_early_retention,4,TPL_0454,07:00,push,TPL_0453,12:30,push,TPL_0457,07:15,push,TPL_0456,13:00,push
-U0038,4,Social Power Users,paid,D64,6,retention,5_early_retention,4,TPL_0457,06:45,push,TPL_0452,13:00,push,TPL_0456,07:00,push,TPL_0453,13:30,push
-U0039,5,Low Engagement Users,paid,D86,0,retention,5_early_retention,4,TPL_0558,09:45,push,TPL_0556,15:30,push,TPL_0554,09:00,push,TPL_0560,16:00,push
-U0039,5,Low Engagement Users,paid,D87,1,retention,5_early_retention,4,TPL_0554,11:30,push,TPL_0560,15:15,push,TPL_0559,09:30,push,TPL_0555,16:15,push
-U0039,5,Low Engagement Users,paid,D88,2,retention,5_early_retention,4,TPL_0558,11:45,push,TPL_0559,16:00,push,TPL_0551,09:00,push,TPL_0554,16:15,push
-U0039,5,Low Engagement Users,paid,D89,3,retention,5_early_retention,4,TPL_0560,09:45,push,TPL_0557,15:30,push,TPL_0556,09:30,push,TPL_0555,15:00,push
-U0039,5,Low Engagement Users,paid,D90,4,retention,5_early_retention,4,TPL_0551,09:45,push,TPL_0556,17:45,push,TPL_0558,09:00,push,TPL_0554,16:00,push
-U0039,5,Low Engagement Users,paid,D91,5,retention,5_early_retention,4,TPL_0557,11:15,push,TPL_0554,17:15,push,TPL_0556,10:45,push,TPL_0559,15:30,push
-U0039,5,Low Engagement Users,paid,D92,6,retention,5_early_retention,4,TPL_0554,09:45,push,TPL_0560,15:00,push,TPL_0553,11:30,push,TPL_0557,15:00,push
-U0040,1,Social Gamifiers,trial,D81,0,activation,1_activation,2,TPL_0163,07:45,push,TPL_0161,09:45,push,,,,,,
-U0040,1,Social Gamifiers,trial,D82,1,habit_formation,1_activation,2,TPL_0192,07:30,push,TPL_0199,11:00,push,,,,,,
-U0040,1,Social Gamifiers,trial,D83,2,habit_formation,2_habit_formation,2,TPL_0197,07:00,push,TPL_0200,10:15,push,,,,,,
-U0040,1,Social Gamifiers,trial,D84,3,feature_discovery,2_habit_formation,2,TPL_0188,08:00,push,TPL_0186,11:30,push,,,,,,
-U0040,1,Social Gamifiers,trial,D85,4,feature_discovery,2_habit_formation,2,TPL_0187,06:00,push,TPL_0184,10:30,push,,,,,,
-U0040,1,Social Gamifiers,trial,D86,5,feature_discovery,3_feature_discovery,2,TPL_0187,08:15,push,TPL_0188,11:45,push,,,,,,
-U0040,1,Social Gamifiers,trial,D87,6,conversion_readiness,3_feature_discovery,2,TPL_0180,08:45,push,TPL_0178,11:15,push,,,,,,
-U0041,5,Low Engagement Users,paid,D38,0,retention,5_early_retention,4,TPL_0558,09:00,push,TPL_0559,17:45,push,TPL_0555,09:30,push,TPL_0560,15:00,push
-U0041,5,Low Engagement Users,paid,D39,1,retention,5_early_retention,4,TPL_0554,09:00,push,TPL_0557,16:30,push,TPL_0551,11:45,push,TPL_0560,17:45,push
-U0041,5,Low Engagement Users,paid,D40,2,retention,5_early_retention,4,TPL_0558,10:00,push,TPL_0553,17:15,push,TPL_0552,10:30,push,TPL_0554,15:30,push
-U0041,5,Low Engagement Users,paid,D41,3,retention,5_early_retention,4,TPL_0554,10:00,push,TPL_0560,16:45,push,TPL_0556,10:45,push,TPL_0559,16:30,push
-U0041,5,Low Engagement Users,paid,D42,4,retention,5_early_retention,4,TPL_0560,09:45,push,TPL_0559,17:45,push,TPL_0558,10:30,push,TPL_0555,15:45,push
-U0041,5,Low Engagement Users,paid,D43,5,retention,5_early_retention,4,TPL_0552,09:45,push,TPL_0555,17:15,push,TPL_0558,11:30,push,TPL_0556,16:00,push
-U0041,5,Low Engagement Users,paid,D44,6,retention,5_early_retention,4,TPL_0557,09:30,push,TPL_0558,17:30,push,TPL_0556,10:45,push,TPL_0554,17:45,push
-U0042,4,Social Power Users,trial,D17,0,activation,1_activation,4,TPL_0468,06:45,push,TPL_0464,13:45,push,TPL_0461,06:30,push,TPL_0467,14:45,push
-U0042,4,Social Power Users,trial,D18,1,habit_formation,1_activation,4,TPL_0497,07:00,push,TPL_0499,12:45,push,TPL_0494,07:15,push,TPL_0495,12:15,push
-U0042,4,Social Power Users,trial,D19,2,habit_formation,2_habit_formation,4,TPL_0492,08:45,push,TPL_0498,12:15,push,TPL_0493,06:15,push,TPL_0491,14:30,push
-U0042,4,Social Power Users,trial,D20,3,feature_discovery,2_habit_formation,4,TPL_0484,07:45,push,TPL_0483,14:00,push,TPL_0489,08:15,push,TPL_0482,14:45,push
-U0042,4,Social Power Users,trial,D21,4,feature_discovery,2_habit_formation,4,TPL_0490,07:30,push,TPL_0489,13:00,push,TPL_0481,08:15,push,TPL_0487,14:30,push
-U0042,4,Social Power Users,trial,D22,5,feature_discovery,3_feature_discovery,4,TPL_0482,07:30,push,TPL_0483,14:30,push,TPL_0490,06:00,push,TPL_0481,12:15,push
-U0042,4,Social Power Users,trial,D23,6,conversion_readiness,3_feature_discovery,4,TPL_0480,07:45,push,TPL_0474,14:00,push,TPL_0472,07:30,push,TPL_0479,14:45,push
-U0043,1,Social Gamifiers,inactive,D58,0,activation,11_gentle_nudge,2,TPL_0118,06:30,push,TPL_0120,11:45,push,,,,,,
-U0043,1,Social Gamifiers,inactive,D59,1,activation,11_gentle_nudge,2,TPL_0120,06:00,push,TPL_0116,09:00,push,,,,,,
-U0043,1,Social Gamifiers,inactive,D60,2,activation,11_gentle_nudge,2,TPL_0116,07:15,push,TPL_0113,11:45,push,,,,,,
-U0043,1,Social Gamifiers,inactive,D61,3,activation,12_last_chance,2,TPL_0118,06:30,push,TPL_0117,11:30,push,,,,,,
-U0043,1,Social Gamifiers,inactive,D62,4,activation,12_last_chance,2,TPL_0111,08:00,push,TPL_0115,11:30,push,,,,,,
-U0043,1,Social Gamifiers,inactive,D63,5,activation,12_last_chance,2,TPL_0119,07:15,push,TPL_0117,11:15,push,,,,,,
-U0043,1,Social Gamifiers,inactive,D64,6,activation,12_last_chance,2,TPL_0114,07:15,push,TPL_0112,09:15,push,,,,,,
-U0044,2,Casual Solo Users,trial,D16,0,activation,1_activation,2,TPL_0267,21:15,push,TPL_0270,13:00,push,,,,,,
-U0044,2,Casual Solo Users,trial,D17,1,habit_formation,1_activation,2,TPL_0299,22:30,push,TPL_0295,13:15,push,,,,,,
-U0044,2,Casual Solo Users,trial,D18,2,habit_formation,2_habit_formation,2,TPL_0299,23:00,push,TPL_0300,12:30,push,,,,,,
-U0044,2,Casual Solo Users,trial,D19,3,feature_discovery,2_habit_formation,2,TPL_0281,22:45,push,TPL_0290,14:45,push,,,,,,
-U0044,2,Casual Solo Users,trial,D20,4,feature_discovery,2_habit_formation,2,TPL_0287,22:00,push,TPL_0281,12:30,push,,,,,,
-U0044,2,Casual Solo Users,trial,D21,5,feature_discovery,3_feature_discovery,2,TPL_0281,23:00,push,TPL_0283,13:45,push,,,,,,
-U0044,2,Casual Solo Users,trial,D22,6,conversion_readiness,3_feature_discovery,2,TPL_0272,23:30,push,TPL_0274,12:15,push,,,,,,
-U0045,4,Social Power Users,paid,D13,0,retention,5_early_retention,4,TPL_0454,06:45,push,TPL_0453,14:00,push,TPL_0456,06:15,push,TPL_0460,13:15,push
-U0045,4,Social Power Users,paid,D14,1,retention,5_early_retention,4,TPL_0451,06:30,push,TPL_0458,14:15,push,TPL_0456,07:30,push,TPL_0455,12:30,push
-U0045,4,Social Power Users,paid,D15,2,retention,5_early_retention,4,TPL_0460,06:30,push,TPL_0455,12:30,push,TPL_0457,08:00,push,TPL_0454,14:15,push
-U0045,4,Social Power Users,paid,D16,3,retention,5_early_retention,4,TPL_0457,08:15,push,TPL_0458,12:30,push,TPL_0459,08:00,push,TPL_0460,12:00,push
-U0045,4,Social Power Users,paid,D17,4,retention,5_early_retention,4,TPL_0456,06:30,push,TPL_0460,14:15,push,TPL_0459,08:45,push,TPL_0455,14:00,push
-U0045,4,Social Power Users,paid,D18,5,retention,5_early_retention,4,TPL_0451,07:30,push,TPL_0459,14:30,push,TPL_0460,07:15,push,TPL_0454,14:45,push
-U0045,4,Social Power Users,paid,D19,6,retention,5_early_retention,4,TPL_0457,07:45,push,TPL_0451,12:00,push,TPL_0452,06:45,push,TPL_0453,13:45,push
-U0046,3,Engaged Free Triers,trial,D30,0,activation,1_activation,4,TPL_0361,10:15,push,TPL_0365,07:15,push,TPL_0369,10:30,push,TPL_0362,08:30,push
-U0046,3,Engaged Free Triers,trial,D31,1,habit_formation,1_activation,4,TPL_0400,10:15,push,TPL_0397,07:00,push,TPL_0399,10:15,push,TPL_0393,07:00,push
-U0046,3,Engaged Free Triers,trial,D32,2,habit_formation,2_habit_formation,4,TPL_0393,10:45,push,TPL_0395,06:15,push,TPL_0399,09:00,push,TPL_0398,07:45,push
-U0046,3,Engaged Free Triers,trial,D33,3,feature_discovery,2_habit_formation,4,TPL_0387,11:45,push,TPL_0382,06:15,push,TPL_0388,10:30,push,TPL_0383,06:15,push
-U0046,3,Engaged Free Triers,trial,D34,4,feature_discovery,2_habit_formation,4,TPL_0388,10:45,push,TPL_0386,07:30,push,TPL_0389,10:00,push,TPL_0390,06:45,push
-U0046,3,Engaged Free Triers,trial,D35,5,feature_discovery,3_feature_discovery,4,TPL_0383,11:45,push,TPL_0388,06:15,push,TPL_0387,11:30,push,TPL_0381,06:00,push
-U0046,3,Engaged Free Triers,trial,D36,6,conversion_readiness,3_feature_discovery,4,TPL_0380,10:45,push,TPL_0377,08:45,push,TPL_0375,10:00,push,TPL_0374,06:45,push
-U0047,2,Casual Solo Users,paid,D23,0,retention,5_early_retention,2,TPL_0254,21:30,push,TPL_0253,14:30,push,,,,,,
-U0047,2,Casual Solo Users,paid,D24,1,retention,5_early_retention,2,TPL_0260,22:30,push,TPL_0252,12:45,push,,,,,,
-U0047,2,Casual Solo Users,paid,D25,2,retention,5_early_retention,2,TPL_0256,21:15,push,TPL_0258,13:30,push,,,,,,
-U0047,2,Casual Solo Users,paid,D26,3,retention,5_early_retention,2,TPL_0252,21:45,push,TPL_0259,14:45,push,,,,,,
-U0047,2,Casual Solo Users,paid,D27,4,retention,5_early_retention,2,TPL_0254,23:30,push,TPL_0256,14:00,push,,,,,,
-U0047,2,Casual Solo Users,paid,D28,5,retention,5_early_retention,2,TPL_0260,21:00,push,TPL_0253,13:30,push,,,,,,
-U0047,2,Casual Solo Users,paid,D29,6,retention,5_early_retention,2,TPL_0260,22:30,push,TPL_0255,12:15,push,,,,,,
-U0048,2,Casual Solo Users,paid,D59,0,retention,5_early_retention,2,TPL_0257,23:45,push,TPL_0252,14:00,push,,,,,,
-U0048,2,Casual Solo Users,paid,D60,1,retention,5_early_retention,2,TPL_0259,21:00,push,TPL_0258,12:30,push,,,,,,
-U0048,2,Casual Solo Users,paid,D61,2,retention,5_early_retention,2,TPL_0260,22:45,push,TPL_0255,12:15,push,,,,,,
-U0048,2,Casual Solo Users,paid,D62,3,retention,5_early_retention,2,TPL_0255,22:30,push,TPL_0260,12:45,push,,,,,,
-U0048,2,Casual Solo Users,paid,D63,4,retention,5_early_retention,2,TPL_0253,23:30,push,TPL_0254,14:30,push,,,,,,
-U0048,2,Casual Solo Users,paid,D64,5,retention,5_early_retention,2,TPL_0257,23:45,push,TPL_0253,14:30,push,,,,,,
-U0048,2,Casual Solo Users,paid,D65,6,retention,5_early_retention,2,TPL_0255,22:00,push,TPL_0252,13:30,push,,,,,,
-U0049,2,Casual Solo Users,trial,D44,0,activation,1_activation,2,TPL_0266,23:00,push,TPL_0265,13:30,push,,,,,,
-U0049,2,Casual Solo Users,trial,D45,1,habit_formation,1_activation,2,TPL_0291,23:00,push,TPL_0298,14:45,push,,,,,,
-U0049,2,Casual Solo Users,trial,D46,2,habit_formation,2_habit_formation,2,TPL_0291,22:15,push,TPL_0297,14:00,push,,,,,,
-U0049,2,Casual Solo Users,trial,D47,3,feature_discovery,2_habit_formation,2,TPL_0287,23:45,push,TPL_0290,12:45,push,,,,,,
-U0049,2,Casual Solo Users,trial,D48,4,feature_discovery,2_habit_formation,2,TPL_0288,21:15,push,TPL_0290,12:00,push,,,,,,
-U0049,2,Casual Solo Users,trial,D49,5,feature_discovery,3_feature_discovery,2,TPL_0282,21:00,push,TPL_0281,13:30,push,,,,,,
-U0049,2,Casual Solo Users,trial,D50,6,conversion_readiness,3_feature_discovery,2,TPL_0279,22:15,push,TPL_0273,13:15,push,,,,,,
-U0050,0,High Risk Inactives,inactive,D2,0,activation,11_gentle_nudge,2,TPL_0020,10:45,push,TPL_0014,17:00,push,,,,,,
-U0050,0,High Risk Inactives,inactive,D3,1,activation,11_gentle_nudge,2,TPL_0019,11:15,push,TPL_0013,17:15,push,,,,,,
-U0050,0,High Risk Inactives,inactive,D4,2,activation,11_gentle_nudge,2,TPL_0020,11:30,push,TPL_0019,17:45,push,,,,,,
-U0050,0,High Risk Inactives,inactive,D5,3,activation,12_last_chance,2,TPL_0012,11:45,push,TPL_0018,16:15,push,,,,,,
-U0050,0,High Risk Inactives,inactive,D6,4,activation,12_last_chance,2,TPL_0017,10:30,push,TPL_0013,17:30,push,,,,,,
-U0050,0,High Risk Inactives,inactive,D7,5,activation,12_last_chance,2,TPL_0014,11:30,push,TPL_0017,17:45,push,,,,,,
-U0050,0,High Risk Inactives,inactive,D8,6,activation,12_last_chance,2,TPL_0018,09:15,push,TPL_0016,16:30,push,,,,,,
-U0051,1,Social Gamifiers,churned,D36,0,re_engagement,9_win_back,2,TPL_0107,06:30,push,TPL_0103,10:15,push,,,,,,
-U0051,1,Social Gamifiers,churned,D37,1,re_engagement,9_win_back,2,TPL_0102,08:45,push,TPL_0105,10:45,push,,,,,,
-U0051,1,Social Gamifiers,churned,D38,2,re_engagement,9_win_back,2,TPL_0102,07:30,push,TPL_0106,10:00,push,,,,,,
-U0051,1,Social Gamifiers,churned,D39,3,re_engagement,10_re_activation,2,TPL_0107,08:45,push,TPL_0110,10:30,push,,,,,,
-U0051,1,Social Gamifiers,churned,D40,4,re_engagement,10_re_activation,2,TPL_0109,06:30,push,TPL_0107,09:30,push,,,,,,
-U0051,1,Social Gamifiers,churned,D41,5,re_engagement,10_re_activation,2,TPL_0107,08:00,push,TPL_0109,10:45,push,,,,,,
-U0051,1,Social Gamifiers,churned,D42,6,re_engagement,10_re_activation,2,TPL_0102,08:30,push,TPL_0108,11:45,push,,,,,,
-U0052,3,Engaged Free Triers,inactive,D42,0,activation,11_gentle_nudge,4,TPL_0315,09:15,push,TPL_0314,08:30,push,TPL_0319,11:30,push,TPL_0312,06:00,push
-U0052,3,Engaged Free Triers,inactive,D43,1,activation,11_gentle_nudge,4,TPL_0318,11:15,push,TPL_0314,06:00,push,TPL_0319,11:15,push,TPL_0315,08:15,push
-U0052,3,Engaged Free Triers,inactive,D44,2,activation,11_gentle_nudge,4,TPL_0311,09:00,push,TPL_0314,07:30,push,TPL_0318,11:45,push,TPL_0315,06:15,push
-U0052,3,Engaged Free Triers,inactive,D45,3,activation,12_last_chance,4,TPL_0311,09:15,push,TPL_0314,07:45,push,TPL_0320,10:15,push,TPL_0313,07:30,push
-U0052,3,Engaged Free Triers,inactive,D46,4,activation,12_last_chance,4,TPL_0319,10:00,push,TPL_0311,06:15,push,TPL_0316,11:00,push,TPL_0320,06:45,push
-U0052,3,Engaged Free Triers,inactive,D47,5,activation,12_last_chance,4,TPL_0313,09:00,push,TPL_0317,07:45,push,TPL_0319,09:30,push,TPL_0320,06:00,push
-U0052,3,Engaged Free Triers,inactive,D48,6,activation,12_last_chance,4,TPL_0315,10:00,push,TPL_0320,07:30,push,TPL_0313,10:45,push,TPL_0316,06:45,push
-U0053,1,Social Gamifiers,churned,D39,0,re_engagement,9_win_back,2,TPL_0106,07:15,push,TPL_0105,09:30,push,,,,,,
-U0053,1,Social Gamifiers,churned,D40,1,re_engagement,9_win_back,2,TPL_0108,06:45,push,TPL_0104,11:30,push,,,,,,
-U0053,1,Social Gamifiers,churned,D41,2,re_engagement,9_win_back,2,TPL_0107,08:15,push,TPL_0106,09:30,push,,,,,,
-U0053,1,Social Gamifiers,churned,D42,3,re_engagement,10_re_activation,2,TPL_0108,07:15,push,TPL_0110,09:45,push,,,,,,
-U0053,1,Social Gamifiers,churned,D43,4,re_engagement,10_re_activation,2,TPL_0109,07:30,push,TPL_0101,09:45,push,,,,,,
-U0053,1,Social Gamifiers,churned,D44,5,re_engagement,10_re_activation,2,TPL_0102,08:00,push,TPL_0108,09:15,push,,,,,,
-U0053,1,Social Gamifiers,churned,D45,6,re_engagement,10_re_activation,2,TPL_0106,07:30,push,TPL_0105,09:00,push,,,,,,
-U0054,2,Casual Solo Users,paid,D89,0,retention,5_early_retention,2,TPL_0259,22:45,push,TPL_0258,12:45,push,,,,,,
-U0054,2,Casual Solo Users,paid,D90,1,retention,5_early_retention,2,TPL_0260,22:30,push,TPL_0255,13:00,push,,,,,,
-U0054,2,Casual Solo Users,paid,D91,2,retention,5_early_retention,2,TPL_0259,22:30,push,TPL_0255,14:15,push,,,,,,
-U0054,2,Casual Solo Users,paid,D92,3,retention,5_early_retention,2,TPL_0259,21:00,push,TPL_0253,13:30,push,,,,,,
-U0054,2,Casual Solo Users,paid,D93,4,retention,5_early_retention,2,TPL_0260,21:45,push,TPL_0254,14:30,push,,,,,,
-U0054,2,Casual Solo Users,paid,D94,5,retention,5_early_retention,2,TPL_0255,23:00,push,TPL_0253,14:30,push,,,,,,
-U0054,2,Casual Solo Users,paid,D95,6,retention,5_early_retention,2,TPL_0257,22:15,push,TPL_0259,12:15,push,,,,,,
-U0055,3,Engaged Free Triers,inactive,D54,0,activation,11_gentle_nudge,4,TPL_0319,10:15,push,TPL_0317,07:30,push,TPL_0316,10:45,push,TPL_0313,08:15,push
-U0055,3,Engaged Free Triers,inactive,D55,1,activation,11_gentle_nudge,4,TPL_0318,09:00,push,TPL_0320,08:45,push,TPL_0315,11:30,push,TPL_0311,06:00,push
-U0055,3,Engaged Free Triers,inactive,D56,2,activation,11_gentle_nudge,4,TPL_0311,09:15,push,TPL_0320,08:15,push,TPL_0312,09:30,push,TPL_0318,08:45,push
-U0055,3,Engaged Free Triers,inactive,D57,3,activation,12_last_chance,4,TPL_0319,09:15,push,TPL_0316,08:45,push,TPL_0320,09:45,push,TPL_0311,06:45,push
-U0055,3,Engaged Free Triers,inactive,D58,4,activation,12_last_chance,4,TPL_0318,09:45,push,TPL_0312,07:00,push,TPL_0313,11:45,push,TPL_0311,08:30,push
-U0055,3,Engaged Free Triers,inactive,D59,5,activation,12_last_chance,4,TPL_0320,11:00,push,TPL_0313,07:30,push,TPL_0314,09:15,push,TPL_0311,08:00,push
-U0055,3,Engaged Free Triers,inactive,D60,6,activation,12_last_chance,4,TPL_0315,09:45,push,TPL_0312,07:00,push,TPL_0320,11:00,push,TPL_0314,06:45,push
-U0056,5,Low Engagement Users,trial,D86,0,activation,1_activation,4,TPL_0563,09:30,push,TPL_0566,16:15,push,TPL_0570,09:45,push,TPL_0564,16:45,push
-U0056,5,Low Engagement Users,trial,D87,1,habit_formation,1_activation,4,TPL_0600,10:45,push,TPL_0598,16:00,push,TPL_0594,11:15,push,TPL_0592,17:30,push
-U0056,5,Low Engagement Users,trial,D88,2,habit_formation,2_habit_formation,4,TPL_0599,09:15,push,TPL_0594,17:45,push,TPL_0592,11:15,push,TPL_0600,17:15,push
-U0056,5,Low Engagement Users,trial,D89,3,feature_discovery,2_habit_formation,4,TPL_0590,09:00,push,TPL_0582,16:45,push,TPL_0589,11:45,push,TPL_0586,17:45,push
-U0056,5,Low Engagement Users,trial,D90,4,feature_discovery,2_habit_formation,4,TPL_0588,09:15,push,TPL_0589,16:30,push,TPL_0583,09:30,push,TPL_0590,15:00,push
-U0056,5,Low Engagement Users,trial,D91,5,feature_discovery,3_feature_discovery,4,TPL_0583,09:45,push,TPL_0589,17:00,push,TPL_0590,09:15,push,TPL_0586,15:00,push
-U0056,5,Low Engagement Users,trial,D92,6,conversion_readiness,3_feature_discovery,4,TPL_0577,11:00,push,TPL_0578,16:00,push,TPL_0571,09:00,push,TPL_0576,16:45,push
-U0057,1,Social Gamifiers,trial,D38,0,activation,1_activation,2,TPL_0170,06:15,push,TPL_0161,09:15,push,,,,,,
-U0057,1,Social Gamifiers,trial,D39,1,habit_formation,1_activation,2,TPL_0193,08:30,push,TPL_0191,09:30,push,,,,,,
-U0057,1,Social Gamifiers,trial,D40,2,habit_formation,2_habit_formation,2,TPL_0191,08:30,push,TPL_0197,09:30,push,,,,,,
-U0057,1,Social Gamifiers,trial,D41,3,feature_discovery,2_habit_formation,2,TPL_0181,06:15,push,TPL_0184,10:30,push,,,,,,
-U0057,1,Social Gamifiers,trial,D42,4,feature_discovery,2_habit_formation,2,TPL_0184,07:00,push,TPL_0187,11:15,push,,,,,,
-U0057,1,Social Gamifiers,trial,D43,5,feature_discovery,3_feature_discovery,2,TPL_0182,08:45,push,TPL_0187,11:45,push,,,,,,
-U0057,1,Social Gamifiers,trial,D44,6,conversion_readiness,3_feature_discovery,2,TPL_0180,06:30,push,TPL_0175,11:45,push,,,,,,
-U0058,4,Social Power Users,trial,D14,0,activation,1_activation,4,TPL_0461,08:30,push,TPL_0465,14:45,push,TPL_0468,07:15,push,TPL_0470,13:45,push
-U0058,4,Social Power Users,trial,D15,1,habit_formation,1_activation,4,TPL_0494,06:45,push,TPL_0497,12:15,push,TPL_0493,07:15,push,TPL_0500,13:00,push
-U0058,4,Social Power Users,trial,D16,2,habit_formation,2_habit_formation,4,TPL_0493,08:45,push,TPL_0491,13:15,push,TPL_0499,07:15,push,TPL_0492,13:15,push
-U0058,4,Social Power Users,trial,D17,3,feature_discovery,2_habit_formation,4,TPL_0488,07:00,push,TPL_0481,13:30,push,TPL_0483,06:15,push,TPL_0490,12:30,push
-U0058,4,Social Power Users,trial,D18,4,feature_discovery,2_habit_formation,4,TPL_0484,07:00,push,TPL_0482,12:15,push,TPL_0483,08:15,push,TPL_0488,13:15,push
-U0058,4,Social Power Users,trial,D19,5,feature_discovery,3_feature_discovery,4,TPL_0488,07:30,push,TPL_0489,12:15,push,TPL_0483,06:00,push,TPL_0481,14:45,push
-U0058,4,Social Power Users,trial,D20,6,conversion_readiness,3_feature_discovery,4,TPL_0478,06:15,push,TPL_0476,13:15,push,TPL_0473,08:30,push,TPL_0479,13:45,push
-U0059,0,High Risk Inactives,trial,D3,0,activation,1_activation,2,TPL_0069,10:30,push,TPL_0064,16:30,push,,,,,,
-U0059,0,High Risk Inactives,trial,D4,1,habit_formation,1_activation,2,TPL_0092,10:45,push,TPL_0100,16:00,push,,,,,,
-U0059,0,High Risk Inactives,trial,D5,2,habit_formation,2_habit_formation,2,TPL_0098,11:45,push,TPL_0100,16:15,push,,,,,,
-U0059,0,High Risk Inactives,trial,D6,3,feature_discovery,2_habit_formation,2,TPL_0090,10:30,push,TPL_0085,16:00,push,,,,,,
-U0059,0,High Risk Inactives,trial,D7,4,feature_discovery,2_habit_formation,2,TPL_0082,11:15,push,TPL_0085,17:15,push,,,,,,
-U0059,0,High Risk Inactives,trial,D8,5,feature_discovery,3_feature_discovery,2,TPL_0087,09:30,push,TPL_0082,17:45,push,,,,,,
-U0059,0,High Risk Inactives,trial,D9,6,conversion_readiness,3_feature_discovery,2,TPL_0073,10:15,push,TPL_0079,15:30,push,,,,,,
-U0060,4,Social Power Users,trial,D85,0,activation,1_activation,4,TPL_0464,06:45,push,TPL_0466,14:15,push,TPL_0463,07:30,push,TPL_0468,13:45,push
-U0060,4,Social Power Users,trial,D86,1,habit_formation,1_activation,4,TPL_0493,08:45,push,TPL_0492,13:15,push,TPL_0497,08:30,push,TPL_0500,12:15,push
-U0060,4,Social Power Users,trial,D87,2,habit_formation,2_habit_formation,4,TPL_0500,08:45,push,TPL_0498,12:00,push,TPL_0492,08:00,push,TPL_0495,12:00,push
-U0060,4,Social Power Users,trial,D88,3,feature_discovery,2_habit_formation,4,TPL_0489,06:45,push,TPL_0485,12:15,push,TPL_0488,06:15,push,TPL_0490,12:15,push
-U0060,4,Social Power Users,trial,D89,4,feature_discovery,2_habit_formation,4,TPL_0484,08:45,push,TPL_0482,13:00,push,TPL_0481,08:45,push,TPL_0487,14:45,push
-U0060,4,Social Power Users,trial,D90,5,feature_discovery,3_feature_discovery,4,TPL_0490,06:00,push,TPL_0484,14:45,push,TPL_0487,06:00,push,TPL_0488,14:30,push
-U0060,4,Social Power Users,trial,D91,6,conversion_readiness,3_feature_discovery,4,TPL_0477,08:30,push,TPL_0475,12:45,push,TPL_0479,06:00,push,TPL_0473,12:15,push
-U0061,5,Low Engagement Users,trial,D24,0,activation,1_activation,4,TPL_0569,09:15,push,TPL_0562,17:30,push,TPL_0570,10:30,push,TPL_0568,16:00,push
-U0061,5,Low Engagement Users,trial,D25,1,habit_formation,1_activation,4,TPL_0598,10:45,push,TPL_0593,16:15,push,TPL_0592,11:15,push,TPL_0600,16:00,push
-U0061,5,Low Engagement Users,trial,D26,2,habit_formation,2_habit_formation,4,TPL_0600,11:00,push,TPL_0593,15:45,push,TPL_0599,10:45,push,TPL_0592,17:45,push
-U0061,5,Low Engagement Users,trial,D27,3,feature_discovery,2_habit_formation,4,TPL_0589,09:00,push,TPL_0581,17:15,push,TPL_0584,09:45,push,TPL_0585,16:30,push
-U0061,5,Low Engagement Users,trial,D28,4,feature_discovery,2_habit_formation,4,TPL_0581,11:00,push,TPL_0583,17:00,push,TPL_0590,09:15,push,TPL_0587,17:45,push
-U0061,5,Low Engagement Users,trial,D29,5,feature_discovery,3_feature_discovery,4,TPL_0582,10:00,push,TPL_0590,15:30,push,TPL_0588,11:00,push,TPL_0585,15:30,push
-U0061,5,Low Engagement Users,trial,D30,6,conversion_readiness,3_feature_discovery,4,TPL_0574,09:15,push,TPL_0571,17:15,push,TPL_0572,11:45,push,TPL_0580,15:30,push
-U0062,3,Engaged Free Triers,churned,D12,0,re_engagement,9_win_back,4,TPL_0303,09:15,push,TPL_0302,08:45,push,TPL_0301,11:30,push,TPL_0309,07:15,push
-U0062,3,Engaged Free Triers,churned,D13,1,re_engagement,9_win_back,4,TPL_0308,11:00,push,TPL_0305,08:30,push,TPL_0306,09:00,push,TPL_0310,07:15,push
-U0062,3,Engaged Free Triers,churned,D14,2,re_engagement,9_win_back,4,TPL_0304,09:30,push,TPL_0306,08:45,push,TPL_0301,10:00,push,TPL_0302,08:30,push
-U0062,3,Engaged Free Triers,churned,D15,3,re_engagement,10_re_activation,4,TPL_0305,10:45,push,TPL_0308,06:30,push,TPL_0301,11:45,push,TPL_0304,07:15,push
-U0062,3,Engaged Free Triers,churned,D16,4,re_engagement,10_re_activation,4,TPL_0307,11:45,push,TPL_0310,06:30,push,TPL_0306,09:00,push,TPL_0303,06:30,push
-U0062,3,Engaged Free Triers,churned,D17,5,re_engagement,10_re_activation,4,TPL_0306,09:45,push,TPL_0308,08:15,push,TPL_0302,11:45,push,TPL_0303,07:30,push
-U0062,3,Engaged Free Triers,churned,D18,6,re_engagement,10_re_activation,4,TPL_0304,09:00,push,TPL_0306,06:30,push,TPL_0307,10:30,push,TPL_0303,07:00,push
-U0063,1,Social Gamifiers,trial,D81,0,activation,1_activation,2,TPL_0169,06:00,push,TPL_0165,09:45,push,,,,,,
-U0063,1,Social Gamifiers,trial,D82,1,habit_formation,1_activation,2,TPL_0194,07:45,push,TPL_0200,09:00,push,,,,,,
-U0063,1,Social Gamifiers,trial,D83,2,habit_formation,2_habit_formation,2,TPL_0197,06:30,push,TPL_0199,11:00,push,,,,,,
-U0063,1,Social Gamifiers,trial,D84,3,feature_discovery,2_habit_formation,2,TPL_0183,08:30,push,TPL_0181,10:00,push,,,,,,
-U0063,1,Social Gamifiers,trial,D85,4,feature_discovery,2_habit_formation,2,TPL_0190,07:45,push,TPL_0182,10:00,push,,,,,,
-U0063,1,Social Gamifiers,trial,D86,5,feature_discovery,3_feature_discovery,2,TPL_0183,08:15,push,TPL_0188,11:15,push,,,,,,
-U0063,1,Social Gamifiers,trial,D87,6,conversion_readiness,3_feature_discovery,2,TPL_0179,08:45,push,TPL_0174,09:15,push,,,,,,
-U0064,1,Social Gamifiers,trial,D32,0,activation,1_activation,2,TPL_0164,07:30,push,TPL_0167,10:45,push,,,,,,
-U0064,1,Social Gamifiers,trial,D33,1,habit_formation,1_activation,2,TPL_0195,06:00,push,TPL_0200,09:45,push,,,,,,
-U0064,1,Social Gamifiers,trial,D34,2,habit_formation,2_habit_formation,2,TPL_0197,07:45,push,TPL_0192,10:45,push,,,,,,
-U0064,1,Social Gamifiers,trial,D35,3,feature_discovery,2_habit_formation,2,TPL_0181,06:30,push,TPL_0189,10:15,push,,,,,,
-U0064,1,Social Gamifiers,trial,D36,4,feature_discovery,2_habit_formation,2,TPL_0188,08:45,push,TPL_0190,11:15,push,,,,,,
-U0064,1,Social Gamifiers,trial,D37,5,feature_discovery,3_feature_discovery,2,TPL_0185,07:00,push,TPL_0182,09:30,push,,,,,,
-U0064,1,Social Gamifiers,trial,D38,6,conversion_readiness,3_feature_discovery,2,TPL_0174,06:45,push,TPL_0178,10:45,push,,,,,,
-U0065,2,Casual Solo Users,paid,D15,0,retention,5_early_retention,2,TPL_0259,22:45,push,TPL_0253,13:45,push,,,,,,
-U0065,2,Casual Solo Users,paid,D16,1,retention,5_early_retention,2,TPL_0256,23:15,push,TPL_0254,13:30,push,,,,,,
-U0065,2,Casual Solo Users,paid,D17,2,retention,5_early_retention,2,TPL_0259,23:15,push,TPL_0260,13:30,push,,,,,,
-U0065,2,Casual Solo Users,paid,D18,3,retention,5_early_retention,2,TPL_0252,21:45,push,TPL_0259,13:30,push,,,,,,
-U0065,2,Casual Solo Users,paid,D19,4,retention,5_early_retention,2,TPL_0257,23:45,push,TPL_0253,14:15,push,,,,,,
-U0065,2,Casual Solo Users,paid,D20,5,retention,5_early_retention,2,TPL_0260,22:45,push,TPL_0254,13:45,push,,,,,,
-U0065,2,Casual Solo Users,paid,D21,6,retention,5_early_retention,2,TPL_0260,22:00,push,TPL_0255,14:15,push,,,,,,
-U0066,5,Low Engagement Users,trial,D41,0,activation,1_activation,4,TPL_0569,11:15,push,TPL_0568,17:00,push,TPL_0565,11:45,push,TPL_0566,17:15,push
-U0066,5,Low Engagement Users,trial,D42,1,habit_formation,1_activation,4,TPL_0593,10:30,push,TPL_0600,17:00,push,TPL_0592,10:45,push,TPL_0599,15:30,push
-U0066,5,Low Engagement Users,trial,D43,2,habit_formation,2_habit_formation,4,TPL_0596,09:30,push,TPL_0593,17:15,push,TPL_0592,11:45,push,TPL_0595,16:00,push
-U0066,5,Low Engagement Users,trial,D44,3,feature_discovery,2_habit_formation,4,TPL_0584,10:45,push,TPL_0588,17:45,push,TPL_0583,11:45,push,TPL_0582,17:00,push
-U0066,5,Low Engagement Users,trial,D45,4,feature_discovery,2_habit_formation,4,TPL_0589,10:00,push,TPL_0583,15:15,push,TPL_0584,11:30,push,TPL_0590,15:00,push
-U0066,5,Low Engagement Users,trial,D46,5,feature_discovery,3_feature_discovery,4,TPL_0583,11:45,push,TPL_0585,16:45,push,TPL_0582,09:00,push,TPL_0584,15:30,push
-U0066,5,Low Engagement Users,trial,D47,6,conversion_readiness,3_feature_discovery,4,TPL_0578,09:15,push,TPL_0579,16:30,push,TPL_0572,10:45,push,TPL_0571,17:15,push
-U0067,1,Social Gamifiers,churned,D65,0,re_engagement,9_win_back,2,TPL_0105,07:00,push,TPL_0102,10:00,push,,,,,,
-U0067,1,Social Gamifiers,churned,D66,1,re_engagement,9_win_back,2,TPL_0105,07:45,push,TPL_0109,09:00,push,,,,,,
-U0067,1,Social Gamifiers,churned,D67,2,re_engagement,9_win_back,2,TPL_0105,08:15,push,TPL_0108,10:30,push,,,,,,
-U0067,1,Social Gamifiers,churned,D68,3,re_engagement,10_re_activation,2,TPL_0106,07:45,push,TPL_0102,09:45,push,,,,,,
-U0067,1,Social Gamifiers,churned,D69,4,re_engagement,10_re_activation,2,TPL_0108,07:45,push,TPL_0105,09:45,push,,,,,,
-U0067,1,Social Gamifiers,churned,D70,5,re_engagement,10_re_activation,2,TPL_0106,08:45,push,TPL_0110,10:00,push,,,,,,
-U0067,1,Social Gamifiers,churned,D71,6,re_engagement,10_re_activation,2,TPL_0108,07:00,push,TPL_0106,11:00,push,,,,,,
-U0068,4,Social Power Users,trial,D54,0,activation,1_activation,4,TPL_0468,06:30,push,TPL_0464,14:00,push,TPL_0461,08:15,push,TPL_0466,14:15,push
-U0068,4,Social Power Users,trial,D55,1,habit_formation,1_activation,4,TPL_0492,08:15,push,TPL_0495,14:15,push,TPL_0500,07:45,push,TPL_0499,13:15,push
-U0068,4,Social Power Users,trial,D56,2,habit_formation,2_habit_formation,4,TPL_0495,07:15,push,TPL_0492,12:45,push,TPL_0499,07:00,push,TPL_0498,14:15,push
-U0068,4,Social Power Users,trial,D57,3,feature_discovery,2_habit_formation,4,TPL_0481,07:45,push,TPL_0487,13:00,push,TPL_0489,08:15,push,TPL_0485,12:30,push
-U0068,4,Social Power Users,trial,D58,4,feature_discovery,2_habit_formation,4,TPL_0490,08:00,push,TPL_0488,14:00,push,TPL_0482,08:15,push,TPL_0481,13:30,push
-U0068,4,Social Power Users,trial,D59,5,feature_discovery,3_feature_discovery,4,TPL_0483,06:45,push,TPL_0482,12:30,push,TPL_0489,08:45,push,TPL_0490,14:30,push
-U0068,4,Social Power Users,trial,D60,6,conversion_readiness,3_feature_discovery,4,TPL_0475,08:45,push,TPL_0477,14:45,push,TPL_0472,08:00,push,TPL_0473,13:30,push
-U0069,1,Social Gamifiers,inactive,D41,0,activation,11_gentle_nudge,2,TPL_0112,07:15,push,TPL_0117,11:30,push,,,,,,
-U0069,1,Social Gamifiers,inactive,D42,1,activation,11_gentle_nudge,2,TPL_0117,08:00,push,TPL_0114,11:15,push,,,,,,
-U0069,1,Social Gamifiers,inactive,D43,2,activation,11_gentle_nudge,2,TPL_0117,07:00,push,TPL_0120,09:30,push,,,,,,
-U0069,1,Social Gamifiers,inactive,D44,3,activation,12_last_chance,2,TPL_0112,06:15,push,TPL_0113,10:15,push,,,,,,
-U0069,1,Social Gamifiers,inactive,D45,4,activation,12_last_chance,2,TPL_0117,08:45,push,TPL_0114,10:15,push,,,,,,
-U0069,1,Social Gamifiers,inactive,D46,5,activation,12_last_chance,2,TPL_0111,08:45,push,TPL_0120,10:15,push,,,,,,
-U0069,1,Social Gamifiers,inactive,D47,6,activation,12_last_chance,2,TPL_0115,07:15,push,TPL_0117,11:15,push,,,,,,
-U0070,4,Social Power Users,churned,D33,0,re_engagement,9_win_back,4,TPL_0408,07:30,push,TPL_0404,12:15,push,TPL_0409,07:45,push,TPL_0407,14:00,push
-U0070,4,Social Power Users,churned,D34,1,re_engagement,9_win_back,4,TPL_0403,07:00,push,TPL_0405,13:15,push,TPL_0402,06:45,push,TPL_0409,14:45,push
-U0070,4,Social Power Users,churned,D35,2,re_engagement,9_win_back,4,TPL_0407,07:45,push,TPL_0402,13:45,push,TPL_0403,07:15,push,TPL_0408,12:00,push
-U0070,4,Social Power Users,churned,D36,3,re_engagement,10_re_activation,4,TPL_0408,06:30,push,TPL_0406,12:30,push,TPL_0407,06:30,push,TPL_0409,12:45,push
-U0070,4,Social Power Users,churned,D37,4,re_engagement,10_re_activation,4,TPL_0404,08:45,push,TPL_0409,14:00,push,TPL_0403,08:00,push,TPL_0402,13:30,push
-U0070,4,Social Power Users,churned,D38,5,re_engagement,10_re_activation,4,TPL_0407,08:00,push,TPL_0404,14:45,push,TPL_0409,08:15,push,TPL_0402,13:00,push
-U0070,4,Social Power Users,churned,D39,6,re_engagement,10_re_activation,4,TPL_0407,08:15,push,TPL_0403,13:00,push,TPL_0409,07:30,push,TPL_0406,13:00,push
-U0071,5,Low Engagement Users,trial,D29,0,activation,1_activation,4,TPL_0567,10:00,push,TPL_0565,15:15,push,TPL_0562,11:30,push,TPL_0561,17:45,push
-U0071,5,Low Engagement Users,trial,D30,1,habit_formation,1_activation,4,TPL_0598,09:15,push,TPL_0597,15:15,push,TPL_0594,09:30,push,TPL_0595,17:30,push
-U0071,5,Low Engagement Users,trial,D31,2,habit_formation,2_habit_formation,4,TPL_0593,11:15,push,TPL_0598,16:30,push,TPL_0599,10:30,push,TPL_0595,17:00,push
-U0071,5,Low Engagement Users,trial,D32,3,feature_discovery,2_habit_formation,4,TPL_0589,09:45,push,TPL_0585,15:30,push,TPL_0590,11:15,push,TPL_0587,17:15,push
-U0071,5,Low Engagement Users,trial,D33,4,feature_discovery,2_habit_formation,4,TPL_0582,09:15,push,TPL_0581,17:30,push,TPL_0584,09:45,push,TPL_0585,16:15,push
-U0071,5,Low Engagement Users,trial,D34,5,feature_discovery,3_feature_discovery,4,TPL_0588,11:30,push,TPL_0585,17:45,push,TPL_0590,10:45,push,TPL_0587,15:00,push
-U0071,5,Low Engagement Users,trial,D35,6,conversion_readiness,3_feature_discovery,4,TPL_0580,10:30,push,TPL_0572,17:30,push,TPL_0571,10:45,push,TPL_0575,16:00,push
-U0072,2,Casual Solo Users,trial,D12,0,activation,1_activation,2,TPL_0267,23:00,push,TPL_0263,14:45,push,,,,,,
-U0072,2,Casual Solo Users,trial,D13,1,habit_formation,1_activation,2,TPL_0295,23:30,push,TPL_0300,12:45,push,,,,,,
-U0072,2,Casual Solo Users,trial,D14,2,habit_formation,2_habit_formation,2,TPL_0291,21:45,push,TPL_0298,12:45,push,,,,,,
-U0072,2,Casual Solo Users,trial,D15,3,feature_discovery,2_habit_formation,2,TPL_0288,22:30,push,TPL_0281,13:30,push,,,,,,
-U0072,2,Casual Solo Users,trial,D16,4,feature_discovery,2_habit_formation,2,TPL_0290,23:15,push,TPL_0284,14:45,push,,,,,,
-U0072,2,Casual Solo Users,trial,D17,5,feature_discovery,3_feature_discovery,2,TPL_0282,22:00,push,TPL_0289,12:00,push,,,,,,
-U0072,2,Casual Solo Users,trial,D18,6,conversion_readiness,3_feature_discovery,2,TPL_0277,23:45,push,TPL_0271,12:00,push,,,,,,
-U0073,2,Casual Solo Users,churned,D12,0,re_engagement,9_win_back,2,TPL_0208,21:45,push,TPL_0209,13:00,push,,,,,,
-U0073,2,Casual Solo Users,churned,D13,1,re_engagement,9_win_back,2,TPL_0210,22:15,push,TPL_0208,14:15,push,,,,,,
-U0073,2,Casual Solo Users,churned,D14,2,re_engagement,9_win_back,2,TPL_0202,23:30,push,TPL_0210,12:30,push,,,,,,
-U0073,2,Casual Solo Users,churned,D15,3,re_engagement,10_re_activation,2,TPL_0208,21:30,push,TPL_0202,13:00,push,,,,,,
-U0073,2,Casual Solo Users,churned,D16,4,re_engagement,10_re_activation,2,TPL_0205,22:15,push,TPL_0204,12:45,push,,,,,,
-U0073,2,Casual Solo Users,churned,D17,5,re_engagement,10_re_activation,2,TPL_0208,23:30,push,TPL_0204,14:15,push,,,,,,
-U0073,2,Casual Solo Users,churned,D18,6,re_engagement,10_re_activation,2,TPL_0209,22:00,push,TPL_0205,14:00,push,,,,,,
-U0074,2,Casual Solo Users,paid,D17,0,retention,5_early_retention,2,TPL_0253,21:15,push,TPL_0254,13:00,push,,,,,,
-U0074,2,Casual Solo Users,paid,D18,1,retention,5_early_retention,2,TPL_0258,21:15,push,TPL_0257,14:45,push,,,,,,
-U0074,2,Casual Solo Users,paid,D19,2,retention,5_early_retention,2,TPL_0260,21:00,push,TPL_0258,14:30,push,,,,,,
-U0074,2,Casual Solo Users,paid,D20,3,retention,5_early_retention,2,TPL_0255,21:45,push,TPL_0254,14:15,push,,,,,,
-U0074,2,Casual Solo Users,paid,D21,4,retention,5_early_retention,2,TPL_0255,22:00,push,TPL_0260,12:45,push,,,,,,
-U0074,2,Casual Solo Users,paid,D22,5,retention,5_early_retention,2,TPL_0260,21:00,push,TPL_0254,12:30,push,,,,,,
-U0074,2,Casual Solo Users,paid,D23,6,retention,5_early_retention,2,TPL_0253,22:30,push,TPL_0254,12:45,push,,,,,,
-U0075,4,Social Power Users,paid,D31,0,retention,5_early_retention,4,TPL_0459,06:15,push,TPL_0451,12:00,push,TPL_0453,08:15,push,TPL_0458,13:30,push
-U0075,4,Social Power Users,paid,D32,1,retention,5_early_retention,4,TPL_0458,08:15,push,TPL_0453,14:15,push,TPL_0459,07:45,push,TPL_0460,12:00,push
-U0075,4,Social Power Users,paid,D33,2,retention,5_early_retention,4,TPL_0451,06:15,push,TPL_0457,12:45,push,TPL_0454,07:45,push,TPL_0460,13:15,push
-U0075,4,Social Power Users,paid,D34,3,retention,5_early_retention,4,TPL_0459,06:30,push,TPL_0460,14:00,push,TPL_0455,06:30,push,TPL_0457,14:00,push
-U0075,4,Social Power Users,paid,D35,4,retention,5_early_retention,4,TPL_0451,08:30,push,TPL_0458,12:15,push,TPL_0452,08:45,push,TPL_0457,13:00,push
-U0075,4,Social Power Users,paid,D36,5,retention,5_early_retention,4,TPL_0457,06:45,push,TPL_0455,13:00,push,TPL_0452,06:45,push,TPL_0456,14:00,push
-U0075,4,Social Power Users,paid,D37,6,retention,5_early_retention,4,TPL_0454,08:00,push,TPL_0453,13:30,push,TPL_0458,06:45,push,TPL_0460,14:45,push
-U0076,2,Casual Solo Users,churned,D38,0,re_engagement,9_win_back,2,TPL_0206,22:15,push,TPL_0207,13:00,push,,,,,,
-U0076,2,Casual Solo Users,churned,D39,1,re_engagement,9_win_back,2,TPL_0202,21:00,push,TPL_0208,12:30,push,,,,,,
-U0076,2,Casual Solo Users,churned,D40,2,re_engagement,9_win_back,2,TPL_0206,21:00,push,TPL_0202,12:45,push,,,,,,
-U0076,2,Casual Solo Users,churned,D41,3,re_engagement,10_re_activation,2,TPL_0206,23:30,push,TPL_0207,14:45,push,,,,,,
-U0076,2,Casual Solo Users,churned,D42,4,re_engagement,10_re_activation,2,TPL_0207,22:45,push,TPL_0202,12:15,push,,,,,,
-U0076,2,Casual Solo Users,churned,D43,5,re_engagement,10_re_activation,2,TPL_0205,22:00,push,TPL_0208,13:00,push,,,,,,
-U0076,2,Casual Solo Users,churned,D44,6,re_engagement,10_re_activation,2,TPL_0209,23:15,push,TPL_0205,12:30,push,,,,,,
-U0077,5,Low Engagement Users,trial,D45,0,activation,1_activation,4,TPL_0568,10:00,push,TPL_0563,16:45,push,TPL_0566,11:15,push,TPL_0564,15:15,push
-U0077,5,Low Engagement Users,trial,D46,1,habit_formation,1_activation,4,TPL_0593,09:45,push,TPL_0595,15:45,push,TPL_0597,11:00,push,TPL_0596,16:15,push
-U0077,5,Low Engagement Users,trial,D47,2,habit_formation,2_habit_formation,4,TPL_0599,09:00,push,TPL_0596,17:15,push,TPL_0592,11:00,push,TPL_0594,15:45,push
-U0077,5,Low Engagement Users,trial,D48,3,feature_discovery,2_habit_formation,4,TPL_0581,10:30,push,TPL_0584,15:30,push,TPL_0587,09:30,push,TPL_0583,17:00,push
-U0077,5,Low Engagement Users,trial,D49,4,feature_discovery,2_habit_formation,4,TPL_0584,09:30,push,TPL_0585,16:30,push,TPL_0587,11:00,push,TPL_0581,16:00,push
-U0077,5,Low Engagement Users,trial,D50,5,feature_discovery,3_feature_discovery,4,TPL_0590,10:45,push,TPL_0582,17:30,push,TPL_0583,09:45,push,TPL_0584,17:15,push
-U0077,5,Low Engagement Users,trial,D51,6,conversion_readiness,3_feature_discovery,4,TPL_0577,10:15,push,TPL_0576,16:00,push,TPL_0573,11:00,push,TPL_0579,15:00,push
-U0078,2,Casual Solo Users,trial,D28,0,activation,1_activation,2,TPL_0265,21:00,push,TPL_0264,12:00,push,,,,,,
-U0078,2,Casual Solo Users,trial,D29,1,habit_formation,1_activation,2,TPL_0293,22:30,push,TPL_0291,13:15,push,,,,,,
-U0078,2,Casual Solo Users,trial,D30,2,habit_formation,2_habit_formation,2,TPL_0300,21:00,push,TPL_0299,14:45,push,,,,,,
-U0078,2,Casual Solo Users,trial,D31,3,feature_discovery,2_habit_formation,2,TPL_0290,21:30,push,TPL_0283,12:45,push,,,,,,
-U0078,2,Casual Solo Users,trial,D32,4,feature_discovery,2_habit_formation,2,TPL_0290,23:30,push,TPL_0289,13:00,push,,,,,,
-U0078,2,Casual Solo Users,trial,D33,5,feature_discovery,3_feature_discovery,2,TPL_0283,23:30,push,TPL_0287,12:00,push,,,,,,
-U0078,2,Casual Solo Users,trial,D34,6,conversion_readiness,3_feature_discovery,2,TPL_0279,21:15,push,TPL_0278,14:00,push,,,,,,
-U0079,3,Engaged Free Triers,trial,D61,0,activation,1_activation,4,TPL_0363,10:00,push,TPL_0366,07:30,push,TPL_0369,10:30,push,TPL_0367,06:45,push
-U0079,3,Engaged Free Triers,trial,D62,1,habit_formation,1_activation,4,TPL_0391,09:30,push,TPL_0400,06:30,push,TPL_0394,11:30,push,TPL_0396,08:15,push
-U0079,3,Engaged Free Triers,trial,D63,2,habit_formation,2_habit_formation,4,TPL_0394,10:30,push,TPL_0400,08:45,push,TPL_0397,09:15,push,TPL_0396,06:00,push
-U0079,3,Engaged Free Triers,trial,D64,3,feature_discovery,2_habit_formation,4,TPL_0385,10:00,push,TPL_0383,06:30,push,TPL_0388,11:00,push,TPL_0384,07:00,push
-U0079,3,Engaged Free Triers,trial,D65,4,feature_discovery,2_habit_formation,4,TPL_0386,11:45,push,TPL_0385,08:30,push,TPL_0381,09:15,push,TPL_0388,08:15,push
-U0079,3,Engaged Free Triers,trial,D66,5,feature_discovery,3_feature_discovery,4,TPL_0385,10:45,push,TPL_0388,06:15,push,TPL_0386,11:30,push,TPL_0381,06:00,push
-U0079,3,Engaged Free Triers,trial,D67,6,conversion_readiness,3_feature_discovery,4,TPL_0371,09:45,push,TPL_0373,08:30,push,TPL_0374,10:00,push,TPL_0372,08:00,push
-U0080,2,Casual Solo Users,churned,D61,0,re_engagement,9_win_back,2,TPL_0208,23:15,push,TPL_0209,14:45,push,,,,,,
-U0080,2,Casual Solo Users,churned,D62,1,re_engagement,9_win_back,2,TPL_0206,21:00,push,TPL_0201,13:15,push,,,,,,
-U0080,2,Casual Solo Users,churned,D63,2,re_engagement,9_win_back,2,TPL_0201,21:30,push,TPL_0206,13:30,push,,,,,,
-U0080,2,Casual Solo Users,churned,D64,3,re_engagement,10_re_activation,2,TPL_0207,22:30,push,TPL_0203,13:45,push,,,,,,
-U0080,2,Casual Solo Users,churned,D65,4,re_engagement,10_re_activation,2,TPL_0205,22:15,push,TPL_0208,12:15,push,,,,,,
-U0080,2,Casual Solo Users,churned,D66,5,re_engagement,10_re_activation,2,TPL_0210,21:00,push,TPL_0204,12:00,push,,,,,,
-U0080,2,Casual Solo Users,churned,D67,6,re_engagement,10_re_activation,2,TPL_0201,21:45,push,TPL_0204,13:30,push,,,,,,
-U0081,2,Casual Solo Users,paid,D56,0,retention,5_early_retention,2,TPL_0254,22:00,push,TPL_0256,14:30,push,,,,,,
-U0081,2,Casual Solo Users,paid,D57,1,retention,5_early_retention,2,TPL_0253,21:45,push,TPL_0252,13:45,push,,,,,,
-U0081,2,Casual Solo Users,paid,D58,2,retention,5_early_retention,2,TPL_0255,22:00,push,TPL_0260,12:15,push,,,,,,
-U0081,2,Casual Solo Users,paid,D59,3,retention,5_early_retention,2,TPL_0257,23:30,push,TPL_0255,14:00,push,,,,,,
-U0081,2,Casual Solo Users,paid,D60,4,retention,5_early_retention,2,TPL_0260,21:30,push,TPL_0255,12:00,push,,,,,,
-U0081,2,Casual Solo Users,paid,D61,5,retention,5_early_retention,2,TPL_0255,23:15,push,TPL_0254,13:45,push,,,,,,
-U0081,2,Casual Solo Users,paid,D62,6,retention,5_early_retention,2,TPL_0255,23:00,push,TPL_0253,14:30,push,,,,,,
-U0082,4,Social Power Users,trial,D15,0,activation,1_activation,4,TPL_0467,07:15,push,TPL_0465,12:45,push,TPL_0470,07:15,push,TPL_0466,12:45,push
-U0082,4,Social Power Users,trial,D16,1,habit_formation,1_activation,4,TPL_0495,06:15,push,TPL_0497,12:00,push,TPL_0494,06:15,push,TPL_0492,12:15,push
-U0082,4,Social Power Users,trial,D17,2,habit_formation,2_habit_formation,4,TPL_0493,07:30,push,TPL_0500,14:00,push,TPL_0494,08:30,push,TPL_0498,12:00,push
-U0082,4,Social Power Users,trial,D18,3,feature_discovery,2_habit_formation,4,TPL_0485,06:15,push,TPL_0487,14:45,push,TPL_0490,06:00,push,TPL_0483,13:00,push
-U0082,4,Social Power Users,trial,D19,4,feature_discovery,2_habit_formation,4,TPL_0488,06:45,push,TPL_0490,12:15,push,TPL_0485,08:45,push,TPL_0483,14:45,push
-U0082,4,Social Power Users,trial,D20,5,feature_discovery,3_feature_discovery,4,TPL_0482,07:00,push,TPL_0488,13:45,push,TPL_0481,06:30,push,TPL_0484,12:15,push
-U0082,4,Social Power Users,trial,D21,6,conversion_readiness,3_feature_discovery,4,TPL_0476,07:30,push,TPL_0479,13:15,push,TPL_0475,06:15,push,TPL_0478,14:30,push
-U0083,5,Low Engagement Users,trial,D55,0,activation,1_activation,4,TPL_0566,10:45,push,TPL_0564,17:45,push,TPL_0569,09:00,push,TPL_0570,16:45,push
-U0083,5,Low Engagement Users,trial,D56,1,habit_formation,1_activation,4,TPL_0594,09:45,push,TPL_0592,15:15,push,TPL_0600,11:00,push,TPL_0597,16:30,push
-U0083,5,Low Engagement Users,trial,D57,2,habit_formation,2_habit_formation,4,TPL_0599,10:45,push,TPL_0600,16:30,push,TPL_0593,10:30,push,TPL_0594,15:00,push
-U0083,5,Low Engagement Users,trial,D58,3,feature_discovery,2_habit_formation,4,TPL_0586,10:15,push,TPL_0583,15:30,push,TPL_0588,09:45,push,TPL_0589,17:30,push
-U0083,5,Low Engagement Users,trial,D59,4,feature_discovery,2_habit_formation,4,TPL_0583,11:15,push,TPL_0588,15:00,push,TPL_0587,09:15,push,TPL_0590,16:00,push
-U0083,5,Low Engagement Users,trial,D60,5,feature_discovery,3_feature_discovery,4,TPL_0583,09:45,push,TPL_0588,16:15,push,TPL_0587,09:15,push,TPL_0584,17:30,push
-U0083,5,Low Engagement Users,trial,D61,6,conversion_readiness,3_feature_discovery,4,TPL_0577,11:30,push,TPL_0574,17:00,push,TPL_0578,11:30,push,TPL_0572,17:15,push
-U0084,2,Casual Solo Users,trial,D9,0,activation,1_activation,2,TPL_0268,23:15,push,TPL_0269,13:30,push,,,,,,
-U0084,2,Casual Solo Users,trial,D10,1,habit_formation,1_activation,2,TPL_0300,21:45,push,TPL_0292,12:00,push,,,,,,
-U0084,2,Casual Solo Users,trial,D11,2,habit_formation,2_habit_formation,2,TPL_0299,21:15,push,TPL_0300,14:15,push,,,,,,
-U0084,2,Casual Solo Users,trial,D12,3,feature_discovery,2_habit_formation,2,TPL_0289,21:45,push,TPL_0288,12:30,push,,,,,,
-U0084,2,Casual Solo Users,trial,D13,4,feature_discovery,2_habit_formation,2,TPL_0285,23:15,push,TPL_0289,12:30,push,,,,,,
-U0084,2,Casual Solo Users,trial,D14,5,feature_discovery,3_feature_discovery,2,TPL_0281,23:15,push,TPL_0282,13:00,push,,,,,,
-U0084,2,Casual Solo Users,trial,D15,6,conversion_readiness,3_feature_discovery,2,TPL_0274,21:15,push,TPL_0271,14:15,push,,,,,,
-U0085,2,Casual Solo Users,trial,D29,0,activation,1_activation,2,TPL_0262,21:30,push,TPL_0269,12:30,push,,,,,,
-U0085,2,Casual Solo Users,trial,D30,1,habit_formation,1_activation,2,TPL_0291,23:45,push,TPL_0294,14:00,push,,,,,,
-U0085,2,Casual Solo Users,trial,D31,2,habit_formation,2_habit_formation,2,TPL_0296,22:30,push,TPL_0293,13:15,push,,,,,,
-U0085,2,Casual Solo Users,trial,D32,3,feature_discovery,2_habit_formation,2,TPL_0287,21:45,push,TPL_0284,14:45,push,,,,,,
-U0085,2,Casual Solo Users,trial,D33,4,feature_discovery,2_habit_formation,2,TPL_0284,23:30,push,TPL_0288,12:30,push,,,,,,
-U0085,2,Casual Solo Users,trial,D34,5,feature_discovery,3_feature_discovery,2,TPL_0284,21:15,push,TPL_0288,13:30,push,,,,,,
-U0085,2,Casual Solo Users,trial,D35,6,conversion_readiness,3_feature_discovery,2,TPL_0277,23:30,push,TPL_0279,12:15,push,,,,,,
-U0086,3,Engaged Free Triers,paid,D24,0,retention,5_early_retention,4,TPL_0359,11:00,push,TPL_0360,08:45,push,TPL_0357,11:00,push,TPL_0352,06:30,push
-U0086,3,Engaged Free Triers,paid,D25,1,retention,5_early_retention,4,TPL_0354,11:15,push,TPL_0352,08:00,push,TPL_0358,10:15,push,TPL_0357,07:00,push
-U0086,3,Engaged Free Triers,paid,D26,2,retention,5_early_retention,4,TPL_0352,09:30,push,TPL_0358,07:15,push,TPL_0353,11:00,push,TPL_0355,08:30,push
-U0086,3,Engaged Free Triers,paid,D27,3,retention,5_early_retention,4,TPL_0358,10:00,push,TPL_0356,07:15,push,TPL_0351,09:00,push,TPL_0359,07:30,push
-U0086,3,Engaged Free Triers,paid,D28,4,retention,5_early_retention,4,TPL_0358,09:00,push,TPL_0360,06:45,push,TPL_0353,10:45,push,TPL_0351,06:45,push
-U0086,3,Engaged Free Triers,paid,D29,5,retention,5_early_retention,4,TPL_0353,10:45,push,TPL_0357,07:45,push,TPL_0354,09:45,push,TPL_0359,08:15,push
-U0086,3,Engaged Free Triers,paid,D30,6,retention,5_early_retention,4,TPL_0355,09:45,push,TPL_0352,06:00,push,TPL_0351,10:00,push,TPL_0354,07:30,push
-U0087,2,Casual Solo Users,paid,D83,0,retention,5_early_retention,2,TPL_0252,21:00,push,TPL_0258,13:15,push,,,,,,
-U0087,2,Casual Solo Users,paid,D84,1,retention,5_early_retention,2,TPL_0260,22:15,push,TPL_0259,14:00,push,,,,,,
-U0087,2,Casual Solo Users,paid,D85,2,retention,5_early_retention,2,TPL_0257,23:00,push,TPL_0256,13:45,push,,,,,,
-U0087,2,Casual Solo Users,paid,D86,3,retention,5_early_retention,2,TPL_0255,23:00,push,TPL_0260,13:15,push,,,,,,
-U0087,2,Casual Solo Users,paid,D87,4,retention,5_early_retention,2,TPL_0252,23:45,push,TPL_0259,12:00,push,,,,,,
-U0087,2,Casual Solo Users,paid,D88,5,retention,5_early_retention,2,TPL_0256,21:30,push,TPL_0255,12:15,push,,,,,,
-U0087,2,Casual Solo Users,paid,D89,6,retention,5_early_retention,2,TPL_0260,22:30,push,TPL_0258,14:30,push,,,,,,
-U0088,2,Casual Solo Users,churned,D4,0,re_engagement,9_win_back,2,TPL_0209,22:15,push,TPL_0202,12:00,push,,,,,,
-U0088,2,Casual Solo Users,churned,D5,1,re_engagement,9_win_back,2,TPL_0205,22:45,push,TPL_0207,12:00,push,,,,,,
-U0088,2,Casual Solo Users,churned,D6,2,re_engagement,9_win_back,2,TPL_0204,22:00,push,TPL_0206,13:00,push,,,,,,
-U0088,2,Casual Solo Users,churned,D7,3,re_engagement,10_re_activation,2,TPL_0206,22:45,push,TPL_0203,12:00,push,,,,,,
-U0088,2,Casual Solo Users,churned,D8,4,re_engagement,10_re_activation,2,TPL_0204,21:15,push,TPL_0209,12:30,push,,,,,,
-U0088,2,Casual Solo Users,churned,D9,5,re_engagement,10_re_activation,2,TPL_0210,21:45,push,TPL_0207,12:30,push,,,,,,
-U0088,2,Casual Solo Users,churned,D10,6,re_engagement,10_re_activation,2,TPL_0207,22:45,push,TPL_0203,13:30,push,,,,,,
-U0089,5,Low Engagement Users,paid,D64,0,retention,5_early_retention,4,TPL_0559,09:45,push,TPL_0554,15:30,push,TPL_0560,10:30,push,TPL_0551,15:45,push
-U0089,5,Low Engagement Users,paid,D65,1,retention,5_early_retention,4,TPL_0558,09:30,push,TPL_0555,16:45,push,TPL_0557,10:15,push,TPL_0551,16:00,push
-U0089,5,Low Engagement Users,paid,D66,2,retention,5_early_retention,4,TPL_0554,09:00,push,TPL_0553,15:30,push,TPL_0551,11:45,push,TPL_0560,17:15,push
-U0089,5,Low Engagement Users,paid,D67,3,retention,5_early_retention,4,TPL_0557,11:00,push,TPL_0560,16:45,push,TPL_0553,11:45,push,TPL_0551,17:15,push
-U0089,5,Low Engagement Users,paid,D68,4,retention,5_early_retention,4,TPL_0560,10:30,push,TPL_0551,15:45,push,TPL_0552,11:00,push,TPL_0559,17:15,push
-U0089,5,Low Engagement Users,paid,D69,5,retention,5_early_retention,4,TPL_0552,09:45,push,TPL_0560,15:15,push,TPL_0558,09:15,push,TPL_0553,15:00,push
-U0089,5,Low Engagement Users,paid,D70,6,retention,5_early_retention,4,TPL_0558,10:00,push,TPL_0560,17:45,push,TPL_0551,09:15,push,TPL_0556,17:30,push
-U0090,3,Engaged Free Triers,trial,D48,0,activation,1_activation,4,TPL_0367,10:00,push,TPL_0366,06:45,push,TPL_0370,11:45,push,TPL_0364,08:30,push
-U0090,3,Engaged Free Triers,trial,D49,1,habit_formation,1_activation,4,TPL_0393,10:45,push,TPL_0400,06:45,push,TPL_0391,09:45,push,TPL_0392,06:15,push
-U0090,3,Engaged Free Triers,trial,D50,2,habit_formation,2_habit_formation,4,TPL_0398,11:00,push,TPL_0391,06:00,push,TPL_0396,10:30,push,TPL_0393,07:30,push
-U0090,3,Engaged Free Triers,trial,D51,3,feature_discovery,2_habit_formation,4,TPL_0387,10:45,push,TPL_0384,08:45,push,TPL_0389,09:15,push,TPL_0381,07:45,push
-U0090,3,Engaged Free Triers,trial,D52,4,feature_discovery,2_habit_formation,4,TPL_0389,09:45,push,TPL_0383,06:45,push,TPL_0387,10:15,push,TPL_0385,06:45,push
-U0090,3,Engaged Free Triers,trial,D53,5,feature_discovery,3_feature_discovery,4,TPL_0389,10:30,push,TPL_0386,06:30,push,TPL_0381,10:30,push,TPL_0390,07:45,push
-U0090,3,Engaged Free Triers,trial,D54,6,conversion_readiness,3_feature_discovery,4,TPL_0373,11:00,push,TPL_0376,06:15,push,TPL_0371,10:45,push,TPL_0378,07:30,push
-U0091,2,Casual Solo Users,paid,D2,0,retention,5_early_retention,2,TPL_0253,23:45,push,TPL_0255,14:00,push,,,,,,
-U0091,2,Casual Solo Users,paid,D3,1,retention,5_early_retention,2,TPL_0252,21:45,push,TPL_0257,12:45,push,,,,,,
-U0091,2,Casual Solo Users,paid,D4,2,retention,5_early_retention,2,TPL_0259,23:45,push,TPL_0258,14:30,push,,,,,,
-U0091,2,Casual Solo Users,paid,D5,3,retention,5_early_retention,2,TPL_0252,21:15,push,TPL_0260,12:30,push,,,,,,
-U0091,2,Casual Solo Users,paid,D6,4,retention,5_early_retention,2,TPL_0259,23:45,push,TPL_0255,12:00,push,,,,,,
-U0091,2,Casual Solo Users,paid,D7,5,retention,5_early_retention,2,TPL_0258,21:15,push,TPL_0252,12:00,push,,,,,,
-U0091,2,Casual Solo Users,paid,D8,6,retention,5_early_retention,2,TPL_0257,21:00,push,TPL_0253,13:00,push,,,,,,
-U0092,5,Low Engagement Users,churned,D44,0,re_engagement,9_win_back,4,TPL_0505,10:15,push,TPL_0501,16:30,push,TPL_0506,10:45,push,TPL_0509,17:00,push
-U0092,5,Low Engagement Users,churned,D45,1,re_engagement,9_win_back,4,TPL_0501,11:00,push,TPL_0507,15:30,push,TPL_0509,10:45,push,TPL_0504,15:45,push
-U0092,5,Low Engagement Users,churned,D46,2,re_engagement,9_win_back,4,TPL_0501,11:30,push,TPL_0502,16:15,push,TPL_0506,10:00,push,TPL_0509,16:00,push
-U0092,5,Low Engagement Users,churned,D47,3,re_engagement,10_re_activation,4,TPL_0506,10:00,push,TPL_0507,15:15,push,TPL_0504,09:15,push,TPL_0508,17:15,push
-U0092,5,Low Engagement Users,churned,D48,4,re_engagement,10_re_activation,4,TPL_0503,10:45,push,TPL_0502,17:00,push,TPL_0504,11:00,push,TPL_0507,16:15,push
-U0092,5,Low Engagement Users,churned,D49,5,re_engagement,10_re_activation,4,TPL_0501,11:15,push,TPL_0504,17:00,push,TPL_0510,09:30,push,TPL_0505,17:30,push
-U0092,5,Low Engagement Users,churned,D50,6,re_engagement,10_re_activation,4,TPL_0504,11:30,push,TPL_0510,16:45,push,TPL_0503,10:45,push,TPL_0506,16:15,push
-U0093,1,Social Gamifiers,paid,D13,0,retention,5_early_retention,2,TPL_0158,07:30,push,TPL_0160,11:45,push,,,,,,
-U0093,1,Social Gamifiers,paid,D14,1,retention,5_early_retention,2,TPL_0155,08:00,push,TPL_0160,09:30,push,,,,,,
-U0093,1,Social Gamifiers,paid,D15,2,retention,5_early_retention,2,TPL_0154,08:30,push,TPL_0160,10:00,push,,,,,,
-U0093,1,Social Gamifiers,paid,D16,3,retention,5_early_retention,2,TPL_0151,07:00,push,TPL_0152,10:30,push,,,,,,
-U0093,1,Social Gamifiers,paid,D17,4,retention,5_early_retention,2,TPL_0158,08:30,push,TPL_0152,10:30,push,,,,,,
-U0093,1,Social Gamifiers,paid,D18,5,retention,5_early_retention,2,TPL_0152,08:30,push,TPL_0155,09:15,push,,,,,,
-U0093,1,Social Gamifiers,paid,D19,6,retention,5_early_retention,2,TPL_0152,08:15,push,TPL_0157,09:45,push,,,,,,
-U0094,3,Engaged Free Triers,churned,D29,0,re_engagement,9_win_back,4,TPL_0305,11:30,push,TPL_0308,08:15,push,TPL_0309,11:00,push,TPL_0306,08:45,push
-U0094,3,Engaged Free Triers,churned,D30,1,re_engagement,9_win_back,4,TPL_0306,10:30,push,TPL_0302,07:45,push,TPL_0309,10:00,push,TPL_0303,08:15,push
-U0094,3,Engaged Free Triers,churned,D31,2,re_engagement,9_win_back,4,TPL_0310,10:15,push,TPL_0308,08:45,push,TPL_0309,11:30,push,TPL_0307,08:30,push
-U0094,3,Engaged Free Triers,churned,D32,3,re_engagement,10_re_activation,4,TPL_0304,09:15,push,TPL_0308,07:00,push,TPL_0310,10:15,push,TPL_0307,08:30,push
-U0094,3,Engaged Free Triers,churned,D33,4,re_engagement,10_re_activation,4,TPL_0310,11:15,push,TPL_0304,08:30,push,TPL_0301,11:00,push,TPL_0309,06:30,push
-U0094,3,Engaged Free Triers,churned,D34,5,re_engagement,10_re_activation,4,TPL_0305,09:30,push,TPL_0307,07:30,push,TPL_0302,10:30,push,TPL_0301,08:30,push
-U0094,3,Engaged Free Triers,churned,D35,6,re_engagement,10_re_activation,4,TPL_0306,10:00,push,TPL_0304,07:00,push,TPL_0302,11:00,push,TPL_0303,07:15,push
-U0095,3,Engaged Free Triers,paid,D67,0,retention,5_early_retention,4,TPL_0354,11:00,push,TPL_0352,08:45,push,TPL_0356,11:30,push,TPL_0359,07:00,push
-U0095,3,Engaged Free Triers,paid,D68,1,retention,5_early_retention,4,TPL_0360,09:15,push,TPL_0352,06:30,push,TPL_0356,10:45,push,TPL_0358,06:30,push
-U0095,3,Engaged Free Triers,paid,D69,2,retention,5_early_retention,4,TPL_0356,11:15,push,TPL_0353,06:45,push,TPL_0352,10:15,push,TPL_0357,07:00,push
-U0095,3,Engaged Free Triers,paid,D70,3,retention,5_early_retention,4,TPL_0352,09:45,push,TPL_0359,07:15,push,TPL_0353,09:15,push,TPL_0355,07:00,push
-U0095,3,Engaged Free Triers,paid,D71,4,retention,5_early_retention,4,TPL_0359,09:45,push,TPL_0358,08:45,push,TPL_0360,10:45,push,TPL_0357,07:45,push
-U0095,3,Engaged Free Triers,paid,D72,5,retention,5_early_retention,4,TPL_0351,09:00,push,TPL_0353,08:15,push,TPL_0352,11:30,push,TPL_0355,06:30,push
-U0095,3,Engaged Free Triers,paid,D73,6,retention,5_early_retention,4,TPL_0352,11:15,push,TPL_0353,06:00,push,TPL_0360,11:15,push,TPL_0359,06:30,push
-U0096,2,Casual Solo Users,paid,D17,0,retention,5_early_retention,2,TPL_0252,22:15,push,TPL_0259,12:45,push,,,,,,
-U0096,2,Casual Solo Users,paid,D18,1,retention,5_early_retention,2,TPL_0256,23:30,push,TPL_0252,12:00,push,,,,,,
-U0096,2,Casual Solo Users,paid,D19,2,retention,5_early_retention,2,TPL_0257,21:30,push,TPL_0256,13:45,push,,,,,,
-U0096,2,Casual Solo Users,paid,D20,3,retention,5_early_retention,2,TPL_0257,23:30,push,TPL_0256,13:15,push,,,,,,
-U0096,2,Casual Solo Users,paid,D21,4,retention,5_early_retention,2,TPL_0260,22:45,push,TPL_0252,13:15,push,,,,,,
-U0096,2,Casual Solo Users,paid,D22,5,retention,5_early_retention,2,TPL_0253,21:45,push,TPL_0254,12:15,push,,,,,,
-U0096,2,Casual Solo Users,paid,D23,6,retention,5_early_retention,2,TPL_0260,21:15,push,TPL_0258,12:00,push,,,,,,
-U0097,4,Social Power Users,paid,D61,0,retention,5_early_retention,4,TPL_0454,08:15,push,TPL_0453,12:30,push,TPL_0456,08:00,push,TPL_0452,13:30,push
-U0097,4,Social Power Users,paid,D62,1,retention,5_early_retention,4,TPL_0455,08:00,push,TPL_0456,14:00,push,TPL_0460,08:00,push,TPL_0453,14:00,push
-U0097,4,Social Power Users,paid,D63,2,retention,5_early_retention,4,TPL_0456,06:00,push,TPL_0460,13:45,push,TPL_0455,07:00,push,TPL_0459,14:30,push
-U0097,4,Social Power Users,paid,D64,3,retention,5_early_retention,4,TPL_0459,07:15,push,TPL_0458,12:00,push,TPL_0453,07:45,push,TPL_0456,14:00,push
-U0097,4,Social Power Users,paid,D65,4,retention,5_early_retention,4,TPL_0454,08:30,push,TPL_0451,14:15,push,TPL_0457,07:00,push,TPL_0452,14:00,push
-U0097,4,Social Power Users,paid,D66,5,retention,5_early_retention,4,TPL_0457,07:00,push,TPL_0453,12:45,push,TPL_0456,06:15,push,TPL_0452,13:15,push
-U0097,4,Social Power Users,paid,D67,6,retention,5_early_retention,4,TPL_0457,07:45,push,TPL_0456,13:15,push,TPL_0454,06:45,push,TPL_0451,12:45,push
-U0098,5,Low Engagement Users,trial,D36,0,activation,1_activation,4,TPL_0561,10:15,push,TPL_0565,15:00,push,TPL_0567,11:00,push,TPL_0564,15:45,push
-U0098,5,Low Engagement Users,trial,D37,1,habit_formation,1_activation,4,TPL_0599,09:00,push,TPL_0594,17:00,push,TPL_0598,11:00,push,TPL_0597,16:15,push
-U0098,5,Low Engagement Users,trial,D38,2,habit_formation,2_habit_formation,4,TPL_0596,10:30,push,TPL_0598,16:45,push,TPL_0597,09:00,push,TPL_0592,15:00,push
-U0098,5,Low Engagement Users,trial,D39,3,feature_discovery,2_habit_formation,4,TPL_0590,10:30,push,TPL_0586,17:30,push,TPL_0589,10:00,push,TPL_0582,15:00,push
-U0098,5,Low Engagement Users,trial,D40,4,feature_discovery,2_habit_formation,4,TPL_0588,09:15,push,TPL_0582,17:15,push,TPL_0583,10:30,push,TPL_0585,16:30,push
-U0098,5,Low Engagement Users,trial,D41,5,feature_discovery,3_feature_discovery,4,TPL_0583,11:00,push,TPL_0582,16:30,push,TPL_0585,09:00,push,TPL_0590,16:45,push
-U0098,5,Low Engagement Users,trial,D42,6,conversion_readiness,3_feature_discovery,4,TPL_0578,10:30,push,TPL_0580,16:45,push,TPL_0571,10:15,push,TPL_0575,15:15,push
-U0099,4,Social Power Users,trial,D24,0,activation,1_activation,4,TPL_0469,08:00,push,TPL_0462,12:00,push,TPL_0464,07:45,push,TPL_0463,14:45,push
-U0099,4,Social Power Users,trial,D25,1,habit_formation,1_activation,4,TPL_0493,06:45,push,TPL_0491,13:00,push,TPL_0500,08:15,push,TPL_0497,13:45,push
-U0099,4,Social Power Users,trial,D26,2,habit_formation,2_habit_formation,4,TPL_0492,06:45,push,TPL_0497,13:00,push,TPL_0500,06:30,push,TPL_0498,14:30,push
-U0099,4,Social Power Users,trial,D27,3,feature_discovery,2_habit_formation,4,TPL_0489,06:15,push,TPL_0482,14:30,push,TPL_0485,08:00,push,TPL_0481,13:15,push
-U0099,4,Social Power Users,trial,D28,4,feature_discovery,2_habit_formation,4,TPL_0485,07:30,push,TPL_0484,14:45,push,TPL_0488,06:00,push,TPL_0487,12:15,push
-U0099,4,Social Power Users,trial,D29,5,feature_discovery,3_feature_discovery,4,TPL_0485,08:45,push,TPL_0488,13:15,push,TPL_0481,06:45,push,TPL_0484,13:15,push
-U0099,4,Social Power Users,trial,D30,6,conversion_readiness,3_feature_discovery,4,TPL_0474,07:30,push,TPL_0479,12:15,push,TPL_0476,08:45,push,TPL_0472,13:15,push
+U0000,0,Low Engagement Users,trial,D46,0,activation,1_activation,2,TPL_0062,20:00,push,TPL_0070,06:30,push,,,,,,
+U0000,0,Low Engagement Users,trial,D47,1,habit_formation,1_activation,2,TPL_0097,18:15,push,TPL_0093,06:00,push,,,,,,
+U0000,0,Low Engagement Users,trial,D48,2,habit_formation,2_habit_formation,2,TPL_0095,20:00,push,TPL_0098,08:45,push,,,,,,
+U0000,0,Low Engagement Users,trial,D49,3,feature_discovery,2_habit_formation,2,TPL_0083,18:00,push,TPL_0084,06:15,push,,,,,,
+U0000,0,Low Engagement Users,trial,D50,4,feature_discovery,2_habit_formation,2,TPL_0084,18:00,push,TPL_0083,08:15,push,,,,,,
+U0000,0,Low Engagement Users,trial,D51,5,feature_discovery,3_feature_discovery,2,TPL_0088,20:45,push,TPL_0089,06:45,push,,,,,,
+U0000,0,Low Engagement Users,trial,D52,6,conversion_readiness,3_feature_discovery,2,TPL_0078,20:30,push,TPL_0079,06:15,push,,,,,,
+U0001,0,Low Engagement Users,inactive,D11,0,activation,11_gentle_nudge,2,TPL_0012,20:45,push,TPL_0019,07:30,push,,,,,,
+U0001,0,Low Engagement Users,inactive,D12,1,activation,11_gentle_nudge,2,TPL_0017,18:15,push,TPL_0020,07:00,push,,,,,,
+U0001,0,Low Engagement Users,inactive,D13,2,activation,11_gentle_nudge,2,TPL_0012,18:45,push,TPL_0013,06:30,push,,,,,,
+U0001,0,Low Engagement Users,inactive,D14,3,activation,12_last_chance,2,TPL_0013,19:30,push,TPL_0014,06:45,push,,,,,,
+U0001,0,Low Engagement Users,inactive,D15,4,activation,12_last_chance,2,TPL_0016,20:00,push,TPL_0013,07:00,push,,,,,,
+U0001,0,Low Engagement Users,inactive,D16,5,activation,12_last_chance,2,TPL_0014,20:30,push,TPL_0019,08:30,push,,,,,,
+U0001,0,Low Engagement Users,inactive,D17,6,activation,12_last_chance,2,TPL_0018,20:15,push,TPL_0020,08:00,push,,,,,,
+U0002,0,Low Engagement Users,paid,D61,0,retention,5_early_retention,2,TPL_0059,18:15,push,TPL_0055,07:00,push,,,,,,
+U0002,0,Low Engagement Users,paid,D62,1,retention,5_early_retention,2,TPL_0054,18:00,push,TPL_0059,07:30,push,,,,,,
+U0002,0,Low Engagement Users,paid,D63,2,retention,5_early_retention,2,TPL_0052,19:30,push,TPL_0056,06:30,push,,,,,,
+U0002,0,Low Engagement Users,paid,D64,3,retention,5_early_retention,2,TPL_0058,19:15,push,TPL_0060,08:30,push,,,,,,
+U0002,0,Low Engagement Users,paid,D65,4,retention,5_early_retention,2,TPL_0056,20:00,push,TPL_0055,08:15,push,,,,,,
+U0002,0,Low Engagement Users,paid,D66,5,retention,5_early_retention,2,TPL_0056,20:15,push,TPL_0052,06:45,push,,,,,,
+U0002,0,Low Engagement Users,paid,D67,6,retention,5_early_retention,2,TPL_0053,19:30,push,TPL_0057,08:15,push,,,,,,
+U0003,1,Social Gamifiers,paid,D79,0,retention,5_early_retention,2,TPL_0157,14:30,push,TPL_0153,18:15,push,,,,,,
+U0003,1,Social Gamifiers,paid,D80,1,retention,5_early_retention,2,TPL_0160,12:30,push,TPL_0151,19:30,push,,,,,,
+U0003,1,Social Gamifiers,paid,D81,2,retention,5_early_retention,2,TPL_0158,12:15,push,TPL_0154,20:30,push,,,,,,
+U0003,1,Social Gamifiers,paid,D82,3,retention,5_early_retention,2,TPL_0160,12:45,push,TPL_0151,19:45,push,,,,,,
+U0003,1,Social Gamifiers,paid,D83,4,retention,5_early_retention,2,TPL_0158,12:30,push,TPL_0160,18:15,push,,,,,,
+U0003,1,Social Gamifiers,paid,D84,5,retention,5_early_retention,2,TPL_0158,14:30,push,TPL_0160,20:45,push,,,,,,
+U0003,1,Social Gamifiers,paid,D85,6,retention,5_early_retention,2,TPL_0156,14:45,push,TPL_0153,19:15,push,,,,,,
+U0004,3,Core Engaged,trial,D87,0,activation,1_activation,4,TPL_0363,18:45,push,TPL_0370,12:00,push,TPL_0361,18:15,push,TPL_0369,14:15,push
+U0004,3,Core Engaged,trial,D88,1,habit_formation,1_activation,4,TPL_0393,20:45,push,TPL_0398,14:00,push,TPL_0400,19:45,push,TPL_0392,14:45,push
+U0004,3,Core Engaged,trial,D89,2,habit_formation,2_habit_formation,4,TPL_0395,20:30,push,TPL_0394,14:00,push,TPL_0398,20:00,push,TPL_0396,14:30,push
+U0004,3,Core Engaged,trial,D90,3,feature_discovery,2_habit_formation,4,TPL_0382,20:30,push,TPL_0385,12:30,push,TPL_0388,19:15,push,TPL_0383,13:00,push
+U0004,3,Core Engaged,trial,D91,4,feature_discovery,2_habit_formation,4,TPL_0387,20:30,push,TPL_0385,14:15,push,TPL_0388,20:00,push,TPL_0381,14:30,push
+U0004,3,Core Engaged,trial,D92,5,feature_discovery,3_feature_discovery,4,TPL_0381,20:15,push,TPL_0384,12:30,push,TPL_0385,18:00,push,TPL_0388,14:30,push
+U0004,3,Core Engaged,trial,D93,6,conversion_readiness,3_feature_discovery,4,TPL_0372,19:00,push,TPL_0379,12:30,push,TPL_0371,19:15,push,TPL_0374,12:15,push
+U0005,1,Social Gamifiers,trial,D82,0,activation,1_activation,2,TPL_0165,14:00,push,TPL_0169,18:45,push,,,,,,
+U0005,1,Social Gamifiers,trial,D83,1,habit_formation,1_activation,2,TPL_0198,12:15,push,TPL_0192,18:45,push,,,,,,
+U0005,1,Social Gamifiers,trial,D84,2,habit_formation,2_habit_formation,2,TPL_0196,14:15,push,TPL_0193,19:45,push,,,,,,
+U0005,1,Social Gamifiers,trial,D85,3,feature_discovery,2_habit_formation,2,TPL_0189,12:15,push,TPL_0187,20:30,push,,,,,,
+U0005,1,Social Gamifiers,trial,D86,4,feature_discovery,2_habit_formation,2,TPL_0188,13:30,push,TPL_0182,19:45,push,,,,,,
+U0005,1,Social Gamifiers,trial,D87,5,feature_discovery,3_feature_discovery,2,TPL_0185,12:15,push,TPL_0188,18:00,push,,,,,,
+U0005,1,Social Gamifiers,trial,D88,6,conversion_readiness,3_feature_discovery,2,TPL_0178,13:00,push,TPL_0172,20:15,push,,,,,,
+U0006,4,Social Achievers,trial,D7,0,activation,1_activation,4,TPL_0468,14:15,push,TPL_0466,09:00,push,TPL_0467,14:00,push,TPL_0461,09:00,push
+U0006,4,Social Achievers,trial,D8,1,habit_formation,1_activation,4,TPL_0500,12:30,push,TPL_0493,09:15,push,TPL_0495,13:45,push,TPL_0499,09:15,push
+U0006,4,Social Achievers,trial,D9,2,habit_formation,2_habit_formation,4,TPL_0497,14:45,push,TPL_0500,09:45,push,TPL_0498,13:15,push,TPL_0493,09:00,push
+U0006,4,Social Achievers,trial,D10,3,feature_discovery,2_habit_formation,4,TPL_0481,14:45,push,TPL_0490,10:45,push,TPL_0482,13:45,push,TPL_0488,11:00,push
+U0006,4,Social Achievers,trial,D11,4,feature_discovery,2_habit_formation,4,TPL_0482,14:00,push,TPL_0481,09:45,push,TPL_0487,14:30,push,TPL_0490,09:15,push
+U0006,4,Social Achievers,trial,D12,5,feature_discovery,3_feature_discovery,4,TPL_0488,12:15,push,TPL_0484,11:45,push,TPL_0490,12:45,push,TPL_0481,09:30,push
+U0006,4,Social Achievers,trial,D13,6,conversion_readiness,3_feature_discovery,4,TPL_0480,13:15,push,TPL_0475,09:45,push,TPL_0478,14:00,push,TPL_0479,09:00,push
+U0007,0,Low Engagement Users,churned,D20,0,re_engagement,9_win_back,2,TPL_0008,18:15,push,TPL_0003,06:45,push,,,,,,
+U0007,0,Low Engagement Users,churned,D21,1,re_engagement,9_win_back,2,TPL_0010,19:45,push,TPL_0004,06:45,push,,,,,,
+U0007,0,Low Engagement Users,churned,D22,2,re_engagement,9_win_back,2,TPL_0005,18:15,push,TPL_0007,07:00,push,,,,,,
+U0007,0,Low Engagement Users,churned,D23,3,re_engagement,10_re_activation,2,TPL_0010,19:30,push,TPL_0002,07:30,push,,,,,,
+U0007,0,Low Engagement Users,churned,D24,4,re_engagement,10_re_activation,2,TPL_0007,19:45,push,TPL_0010,06:15,push,,,,,,
+U0007,0,Low Engagement Users,churned,D25,5,re_engagement,10_re_activation,2,TPL_0007,19:15,push,TPL_0003,06:00,push,,,,,,
+U0007,0,Low Engagement Users,churned,D26,6,re_engagement,10_re_activation,2,TPL_0004,20:30,push,TPL_0002,06:00,push,,,,,,
+U0008,3,Core Engaged,paid,D80,0,retention,5_early_retention,4,TPL_0354,20:45,push,TPL_0359,14:15,push,TPL_0352,18:00,push,TPL_0357,12:00,push
+U0008,3,Core Engaged,paid,D81,1,retention,5_early_retention,4,TPL_0351,20:00,push,TPL_0357,14:15,push,TPL_0358,19:00,push,TPL_0353,14:15,push
+U0008,3,Core Engaged,paid,D82,2,retention,5_early_retention,4,TPL_0354,20:00,push,TPL_0352,14:00,push,TPL_0357,19:30,push,TPL_0360,13:15,push
+U0008,3,Core Engaged,paid,D83,3,retention,5_early_retention,4,TPL_0352,20:30,push,TPL_0355,12:30,push,TPL_0354,19:15,push,TPL_0357,14:30,push
+U0008,3,Core Engaged,paid,D84,4,retention,5_early_retention,4,TPL_0354,19:30,push,TPL_0359,12:00,push,TPL_0352,19:00,push,TPL_0358,12:15,push
+U0008,3,Core Engaged,paid,D85,5,retention,5_early_retention,4,TPL_0358,20:30,push,TPL_0359,12:30,push,TPL_0352,18:15,push,TPL_0360,13:30,push
+U0008,3,Core Engaged,paid,D86,6,retention,5_early_retention,4,TPL_0351,18:45,push,TPL_0356,14:30,push,TPL_0358,20:00,push,TPL_0352,14:30,push
+U0009,5,Casual Explorers,paid,D86,0,retention,5_early_retention,4,TPL_0552,20:00,push,TPL_0558,21:30,push,TPL_0551,18:00,push,TPL_0559,23:15,push
+U0009,5,Casual Explorers,paid,D87,1,retention,5_early_retention,4,TPL_0551,19:30,push,TPL_0558,23:15,push,TPL_0560,20:30,push,TPL_0555,21:30,push
+U0009,5,Casual Explorers,paid,D88,2,retention,5_early_retention,4,TPL_0551,20:45,push,TPL_0557,22:00,push,TPL_0559,18:45,push,TPL_0555,22:00,push
+U0009,5,Casual Explorers,paid,D89,3,retention,5_early_retention,4,TPL_0553,18:30,push,TPL_0555,21:30,push,TPL_0554,18:45,push,TPL_0557,23:45,push
+U0009,5,Casual Explorers,paid,D90,4,retention,5_early_retention,4,TPL_0556,20:00,push,TPL_0554,21:00,push,TPL_0558,20:15,push,TPL_0551,23:00,push
+U0009,5,Casual Explorers,paid,D91,5,retention,5_early_retention,4,TPL_0560,19:15,push,TPL_0553,22:15,push,TPL_0551,18:30,push,TPL_0552,22:00,push
+U0009,5,Casual Explorers,paid,D92,6,retention,5_early_retention,4,TPL_0553,19:15,push,TPL_0551,23:15,push,TPL_0560,20:00,push,TPL_0559,22:45,push
+U0010,0,Low Engagement Users,trial,D79,0,activation,1_activation,2,TPL_0061,20:15,push,TPL_0070,06:15,push,,,,,,
+U0010,0,Low Engagement Users,trial,D80,1,habit_formation,1_activation,2,TPL_0095,18:45,push,TPL_0098,06:15,push,,,,,,
+U0010,0,Low Engagement Users,trial,D81,2,habit_formation,2_habit_formation,2,TPL_0098,20:30,push,TPL_0093,07:15,push,,,,,,
+U0010,0,Low Engagement Users,trial,D82,3,feature_discovery,2_habit_formation,2,TPL_0086,19:15,push,TPL_0089,08:00,push,,,,,,
+U0010,0,Low Engagement Users,trial,D83,4,feature_discovery,2_habit_formation,2,TPL_0089,19:00,push,TPL_0084,07:15,push,,,,,,
+U0010,0,Low Engagement Users,trial,D84,5,feature_discovery,3_feature_discovery,2,TPL_0087,18:45,push,TPL_0086,07:30,push,,,,,,
+U0010,0,Low Engagement Users,trial,D85,6,conversion_readiness,3_feature_discovery,2,TPL_0071,18:15,push,TPL_0075,06:15,push,,,,,,
+U0011,3,Core Engaged,inactive,D69,0,activation,11_gentle_nudge,4,TPL_0319,19:30,push,TPL_0317,13:00,push,TPL_0311,19:30,push,TPL_0312,14:45,push
+U0011,3,Core Engaged,inactive,D70,1,activation,11_gentle_nudge,4,TPL_0320,20:30,push,TPL_0312,12:00,push,TPL_0316,19:15,push,TPL_0313,14:30,push
+U0011,3,Core Engaged,inactive,D71,2,activation,11_gentle_nudge,4,TPL_0314,18:00,push,TPL_0319,14:45,push,TPL_0318,19:30,push,TPL_0313,13:00,push
+U0011,3,Core Engaged,inactive,D72,3,activation,12_last_chance,4,TPL_0318,19:15,push,TPL_0315,13:00,push,TPL_0312,20:45,push,TPL_0313,12:15,push
+U0011,3,Core Engaged,inactive,D73,4,activation,12_last_chance,4,TPL_0315,19:45,push,TPL_0312,12:30,push,TPL_0320,20:30,push,TPL_0316,14:00,push
+U0011,3,Core Engaged,inactive,D74,5,activation,12_last_chance,4,TPL_0312,20:30,push,TPL_0315,14:30,push,TPL_0319,20:45,push,TPL_0318,13:45,push
+U0011,3,Core Engaged,inactive,D75,6,activation,12_last_chance,4,TPL_0315,20:30,push,TPL_0312,14:15,push,TPL_0319,18:45,push,TPL_0316,14:45,push
+U0012,3,Core Engaged,churned,D71,0,re_engagement,9_win_back,4,TPL_0303,20:15,push,TPL_0302,14:30,push,TPL_0304,19:00,push,TPL_0308,13:30,push
+U0012,3,Core Engaged,churned,D72,1,re_engagement,9_win_back,4,TPL_0310,18:45,push,TPL_0306,14:30,push,TPL_0302,19:45,push,TPL_0308,13:15,push
+U0012,3,Core Engaged,churned,D73,2,re_engagement,9_win_back,4,TPL_0308,20:45,push,TPL_0310,14:15,push,TPL_0306,20:00,push,TPL_0309,13:30,push
+U0012,3,Core Engaged,churned,D74,3,re_engagement,10_re_activation,4,TPL_0306,18:15,push,TPL_0304,14:30,push,TPL_0309,18:15,push,TPL_0310,12:00,push
+U0012,3,Core Engaged,churned,D75,4,re_engagement,10_re_activation,4,TPL_0308,18:15,push,TPL_0309,13:00,push,TPL_0307,19:45,push,TPL_0304,14:15,push
+U0012,3,Core Engaged,churned,D76,5,re_engagement,10_re_activation,4,TPL_0303,20:45,push,TPL_0310,13:45,push,TPL_0301,18:15,push,TPL_0306,14:00,push
+U0012,3,Core Engaged,churned,D77,6,re_engagement,10_re_activation,4,TPL_0303,18:45,push,TPL_0307,12:15,push,TPL_0306,20:45,push,TPL_0301,12:15,push
+U0013,1,Social Gamifiers,trial,D24,0,activation,1_activation,2,TPL_0164,12:45,push,TPL_0161,18:45,push,,,,,,
+U0013,1,Social Gamifiers,trial,D25,1,habit_formation,1_activation,2,TPL_0195,14:30,push,TPL_0193,19:45,push,,,,,,
+U0013,1,Social Gamifiers,trial,D26,2,habit_formation,2_habit_formation,2,TPL_0200,14:45,push,TPL_0191,18:45,push,,,,,,
+U0013,1,Social Gamifiers,trial,D27,3,feature_discovery,2_habit_formation,2,TPL_0190,13:30,push,TPL_0183,18:30,push,,,,,,
+U0013,1,Social Gamifiers,trial,D28,4,feature_discovery,2_habit_formation,2,TPL_0186,14:45,push,TPL_0181,20:15,push,,,,,,
+U0013,1,Social Gamifiers,trial,D29,5,feature_discovery,3_feature_discovery,2,TPL_0190,13:45,push,TPL_0184,18:30,push,,,,,,
+U0013,1,Social Gamifiers,trial,D30,6,conversion_readiness,3_feature_discovery,2,TPL_0179,12:30,push,TPL_0178,19:30,push,,,,,,
+U0014,1,Social Gamifiers,trial,D81,0,activation,1_activation,2,TPL_0162,14:00,push,TPL_0163,18:15,push,,,,,,
+U0014,1,Social Gamifiers,trial,D82,1,habit_formation,1_activation,2,TPL_0195,12:45,push,TPL_0191,20:15,push,,,,,,
+U0014,1,Social Gamifiers,trial,D83,2,habit_formation,2_habit_formation,2,TPL_0196,14:15,push,TPL_0198,18:45,push,,,,,,
+U0014,1,Social Gamifiers,trial,D84,3,feature_discovery,2_habit_formation,2,TPL_0190,13:30,push,TPL_0185,20:45,push,,,,,,
+U0014,1,Social Gamifiers,trial,D85,4,feature_discovery,2_habit_formation,2,TPL_0184,13:00,push,TPL_0183,18:45,push,,,,,,
+U0014,1,Social Gamifiers,trial,D86,5,feature_discovery,3_feature_discovery,2,TPL_0184,13:00,push,TPL_0183,20:45,push,,,,,,
+U0014,1,Social Gamifiers,trial,D87,6,conversion_readiness,3_feature_discovery,2,TPL_0171,13:00,push,TPL_0172,19:30,push,,,,,,
+U0015,0,Low Engagement Users,trial,D88,0,activation,1_activation,2,TPL_0067,19:45,push,TPL_0062,08:15,push,,,,,,
+U0015,0,Low Engagement Users,trial,D89,1,habit_formation,1_activation,2,TPL_0092,19:15,push,TPL_0095,07:45,push,,,,,,
+U0015,0,Low Engagement Users,trial,D90,2,habit_formation,2_habit_formation,2,TPL_0095,19:00,push,TPL_0094,07:30,push,,,,,,
+U0015,0,Low Engagement Users,trial,D91,3,feature_discovery,2_habit_formation,2,TPL_0086,20:45,push,TPL_0083,08:15,push,,,,,,
+U0015,0,Low Engagement Users,trial,D92,4,feature_discovery,2_habit_formation,2,TPL_0086,19:15,push,TPL_0089,08:00,push,,,,,,
+U0015,0,Low Engagement Users,trial,D93,5,feature_discovery,3_feature_discovery,2,TPL_0086,19:00,push,TPL_0089,06:45,push,,,,,,
+U0015,0,Low Engagement Users,trial,D94,6,conversion_readiness,3_feature_discovery,2,TPL_0076,18:45,push,TPL_0074,06:00,push,,,,,,
+U0016,0,Low Engagement Users,trial,D11,0,activation,1_activation,2,TPL_0068,19:45,push,TPL_0063,07:15,push,,,,,,
+U0016,0,Low Engagement Users,trial,D12,1,habit_formation,1_activation,2,TPL_0100,19:30,push,TPL_0093,07:45,push,,,,,,
+U0016,0,Low Engagement Users,trial,D13,2,habit_formation,2_habit_formation,2,TPL_0100,19:45,push,TPL_0093,07:00,push,,,,,,
+U0016,0,Low Engagement Users,trial,D14,3,feature_discovery,2_habit_formation,2,TPL_0083,19:00,push,TPL_0085,08:00,push,,,,,,
+U0016,0,Low Engagement Users,trial,D15,4,feature_discovery,2_habit_formation,2,TPL_0084,19:15,push,TPL_0082,08:00,push,,,,,,
+U0016,0,Low Engagement Users,trial,D16,5,feature_discovery,3_feature_discovery,2,TPL_0082,20:00,push,TPL_0089,06:15,push,,,,,,
+U0016,0,Low Engagement Users,trial,D17,6,conversion_readiness,3_feature_discovery,2,TPL_0080,18:00,push,TPL_0074,08:15,push,,,,,,
+U0017,1,Social Gamifiers,paid,D14,0,retention,5_early_retention,2,TPL_0155,12:15,push,TPL_0160,19:00,push,,,,,,
+U0017,1,Social Gamifiers,paid,D15,1,retention,5_early_retention,2,TPL_0160,14:15,push,TPL_0155,19:30,push,,,,,,
+U0017,1,Social Gamifiers,paid,D16,2,retention,5_early_retention,2,TPL_0151,13:15,push,TPL_0159,20:00,push,,,,,,
+U0017,1,Social Gamifiers,paid,D17,3,retention,5_early_retention,2,TPL_0155,12:30,push,TPL_0151,18:00,push,,,,,,
+U0017,1,Social Gamifiers,paid,D18,4,retention,5_early_retention,2,TPL_0152,13:45,push,TPL_0154,19:15,push,,,,,,
+U0017,1,Social Gamifiers,paid,D19,5,retention,5_early_retention,2,TPL_0151,12:15,push,TPL_0154,18:30,push,,,,,,
+U0017,1,Social Gamifiers,paid,D20,6,retention,5_early_retention,2,TPL_0152,14:00,push,TPL_0160,20:00,push,,,,,,
+U0018,4,Social Achievers,paid,D58,0,retention,5_early_retention,4,TPL_0456,13:45,push,TPL_0451,11:30,push,TPL_0455,12:30,push,TPL_0454,09:45,push
+U0018,4,Social Achievers,paid,D59,1,retention,5_early_retention,4,TPL_0457,13:00,push,TPL_0459,10:30,push,TPL_0454,14:45,push,TPL_0456,11:15,push
+U0018,4,Social Achievers,paid,D60,2,retention,5_early_retention,4,TPL_0454,13:15,push,TPL_0452,11:30,push,TPL_0457,14:45,push,TPL_0460,10:45,push
+U0018,4,Social Achievers,paid,D61,3,retention,5_early_retention,4,TPL_0459,14:30,push,TPL_0458,10:15,push,TPL_0456,12:30,push,TPL_0451,10:15,push
+U0018,4,Social Achievers,paid,D62,4,retention,5_early_retention,4,TPL_0454,13:45,push,TPL_0458,10:00,push,TPL_0452,13:30,push,TPL_0460,09:45,push
+U0018,4,Social Achievers,paid,D63,5,retention,5_early_retention,4,TPL_0451,12:30,push,TPL_0452,10:30,push,TPL_0453,13:30,push,TPL_0459,11:00,push
+U0018,4,Social Achievers,paid,D64,6,retention,5_early_retention,4,TPL_0453,14:15,push,TPL_0451,09:15,push,TPL_0455,14:45,push,TPL_0456,10:15,push
+U0019,0,Low Engagement Users,trial,D25,0,activation,1_activation,2,TPL_0067,20:45,push,TPL_0062,08:45,push,,,,,,
+U0019,0,Low Engagement Users,trial,D26,1,habit_formation,1_activation,2,TPL_0099,19:00,push,TPL_0094,06:30,push,,,,,,
+U0019,0,Low Engagement Users,trial,D27,2,habit_formation,2_habit_formation,2,TPL_0099,18:45,push,TPL_0094,08:15,push,,,,,,
+U0019,0,Low Engagement Users,trial,D28,3,feature_discovery,2_habit_formation,2,TPL_0084,19:30,push,TPL_0085,07:30,push,,,,,,
+U0019,0,Low Engagement Users,trial,D29,4,feature_discovery,2_habit_formation,2,TPL_0082,19:30,push,TPL_0085,07:45,push,,,,,,
+U0019,0,Low Engagement Users,trial,D30,5,feature_discovery,3_feature_discovery,2,TPL_0087,19:30,push,TPL_0089,07:15,push,,,,,,
+U0019,0,Low Engagement Users,trial,D31,6,conversion_readiness,3_feature_discovery,2,TPL_0074,18:15,push,TPL_0078,07:00,push,,,,,,
+U0020,0,Low Engagement Users,paid,D25,0,retention,5_early_retention,2,TPL_0060,20:15,push,TPL_0056,06:15,push,,,,,,
+U0020,0,Low Engagement Users,paid,D26,1,retention,5_early_retention,2,TPL_0058,20:45,push,TPL_0060,07:30,push,,,,,,
+U0020,0,Low Engagement Users,paid,D27,2,retention,5_early_retention,2,TPL_0059,18:15,push,TPL_0056,07:15,push,,,,,,
+U0020,0,Low Engagement Users,paid,D28,3,retention,5_early_retention,2,TPL_0057,19:15,push,TPL_0056,07:00,push,,,,,,
+U0020,0,Low Engagement Users,paid,D29,4,retention,5_early_retention,2,TPL_0060,20:15,push,TPL_0052,07:00,push,,,,,,
+U0020,0,Low Engagement Users,paid,D30,5,retention,5_early_retention,2,TPL_0053,18:30,push,TPL_0059,08:15,push,,,,,,
+U0020,0,Low Engagement Users,paid,D31,6,retention,5_early_retention,2,TPL_0056,20:45,push,TPL_0058,06:00,push,,,,,,
+U0021,0,Low Engagement Users,trial,D46,0,activation,1_activation,2,TPL_0065,20:30,push,TPL_0068,07:45,push,,,,,,
+U0021,0,Low Engagement Users,trial,D47,1,habit_formation,1_activation,2,TPL_0099,19:30,push,TPL_0096,06:00,push,,,,,,
+U0021,0,Low Engagement Users,trial,D48,2,habit_formation,2_habit_formation,2,TPL_0097,19:45,push,TPL_0094,06:00,push,,,,,,
+U0021,0,Low Engagement Users,trial,D49,3,feature_discovery,2_habit_formation,2,TPL_0088,19:45,push,TPL_0084,06:00,push,,,,,,
+U0021,0,Low Engagement Users,trial,D50,4,feature_discovery,2_habit_formation,2,TPL_0087,18:15,push,TPL_0086,08:30,push,,,,,,
+U0021,0,Low Engagement Users,trial,D51,5,feature_discovery,3_feature_discovery,2,TPL_0085,18:15,push,TPL_0088,06:45,push,,,,,,
+U0021,0,Low Engagement Users,trial,D52,6,conversion_readiness,3_feature_discovery,2,TPL_0080,20:15,push,TPL_0074,08:45,push,,,,,,
+U0022,3,Core Engaged,trial,D31,0,activation,1_activation,4,TPL_0361,19:45,push,TPL_0369,13:45,push,TPL_0365,19:00,push,TPL_0363,14:00,push
+U0022,3,Core Engaged,trial,D32,1,habit_formation,1_activation,4,TPL_0400,18:15,push,TPL_0393,13:00,push,TPL_0399,18:15,push,TPL_0396,12:00,push
+U0022,3,Core Engaged,trial,D33,2,habit_formation,2_habit_formation,4,TPL_0399,18:00,push,TPL_0396,13:45,push,TPL_0394,20:45,push,TPL_0398,13:00,push
+U0022,3,Core Engaged,trial,D34,3,feature_discovery,2_habit_formation,4,TPL_0385,18:30,push,TPL_0381,14:30,push,TPL_0386,20:45,push,TPL_0383,12:15,push
+U0022,3,Core Engaged,trial,D35,4,feature_discovery,2_habit_formation,4,TPL_0388,19:15,push,TPL_0382,13:00,push,TPL_0386,20:15,push,TPL_0381,14:15,push
+U0022,3,Core Engaged,trial,D36,5,feature_discovery,3_feature_discovery,4,TPL_0383,19:15,push,TPL_0387,12:00,push,TPL_0389,18:30,push,TPL_0388,14:30,push
+U0022,3,Core Engaged,trial,D37,6,conversion_readiness,3_feature_discovery,4,TPL_0373,19:00,push,TPL_0375,13:30,push,TPL_0378,20:45,push,TPL_0379,13:45,push
+U0023,4,Social Achievers,trial,D9,0,activation,1_activation,4,TPL_0469,13:00,push,TPL_0463,11:00,push,TPL_0464,13:30,push,TPL_0467,11:30,push
+U0023,4,Social Achievers,trial,D10,1,habit_formation,1_activation,4,TPL_0497,12:00,push,TPL_0494,09:00,push,TPL_0500,14:30,push,TPL_0492,11:00,push
+U0023,4,Social Achievers,trial,D11,2,habit_formation,2_habit_formation,4,TPL_0500,12:45,push,TPL_0499,11:45,push,TPL_0494,13:15,push,TPL_0493,11:45,push
+U0023,4,Social Achievers,trial,D12,3,feature_discovery,2_habit_formation,4,TPL_0481,14:45,push,TPL_0482,09:45,push,TPL_0487,13:45,push,TPL_0485,10:30,push
+U0023,4,Social Achievers,trial,D13,4,feature_discovery,2_habit_formation,4,TPL_0488,14:00,push,TPL_0484,09:30,push,TPL_0487,13:45,push,TPL_0490,10:45,push
+U0023,4,Social Achievers,trial,D14,5,feature_discovery,3_feature_discovery,4,TPL_0485,14:00,push,TPL_0482,10:00,push,TPL_0487,13:30,push,TPL_0484,10:00,push
+U0023,4,Social Achievers,trial,D15,6,conversion_readiness,3_feature_discovery,4,TPL_0475,13:00,push,TPL_0479,11:45,push,TPL_0478,13:00,push,TPL_0474,09:30,push
+U0024,0,Low Engagement Users,paid,D15,0,retention,5_early_retention,2,TPL_0052,20:45,push,TPL_0059,08:45,push,,,,,,
+U0024,0,Low Engagement Users,paid,D16,1,retention,5_early_retention,2,TPL_0055,18:15,push,TPL_0058,07:15,push,,,,,,
+U0024,0,Low Engagement Users,paid,D17,2,retention,5_early_retention,2,TPL_0059,19:45,push,TPL_0054,08:45,push,,,,,,
+U0024,0,Low Engagement Users,paid,D18,3,retention,5_early_retention,2,TPL_0053,18:00,push,TPL_0059,08:15,push,,,,,,
+U0024,0,Low Engagement Users,paid,D19,4,retention,5_early_retention,2,TPL_0053,20:15,push,TPL_0057,07:00,push,,,,,,
+U0024,0,Low Engagement Users,paid,D20,5,retention,5_early_retention,2,TPL_0056,20:45,push,TPL_0059,06:15,push,,,,,,
+U0024,0,Low Engagement Users,paid,D21,6,retention,5_early_retention,2,TPL_0055,18:45,push,TPL_0057,06:15,push,,,,,,
+U0025,5,Casual Explorers,churned,D70,0,re_engagement,9_win_back,4,TPL_0503,19:30,push,TPL_0506,23:30,push,TPL_0509,19:45,push,TPL_0501,22:15,push
+U0025,5,Casual Explorers,churned,D71,1,re_engagement,9_win_back,4,TPL_0510,19:15,push,TPL_0504,22:15,push,TPL_0506,20:15,push,TPL_0502,21:30,push
+U0025,5,Casual Explorers,churned,D72,2,re_engagement,9_win_back,4,TPL_0506,19:30,push,TPL_0509,23:30,push,TPL_0508,18:30,push,TPL_0504,23:30,push
+U0025,5,Casual Explorers,churned,D73,3,re_engagement,10_re_activation,4,TPL_0503,20:45,push,TPL_0508,21:45,push,TPL_0507,20:45,push,TPL_0505,22:30,push
+U0025,5,Casual Explorers,churned,D74,4,re_engagement,10_re_activation,4,TPL_0505,20:45,push,TPL_0507,22:30,push,TPL_0501,18:15,push,TPL_0508,23:45,push
+U0025,5,Casual Explorers,churned,D75,5,re_engagement,10_re_activation,4,TPL_0504,18:45,push,TPL_0510,21:30,push,TPL_0505,20:45,push,TPL_0506,23:45,push
+U0025,5,Casual Explorers,churned,D76,6,re_engagement,10_re_activation,4,TPL_0504,19:15,push,TPL_0509,22:00,push,TPL_0508,18:30,push,TPL_0501,21:45,push
+U0026,1,Social Gamifiers,trial,D16,0,activation,1_activation,2,TPL_0163,12:45,push,TPL_0162,18:15,push,,,,,,
+U0026,1,Social Gamifiers,trial,D17,1,habit_formation,1_activation,2,TPL_0197,13:15,push,TPL_0199,18:45,push,,,,,,
+U0026,1,Social Gamifiers,trial,D18,2,habit_formation,2_habit_formation,2,TPL_0198,13:30,push,TPL_0192,20:45,push,,,,,,
+U0026,1,Social Gamifiers,trial,D19,3,feature_discovery,2_habit_formation,2,TPL_0184,14:00,push,TPL_0182,19:45,push,,,,,,
+U0026,1,Social Gamifiers,trial,D20,4,feature_discovery,2_habit_formation,2,TPL_0190,13:45,push,TPL_0184,20:00,push,,,,,,
+U0026,1,Social Gamifiers,trial,D21,5,feature_discovery,3_feature_discovery,2,TPL_0189,14:00,push,TPL_0182,18:30,push,,,,,,
+U0026,1,Social Gamifiers,trial,D22,6,conversion_readiness,3_feature_discovery,2,TPL_0175,12:00,push,TPL_0174,19:00,push,,,,,,
+U0027,0,Low Engagement Users,paid,D22,0,retention,5_early_retention,2,TPL_0058,20:00,push,TPL_0056,07:15,push,,,,,,
+U0027,0,Low Engagement Users,paid,D23,1,retention,5_early_retention,2,TPL_0060,20:30,push,TPL_0058,06:00,push,,,,,,
+U0027,0,Low Engagement Users,paid,D24,2,retention,5_early_retention,2,TPL_0052,19:00,push,TPL_0058,07:30,push,,,,,,
+U0027,0,Low Engagement Users,paid,D25,3,retention,5_early_retention,2,TPL_0059,19:45,push,TPL_0054,06:15,push,,,,,,
+U0027,0,Low Engagement Users,paid,D26,4,retention,5_early_retention,2,TPL_0059,20:45,push,TPL_0054,08:15,push,,,,,,
+U0027,0,Low Engagement Users,paid,D27,5,retention,5_early_retention,2,TPL_0060,18:15,push,TPL_0055,06:45,push,,,,,,
+U0027,0,Low Engagement Users,paid,D28,6,retention,5_early_retention,2,TPL_0052,20:15,push,TPL_0060,07:15,push,,,,,,
+U0028,3,Core Engaged,paid,D25,0,retention,5_early_retention,4,TPL_0359,18:45,push,TPL_0355,14:30,push,TPL_0357,19:30,push,TPL_0356,14:00,push
+U0028,3,Core Engaged,paid,D26,1,retention,5_early_retention,4,TPL_0351,19:30,push,TPL_0360,14:15,push,TPL_0355,18:45,push,TPL_0358,13:30,push
+U0028,3,Core Engaged,paid,D27,2,retention,5_early_retention,4,TPL_0357,20:45,push,TPL_0356,14:30,push,TPL_0358,19:30,push,TPL_0360,12:45,push
+U0028,3,Core Engaged,paid,D28,3,retention,5_early_retention,4,TPL_0352,19:00,push,TPL_0358,12:45,push,TPL_0355,20:30,push,TPL_0360,14:30,push
+U0028,3,Core Engaged,paid,D29,4,retention,5_early_retention,4,TPL_0353,20:30,push,TPL_0359,12:45,push,TPL_0351,19:00,push,TPL_0360,14:00,push
+U0028,3,Core Engaged,paid,D30,5,retention,5_early_retention,4,TPL_0359,20:45,push,TPL_0354,13:15,push,TPL_0356,20:30,push,TPL_0353,12:15,push
+U0028,3,Core Engaged,paid,D31,6,retention,5_early_retention,4,TPL_0354,20:30,push,TPL_0355,14:15,push,TPL_0352,20:00,push,TPL_0357,14:00,push
+U0029,0,Low Engagement Users,trial,D84,0,activation,1_activation,2,TPL_0065,19:45,push,TPL_0067,06:30,push,,,,,,
+U0029,0,Low Engagement Users,trial,D85,1,habit_formation,1_activation,2,TPL_0100,20:15,push,TPL_0092,06:30,push,,,,,,
+U0029,0,Low Engagement Users,trial,D86,2,habit_formation,2_habit_formation,2,TPL_0092,19:45,push,TPL_0098,06:15,push,,,,,,
+U0029,0,Low Engagement Users,trial,D87,3,feature_discovery,2_habit_formation,2,TPL_0085,18:30,push,TPL_0082,08:30,push,,,,,,
+U0029,0,Low Engagement Users,trial,D88,4,feature_discovery,2_habit_formation,2,TPL_0082,18:30,push,TPL_0083,07:30,push,,,,,,
+U0029,0,Low Engagement Users,trial,D89,5,feature_discovery,3_feature_discovery,2,TPL_0088,20:30,push,TPL_0084,06:45,push,,,,,,
+U0029,0,Low Engagement Users,trial,D90,6,conversion_readiness,3_feature_discovery,2,TPL_0071,18:15,push,TPL_0078,06:45,push,,,,,,
+U0030,4,Social Achievers,paid,D85,0,retention,5_early_retention,4,TPL_0452,14:30,push,TPL_0454,09:45,push,TPL_0460,12:30,push,TPL_0453,11:00,push
+U0030,4,Social Achievers,paid,D86,1,retention,5_early_retention,4,TPL_0452,13:30,push,TPL_0457,11:30,push,TPL_0459,14:45,push,TPL_0451,11:30,push
+U0030,4,Social Achievers,paid,D87,2,retention,5_early_retention,4,TPL_0451,12:15,push,TPL_0460,10:00,push,TPL_0452,14:30,push,TPL_0456,11:15,push
+U0030,4,Social Achievers,paid,D88,3,retention,5_early_retention,4,TPL_0453,14:00,push,TPL_0455,11:45,push,TPL_0457,14:30,push,TPL_0451,11:45,push
+U0030,4,Social Achievers,paid,D89,4,retention,5_early_retention,4,TPL_0452,12:15,push,TPL_0458,09:00,push,TPL_0454,13:45,push,TPL_0459,09:00,push
+U0030,4,Social Achievers,paid,D90,5,retention,5_early_retention,4,TPL_0458,12:15,push,TPL_0451,10:45,push,TPL_0452,13:45,push,TPL_0453,11:15,push
+U0030,4,Social Achievers,paid,D91,6,retention,5_early_retention,4,TPL_0457,13:00,push,TPL_0454,10:45,push,TPL_0452,13:00,push,TPL_0460,11:30,push
+U0031,0,Low Engagement Users,trial,D6,0,activation,1_activation,2,TPL_0069,18:45,push,TPL_0062,07:15,push,,,,,,
+U0031,0,Low Engagement Users,trial,D7,1,habit_formation,1_activation,2,TPL_0098,19:00,push,TPL_0096,08:30,push,,,,,,
+U0031,0,Low Engagement Users,trial,D8,2,habit_formation,2_habit_formation,2,TPL_0094,20:30,push,TPL_0097,06:45,push,,,,,,
+U0031,0,Low Engagement Users,trial,D9,3,feature_discovery,2_habit_formation,2,TPL_0090,19:15,push,TPL_0087,06:45,push,,,,,,
+U0031,0,Low Engagement Users,trial,D10,4,feature_discovery,2_habit_formation,2,TPL_0084,18:15,push,TPL_0088,08:00,push,,,,,,
+U0031,0,Low Engagement Users,trial,D11,5,feature_discovery,3_feature_discovery,2,TPL_0086,18:30,push,TPL_0090,06:15,push,,,,,,
+U0031,0,Low Engagement Users,trial,D12,6,conversion_readiness,3_feature_discovery,2,TPL_0073,20:15,push,TPL_0075,06:15,push,,,,,,
+U0032,0,Low Engagement Users,trial,D13,0,activation,1_activation,2,TPL_0064,20:15,push,TPL_0070,06:30,push,,,,,,
+U0032,0,Low Engagement Users,trial,D14,1,habit_formation,1_activation,2,TPL_0100,18:00,push,TPL_0099,07:15,push,,,,,,
+U0032,0,Low Engagement Users,trial,D15,2,habit_formation,2_habit_formation,2,TPL_0094,18:30,push,TPL_0095,06:00,push,,,,,,
+U0032,0,Low Engagement Users,trial,D16,3,feature_discovery,2_habit_formation,2,TPL_0089,20:00,push,TPL_0090,06:00,push,,,,,,
+U0032,0,Low Engagement Users,trial,D17,4,feature_discovery,2_habit_formation,2,TPL_0082,19:15,push,TPL_0088,08:30,push,,,,,,
+U0032,0,Low Engagement Users,trial,D18,5,feature_discovery,3_feature_discovery,2,TPL_0085,18:15,push,TPL_0087,07:00,push,,,,,,
+U0032,0,Low Engagement Users,trial,D19,6,conversion_readiness,3_feature_discovery,2,TPL_0073,18:45,push,TPL_0078,08:00,push,,,,,,
+U0033,3,Core Engaged,inactive,D78,0,activation,11_gentle_nudge,4,TPL_0314,20:00,push,TPL_0312,13:45,push,TPL_0316,19:00,push,TPL_0315,13:15,push
+U0033,3,Core Engaged,inactive,D79,1,activation,11_gentle_nudge,4,TPL_0314,20:00,push,TPL_0317,14:30,push,TPL_0319,19:00,push,TPL_0315,12:45,push
+U0033,3,Core Engaged,inactive,D80,2,activation,11_gentle_nudge,4,TPL_0312,19:45,push,TPL_0317,14:00,push,TPL_0315,19:45,push,TPL_0316,12:00,push
+U0033,3,Core Engaged,inactive,D81,3,activation,12_last_chance,4,TPL_0312,19:15,push,TPL_0318,12:15,push,TPL_0320,19:30,push,TPL_0315,13:30,push
+U0033,3,Core Engaged,inactive,D82,4,activation,12_last_chance,4,TPL_0317,19:45,push,TPL_0314,12:00,push,TPL_0312,20:15,push,TPL_0311,13:45,push
+U0033,3,Core Engaged,inactive,D83,5,activation,12_last_chance,4,TPL_0317,18:45,push,TPL_0320,13:45,push,TPL_0318,19:45,push,TPL_0316,14:00,push
+U0033,3,Core Engaged,inactive,D84,6,activation,12_last_chance,4,TPL_0311,19:45,push,TPL_0315,13:30,push,TPL_0317,19:15,push,TPL_0318,14:45,push
+U0034,1,Social Gamifiers,inactive,D6,0,activation,11_gentle_nudge,2,TPL_0120,12:00,push,TPL_0118,18:00,push,,,,,,
+U0034,1,Social Gamifiers,inactive,D7,1,activation,11_gentle_nudge,2,TPL_0111,13:00,push,TPL_0115,20:30,push,,,,,,
+U0034,1,Social Gamifiers,inactive,D8,2,activation,11_gentle_nudge,2,TPL_0116,12:00,push,TPL_0118,20:30,push,,,,,,
+U0034,1,Social Gamifiers,inactive,D9,3,activation,12_last_chance,2,TPL_0118,14:00,push,TPL_0119,19:30,push,,,,,,
+U0034,1,Social Gamifiers,inactive,D10,4,activation,12_last_chance,2,TPL_0113,14:45,push,TPL_0117,20:00,push,,,,,,
+U0034,1,Social Gamifiers,inactive,D11,5,activation,12_last_chance,2,TPL_0112,13:30,push,TPL_0118,19:00,push,,,,,,
+U0034,1,Social Gamifiers,inactive,D12,6,activation,12_last_chance,2,TPL_0112,14:15,push,TPL_0118,18:45,push,,,,,,
+U0035,0,Low Engagement Users,churned,D8,0,re_engagement,9_win_back,2,TPL_0007,18:00,push,TPL_0010,07:30,push,,,,,,
+U0035,0,Low Engagement Users,churned,D9,1,re_engagement,9_win_back,2,TPL_0005,18:30,push,TPL_0007,08:15,push,,,,,,
+U0035,0,Low Engagement Users,churned,D10,2,re_engagement,9_win_back,2,TPL_0002,19:00,push,TPL_0007,08:30,push,,,,,,
+U0035,0,Low Engagement Users,churned,D11,3,re_engagement,10_re_activation,2,TPL_0008,18:15,push,TPL_0009,07:30,push,,,,,,
+U0035,0,Low Engagement Users,churned,D12,4,re_engagement,10_re_activation,2,TPL_0009,19:30,push,TPL_0004,06:15,push,,,,,,
+U0035,0,Low Engagement Users,churned,D13,5,re_engagement,10_re_activation,2,TPL_0009,18:45,push,TPL_0010,06:15,push,,,,,,
+U0035,0,Low Engagement Users,churned,D14,6,re_engagement,10_re_activation,2,TPL_0003,20:00,push,TPL_0002,06:15,push,,,,,,
+U0036,0,Low Engagement Users,trial,D47,0,activation,1_activation,2,TPL_0063,19:45,push,TPL_0067,07:30,push,,,,,,
+U0036,0,Low Engagement Users,trial,D48,1,habit_formation,1_activation,2,TPL_0099,18:30,push,TPL_0094,07:30,push,,,,,,
+U0036,0,Low Engagement Users,trial,D49,2,habit_formation,2_habit_formation,2,TPL_0098,20:00,push,TPL_0093,06:15,push,,,,,,
+U0036,0,Low Engagement Users,trial,D50,3,feature_discovery,2_habit_formation,2,TPL_0086,18:00,push,TPL_0083,08:00,push,,,,,,
+U0036,0,Low Engagement Users,trial,D51,4,feature_discovery,2_habit_formation,2,TPL_0082,19:45,push,TPL_0085,08:45,push,,,,,,
+U0036,0,Low Engagement Users,trial,D52,5,feature_discovery,3_feature_discovery,2,TPL_0084,19:45,push,TPL_0082,07:30,push,,,,,,
+U0036,0,Low Engagement Users,trial,D53,6,conversion_readiness,3_feature_discovery,2,TPL_0074,18:00,push,TPL_0076,07:45,push,,,,,,
+U0037,4,Social Achievers,trial,D71,0,activation,1_activation,4,TPL_0469,12:30,push,TPL_0464,11:45,push,TPL_0467,14:30,push,TPL_0470,09:15,push
+U0037,4,Social Achievers,trial,D72,1,habit_formation,1_activation,4,TPL_0495,13:00,push,TPL_0499,09:15,push,TPL_0500,13:15,push,TPL_0493,09:30,push
+U0037,4,Social Achievers,trial,D73,2,habit_formation,2_habit_formation,4,TPL_0494,13:30,push,TPL_0493,09:00,push,TPL_0498,13:45,push,TPL_0497,09:15,push
+U0037,4,Social Achievers,trial,D74,3,feature_discovery,2_habit_formation,4,TPL_0482,13:15,push,TPL_0485,11:30,push,TPL_0487,12:45,push,TPL_0484,11:00,push
+U0037,4,Social Achievers,trial,D75,4,feature_discovery,2_habit_formation,4,TPL_0481,13:00,push,TPL_0488,10:00,push,TPL_0489,13:45,push,TPL_0484,11:45,push
+U0037,4,Social Achievers,trial,D76,5,feature_discovery,3_feature_discovery,4,TPL_0484,14:45,push,TPL_0489,10:00,push,TPL_0490,13:00,push,TPL_0487,10:15,push
+U0037,4,Social Achievers,trial,D77,6,conversion_readiness,3_feature_discovery,4,TPL_0472,14:45,push,TPL_0478,11:30,push,TPL_0473,12:45,push,TPL_0477,09:15,push
+U0038,1,Social Gamifiers,paid,D58,0,retention,5_early_retention,2,TPL_0155,13:45,push,TPL_0154,20:00,push,,,,,,
+U0038,1,Social Gamifiers,paid,D59,1,retention,5_early_retention,2,TPL_0160,13:30,push,TPL_0153,20:30,push,,,,,,
+U0038,1,Social Gamifiers,paid,D60,2,retention,5_early_retention,2,TPL_0158,12:30,push,TPL_0159,18:00,push,,,,,,
+U0038,1,Social Gamifiers,paid,D61,3,retention,5_early_retention,2,TPL_0157,14:00,push,TPL_0153,20:15,push,,,,,,
+U0038,1,Social Gamifiers,paid,D62,4,retention,5_early_retention,2,TPL_0157,13:30,push,TPL_0153,20:15,push,,,,,,
+U0038,1,Social Gamifiers,paid,D63,5,retention,5_early_retention,2,TPL_0151,12:00,push,TPL_0159,18:30,push,,,,,,
+U0038,1,Social Gamifiers,paid,D64,6,retention,5_early_retention,2,TPL_0157,12:15,push,TPL_0158,20:15,push,,,,,,
+U0039,5,Casual Explorers,paid,D86,0,retention,5_early_retention,4,TPL_0560,20:00,push,TPL_0557,21:45,push,TPL_0554,19:45,push,TPL_0559,23:30,push
+U0039,5,Casual Explorers,paid,D87,1,retention,5_early_retention,4,TPL_0553,20:30,push,TPL_0559,21:45,push,TPL_0557,18:45,push,TPL_0552,22:30,push
+U0039,5,Casual Explorers,paid,D88,2,retention,5_early_retention,4,TPL_0554,19:00,push,TPL_0558,22:00,push,TPL_0553,19:45,push,TPL_0559,22:00,push
+U0039,5,Casual Explorers,paid,D89,3,retention,5_early_retention,4,TPL_0551,18:30,push,TPL_0560,22:00,push,TPL_0554,20:00,push,TPL_0558,23:45,push
+U0039,5,Casual Explorers,paid,D90,4,retention,5_early_retention,4,TPL_0558,19:00,push,TPL_0552,22:15,push,TPL_0557,19:45,push,TPL_0560,23:15,push
+U0039,5,Casual Explorers,paid,D91,5,retention,5_early_retention,4,TPL_0554,18:45,push,TPL_0558,21:30,push,TPL_0556,20:00,push,TPL_0551,23:15,push
+U0039,5,Casual Explorers,paid,D92,6,retention,5_early_retention,4,TPL_0558,18:15,push,TPL_0556,23:45,push,TPL_0552,19:15,push,TPL_0557,22:30,push
+U0040,1,Social Gamifiers,trial,D81,0,activation,1_activation,2,TPL_0162,13:45,push,TPL_0170,19:30,push,,,,,,
+U0040,1,Social Gamifiers,trial,D82,1,habit_formation,1_activation,2,TPL_0191,14:00,push,TPL_0200,20:30,push,,,,,,
+U0040,1,Social Gamifiers,trial,D83,2,habit_formation,2_habit_formation,2,TPL_0198,12:30,push,TPL_0193,18:45,push,,,,,,
+U0040,1,Social Gamifiers,trial,D84,3,feature_discovery,2_habit_formation,2,TPL_0189,13:30,push,TPL_0184,20:15,push,,,,,,
+U0040,1,Social Gamifiers,trial,D85,4,feature_discovery,2_habit_formation,2,TPL_0181,13:00,push,TPL_0190,20:15,push,,,,,,
+U0040,1,Social Gamifiers,trial,D86,5,feature_discovery,3_feature_discovery,2,TPL_0189,13:30,push,TPL_0184,20:45,push,,,,,,
+U0040,1,Social Gamifiers,trial,D87,6,conversion_readiness,3_feature_discovery,2,TPL_0171,12:00,push,TPL_0176,19:45,push,,,,,,
+U0041,0,Low Engagement Users,paid,D38,0,retention,5_early_retention,2,TPL_0056,20:30,push,TPL_0055,06:00,push,,,,,,
+U0041,0,Low Engagement Users,paid,D39,1,retention,5_early_retention,2,TPL_0059,20:45,push,TPL_0053,08:30,push,,,,,,
+U0041,0,Low Engagement Users,paid,D40,2,retention,5_early_retention,2,TPL_0054,18:30,push,TPL_0059,07:15,push,,,,,,
+U0041,0,Low Engagement Users,paid,D41,3,retention,5_early_retention,2,TPL_0060,18:30,push,TPL_0052,07:15,push,,,,,,
+U0041,0,Low Engagement Users,paid,D42,4,retention,5_early_retention,2,TPL_0052,18:15,push,TPL_0054,06:00,push,,,,,,
+U0041,0,Low Engagement Users,paid,D43,5,retention,5_early_retention,2,TPL_0053,19:00,push,TPL_0057,08:00,push,,,,,,
+U0041,0,Low Engagement Users,paid,D44,6,retention,5_early_retention,2,TPL_0057,20:30,push,TPL_0055,08:15,push,,,,,,
+U0042,4,Social Achievers,trial,D17,0,activation,1_activation,4,TPL_0467,14:45,push,TPL_0464,09:15,push,TPL_0466,12:15,push,TPL_0470,11:45,push
+U0042,4,Social Achievers,trial,D18,1,habit_formation,1_activation,4,TPL_0497,12:45,push,TPL_0499,10:15,push,TPL_0494,13:30,push,TPL_0491,11:45,push
+U0042,4,Social Achievers,trial,D19,2,habit_formation,2_habit_formation,4,TPL_0499,12:15,push,TPL_0493,10:45,push,TPL_0492,12:30,push,TPL_0500,11:45,push
+U0042,4,Social Achievers,trial,D20,3,feature_discovery,2_habit_formation,4,TPL_0481,13:30,push,TPL_0484,10:45,push,TPL_0483,12:15,push,TPL_0489,11:15,push
+U0042,4,Social Achievers,trial,D21,4,feature_discovery,2_habit_formation,4,TPL_0484,13:00,push,TPL_0490,11:45,push,TPL_0482,13:00,push,TPL_0488,11:00,push
+U0042,4,Social Achievers,trial,D22,5,feature_discovery,3_feature_discovery,4,TPL_0487,13:00,push,TPL_0490,09:30,push,TPL_0482,13:15,push,TPL_0489,10:00,push
+U0042,4,Social Achievers,trial,D23,6,conversion_readiness,3_feature_discovery,4,TPL_0476,12:45,push,TPL_0474,10:00,push,TPL_0478,13:00,push,TPL_0480,10:30,push
+U0043,1,Social Gamifiers,inactive,D58,0,activation,11_gentle_nudge,2,TPL_0116,12:45,push,TPL_0118,18:30,push,,,,,,
+U0043,1,Social Gamifiers,inactive,D59,1,activation,11_gentle_nudge,2,TPL_0118,12:00,push,TPL_0116,19:00,push,,,,,,
+U0043,1,Social Gamifiers,inactive,D60,2,activation,11_gentle_nudge,2,TPL_0114,14:30,push,TPL_0116,18:15,push,,,,,,
+U0043,1,Social Gamifiers,inactive,D61,3,activation,12_last_chance,2,TPL_0114,12:30,push,TPL_0119,19:15,push,,,,,,
+U0043,1,Social Gamifiers,inactive,D62,4,activation,12_last_chance,2,TPL_0118,14:45,push,TPL_0120,19:00,push,,,,,,
+U0043,1,Social Gamifiers,inactive,D63,5,activation,12_last_chance,2,TPL_0113,12:00,push,TPL_0117,19:15,push,,,,,,
+U0043,1,Social Gamifiers,inactive,D64,6,activation,12_last_chance,2,TPL_0119,12:45,push,TPL_0120,18:30,push,,,,,,
+U0044,0,Low Engagement Users,trial,D16,0,activation,1_activation,2,TPL_0065,18:30,push,TPL_0069,06:00,push,,,,,,
+U0044,0,Low Engagement Users,trial,D17,1,habit_formation,1_activation,2,TPL_0099,18:45,push,TPL_0100,08:45,push,,,,,,
+U0044,0,Low Engagement Users,trial,D18,2,habit_formation,2_habit_formation,2,TPL_0094,18:00,push,TPL_0097,07:00,push,,,,,,
+U0044,0,Low Engagement Users,trial,D19,3,feature_discovery,2_habit_formation,2,TPL_0085,20:15,push,TPL_0083,08:15,push,,,,,,
+U0044,0,Low Engagement Users,trial,D20,4,feature_discovery,2_habit_formation,2,TPL_0086,19:45,push,TPL_0087,06:30,push,,,,,,
+U0044,0,Low Engagement Users,trial,D21,5,feature_discovery,3_feature_discovery,2,TPL_0089,18:45,push,TPL_0085,06:00,push,,,,,,
+U0044,0,Low Engagement Users,trial,D22,6,conversion_readiness,3_feature_discovery,2,TPL_0072,20:30,push,TPL_0077,06:00,push,,,,,,
+U0045,4,Social Achievers,paid,D13,0,retention,5_early_retention,4,TPL_0456,13:45,push,TPL_0453,09:45,push,TPL_0454,13:30,push,TPL_0455,11:00,push
+U0045,4,Social Achievers,paid,D14,1,retention,5_early_retention,4,TPL_0457,13:00,push,TPL_0452,10:15,push,TPL_0456,14:00,push,TPL_0451,11:30,push
+U0045,4,Social Achievers,paid,D15,2,retention,5_early_retention,4,TPL_0453,12:00,push,TPL_0451,10:30,push,TPL_0455,14:15,push,TPL_0457,11:45,push
+U0045,4,Social Achievers,paid,D16,3,retention,5_early_retention,4,TPL_0451,14:45,push,TPL_0452,11:15,push,TPL_0455,12:00,push,TPL_0460,11:45,push
+U0045,4,Social Achievers,paid,D17,4,retention,5_early_retention,4,TPL_0453,12:30,push,TPL_0452,09:00,push,TPL_0457,12:00,push,TPL_0454,10:30,push
+U0045,4,Social Achievers,paid,D18,5,retention,5_early_retention,4,TPL_0458,14:45,push,TPL_0460,11:45,push,TPL_0452,13:00,push,TPL_0457,11:15,push
+U0045,4,Social Achievers,paid,D19,6,retention,5_early_retention,4,TPL_0456,13:30,push,TPL_0451,09:30,push,TPL_0459,13:00,push,TPL_0453,10:45,push
+U0046,3,Core Engaged,trial,D30,0,activation,1_activation,4,TPL_0364,19:45,push,TPL_0363,13:30,push,TPL_0369,18:45,push,TPL_0366,14:45,push
+U0046,3,Core Engaged,trial,D31,1,habit_formation,1_activation,4,TPL_0397,19:30,push,TPL_0400,12:45,push,TPL_0393,18:45,push,TPL_0392,14:15,push
+U0046,3,Core Engaged,trial,D32,2,habit_formation,2_habit_formation,4,TPL_0395,20:30,push,TPL_0393,13:00,push,TPL_0400,18:30,push,TPL_0399,14:30,push
+U0046,3,Core Engaged,trial,D33,3,feature_discovery,2_habit_formation,4,TPL_0382,19:45,push,TPL_0389,14:45,push,TPL_0387,18:45,push,TPL_0386,13:45,push
+U0046,3,Core Engaged,trial,D34,4,feature_discovery,2_habit_formation,4,TPL_0389,18:30,push,TPL_0388,14:45,push,TPL_0384,19:00,push,TPL_0390,12:45,push
+U0046,3,Core Engaged,trial,D35,5,feature_discovery,3_feature_discovery,4,TPL_0389,19:15,push,TPL_0386,12:15,push,TPL_0384,20:45,push,TPL_0390,12:15,push
+U0046,3,Core Engaged,trial,D36,6,conversion_readiness,3_feature_discovery,4,TPL_0377,18:15,push,TPL_0379,14:30,push,TPL_0376,19:45,push,TPL_0374,14:00,push
+U0047,0,Low Engagement Users,paid,D23,0,retention,5_early_retention,2,TPL_0056,20:15,push,TPL_0060,08:45,push,,,,,,
+U0047,0,Low Engagement Users,paid,D24,1,retention,5_early_retention,2,TPL_0056,19:30,push,TPL_0057,07:00,push,,,,,,
+U0047,0,Low Engagement Users,paid,D25,2,retention,5_early_retention,2,TPL_0055,20:15,push,TPL_0056,08:30,push,,,,,,
+U0047,0,Low Engagement Users,paid,D26,3,retention,5_early_retention,2,TPL_0053,19:30,push,TPL_0054,08:30,push,,,,,,
+U0047,0,Low Engagement Users,paid,D27,4,retention,5_early_retention,2,TPL_0060,18:00,push,TPL_0056,06:15,push,,,,,,
+U0047,0,Low Engagement Users,paid,D28,5,retention,5_early_retention,2,TPL_0059,19:45,push,TPL_0054,08:00,push,,,,,,
+U0047,0,Low Engagement Users,paid,D29,6,retention,5_early_retention,2,TPL_0052,19:30,push,TPL_0054,08:45,push,,,,,,
+U0048,0,Low Engagement Users,paid,D59,0,retention,5_early_retention,2,TPL_0060,18:30,push,TPL_0057,08:45,push,,,,,,
+U0048,0,Low Engagement Users,paid,D60,1,retention,5_early_retention,2,TPL_0055,18:00,push,TPL_0060,06:00,push,,,,,,
+U0048,0,Low Engagement Users,paid,D61,2,retention,5_early_retention,2,TPL_0057,19:15,push,TPL_0054,08:45,push,,,,,,
+U0048,0,Low Engagement Users,paid,D62,3,retention,5_early_retention,2,TPL_0052,18:30,push,TPL_0057,08:30,push,,,,,,
+U0048,0,Low Engagement Users,paid,D63,4,retention,5_early_retention,2,TPL_0052,20:00,push,TPL_0057,08:30,push,,,,,,
+U0048,0,Low Engagement Users,paid,D64,5,retention,5_early_retention,2,TPL_0054,19:15,push,TPL_0052,08:15,push,,,,,,
+U0048,0,Low Engagement Users,paid,D65,6,retention,5_early_retention,2,TPL_0052,19:15,push,TPL_0058,06:15,push,,,,,,
+U0049,0,Low Engagement Users,trial,D44,0,activation,1_activation,2,TPL_0067,18:15,push,TPL_0064,07:00,push,,,,,,
+U0049,0,Low Engagement Users,trial,D45,1,habit_formation,1_activation,2,TPL_0098,19:30,push,TPL_0092,07:15,push,,,,,,
+U0049,0,Low Engagement Users,trial,D46,2,habit_formation,2_habit_formation,2,TPL_0096,20:00,push,TPL_0095,06:30,push,,,,,,
+U0049,0,Low Engagement Users,trial,D47,3,feature_discovery,2_habit_formation,2,TPL_0088,19:45,push,TPL_0087,08:45,push,,,,,,
+U0049,0,Low Engagement Users,trial,D48,4,feature_discovery,2_habit_formation,2,TPL_0083,19:00,push,TPL_0090,06:30,push,,,,,,
+U0049,0,Low Engagement Users,trial,D49,5,feature_discovery,3_feature_discovery,2,TPL_0089,20:00,push,TPL_0087,07:45,push,,,,,,
+U0049,0,Low Engagement Users,trial,D50,6,conversion_readiness,3_feature_discovery,2,TPL_0074,20:30,push,TPL_0075,06:15,push,,,,,,
+U0050,2,High Value Churners,inactive,D2,0,activation,11_gentle_nudge,2,TPL_0214,21:45,push,TPL_0220,11:00,push,,,,,,
+U0050,2,High Value Churners,inactive,D3,1,activation,11_gentle_nudge,2,TPL_0219,21:15,push,TPL_0220,10:15,push,,,,,,
+U0050,2,High Value Churners,inactive,D4,2,activation,11_gentle_nudge,2,TPL_0215,21:30,push,TPL_0212,11:15,push,,,,,,
+U0050,2,High Value Churners,inactive,D5,3,activation,12_last_chance,2,TPL_0212,22:30,push,TPL_0217,09:30,push,,,,,,
+U0050,2,High Value Churners,inactive,D6,4,activation,12_last_chance,2,TPL_0217,21:30,push,TPL_0212,09:30,push,,,,,,
+U0050,2,High Value Churners,inactive,D7,5,activation,12_last_chance,2,TPL_0215,23:00,push,TPL_0218,11:15,push,,,,,,
+U0050,2,High Value Churners,inactive,D8,6,activation,12_last_chance,2,TPL_0214,23:15,push,TPL_0215,09:30,push,,,,,,
+U0051,1,Social Gamifiers,churned,D36,0,re_engagement,9_win_back,2,TPL_0110,14:00,push,TPL_0107,18:00,push,,,,,,
+U0051,1,Social Gamifiers,churned,D37,1,re_engagement,9_win_back,2,TPL_0106,12:30,push,TPL_0105,20:15,push,,,,,,
+U0051,1,Social Gamifiers,churned,D38,2,re_engagement,9_win_back,2,TPL_0108,14:45,push,TPL_0102,20:00,push,,,,,,
+U0051,1,Social Gamifiers,churned,D39,3,re_engagement,10_re_activation,2,TPL_0106,13:30,push,TPL_0101,20:30,push,,,,,,
+U0051,1,Social Gamifiers,churned,D40,4,re_engagement,10_re_activation,2,TPL_0110,13:15,push,TPL_0103,20:45,push,,,,,,
+U0051,1,Social Gamifiers,churned,D41,5,re_engagement,10_re_activation,2,TPL_0105,13:45,push,TPL_0108,18:00,push,,,,,,
+U0051,1,Social Gamifiers,churned,D42,6,re_engagement,10_re_activation,2,TPL_0105,12:45,push,TPL_0101,19:45,push,,,,,,
+U0052,3,Core Engaged,inactive,D42,0,activation,11_gentle_nudge,4,TPL_0316,19:15,push,TPL_0319,13:15,push,TPL_0315,19:30,push,TPL_0312,14:30,push
+U0052,3,Core Engaged,inactive,D43,1,activation,11_gentle_nudge,4,TPL_0314,19:15,push,TPL_0318,13:00,push,TPL_0315,19:15,push,TPL_0319,13:00,push
+U0052,3,Core Engaged,inactive,D44,2,activation,11_gentle_nudge,4,TPL_0313,19:45,push,TPL_0320,12:15,push,TPL_0318,18:00,push,TPL_0311,13:45,push
+U0052,3,Core Engaged,inactive,D45,3,activation,12_last_chance,4,TPL_0319,20:45,push,TPL_0315,12:15,push,TPL_0316,19:30,push,TPL_0313,12:15,push
+U0052,3,Core Engaged,inactive,D46,4,activation,12_last_chance,4,TPL_0316,19:45,push,TPL_0314,13:30,push,TPL_0317,19:00,push,TPL_0312,12:45,push
+U0052,3,Core Engaged,inactive,D47,5,activation,12_last_chance,4,TPL_0316,20:45,push,TPL_0313,12:15,push,TPL_0318,20:30,push,TPL_0320,12:00,push
+U0052,3,Core Engaged,inactive,D48,6,activation,12_last_chance,4,TPL_0317,19:45,push,TPL_0316,14:45,push,TPL_0314,19:00,push,TPL_0312,12:45,push
+U0053,1,Social Gamifiers,churned,D39,0,re_engagement,9_win_back,2,TPL_0103,12:30,push,TPL_0110,20:30,push,,,,,,
+U0053,1,Social Gamifiers,churned,D40,1,re_engagement,9_win_back,2,TPL_0106,13:30,push,TPL_0104,18:45,push,,,,,,
+U0053,1,Social Gamifiers,churned,D41,2,re_engagement,9_win_back,2,TPL_0109,12:15,push,TPL_0102,19:30,push,,,,,,
+U0053,1,Social Gamifiers,churned,D42,3,re_engagement,10_re_activation,2,TPL_0109,12:45,push,TPL_0104,20:45,push,,,,,,
+U0053,1,Social Gamifiers,churned,D43,4,re_engagement,10_re_activation,2,TPL_0105,14:30,push,TPL_0106,20:00,push,,,,,,
+U0053,1,Social Gamifiers,churned,D44,5,re_engagement,10_re_activation,2,TPL_0109,12:00,push,TPL_0105,19:30,push,,,,,,
+U0053,1,Social Gamifiers,churned,D45,6,re_engagement,10_re_activation,2,TPL_0101,13:30,push,TPL_0104,18:15,push,,,,,,
+U0054,0,Low Engagement Users,paid,D89,0,retention,5_early_retention,2,TPL_0059,20:45,push,TPL_0057,08:00,push,,,,,,
+U0054,0,Low Engagement Users,paid,D90,1,retention,5_early_retention,2,TPL_0056,18:00,push,TPL_0057,06:30,push,,,,,,
+U0054,0,Low Engagement Users,paid,D91,2,retention,5_early_retention,2,TPL_0055,19:45,push,TPL_0053,06:15,push,,,,,,
+U0054,0,Low Engagement Users,paid,D92,3,retention,5_early_retention,2,TPL_0055,19:30,push,TPL_0053,06:45,push,,,,,,
+U0054,0,Low Engagement Users,paid,D93,4,retention,5_early_retention,2,TPL_0057,20:30,push,TPL_0059,08:30,push,,,,,,
+U0054,0,Low Engagement Users,paid,D94,5,retention,5_early_retention,2,TPL_0058,20:45,push,TPL_0057,08:30,push,,,,,,
+U0054,0,Low Engagement Users,paid,D95,6,retention,5_early_retention,2,TPL_0059,19:00,push,TPL_0056,07:30,push,,,,,,
+U0055,3,Core Engaged,inactive,D54,0,activation,11_gentle_nudge,4,TPL_0316,20:00,push,TPL_0312,13:30,push,TPL_0319,20:00,push,TPL_0314,14:45,push
+U0055,3,Core Engaged,inactive,D55,1,activation,11_gentle_nudge,4,TPL_0311,19:15,push,TPL_0317,14:00,push,TPL_0314,20:45,push,TPL_0320,12:45,push
+U0055,3,Core Engaged,inactive,D56,2,activation,11_gentle_nudge,4,TPL_0317,18:15,push,TPL_0320,12:00,push,TPL_0319,18:00,push,TPL_0318,13:30,push
+U0055,3,Core Engaged,inactive,D57,3,activation,12_last_chance,4,TPL_0320,19:15,push,TPL_0312,13:15,push,TPL_0317,19:45,push,TPL_0318,14:00,push
+U0055,3,Core Engaged,inactive,D58,4,activation,12_last_chance,4,TPL_0320,20:15,push,TPL_0311,14:15,push,TPL_0317,20:30,push,TPL_0313,14:45,push
+U0055,3,Core Engaged,inactive,D59,5,activation,12_last_chance,4,TPL_0311,20:45,push,TPL_0317,13:15,push,TPL_0316,19:30,push,TPL_0318,14:30,push
+U0055,3,Core Engaged,inactive,D60,6,activation,12_last_chance,4,TPL_0319,20:30,push,TPL_0315,14:45,push,TPL_0316,18:15,push,TPL_0318,13:30,push
+U0056,0,Low Engagement Users,trial,D86,0,activation,1_activation,2,TPL_0069,18:30,push,TPL_0064,07:15,push,,,,,,
+U0056,0,Low Engagement Users,trial,D87,1,habit_formation,1_activation,2,TPL_0094,20:45,push,TPL_0099,07:45,push,,,,,,
+U0056,0,Low Engagement Users,trial,D88,2,habit_formation,2_habit_formation,2,TPL_0094,19:30,push,TPL_0096,07:00,push,,,,,,
+U0056,0,Low Engagement Users,trial,D89,3,feature_discovery,2_habit_formation,2,TPL_0090,20:45,push,TPL_0083,07:30,push,,,,,,
+U0056,0,Low Engagement Users,trial,D90,4,feature_discovery,2_habit_formation,2,TPL_0083,18:30,push,TPL_0088,06:30,push,,,,,,
+U0056,0,Low Engagement Users,trial,D91,5,feature_discovery,3_feature_discovery,2,TPL_0084,20:00,push,TPL_0090,07:45,push,,,,,,
+U0056,0,Low Engagement Users,trial,D92,6,conversion_readiness,3_feature_discovery,2,TPL_0079,20:30,push,TPL_0072,08:45,push,,,,,,
+U0057,1,Social Gamifiers,trial,D38,0,activation,1_activation,2,TPL_0165,12:15,push,TPL_0170,20:30,push,,,,,,
+U0057,1,Social Gamifiers,trial,D39,1,habit_formation,1_activation,2,TPL_0199,14:30,push,TPL_0197,18:00,push,,,,,,
+U0057,1,Social Gamifiers,trial,D40,2,habit_formation,2_habit_formation,2,TPL_0198,14:15,push,TPL_0191,18:00,push,,,,,,
+U0057,1,Social Gamifiers,trial,D41,3,feature_discovery,2_habit_formation,2,TPL_0185,14:15,push,TPL_0187,20:15,push,,,,,,
+U0057,1,Social Gamifiers,trial,D42,4,feature_discovery,2_habit_formation,2,TPL_0185,12:00,push,TPL_0188,19:30,push,,,,,,
+U0057,1,Social Gamifiers,trial,D43,5,feature_discovery,3_feature_discovery,2,TPL_0188,14:45,push,TPL_0183,18:15,push,,,,,,
+U0057,1,Social Gamifiers,trial,D44,6,conversion_readiness,3_feature_discovery,2,TPL_0176,12:15,push,TPL_0171,19:45,push,,,,,,
+U0058,4,Social Achievers,trial,D14,0,activation,1_activation,4,TPL_0466,13:15,push,TPL_0468,10:30,push,TPL_0461,13:00,push,TPL_0469,09:15,push
+U0058,4,Social Achievers,trial,D15,1,habit_formation,1_activation,4,TPL_0499,14:00,push,TPL_0497,09:45,push,TPL_0491,12:00,push,TPL_0493,10:45,push
+U0058,4,Social Achievers,trial,D16,2,habit_formation,2_habit_formation,4,TPL_0495,12:30,push,TPL_0493,09:00,push,TPL_0500,13:00,push,TPL_0497,10:30,push
+U0058,4,Social Achievers,trial,D17,3,feature_discovery,2_habit_formation,4,TPL_0482,13:45,push,TPL_0487,09:45,push,TPL_0489,13:15,push,TPL_0481,09:30,push
+U0058,4,Social Achievers,trial,D18,4,feature_discovery,2_habit_formation,4,TPL_0487,12:45,push,TPL_0483,11:30,push,TPL_0488,14:15,push,TPL_0489,09:30,push
+U0058,4,Social Achievers,trial,D19,5,feature_discovery,3_feature_discovery,4,TPL_0485,13:15,push,TPL_0487,09:45,push,TPL_0484,13:30,push,TPL_0488,09:45,push
+U0058,4,Social Achievers,trial,D20,6,conversion_readiness,3_feature_discovery,4,TPL_0477,14:00,push,TPL_0476,09:15,push,TPL_0473,13:30,push,TPL_0475,09:00,push
+U0059,2,High Value Churners,trial,D3,0,activation,1_activation,2,TPL_0268,22:45,push,TPL_0269,09:45,push,,,,,,
+U0059,2,High Value Churners,trial,D4,1,habit_formation,1_activation,2,TPL_0297,22:30,push,TPL_0293,10:00,push,,,,,,
+U0059,2,High Value Churners,trial,D5,2,habit_formation,2_habit_formation,2,TPL_0296,22:30,push,TPL_0295,11:15,push,,,,,,
+U0059,2,High Value Churners,trial,D6,3,feature_discovery,2_habit_formation,2,TPL_0284,21:00,push,TPL_0283,10:30,push,,,,,,
+U0059,2,High Value Churners,trial,D7,4,feature_discovery,2_habit_formation,2,TPL_0283,21:45,push,TPL_0285,11:30,push,,,,,,
+U0059,2,High Value Churners,trial,D8,5,feature_discovery,3_feature_discovery,2,TPL_0288,23:00,push,TPL_0285,11:30,push,,,,,,
+U0059,2,High Value Churners,trial,D9,6,conversion_readiness,3_feature_discovery,2,TPL_0276,22:15,push,TPL_0279,09:15,push,,,,,,
+U0060,4,Social Achievers,trial,D85,0,activation,1_activation,4,TPL_0467,13:15,push,TPL_0466,10:30,push,TPL_0463,13:45,push,TPL_0461,11:15,push
+U0060,4,Social Achievers,trial,D86,1,habit_formation,1_activation,4,TPL_0491,12:00,push,TPL_0500,11:45,push,TPL_0495,14:30,push,TPL_0497,09:00,push
+U0060,4,Social Achievers,trial,D87,2,habit_formation,2_habit_formation,4,TPL_0492,12:15,push,TPL_0499,11:15,push,TPL_0500,12:30,push,TPL_0494,11:45,push
+U0060,4,Social Achievers,trial,D88,3,feature_discovery,2_habit_formation,4,TPL_0482,12:15,push,TPL_0489,11:45,push,TPL_0484,12:45,push,TPL_0487,09:45,push
+U0060,4,Social Achievers,trial,D89,4,feature_discovery,2_habit_formation,4,TPL_0489,12:45,push,TPL_0484,10:00,push,TPL_0485,14:45,push,TPL_0483,11:30,push
+U0060,4,Social Achievers,trial,D90,5,feature_discovery,3_feature_discovery,4,TPL_0483,14:00,push,TPL_0482,10:30,push,TPL_0484,12:15,push,TPL_0485,11:00,push
+U0060,4,Social Achievers,trial,D91,6,conversion_readiness,3_feature_discovery,4,TPL_0476,12:45,push,TPL_0475,10:00,push,TPL_0480,14:00,push,TPL_0473,09:45,push
+U0061,5,Casual Explorers,trial,D24,0,activation,1_activation,4,TPL_0567,18:30,push,TPL_0566,22:15,push,TPL_0568,18:45,push,TPL_0570,22:45,push
+U0061,5,Casual Explorers,trial,D25,1,habit_formation,1_activation,4,TPL_0600,19:45,push,TPL_0599,22:00,push,TPL_0595,20:15,push,TPL_0598,23:30,push
+U0061,5,Casual Explorers,trial,D26,2,habit_formation,2_habit_formation,4,TPL_0596,18:15,push,TPL_0600,23:45,push,TPL_0594,20:15,push,TPL_0593,23:15,push
+U0061,5,Casual Explorers,trial,D27,3,feature_discovery,2_habit_formation,4,TPL_0588,18:00,push,TPL_0590,22:45,push,TPL_0585,20:45,push,TPL_0587,23:45,push
+U0061,5,Casual Explorers,trial,D28,4,feature_discovery,2_habit_formation,4,TPL_0587,18:15,push,TPL_0584,22:30,push,TPL_0586,18:30,push,TPL_0585,21:00,push
+U0061,5,Casual Explorers,trial,D29,5,feature_discovery,3_feature_discovery,4,TPL_0581,18:45,push,TPL_0587,23:00,push,TPL_0589,18:15,push,TPL_0586,21:00,push
+U0061,5,Casual Explorers,trial,D30,6,conversion_readiness,3_feature_discovery,4,TPL_0576,20:00,push,TPL_0580,22:00,push,TPL_0572,18:00,push,TPL_0571,22:45,push
+U0062,3,Core Engaged,churned,D12,0,re_engagement,9_win_back,4,TPL_0307,18:15,push,TPL_0303,12:15,push,TPL_0309,20:30,push,TPL_0301,12:30,push
+U0062,3,Core Engaged,churned,D13,1,re_engagement,9_win_back,4,TPL_0303,20:30,push,TPL_0308,12:30,push,TPL_0306,18:15,push,TPL_0305,13:30,push
+U0062,3,Core Engaged,churned,D14,2,re_engagement,9_win_back,4,TPL_0303,19:00,push,TPL_0302,14:15,push,TPL_0310,20:45,push,TPL_0307,14:45,push
+U0062,3,Core Engaged,churned,D15,3,re_engagement,10_re_activation,4,TPL_0301,18:30,push,TPL_0305,14:45,push,TPL_0304,20:30,push,TPL_0302,14:45,push
+U0062,3,Core Engaged,churned,D16,4,re_engagement,10_re_activation,4,TPL_0309,19:15,push,TPL_0305,13:45,push,TPL_0304,18:45,push,TPL_0303,12:15,push
+U0062,3,Core Engaged,churned,D17,5,re_engagement,10_re_activation,4,TPL_0309,19:15,push,TPL_0304,13:00,push,TPL_0303,20:45,push,TPL_0301,13:15,push
+U0062,3,Core Engaged,churned,D18,6,re_engagement,10_re_activation,4,TPL_0302,19:15,push,TPL_0306,13:15,push,TPL_0307,19:00,push,TPL_0308,13:30,push
+U0063,1,Social Gamifiers,trial,D81,0,activation,1_activation,2,TPL_0162,12:15,push,TPL_0164,18:30,push,,,,,,
+U0063,1,Social Gamifiers,trial,D82,1,habit_formation,1_activation,2,TPL_0197,13:00,push,TPL_0192,18:15,push,,,,,,
+U0063,1,Social Gamifiers,trial,D83,2,habit_formation,2_habit_formation,2,TPL_0196,14:15,push,TPL_0197,19:15,push,,,,,,
+U0063,1,Social Gamifiers,trial,D84,3,feature_discovery,2_habit_formation,2,TPL_0189,13:30,push,TPL_0181,18:15,push,,,,,,
+U0063,1,Social Gamifiers,trial,D85,4,feature_discovery,2_habit_formation,2,TPL_0183,12:00,push,TPL_0184,20:45,push,,,,,,
+U0063,1,Social Gamifiers,trial,D86,5,feature_discovery,3_feature_discovery,2,TPL_0182,12:15,push,TPL_0190,19:15,push,,,,,,
+U0063,1,Social Gamifiers,trial,D87,6,conversion_readiness,3_feature_discovery,2,TPL_0171,14:30,push,TPL_0172,19:45,push,,,,,,
+U0064,1,Social Gamifiers,trial,D32,0,activation,1_activation,2,TPL_0165,13:30,push,TPL_0161,19:30,push,,,,,,
+U0064,1,Social Gamifiers,trial,D33,1,habit_formation,1_activation,2,TPL_0196,13:45,push,TPL_0191,19:00,push,,,,,,
+U0064,1,Social Gamifiers,trial,D34,2,habit_formation,2_habit_formation,2,TPL_0198,14:45,push,TPL_0195,19:15,push,,,,,,
+U0064,1,Social Gamifiers,trial,D35,3,feature_discovery,2_habit_formation,2,TPL_0184,13:30,push,TPL_0181,19:00,push,,,,,,
+U0064,1,Social Gamifiers,trial,D36,4,feature_discovery,2_habit_formation,2,TPL_0182,14:15,push,TPL_0188,20:15,push,,,,,,
+U0064,1,Social Gamifiers,trial,D37,5,feature_discovery,3_feature_discovery,2,TPL_0185,12:30,push,TPL_0182,20:45,push,,,,,,
+U0064,1,Social Gamifiers,trial,D38,6,conversion_readiness,3_feature_discovery,2,TPL_0174,13:15,push,TPL_0171,18:30,push,,,,,,
+U0065,0,Low Engagement Users,paid,D15,0,retention,5_early_retention,2,TPL_0057,18:45,push,TPL_0054,08:15,push,,,,,,
+U0065,0,Low Engagement Users,paid,D16,1,retention,5_early_retention,2,TPL_0058,19:30,push,TPL_0056,07:45,push,,,,,,
+U0065,0,Low Engagement Users,paid,D17,2,retention,5_early_retention,2,TPL_0056,20:45,push,TPL_0057,07:15,push,,,,,,
+U0065,0,Low Engagement Users,paid,D18,3,retention,5_early_retention,2,TPL_0056,20:30,push,TPL_0055,06:15,push,,,,,,
+U0065,0,Low Engagement Users,paid,D19,4,retention,5_early_retention,2,TPL_0057,20:45,push,TPL_0053,06:00,push,,,,,,
+U0065,0,Low Engagement Users,paid,D20,5,retention,5_early_retention,2,TPL_0060,20:00,push,TPL_0054,06:00,push,,,,,,
+U0065,0,Low Engagement Users,paid,D21,6,retention,5_early_retention,2,TPL_0060,18:45,push,TPL_0055,06:15,push,,,,,,
+U0066,5,Casual Explorers,trial,D41,0,activation,1_activation,4,TPL_0568,18:15,push,TPL_0567,21:15,push,TPL_0566,20:45,push,TPL_0563,22:00,push
+U0066,5,Casual Explorers,trial,D42,1,habit_formation,1_activation,4,TPL_0595,20:45,push,TPL_0597,23:45,push,TPL_0600,18:00,push,TPL_0596,23:45,push
+U0066,5,Casual Explorers,trial,D43,2,habit_formation,2_habit_formation,4,TPL_0598,18:00,push,TPL_0594,23:30,push,TPL_0596,20:30,push,TPL_0597,21:45,push
+U0066,5,Casual Explorers,trial,D44,3,feature_discovery,2_habit_formation,4,TPL_0585,18:00,push,TPL_0587,21:15,push,TPL_0590,18:15,push,TPL_0584,23:30,push
+U0066,5,Casual Explorers,trial,D45,4,feature_discovery,2_habit_formation,4,TPL_0588,19:30,push,TPL_0583,22:00,push,TPL_0585,19:45,push,TPL_0589,22:15,push
+U0066,5,Casual Explorers,trial,D46,5,feature_discovery,3_feature_discovery,4,TPL_0584,20:15,push,TPL_0585,22:00,push,TPL_0583,20:00,push,TPL_0586,21:45,push
+U0066,5,Casual Explorers,trial,D47,6,conversion_readiness,3_feature_discovery,4,TPL_0578,19:45,push,TPL_0580,23:45,push,TPL_0579,18:00,push,TPL_0575,23:15,push
+U0067,1,Social Gamifiers,churned,D65,0,re_engagement,9_win_back,2,TPL_0106,12:45,push,TPL_0107,19:30,push,,,,,,
+U0067,1,Social Gamifiers,churned,D66,1,re_engagement,9_win_back,2,TPL_0109,14:00,push,TPL_0101,20:00,push,,,,,,
+U0067,1,Social Gamifiers,churned,D67,2,re_engagement,9_win_back,2,TPL_0106,12:15,push,TPL_0109,20:45,push,,,,,,
+U0067,1,Social Gamifiers,churned,D68,3,re_engagement,10_re_activation,2,TPL_0102,13:00,push,TPL_0109,18:30,push,,,,,,
+U0067,1,Social Gamifiers,churned,D69,4,re_engagement,10_re_activation,2,TPL_0109,14:00,push,TPL_0101,18:30,push,,,,,,
+U0067,1,Social Gamifiers,churned,D70,5,re_engagement,10_re_activation,2,TPL_0109,12:15,push,TPL_0106,20:15,push,,,,,,
+U0067,1,Social Gamifiers,churned,D71,6,re_engagement,10_re_activation,2,TPL_0108,14:45,push,TPL_0110,18:30,push,,,,,,
+U0068,4,Social Achievers,trial,D54,0,activation,1_activation,4,TPL_0463,12:15,push,TPL_0461,11:45,push,TPL_0465,14:30,push,TPL_0466,10:15,push
+U0068,4,Social Achievers,trial,D55,1,habit_formation,1_activation,4,TPL_0492,14:00,push,TPL_0494,11:30,push,TPL_0493,12:00,push,TPL_0498,10:15,push
+U0068,4,Social Achievers,trial,D56,2,habit_formation,2_habit_formation,4,TPL_0500,12:30,push,TPL_0499,11:45,push,TPL_0491,13:00,push,TPL_0497,11:30,push
+U0068,4,Social Achievers,trial,D57,3,feature_discovery,2_habit_formation,4,TPL_0488,13:45,push,TPL_0487,09:30,push,TPL_0489,14:45,push,TPL_0484,10:15,push
+U0068,4,Social Achievers,trial,D58,4,feature_discovery,2_habit_formation,4,TPL_0482,14:45,push,TPL_0487,09:30,push,TPL_0481,12:00,push,TPL_0485,09:30,push
+U0068,4,Social Achievers,trial,D59,5,feature_discovery,3_feature_discovery,4,TPL_0481,12:45,push,TPL_0490,11:15,push,TPL_0485,14:45,push,TPL_0487,10:30,push
+U0068,4,Social Achievers,trial,D60,6,conversion_readiness,3_feature_discovery,4,TPL_0476,12:00,push,TPL_0474,09:30,push,TPL_0473,13:30,push,TPL_0479,10:00,push
+U0069,1,Social Gamifiers,inactive,D41,0,activation,11_gentle_nudge,2,TPL_0115,12:00,push,TPL_0114,18:45,push,,,,,,
+U0069,1,Social Gamifiers,inactive,D42,1,activation,11_gentle_nudge,2,TPL_0120,13:45,push,TPL_0115,18:00,push,,,,,,
+U0069,1,Social Gamifiers,inactive,D43,2,activation,11_gentle_nudge,2,TPL_0117,12:30,push,TPL_0112,20:00,push,,,,,,
+U0069,1,Social Gamifiers,inactive,D44,3,activation,12_last_chance,2,TPL_0113,14:30,push,TPL_0112,19:00,push,,,,,,
+U0069,1,Social Gamifiers,inactive,D45,4,activation,12_last_chance,2,TPL_0118,13:45,push,TPL_0111,19:00,push,,,,,,
+U0069,1,Social Gamifiers,inactive,D46,5,activation,12_last_chance,2,TPL_0115,14:15,push,TPL_0118,20:15,push,,,,,,
+U0069,1,Social Gamifiers,inactive,D47,6,activation,12_last_chance,2,TPL_0111,14:45,push,TPL_0116,18:15,push,,,,,,
+U0070,4,Social Achievers,churned,D33,0,re_engagement,9_win_back,4,TPL_0407,13:30,push,TPL_0406,10:45,push,TPL_0408,12:00,push,TPL_0403,09:45,push
+U0070,4,Social Achievers,churned,D34,1,re_engagement,9_win_back,4,TPL_0410,13:45,push,TPL_0407,10:45,push,TPL_0402,12:30,push,TPL_0405,10:15,push
+U0070,4,Social Achievers,churned,D35,2,re_engagement,9_win_back,4,TPL_0406,14:45,push,TPL_0407,11:15,push,TPL_0404,13:00,push,TPL_0409,09:30,push
+U0070,4,Social Achievers,churned,D36,3,re_engagement,10_re_activation,4,TPL_0410,12:45,push,TPL_0405,10:45,push,TPL_0406,13:45,push,TPL_0403,10:45,push
+U0070,4,Social Achievers,churned,D37,4,re_engagement,10_re_activation,4,TPL_0406,14:15,push,TPL_0403,10:30,push,TPL_0405,14:15,push,TPL_0402,10:30,push
+U0070,4,Social Achievers,churned,D38,5,re_engagement,10_re_activation,4,TPL_0407,12:45,push,TPL_0406,10:30,push,TPL_0402,14:45,push,TPL_0408,11:15,push
+U0070,4,Social Achievers,churned,D39,6,re_engagement,10_re_activation,4,TPL_0402,13:45,push,TPL_0405,10:45,push,TPL_0403,13:00,push,TPL_0407,11:15,push
+U0071,5,Casual Explorers,trial,D29,0,activation,1_activation,4,TPL_0569,20:15,push,TPL_0565,23:00,push,TPL_0562,20:45,push,TPL_0570,23:15,push
+U0071,5,Casual Explorers,trial,D30,1,habit_formation,1_activation,4,TPL_0594,19:30,push,TPL_0598,23:00,push,TPL_0599,19:45,push,TPL_0597,21:30,push
+U0071,5,Casual Explorers,trial,D31,2,habit_formation,2_habit_formation,4,TPL_0597,18:30,push,TPL_0598,23:15,push,TPL_0600,20:45,push,TPL_0595,22:00,push
+U0071,5,Casual Explorers,trial,D32,3,feature_discovery,2_habit_formation,4,TPL_0584,19:45,push,TPL_0581,23:45,push,TPL_0589,20:45,push,TPL_0585,23:00,push
+U0071,5,Casual Explorers,trial,D33,4,feature_discovery,2_habit_formation,4,TPL_0581,19:00,push,TPL_0586,21:15,push,TPL_0589,20:30,push,TPL_0590,21:00,push
+U0071,5,Casual Explorers,trial,D34,5,feature_discovery,3_feature_discovery,4,TPL_0581,20:45,push,TPL_0586,22:45,push,TPL_0589,18:00,push,TPL_0583,21:30,push
+U0071,5,Casual Explorers,trial,D35,6,conversion_readiness,3_feature_discovery,4,TPL_0576,18:15,push,TPL_0572,22:30,push,TPL_0573,19:45,push,TPL_0571,23:15,push
+U0072,0,Low Engagement Users,trial,D12,0,activation,1_activation,2,TPL_0068,19:00,push,TPL_0070,07:00,push,,,,,,
+U0072,0,Low Engagement Users,trial,D13,1,habit_formation,1_activation,2,TPL_0092,19:45,push,TPL_0095,06:00,push,,,,,,
+U0072,0,Low Engagement Users,trial,D14,2,habit_formation,2_habit_formation,2,TPL_0097,20:15,push,TPL_0095,07:30,push,,,,,,
+U0072,0,Low Engagement Users,trial,D15,3,feature_discovery,2_habit_formation,2,TPL_0083,19:45,push,TPL_0090,06:45,push,,,,,,
+U0072,0,Low Engagement Users,trial,D16,4,feature_discovery,2_habit_formation,2,TPL_0084,19:45,push,TPL_0083,06:45,push,,,,,,
+U0072,0,Low Engagement Users,trial,D17,5,feature_discovery,3_feature_discovery,2,TPL_0086,20:45,push,TPL_0090,07:00,push,,,,,,
+U0072,0,Low Engagement Users,trial,D18,6,conversion_readiness,3_feature_discovery,2,TPL_0076,19:00,push,TPL_0080,08:00,push,,,,,,
+U0073,0,Low Engagement Users,churned,D12,0,re_engagement,9_win_back,2,TPL_0009,18:30,push,TPL_0002,08:00,push,,,,,,
+U0073,0,Low Engagement Users,churned,D13,1,re_engagement,9_win_back,2,TPL_0007,20:15,push,TPL_0006,08:15,push,,,,,,
+U0073,0,Low Engagement Users,churned,D14,2,re_engagement,9_win_back,2,TPL_0008,20:15,push,TPL_0001,08:15,push,,,,,,
+U0073,0,Low Engagement Users,churned,D15,3,re_engagement,10_re_activation,2,TPL_0007,19:45,push,TPL_0008,07:15,push,,,,,,
+U0073,0,Low Engagement Users,churned,D16,4,re_engagement,10_re_activation,2,TPL_0008,19:15,push,TPL_0010,06:45,push,,,,,,
+U0073,0,Low Engagement Users,churned,D17,5,re_engagement,10_re_activation,2,TPL_0005,19:00,push,TPL_0001,08:15,push,,,,,,
+U0073,0,Low Engagement Users,churned,D18,6,re_engagement,10_re_activation,2,TPL_0009,19:45,push,TPL_0001,07:00,push,,,,,,
+U0074,0,Low Engagement Users,paid,D17,0,retention,5_early_retention,2,TPL_0057,20:15,push,TPL_0058,06:30,push,,,,,,
+U0074,0,Low Engagement Users,paid,D18,1,retention,5_early_retention,2,TPL_0057,20:00,push,TPL_0053,08:00,push,,,,,,
+U0074,0,Low Engagement Users,paid,D19,2,retention,5_early_retention,2,TPL_0055,20:15,push,TPL_0060,07:30,push,,,,,,
+U0074,0,Low Engagement Users,paid,D20,3,retention,5_early_retention,2,TPL_0053,18:45,push,TPL_0059,06:30,push,,,,,,
+U0074,0,Low Engagement Users,paid,D21,4,retention,5_early_retention,2,TPL_0052,20:45,push,TPL_0054,08:30,push,,,,,,
+U0074,0,Low Engagement Users,paid,D22,5,retention,5_early_retention,2,TPL_0052,20:45,push,TPL_0053,08:45,push,,,,,,
+U0074,0,Low Engagement Users,paid,D23,6,retention,5_early_retention,2,TPL_0054,20:00,push,TPL_0058,07:30,push,,,,,,
+U0075,1,Social Gamifiers,paid,D31,0,retention,5_early_retention,2,TPL_0157,13:15,push,TPL_0160,20:30,push,,,,,,
+U0075,1,Social Gamifiers,paid,D32,1,retention,5_early_retention,2,TPL_0159,14:00,push,TPL_0151,20:15,push,,,,,,
+U0075,1,Social Gamifiers,paid,D33,2,retention,5_early_retention,2,TPL_0159,13:00,push,TPL_0152,18:30,push,,,,,,
+U0075,1,Social Gamifiers,paid,D34,3,retention,5_early_retention,2,TPL_0160,12:15,push,TPL_0153,19:15,push,,,,,,
+U0075,1,Social Gamifiers,paid,D35,4,retention,5_early_retention,2,TPL_0154,14:45,push,TPL_0152,19:15,push,,,,,,
+U0075,1,Social Gamifiers,paid,D36,5,retention,5_early_retention,2,TPL_0152,14:45,push,TPL_0157,19:15,push,,,,,,
+U0075,1,Social Gamifiers,paid,D37,6,retention,5_early_retention,2,TPL_0154,13:15,push,TPL_0153,20:15,push,,,,,,
+U0076,0,Low Engagement Users,churned,D38,0,re_engagement,9_win_back,2,TPL_0002,19:30,push,TPL_0006,06:15,push,,,,,,
+U0076,0,Low Engagement Users,churned,D39,1,re_engagement,9_win_back,2,TPL_0004,19:45,push,TPL_0007,08:00,push,,,,,,
+U0076,0,Low Engagement Users,churned,D40,2,re_engagement,9_win_back,2,TPL_0008,19:00,push,TPL_0005,07:15,push,,,,,,
+U0076,0,Low Engagement Users,churned,D41,3,re_engagement,10_re_activation,2,TPL_0002,18:45,push,TPL_0004,08:45,push,,,,,,
+U0076,0,Low Engagement Users,churned,D42,4,re_engagement,10_re_activation,2,TPL_0007,19:45,push,TPL_0002,07:45,push,,,,,,
+U0076,0,Low Engagement Users,churned,D43,5,re_engagement,10_re_activation,2,TPL_0008,19:15,push,TPL_0009,06:00,push,,,,,,
+U0076,0,Low Engagement Users,churned,D44,6,re_engagement,10_re_activation,2,TPL_0007,18:30,push,TPL_0003,06:30,push,,,,,,
+U0077,5,Casual Explorers,trial,D45,0,activation,1_activation,4,TPL_0567,18:30,push,TPL_0565,21:45,push,TPL_0564,20:45,push,TPL_0563,23:00,push
+U0077,5,Casual Explorers,trial,D46,1,habit_formation,1_activation,4,TPL_0600,20:00,push,TPL_0596,22:30,push,TPL_0594,20:00,push,TPL_0593,23:45,push
+U0077,5,Casual Explorers,trial,D47,2,habit_formation,2_habit_formation,4,TPL_0596,20:15,push,TPL_0592,22:00,push,TPL_0598,20:15,push,TPL_0597,22:00,push
+U0077,5,Casual Explorers,trial,D48,3,feature_discovery,2_habit_formation,4,TPL_0581,19:30,push,TPL_0586,22:00,push,TPL_0588,19:00,push,TPL_0585,21:15,push
+U0077,5,Casual Explorers,trial,D49,4,feature_discovery,2_habit_formation,4,TPL_0584,20:30,push,TPL_0585,23:45,push,TPL_0587,18:15,push,TPL_0582,21:15,push
+U0077,5,Casual Explorers,trial,D50,5,feature_discovery,3_feature_discovery,4,TPL_0586,18:30,push,TPL_0582,23:30,push,TPL_0590,20:15,push,TPL_0581,22:30,push
+U0077,5,Casual Explorers,trial,D51,6,conversion_readiness,3_feature_discovery,4,TPL_0579,19:30,push,TPL_0575,23:00,push,TPL_0571,18:45,push,TPL_0574,21:30,push
+U0078,0,Low Engagement Users,trial,D28,0,activation,1_activation,2,TPL_0067,20:15,push,TPL_0065,08:15,push,,,,,,
+U0078,0,Low Engagement Users,trial,D29,1,habit_formation,1_activation,2,TPL_0100,18:15,push,TPL_0097,08:30,push,,,,,,
+U0078,0,Low Engagement Users,trial,D30,2,habit_formation,2_habit_formation,2,TPL_0100,18:45,push,TPL_0094,07:15,push,,,,,,
+U0078,0,Low Engagement Users,trial,D31,3,feature_discovery,2_habit_formation,2,TPL_0085,20:30,push,TPL_0088,08:45,push,,,,,,
+U0078,0,Low Engagement Users,trial,D32,4,feature_discovery,2_habit_formation,2,TPL_0083,19:45,push,TPL_0086,06:00,push,,,,,,
+U0078,0,Low Engagement Users,trial,D33,5,feature_discovery,3_feature_discovery,2,TPL_0085,19:30,push,TPL_0087,08:30,push,,,,,,
+U0078,0,Low Engagement Users,trial,D34,6,conversion_readiness,3_feature_discovery,2,TPL_0072,19:45,push,TPL_0073,07:00,push,,,,,,
+U0079,3,Core Engaged,trial,D61,0,activation,1_activation,4,TPL_0366,20:00,push,TPL_0367,14:45,push,TPL_0363,20:30,push,TPL_0368,12:45,push
+U0079,3,Core Engaged,trial,D62,1,habit_formation,1_activation,4,TPL_0391,18:45,push,TPL_0394,12:45,push,TPL_0398,19:30,push,TPL_0396,13:30,push
+U0079,3,Core Engaged,trial,D63,2,habit_formation,2_habit_formation,4,TPL_0394,20:15,push,TPL_0400,14:45,push,TPL_0391,19:00,push,TPL_0392,12:00,push
+U0079,3,Core Engaged,trial,D64,3,feature_discovery,2_habit_formation,4,TPL_0382,20:45,push,TPL_0385,12:00,push,TPL_0386,18:45,push,TPL_0387,13:00,push
+U0079,3,Core Engaged,trial,D65,4,feature_discovery,2_habit_formation,4,TPL_0390,19:15,push,TPL_0388,14:15,push,TPL_0384,20:30,push,TPL_0383,12:30,push
+U0079,3,Core Engaged,trial,D66,5,feature_discovery,3_feature_discovery,4,TPL_0388,18:30,push,TPL_0387,13:00,push,TPL_0386,19:15,push,TPL_0384,12:45,push
+U0079,3,Core Engaged,trial,D67,6,conversion_readiness,3_feature_discovery,4,TPL_0376,20:30,push,TPL_0380,14:15,push,TPL_0379,19:00,push,TPL_0378,14:00,push
+U0080,0,Low Engagement Users,churned,D61,0,re_engagement,9_win_back,2,TPL_0010,18:15,push,TPL_0003,07:00,push,,,,,,
+U0080,0,Low Engagement Users,churned,D62,1,re_engagement,9_win_back,2,TPL_0002,18:15,push,TPL_0009,08:45,push,,,,,,
+U0080,0,Low Engagement Users,churned,D63,2,re_engagement,9_win_back,2,TPL_0004,18:00,push,TPL_0008,08:30,push,,,,,,
+U0080,0,Low Engagement Users,churned,D64,3,re_engagement,10_re_activation,2,TPL_0005,18:45,push,TPL_0004,08:15,push,,,,,,
+U0080,0,Low Engagement Users,churned,D65,4,re_engagement,10_re_activation,2,TPL_0001,19:00,push,TPL_0006,06:45,push,,,,,,
+U0080,0,Low Engagement Users,churned,D66,5,re_engagement,10_re_activation,2,TPL_0001,18:00,push,TPL_0009,06:30,push,,,,,,
+U0080,0,Low Engagement Users,churned,D67,6,re_engagement,10_re_activation,2,TPL_0003,19:30,push,TPL_0002,06:45,push,,,,,,
+U0081,0,Low Engagement Users,paid,D56,0,retention,5_early_retention,2,TPL_0060,18:15,push,TPL_0058,06:00,push,,,,,,
+U0081,0,Low Engagement Users,paid,D57,1,retention,5_early_retention,2,TPL_0058,20:15,push,TPL_0052,07:30,push,,,,,,
+U0081,0,Low Engagement Users,paid,D58,2,retention,5_early_retention,2,TPL_0056,20:15,push,TPL_0052,08:15,push,,,,,,
+U0081,0,Low Engagement Users,paid,D59,3,retention,5_early_retention,2,TPL_0056,19:45,push,TPL_0059,06:00,push,,,,,,
+U0081,0,Low Engagement Users,paid,D60,4,retention,5_early_retention,2,TPL_0055,18:15,push,TPL_0056,06:45,push,,,,,,
+U0081,0,Low Engagement Users,paid,D61,5,retention,5_early_retention,2,TPL_0052,19:45,push,TPL_0053,07:15,push,,,,,,
+U0081,0,Low Engagement Users,paid,D62,6,retention,5_early_retention,2,TPL_0060,18:30,push,TPL_0054,08:00,push,,,,,,
+U0082,4,Social Achievers,trial,D15,0,activation,1_activation,4,TPL_0470,12:30,push,TPL_0464,11:00,push,TPL_0469,14:30,push,TPL_0465,09:15,push
+U0082,4,Social Achievers,trial,D16,1,habit_formation,1_activation,4,TPL_0494,14:45,push,TPL_0491,10:00,push,TPL_0499,12:45,push,TPL_0492,10:00,push
+U0082,4,Social Achievers,trial,D17,2,habit_formation,2_habit_formation,4,TPL_0495,12:45,push,TPL_0491,11:00,push,TPL_0499,14:00,push,TPL_0494,10:30,push
+U0082,4,Social Achievers,trial,D18,3,feature_discovery,2_habit_formation,4,TPL_0481,12:45,push,TPL_0484,11:45,push,TPL_0485,13:15,push,TPL_0489,10:00,push
+U0082,4,Social Achievers,trial,D19,4,feature_discovery,2_habit_formation,4,TPL_0483,12:00,push,TPL_0487,09:30,push,TPL_0485,12:00,push,TPL_0488,09:45,push
+U0082,4,Social Achievers,trial,D20,5,feature_discovery,3_feature_discovery,4,TPL_0489,14:30,push,TPL_0484,11:45,push,TPL_0485,13:45,push,TPL_0483,09:15,push
+U0082,4,Social Achievers,trial,D21,6,conversion_readiness,3_feature_discovery,4,TPL_0479,13:00,push,TPL_0474,10:00,push,TPL_0478,14:15,push,TPL_0475,09:30,push
+U0083,5,Casual Explorers,trial,D55,0,activation,1_activation,4,TPL_0562,19:00,push,TPL_0567,22:45,push,TPL_0566,20:15,push,TPL_0561,21:15,push
+U0083,5,Casual Explorers,trial,D56,1,habit_formation,1_activation,4,TPL_0600,18:45,push,TPL_0596,21:45,push,TPL_0594,20:00,push,TPL_0598,22:15,push
+U0083,5,Casual Explorers,trial,D57,2,habit_formation,2_habit_formation,4,TPL_0592,18:00,push,TPL_0593,23:15,push,TPL_0597,20:00,push,TPL_0596,21:45,push
+U0083,5,Casual Explorers,trial,D58,3,feature_discovery,2_habit_formation,4,TPL_0583,19:30,push,TPL_0585,21:30,push,TPL_0584,18:30,push,TPL_0582,23:00,push
+U0083,5,Casual Explorers,trial,D59,4,feature_discovery,2_habit_formation,4,TPL_0588,18:30,push,TPL_0587,22:30,push,TPL_0582,20:00,push,TPL_0583,22:00,push
+U0083,5,Casual Explorers,trial,D60,5,feature_discovery,3_feature_discovery,4,TPL_0585,19:45,push,TPL_0584,23:30,push,TPL_0587,18:45,push,TPL_0588,23:15,push
+U0083,5,Casual Explorers,trial,D61,6,conversion_readiness,3_feature_discovery,4,TPL_0574,19:15,push,TPL_0578,22:00,push,TPL_0575,20:00,push,TPL_0577,21:00,push
+U0084,0,Low Engagement Users,trial,D9,0,activation,1_activation,2,TPL_0061,18:00,push,TPL_0064,06:00,push,,,,,,
+U0084,0,Low Engagement Users,trial,D10,1,habit_formation,1_activation,2,TPL_0092,19:30,push,TPL_0099,07:15,push,,,,,,
+U0084,0,Low Engagement Users,trial,D11,2,habit_formation,2_habit_formation,2,TPL_0094,18:00,push,TPL_0092,08:45,push,,,,,,
+U0084,0,Low Engagement Users,trial,D12,3,feature_discovery,2_habit_formation,2,TPL_0088,18:30,push,TPL_0084,06:45,push,,,,,,
+U0084,0,Low Engagement Users,trial,D13,4,feature_discovery,2_habit_formation,2,TPL_0083,20:30,push,TPL_0088,07:00,push,,,,,,
+U0084,0,Low Engagement Users,trial,D14,5,feature_discovery,3_feature_discovery,2,TPL_0086,20:30,push,TPL_0088,06:00,push,,,,,,
+U0084,0,Low Engagement Users,trial,D15,6,conversion_readiness,3_feature_discovery,2,TPL_0071,18:15,push,TPL_0078,08:00,push,,,,,,
+U0085,0,Low Engagement Users,trial,D29,0,activation,1_activation,2,TPL_0062,19:00,push,TPL_0069,07:30,push,,,,,,
+U0085,0,Low Engagement Users,trial,D30,1,habit_formation,1_activation,2,TPL_0099,19:30,push,TPL_0097,06:45,push,,,,,,
+U0085,0,Low Engagement Users,trial,D31,2,habit_formation,2_habit_formation,2,TPL_0093,18:30,push,TPL_0097,06:30,push,,,,,,
+U0085,0,Low Engagement Users,trial,D32,3,feature_discovery,2_habit_formation,2,TPL_0084,20:30,push,TPL_0087,08:15,push,,,,,,
+U0085,0,Low Engagement Users,trial,D33,4,feature_discovery,2_habit_formation,2,TPL_0087,19:30,push,TPL_0082,08:45,push,,,,,,
+U0085,0,Low Engagement Users,trial,D34,5,feature_discovery,3_feature_discovery,2,TPL_0086,18:15,push,TPL_0084,06:00,push,,,,,,
+U0085,0,Low Engagement Users,trial,D35,6,conversion_readiness,3_feature_discovery,2,TPL_0071,19:00,push,TPL_0074,06:30,push,,,,,,
+U0086,3,Core Engaged,paid,D24,0,retention,5_early_retention,4,TPL_0358,20:00,push,TPL_0353,13:00,push,TPL_0351,20:45,push,TPL_0356,14:30,push
+U0086,3,Core Engaged,paid,D25,1,retention,5_early_retention,4,TPL_0352,18:15,push,TPL_0351,14:15,push,TPL_0359,19:45,push,TPL_0356,12:15,push
+U0086,3,Core Engaged,paid,D26,2,retention,5_early_retention,4,TPL_0355,20:30,push,TPL_0356,12:00,push,TPL_0358,18:45,push,TPL_0357,14:30,push
+U0086,3,Core Engaged,paid,D27,3,retention,5_early_retention,4,TPL_0358,19:00,push,TPL_0351,14:00,push,TPL_0357,20:15,push,TPL_0355,14:45,push
+U0086,3,Core Engaged,paid,D28,4,retention,5_early_retention,4,TPL_0359,18:00,push,TPL_0358,13:15,push,TPL_0355,18:30,push,TPL_0353,13:30,push
+U0086,3,Core Engaged,paid,D29,5,retention,5_early_retention,4,TPL_0351,19:30,push,TPL_0358,13:45,push,TPL_0356,19:15,push,TPL_0353,12:15,push
+U0086,3,Core Engaged,paid,D30,6,retention,5_early_retention,4,TPL_0357,18:00,push,TPL_0355,12:00,push,TPL_0359,18:45,push,TPL_0356,13:30,push
+U0087,0,Low Engagement Users,paid,D83,0,retention,5_early_retention,2,TPL_0052,19:00,push,TPL_0058,08:30,push,,,,,,
+U0087,0,Low Engagement Users,paid,D84,1,retention,5_early_retention,2,TPL_0056,18:45,push,TPL_0052,07:45,push,,,,,,
+U0087,0,Low Engagement Users,paid,D85,2,retention,5_early_retention,2,TPL_0056,19:00,push,TPL_0058,06:15,push,,,,,,
+U0087,0,Low Engagement Users,paid,D86,3,retention,5_early_retention,2,TPL_0054,20:30,push,TPL_0055,08:00,push,,,,,,
+U0087,0,Low Engagement Users,paid,D87,4,retention,5_early_retention,2,TPL_0058,18:30,push,TPL_0053,06:00,push,,,,,,
+U0087,0,Low Engagement Users,paid,D88,5,retention,5_early_retention,2,TPL_0058,20:15,push,TPL_0052,07:45,push,,,,,,
+U0087,0,Low Engagement Users,paid,D89,6,retention,5_early_retention,2,TPL_0058,20:00,push,TPL_0056,08:30,push,,,,,,
+U0088,0,Low Engagement Users,churned,D4,0,re_engagement,9_win_back,2,TPL_0002,19:15,push,TPL_0006,06:45,push,,,,,,
+U0088,0,Low Engagement Users,churned,D5,1,re_engagement,9_win_back,2,TPL_0002,19:15,push,TPL_0007,06:45,push,,,,,,
+U0088,0,Low Engagement Users,churned,D6,2,re_engagement,9_win_back,2,TPL_0005,18:15,push,TPL_0010,06:00,push,,,,,,
+U0088,0,Low Engagement Users,churned,D7,3,re_engagement,10_re_activation,2,TPL_0002,18:15,push,TPL_0010,06:15,push,,,,,,
+U0088,0,Low Engagement Users,churned,D8,4,re_engagement,10_re_activation,2,TPL_0003,19:30,push,TPL_0001,08:00,push,,,,,,
+U0088,0,Low Engagement Users,churned,D9,5,re_engagement,10_re_activation,2,TPL_0010,20:30,push,TPL_0005,06:00,push,,,,,,
+U0088,0,Low Engagement Users,churned,D10,6,re_engagement,10_re_activation,2,TPL_0002,18:15,push,TPL_0001,08:45,push,,,,,,
+U0089,5,Casual Explorers,paid,D64,0,retention,5_early_retention,4,TPL_0558,18:00,push,TPL_0560,22:00,push,TPL_0552,18:45,push,TPL_0551,21:15,push
+U0089,5,Casual Explorers,paid,D65,1,retention,5_early_retention,4,TPL_0554,20:45,push,TPL_0552,23:45,push,TPL_0553,19:00,push,TPL_0560,22:45,push
+U0089,5,Casual Explorers,paid,D66,2,retention,5_early_retention,4,TPL_0560,18:30,push,TPL_0558,21:15,push,TPL_0554,19:30,push,TPL_0559,22:15,push
+U0089,5,Casual Explorers,paid,D67,3,retention,5_early_retention,4,TPL_0558,18:15,push,TPL_0552,23:30,push,TPL_0553,19:45,push,TPL_0555,23:45,push
+U0089,5,Casual Explorers,paid,D68,4,retention,5_early_retention,4,TPL_0553,18:00,push,TPL_0555,22:45,push,TPL_0552,18:45,push,TPL_0558,21:15,push
+U0089,5,Casual Explorers,paid,D69,5,retention,5_early_retention,4,TPL_0554,20:00,push,TPL_0553,22:30,push,TPL_0555,19:45,push,TPL_0551,22:30,push
+U0089,5,Casual Explorers,paid,D70,6,retention,5_early_retention,4,TPL_0556,19:30,push,TPL_0553,21:00,push,TPL_0554,19:15,push,TPL_0552,21:30,push
+U0090,3,Core Engaged,trial,D48,0,activation,1_activation,4,TPL_0369,18:45,push,TPL_0365,14:30,push,TPL_0367,20:15,push,TPL_0361,12:00,push
+U0090,3,Core Engaged,trial,D49,1,habit_formation,1_activation,4,TPL_0393,18:15,push,TPL_0400,13:00,push,TPL_0396,18:45,push,TPL_0395,13:15,push
+U0090,3,Core Engaged,trial,D50,2,habit_formation,2_habit_formation,4,TPL_0392,18:15,push,TPL_0394,14:30,push,TPL_0396,20:30,push,TPL_0391,14:00,push
+U0090,3,Core Engaged,trial,D51,3,feature_discovery,2_habit_formation,4,TPL_0390,20:30,push,TPL_0386,14:15,push,TPL_0382,20:15,push,TPL_0389,13:30,push
+U0090,3,Core Engaged,trial,D52,4,feature_discovery,2_habit_formation,4,TPL_0390,18:45,push,TPL_0385,12:00,push,TPL_0387,18:15,push,TPL_0381,14:15,push
+U0090,3,Core Engaged,trial,D53,5,feature_discovery,3_feature_discovery,4,TPL_0384,18:45,push,TPL_0381,12:30,push,TPL_0387,20:15,push,TPL_0386,12:30,push
+U0090,3,Core Engaged,trial,D54,6,conversion_readiness,3_feature_discovery,4,TPL_0372,20:15,push,TPL_0380,13:00,push,TPL_0376,18:15,push,TPL_0371,14:15,push
+U0091,0,Low Engagement Users,paid,D2,0,retention,5_early_retention,2,TPL_0057,18:30,push,TPL_0059,06:30,push,,,,,,
+U0091,0,Low Engagement Users,paid,D3,1,retention,5_early_retention,2,TPL_0060,20:45,push,TPL_0058,08:00,push,,,,,,
+U0091,0,Low Engagement Users,paid,D4,2,retention,5_early_retention,2,TPL_0056,19:30,push,TPL_0055,07:15,push,,,,,,
+U0091,0,Low Engagement Users,paid,D5,3,retention,5_early_retention,2,TPL_0060,18:45,push,TPL_0053,08:45,push,,,,,,
+U0091,0,Low Engagement Users,paid,D6,4,retention,5_early_retention,2,TPL_0053,20:30,push,TPL_0054,06:30,push,,,,,,
+U0091,0,Low Engagement Users,paid,D7,5,retention,5_early_retention,2,TPL_0054,18:15,push,TPL_0055,07:30,push,,,,,,
+U0091,0,Low Engagement Users,paid,D8,6,retention,5_early_retention,2,TPL_0053,20:30,push,TPL_0059,06:15,push,,,,,,
+U0092,5,Casual Explorers,churned,D44,0,re_engagement,9_win_back,4,TPL_0503,20:00,push,TPL_0501,23:45,push,TPL_0507,20:00,push,TPL_0506,21:30,push
+U0092,5,Casual Explorers,churned,D45,1,re_engagement,9_win_back,4,TPL_0507,20:15,push,TPL_0510,23:00,push,TPL_0504,19:15,push,TPL_0505,22:00,push
+U0092,5,Casual Explorers,churned,D46,2,re_engagement,9_win_back,4,TPL_0505,18:30,push,TPL_0502,22:15,push,TPL_0509,20:00,push,TPL_0501,23:30,push
+U0092,5,Casual Explorers,churned,D47,3,re_engagement,10_re_activation,4,TPL_0503,19:00,push,TPL_0505,22:15,push,TPL_0501,18:00,push,TPL_0510,22:30,push
+U0092,5,Casual Explorers,churned,D48,4,re_engagement,10_re_activation,4,TPL_0509,18:00,push,TPL_0501,21:45,push,TPL_0506,19:45,push,TPL_0510,21:45,push
+U0092,5,Casual Explorers,churned,D49,5,re_engagement,10_re_activation,4,TPL_0506,19:45,push,TPL_0503,22:45,push,TPL_0510,18:45,push,TPL_0502,23:15,push
+U0092,5,Casual Explorers,churned,D50,6,re_engagement,10_re_activation,4,TPL_0502,18:45,push,TPL_0507,21:00,push,TPL_0503,19:00,push,TPL_0509,22:30,push
+U0093,1,Social Gamifiers,paid,D13,0,retention,5_early_retention,2,TPL_0158,12:00,push,TPL_0153,19:15,push,,,,,,
+U0093,1,Social Gamifiers,paid,D14,1,retention,5_early_retention,2,TPL_0156,13:15,push,TPL_0160,20:00,push,,,,,,
+U0093,1,Social Gamifiers,paid,D15,2,retention,5_early_retention,2,TPL_0155,14:00,push,TPL_0158,19:45,push,,,,,,
+U0093,1,Social Gamifiers,paid,D16,3,retention,5_early_retention,2,TPL_0158,14:00,push,TPL_0154,19:15,push,,,,,,
+U0093,1,Social Gamifiers,paid,D17,4,retention,5_early_retention,2,TPL_0151,14:45,push,TPL_0160,18:00,push,,,,,,
+U0093,1,Social Gamifiers,paid,D18,5,retention,5_early_retention,2,TPL_0151,12:30,push,TPL_0159,18:15,push,,,,,,
+U0093,1,Social Gamifiers,paid,D19,6,retention,5_early_retention,2,TPL_0157,13:30,push,TPL_0156,20:30,push,,,,,,
+U0094,3,Core Engaged,churned,D29,0,re_engagement,9_win_back,4,TPL_0309,19:15,push,TPL_0306,12:00,push,TPL_0302,19:45,push,TPL_0310,12:00,push
+U0094,3,Core Engaged,churned,D30,1,re_engagement,9_win_back,4,TPL_0309,19:00,push,TPL_0304,13:00,push,TPL_0303,19:45,push,TPL_0310,12:00,push
+U0094,3,Core Engaged,churned,D31,2,re_engagement,9_win_back,4,TPL_0307,18:15,push,TPL_0303,12:30,push,TPL_0302,18:45,push,TPL_0306,12:30,push
+U0094,3,Core Engaged,churned,D32,3,re_engagement,10_re_activation,4,TPL_0306,19:45,push,TPL_0301,13:30,push,TPL_0302,18:45,push,TPL_0307,12:30,push
+U0094,3,Core Engaged,churned,D33,4,re_engagement,10_re_activation,4,TPL_0310,19:30,push,TPL_0302,12:45,push,TPL_0306,18:30,push,TPL_0305,13:45,push
+U0094,3,Core Engaged,churned,D34,5,re_engagement,10_re_activation,4,TPL_0302,19:15,push,TPL_0310,13:00,push,TPL_0304,18:00,push,TPL_0306,12:30,push
+U0094,3,Core Engaged,churned,D35,6,re_engagement,10_re_activation,4,TPL_0304,20:45,push,TPL_0306,14:15,push,TPL_0303,20:00,push,TPL_0307,13:45,push
+U0095,3,Core Engaged,paid,D67,0,retention,5_early_retention,4,TPL_0353,20:45,push,TPL_0356,14:15,push,TPL_0351,19:30,push,TPL_0355,12:45,push
+U0095,3,Core Engaged,paid,D68,1,retention,5_early_retention,4,TPL_0358,20:00,push,TPL_0360,14:15,push,TPL_0352,18:45,push,TPL_0353,12:15,push
+U0095,3,Core Engaged,paid,D69,2,retention,5_early_retention,4,TPL_0359,18:15,push,TPL_0356,12:00,push,TPL_0360,19:00,push,TPL_0352,14:45,push
+U0095,3,Core Engaged,paid,D70,3,retention,5_early_retention,4,TPL_0355,18:15,push,TPL_0360,14:30,push,TPL_0359,19:00,push,TPL_0354,12:45,push
+U0095,3,Core Engaged,paid,D71,4,retention,5_early_retention,4,TPL_0356,20:45,push,TPL_0357,14:30,push,TPL_0353,19:45,push,TPL_0360,12:45,push
+U0095,3,Core Engaged,paid,D72,5,retention,5_early_retention,4,TPL_0353,18:45,push,TPL_0352,12:15,push,TPL_0359,20:00,push,TPL_0360,12:00,push
+U0095,3,Core Engaged,paid,D73,6,retention,5_early_retention,4,TPL_0352,19:30,push,TPL_0359,13:30,push,TPL_0355,19:45,push,TPL_0351,14:45,push
+U0096,0,Low Engagement Users,paid,D17,0,retention,5_early_retention,2,TPL_0052,18:15,push,TPL_0053,07:45,push,,,,,,
+U0096,0,Low Engagement Users,paid,D18,1,retention,5_early_retention,2,TPL_0055,18:45,push,TPL_0058,06:45,push,,,,,,
+U0096,0,Low Engagement Users,paid,D19,2,retention,5_early_retention,2,TPL_0057,19:15,push,TPL_0056,06:45,push,,,,,,
+U0096,0,Low Engagement Users,paid,D20,3,retention,5_early_retention,2,TPL_0058,19:30,push,TPL_0054,06:30,push,,,,,,
+U0096,0,Low Engagement Users,paid,D21,4,retention,5_early_retention,2,TPL_0053,19:30,push,TPL_0057,07:45,push,,,,,,
+U0096,0,Low Engagement Users,paid,D22,5,retention,5_early_retention,2,TPL_0060,20:00,push,TPL_0057,06:15,push,,,,,,
+U0096,0,Low Engagement Users,paid,D23,6,retention,5_early_retention,2,TPL_0055,19:45,push,TPL_0053,07:30,push,,,,,,
+U0097,4,Social Achievers,paid,D61,0,retention,5_early_retention,4,TPL_0459,14:45,push,TPL_0451,11:00,push,TPL_0454,12:45,push,TPL_0453,09:45,push
+U0097,4,Social Achievers,paid,D62,1,retention,5_early_retention,4,TPL_0456,14:45,push,TPL_0452,11:30,push,TPL_0454,12:15,push,TPL_0460,09:30,push
+U0097,4,Social Achievers,paid,D63,2,retention,5_early_retention,4,TPL_0457,14:45,push,TPL_0454,09:00,push,TPL_0458,12:15,push,TPL_0456,09:00,push
+U0097,4,Social Achievers,paid,D64,3,retention,5_early_retention,4,TPL_0458,12:00,push,TPL_0451,10:00,push,TPL_0455,13:15,push,TPL_0456,10:30,push
+U0097,4,Social Achievers,paid,D65,4,retention,5_early_retention,4,TPL_0452,13:45,push,TPL_0455,11:00,push,TPL_0454,14:00,push,TPL_0458,09:30,push
+U0097,4,Social Achievers,paid,D66,5,retention,5_early_retention,4,TPL_0453,13:45,push,TPL_0457,09:45,push,TPL_0452,14:30,push,TPL_0455,10:15,push
+U0097,4,Social Achievers,paid,D67,6,retention,5_early_retention,4,TPL_0459,13:00,push,TPL_0454,10:00,push,TPL_0460,13:00,push,TPL_0458,09:15,push
+U0098,0,Low Engagement Users,trial,D36,0,activation,1_activation,2,TPL_0063,18:15,push,TPL_0065,08:15,push,,,,,,
+U0098,0,Low Engagement Users,trial,D37,1,habit_formation,1_activation,2,TPL_0094,19:45,push,TPL_0099,08:00,push,,,,,,
+U0098,0,Low Engagement Users,trial,D38,2,habit_formation,2_habit_formation,2,TPL_0092,20:00,push,TPL_0095,07:15,push,,,,,,
+U0098,0,Low Engagement Users,trial,D39,3,feature_discovery,2_habit_formation,2,TPL_0087,20:15,push,TPL_0085,08:00,push,,,,,,
+U0098,0,Low Engagement Users,trial,D40,4,feature_discovery,2_habit_formation,2,TPL_0089,18:30,push,TPL_0088,08:30,push,,,,,,
+U0098,0,Low Engagement Users,trial,D41,5,feature_discovery,3_feature_discovery,2,TPL_0082,20:30,push,TPL_0089,07:45,push,,,,,,
+U0098,0,Low Engagement Users,trial,D42,6,conversion_readiness,3_feature_discovery,2,TPL_0080,19:45,push,TPL_0071,07:15,push,,,,,,
+U0099,4,Social Achievers,trial,D24,0,activation,1_activation,4,TPL_0465,13:30,push,TPL_0467,11:45,push,TPL_0466,14:00,push,TPL_0468,09:30,push
+U0099,4,Social Achievers,trial,D25,1,habit_formation,1_activation,4,TPL_0499,14:30,push,TPL_0493,10:00,push,TPL_0495,13:00,push,TPL_0494,10:30,push
+U0099,4,Social Achievers,trial,D26,2,habit_formation,2_habit_formation,4,TPL_0494,14:30,push,TPL_0495,10:30,push,TPL_0491,14:30,push,TPL_0492,09:15,push
+U0099,4,Social Achievers,trial,D27,3,feature_discovery,2_habit_formation,4,TPL_0484,14:15,push,TPL_0485,09:45,push,TPL_0489,14:30,push,TPL_0481,11:15,push
+U0099,4,Social Achievers,trial,D28,4,feature_discovery,2_habit_formation,4,TPL_0487,14:00,push,TPL_0490,11:45,push,TPL_0488,13:30,push,TPL_0485,10:45,push
+U0099,4,Social Achievers,trial,D29,5,feature_discovery,3_feature_discovery,4,TPL_0490,13:00,push,TPL_0482,11:15,push,TPL_0485,13:15,push,TPL_0487,11:45,push
+U0099,4,Social Achievers,trial,D30,6,conversion_readiness,3_feature_discovery,4,TPL_0480,14:30,push,TPL_0472,11:30,push,TPL_0475,12:15,push,TPL_0477,10:00,push

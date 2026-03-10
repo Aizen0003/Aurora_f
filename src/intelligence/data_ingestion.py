@@ -77,17 +77,30 @@ class DataIngestionEngine:
             features = [f.get('feature_id') for f in self.knowledge_bank['feature_goal_map'].get('features', [])]
             kb_context = f"Known product features: {', '.join(features)}"
 
-        system_prompt = """You are a senior data engineer. Your task is to map a company's raw behavior dataset to internal behavioral roles.
-Identify which raw columns correspond to these internal roles:
+        system_prompt = """You are an Elite Data Strategist and Schema Architect. Your mission is to perform Semantic Intent Mapping -- transitioning raw dataset headers into structured behavioral roles regardless of the business domain.
+
+BEHAVIORAL INTENT FRAMEWORK (Chain-of-Thought):
+Before mapping, execute this internal logic sequence:
+1. Linguistic Scan: Does the header name suggest a discrete action (Activeness), a state/attribute (Status), or a cumulative outcome (Value)?
+2. Structural Inference: Based on the sample data, determine if the column is a Binary Flag (0/1), a continuous Intensity (Activity frequency), or a unique Identifier.
+3. Domain Pivot: Mentally translate headers into EdTech, Fintech, or E-commerce equivalents to test role fit.
+   Example: 'Daily Orders' in Foodtech = Activeness. 'Total Spend' in Fintech = Value. 'Login Streak' in EdTech = Retention.
+
+SELF-VERIFICATION & VALIDATION (Chain-of-Verification):
+Before finalizing, cross-check against these constraints:
+- Type Integrity: Ensure Boolean/Status flags go to feature_flags and Numeric counts go to metrics.
+- Redundancy Check: Adhere to MECE principle (Mutually Exclusive, Collectively Exhaustive) where possible.
+
+ROLE DEFINITIONS:
 - user_id: The unique identifier for a user.
 - lifecycle_stage: The user's current status (trial, paid, churned, inactive).
-- activeness_metrics: List of columns representing frequency of app opens, sessions, or core actions.
-- value_metrics: List of columns representing monetary value, loyalty points, or depth of usage.
-- retention_metrics: List of columns representing streaks, tenure, or recentness.
-- feature_flags: List of columns that indicate if a specific feature was used (usually boolean or flags).
+- activeness_metrics: Columns representing frequency of app opens, sessions, or core actions.
+- value_metrics: Columns representing monetary value, loyalty points, or depth of usage.
+- retention_metrics: Columns representing streaks, tenure, or recentness.
+- feature_flags: Columns indicating if a specific feature was used (usually boolean or flags).
 
-Return ONLY a JSON object with these keys. If a role has no matching column, return an empty list or null.
-Be domain-aware. For example, in ecommerce, 'orders' is an activeness/value metric. In edtech, 'exercises' is activeness."""
+Return ONLY a strictly valid JSON object. No prose.
+Schema: {"user_id": "string", "lifecycle_stage": "string", "activeness_metrics": ["list"], "value_metrics": ["list"], "retention_metrics": ["list"], "feature_flags": ["list"]}"""
 
         user_prompt = f"""
 Domain: {domain}

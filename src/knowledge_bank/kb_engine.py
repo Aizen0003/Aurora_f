@@ -159,6 +159,12 @@ class KnowledgeBankEngine:
         """
         self.rag_mode_used = True
 
+        # Dynamic Scaling: Proportionate to document size
+        word_count = len(raw_text.split())
+        self.rag_vocab_size = min(60, 20 + (word_count // 500))
+        self.rag_top_chunks = min(30, 10 + (word_count // 1000))
+        print(f"   [RAG] Input size: {word_count} words. Scaled params: vocab={self.rag_vocab_size}, chunks={self.rag_top_chunks}")
+
         # Step 2: Semantic chunking
         chunks = self._semantic_chunking(raw_text)
         print(f"   [RAG] Created {len(chunks)} semantic chunks")

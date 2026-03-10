@@ -162,13 +162,25 @@ class TemplateGenerator:
         nsm = self.north_star.get('north_star_metric', 'engagement')
 
         system_prompt = (
-            f"You are a senior push-notification copywriter for a {self.domain} product. "
-            f"The company's North Star Metric is '{nsm}'. "
-            f"Write notification templates that drive user action using the Octalysis '{theme}' drive. "
-            f"Each template must be bilingual: English + Hinglish (Hindi written in Roman script). "
+            f"You are an Elite Behavioral Copywriter and Cultural Linguist for a {self.domain} product. "
+            f"The company's North Star Metric is '{nsm}'.\n\n"
+            f"THE PERSONIFICATION FRAMEWORK (User-Centric Thinking):\n"
+            f"Before writing, inhabit the Target User:\n"
+            f"1. Embody the State: Feel the user's situation ({lifecycle} lifecycle in {self.domain}).\n"
+            f"2. Identify the Friction: What is the between-the-lines pain point?\n"
+            f"3. Filter the Jargon: 100% RULE: Never use words like Octalysis, Retention, Drive, or Metric.\n\n"
+            f"INVISIBLE PSYCHOLOGY (Between-the-Lines Encoding):\n"
+            f"Encode the '{theme}' drive into grammar and tone:\n"
+            f"- Loss Avoidance: Tense, urgent. Encode the pain of losing progress.\n"
+            f"- Social Influence: Peer-pulse language. Encode community warmth.\n"
+            f"- Accomplishment: Celebratory. Encode pride of mastery.\n"
+            f"- Epic Meaning: High-vision. Encode purpose.\n\n"
+            f"LINGUISTIC PRECISION:\n"
+            f"- English: Premium, benefit-first.\n"
+            f"- Hinglish: Natural Urban-Hindi (Roman script). Avoid robot-translations.\n\n"
             f"Allowed tones: {tones_str}. "
             f"Keep titles under 50 chars, bodies under 150 chars, CTAs under 25 chars. "
-            f"Use emojis sparingly. Reference real product features."
+            f"Reference real product features."
         )
 
         user_prompt = (

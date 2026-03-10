@@ -1,601 +1,701 @@
 template_id,current_ctr,recommendations,priority
-TPL_0001,0.03,"Add engagement keywords (streak, coins, etc.); Add urgency elements",HIGH
-TPL_0002,,Increase positive sentiment,LOW
-TPL_0003,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0004,,"Increase positive sentiment; Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0001,0.036,Template is well-optimized,HIGH
+TPL_0002,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0003,,Template is well-optimized,LOW
+TPL_0004,,"Add engagement keywords (streak, coins, etc.)",LOW
 TPL_0005,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0006,0.075,Template is well-optimized,LOW
-TPL_0007,,"Increase positive sentiment; Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0008,,Template is well-optimized,LOW
-TPL_0009,,"Increase positive sentiment; Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0010,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0006,0.069,Template is well-optimized,LOW
+TPL_0007,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0008,,"Increase positive sentiment; Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0009,,Template is well-optimized,LOW
+TPL_0010,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
 TPL_0011,0.0067,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you); Add urgency elements",HIGH
-TPL_0012,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0013,,Template is well-optimized,LOW
+TPL_0012,,"Add personalization (your, you)",LOW
+TPL_0013,,"Increase positive sentiment; Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
 TPL_0014,,Template is well-optimized,LOW
 TPL_0015,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0016,0.045,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you); Add urgency elements",HIGH
-TPL_0017,,"Add personalization (your, you)",LOW
+TPL_0016,0.05,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you); Add urgency elements",HIGH
+TPL_0017,,Template is well-optimized,LOW
 TPL_0018,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0019,,"Increase positive sentiment; Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0020,,"Increase positive sentiment; Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0021,0.0467,"Add engagement keywords (streak, coins, etc.); Add urgency elements",HIGH
-TPL_0022,,Template is well-optimized,LOW
-TPL_0023,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0024,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0025,,Template is well-optimized,LOW
-TPL_0026,0.0175,Template is well-optimized,HIGH
-TPL_0027,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0028,,"Add personalization (your, you)",LOW
-TPL_0029,,"Add personalization (your, you)",LOW
-TPL_0030,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0031,0.106,"Add personalization (your, you)",LOW
-TPL_0032,,Template is well-optimized,LOW
-TPL_0033,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0034,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0035,,Template is well-optimized,LOW
-TPL_0036,0.03,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you); Add urgency elements",HIGH
-TPL_0037,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0038,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0039,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0040,,Template is well-optimized,LOW
-TPL_0041,0.265,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0019,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0020,,"Add personalization (your, you)",LOW
+TPL_0021,0.02,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you); Add urgency elements",HIGH
+TPL_0022,,"Add more context; Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0023,,Template is well-optimized,LOW
+TPL_0024,,"Add personalization (your, you)",LOW
+TPL_0025,,"Add personalization (your, you)",LOW
+TPL_0026,0.0533,Template is well-optimized,LOW
+TPL_0027,,Template is well-optimized,LOW
+TPL_0028,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0029,,Template is well-optimized,LOW
+TPL_0030,,Template is well-optimized,LOW
+TPL_0031,0.0333,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you); Add urgency elements",HIGH
+TPL_0032,,"Add personalization (your, you)",LOW
+TPL_0033,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0034,,"Add personalization (your, you)",LOW
+TPL_0035,,Add more context,LOW
+TPL_0036,0.12,"Add personalization (your, you)",LOW
+TPL_0037,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0038,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0039,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0040,,"Add personalization (your, you)",LOW
+TPL_0041,0.06,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
 TPL_0042,,Template is well-optimized,LOW
 TPL_0043,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0044,,"Increase positive sentiment; Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0045,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0046,0.06,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0047,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0044,,"Increase positive sentiment; Add personalization (your, you)",LOW
+TPL_0045,,Add more context,LOW
+TPL_0046,0.3013,Template is well-optimized,LOW
+TPL_0047,,"Add engagement keywords (streak, coins, etc.)",LOW
 TPL_0048,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0049,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0050,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0051,0.1462,"Add personalization (your, you)",LOW
-TPL_0052,,Template is well-optimized,LOW
-TPL_0053,,"Add personalization (your, you)",LOW
-TPL_0054,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0049,,Increase positive sentiment,LOW
+TPL_0050,,Template is well-optimized,LOW
+TPL_0051,0.02,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you); Add urgency elements",HIGH
+TPL_0052,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0053,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0054,,"Add personalization (your, you)",LOW
 TPL_0055,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0056,0.02,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you); Add urgency elements",HIGH
+TPL_0056,0.1512,Template is well-optimized,LOW
 TPL_0057,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0058,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0059,,"Add personalization (your, you)",LOW
+TPL_0058,,"Add personalization (your, you)",LOW
+TPL_0059,,"Add more context; Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
 TPL_0060,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0061,0.04,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you); Add urgency elements",HIGH
-TPL_0062,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0063,,"Add personalization (your, you)",LOW
-TPL_0064,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0061,0.046,"Add more context; Add personalization (your, you)",HIGH
+TPL_0062,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0063,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0064,,Template is well-optimized,LOW
 TPL_0065,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0066,0.305,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0067,,"Add personalization (your, you)",LOW
-TPL_0068,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0069,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0066,0.315,Template is well-optimized,LOW
+TPL_0067,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0068,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0069,,Template is well-optimized,LOW
 TPL_0070,,Template is well-optimized,LOW
-TPL_0071,0.044,"Add personalization (your, you)",HIGH
-TPL_0072,,"Add personalization (your, you)",LOW
-TPL_0073,,"Increase positive sentiment; Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0074,,Template is well-optimized,LOW
+TPL_0071,0.05,Template is well-optimized,LOW
+TPL_0072,,Template is well-optimized,LOW
+TPL_0073,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0074,,"Increase positive sentiment; Add personalization (your, you)",LOW
 TPL_0075,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0076,0.055,Add urgency elements,HIGH
-TPL_0077,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0078,,"Increase positive sentiment; Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0079,,Template is well-optimized,LOW
-TPL_0080,,Template is well-optimized,LOW
-TPL_0081,0.0167,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you); Add urgency elements",HIGH
-TPL_0082,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0083,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0084,,Template is well-optimized,LOW
-TPL_0085,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0086,0.042,"Add personalization (your, you); Add urgency elements",HIGH
-TPL_0087,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0076,0.045,Add urgency elements,HIGH
+TPL_0077,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0078,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0079,,"Increase positive sentiment; Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0080,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0081,0.0133,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you); Add urgency elements",HIGH
+TPL_0082,,Template is well-optimized,LOW
+TPL_0083,,"Add personalization (your, you)",LOW
+TPL_0084,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0085,,Template is well-optimized,LOW
+TPL_0086,0.046,"Add personalization (your, you); Add urgency elements",HIGH
+TPL_0087,,Template is well-optimized,LOW
 TPL_0088,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0089,,Template is well-optimized,LOW
-TPL_0090,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0091,0.015,Template is well-optimized,HIGH
+TPL_0089,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0090,,"Add more context; Add personalization (your, you)",LOW
+TPL_0091,0.0175,"Add engagement keywords (streak, coins, etc.); Add urgency elements",HIGH
 TPL_0092,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0093,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0094,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0093,,Template is well-optimized,LOW
+TPL_0094,,"Add personalization (your, you)",LOW
 TPL_0095,,Template is well-optimized,LOW
-TPL_0096,0.073,Template is well-optimized,LOW
+TPL_0096,0.079,Template is well-optimized,LOW
 TPL_0097,,"Add personalization (your, you)",LOW
-TPL_0098,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0099,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0100,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0101,0.192,"Increase positive sentiment; Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0098,,Template is well-optimized,LOW
+TPL_0099,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0100,,"Increase positive sentiment; Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0101,0.199,"Increase positive sentiment; Add engagement keywords (streak, coins, etc.)",LOW
 TPL_0102,,Template is well-optimized,LOW
-TPL_0103,,Template is well-optimized,LOW
+TPL_0103,,Increase positive sentiment,LOW
 TPL_0104,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0105,,Template is well-optimized,LOW
-TPL_0106,0.038,Add urgency elements,HIGH
-TPL_0107,,Template is well-optimized,LOW
-TPL_0108,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0109,,"Increase positive sentiment; Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0110,,Template is well-optimized,LOW
+TPL_0105,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0106,0.038,Template is well-optimized,HIGH
+TPL_0107,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0108,,Template is well-optimized,LOW
+TPL_0109,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0110,,"Add engagement keywords (streak, coins, etc.)",LOW
 TPL_0111,0.148,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0112,,"Add personalization (your, you)",LOW
-TPL_0113,,"Add personalization (your, you)",LOW
-TPL_0114,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0115,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0116,0.218,Template is well-optimized,LOW
-TPL_0117,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0118,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0119,,Template is well-optimized,LOW
-TPL_0120,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0121,0.0933,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0122,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0123,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0124,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0112,,Template is well-optimized,LOW
+TPL_0113,,Template is well-optimized,LOW
+TPL_0114,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0115,,Template is well-optimized,LOW
+TPL_0116,0.236,Template is well-optimized,LOW
+TPL_0117,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0118,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0119,,"Increase positive sentiment; Add personalization (your, you)",LOW
+TPL_0120,,Template is well-optimized,LOW
+TPL_0121,0.124,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0122,,"Add personalization (your, you)",LOW
+TPL_0123,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0124,,Template is well-optimized,LOW
 TPL_0125,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0126,0.136,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0127,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0128,,Template is well-optimized,LOW
-TPL_0129,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0130,,Template is well-optimized,LOW
-TPL_0131,0.03,Template is well-optimized,HIGH
-TPL_0132,,Template is well-optimized,LOW
-TPL_0133,,Template is well-optimized,LOW
-TPL_0134,,Template is well-optimized,LOW
-TPL_0135,,Template is well-optimized,LOW
-TPL_0136,0.105,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0126,0.0933,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0127,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0128,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0129,,Template is well-optimized,LOW
+TPL_0130,,"Add personalization (your, you)",LOW
+TPL_0131,0.13,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0132,,"Add personalization (your, you)",LOW
+TPL_0133,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0134,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0135,,"Add personalization (your, you)",LOW
+TPL_0136,0.025,Add urgency elements,HIGH
 TPL_0137,,"Add personalization (your, you)",LOW
-TPL_0138,,"Add personalization (your, you)",LOW
-TPL_0139,,Template is well-optimized,LOW
-TPL_0140,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0141,0.0733,Template is well-optimized,LOW
-TPL_0142,,"Add personalization (your, you)",LOW
+TPL_0138,,Template is well-optimized,LOW
+TPL_0139,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0140,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0141,0.0663,"Add personalization (your, you)",LOW
+TPL_0142,,Template is well-optimized,LOW
 TPL_0143,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0144,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0145,,Template is well-optimized,LOW
-TPL_0146,0.0725,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0147,,"Add more context; Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0148,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0144,,Template is well-optimized,LOW
+TPL_0145,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0146,0.07,Template is well-optimized,LOW
+TPL_0147,,"Add personalization (your, you)",LOW
+TPL_0148,,Template is well-optimized,LOW
 TPL_0149,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0150,,Template is well-optimized,LOW
-TPL_0151,0.0367,Add urgency elements,HIGH
-TPL_0152,,Template is well-optimized,LOW
+TPL_0150,,"Increase positive sentiment; Add personalization (your, you)",LOW
+TPL_0151,0.118,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0152,,"Add personalization (your, you)",LOW
 TPL_0153,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0154,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0155,,Template is well-optimized,LOW
-TPL_0156,0.11,Template is well-optimized,LOW
+TPL_0154,,Template is well-optimized,LOW
+TPL_0155,,"Add personalization (your, you)",LOW
+TPL_0156,0.0367,Add urgency elements,HIGH
 TPL_0157,,Template is well-optimized,LOW
 TPL_0158,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0159,,"Increase positive sentiment; Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0160,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0161,0.0467,Template is well-optimized,HIGH
+TPL_0159,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0160,,Template is well-optimized,LOW
+TPL_0161,0.04,Template is well-optimized,HIGH
 TPL_0162,,"Add engagement keywords (streak, coins, etc.)",LOW
 TPL_0163,,Template is well-optimized,LOW
 TPL_0164,,"Increase positive sentiment; Add personalization (your, you)",LOW
 TPL_0165,,Template is well-optimized,LOW
-TPL_0166,0.0233,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you); Add urgency elements",HIGH
-TPL_0167,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0168,,"Add personalization (your, you)",LOW
-TPL_0169,,"Add personalization (your, you)",LOW
-TPL_0170,,Template is well-optimized,LOW
-TPL_0171,0.05,Template is well-optimized,HIGH
-TPL_0172,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0173,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0174,,"Increase positive sentiment; Add personalization (your, you)",LOW
+TPL_0166,0.02,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",HIGH
+TPL_0167,,"Add personalization (your, you)",LOW
+TPL_0168,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0169,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0170,,"Add personalization (your, you)",LOW
+TPL_0171,0.055,Add urgency elements,HIGH
+TPL_0172,,"Add personalization (your, you)",LOW
+TPL_0173,,Template is well-optimized,LOW
+TPL_0174,,"Increase positive sentiment; Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
 TPL_0175,,Template is well-optimized,LOW
-TPL_0176,0.07,"Add personalization (your, you)",LOW
-TPL_0177,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0176,0.065,"Add personalization (your, you)",LOW
+TPL_0177,,Template is well-optimized,LOW
 TPL_0178,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0179,,"Add personalization (your, you)",LOW
-TPL_0180,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0181,0.164,Template is well-optimized,LOW
+TPL_0179,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0180,,Add more context,LOW
+TPL_0181,0.188,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
 TPL_0182,,"Add personalization (your, you)",LOW
-TPL_0183,,Template is well-optimized,LOW
-TPL_0184,,Increase positive sentiment,LOW
-TPL_0185,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0186,0.15,"Add personalization (your, you)",LOW
-TPL_0187,,"Add personalization (your, you)",LOW
+TPL_0183,,"Add personalization (your, you)",LOW
+TPL_0184,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0185,,Template is well-optimized,LOW
+TPL_0186,0.125,"Add personalization (your, you)",LOW
+TPL_0187,,Template is well-optimized,LOW
 TPL_0188,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
 TPL_0189,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
 TPL_0190,,"Add personalization (your, you)",LOW
 TPL_0191,0.132,Template is well-optimized,LOW
-TPL_0192,,Template is well-optimized,LOW
-TPL_0193,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0194,,Template is well-optimized,LOW
+TPL_0192,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0193,,"Add personalization (your, you)",LOW
+TPL_0194,,"Add engagement keywords (streak, coins, etc.)",LOW
 TPL_0195,,Template is well-optimized,LOW
-TPL_0196,0.0433,"Add engagement keywords (streak, coins, etc.)",HIGH
-TPL_0197,,Template is well-optimized,LOW
+TPL_0196,0.0433,"Add engagement keywords (streak, coins, etc.); Add urgency elements",HIGH
+TPL_0197,,"Add personalization (your, you)",LOW
 TPL_0198,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0199,,"Add personalization (your, you)",LOW
+TPL_0199,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
 TPL_0200,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0201,0.066,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0201,0.1138,"Add engagement keywords (streak, coins, etc.)",LOW
 TPL_0202,,Increase positive sentiment,LOW
 TPL_0203,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0204,,Template is well-optimized,LOW
-TPL_0205,,"Increase positive sentiment; Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0206,0.12,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0207,,Template is well-optimized,LOW
-TPL_0208,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0209,,"Add personalization (your, you)",LOW
+TPL_0204,,"Increase positive sentiment; Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0205,,Increase positive sentiment,LOW
+TPL_0206,0.063,"Add personalization (your, you)",LOW
+TPL_0207,,"Increase positive sentiment; Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0208,,Template is well-optimized,LOW
+TPL_0209,,"Increase positive sentiment; Add engagement keywords (streak, coins, etc.)",LOW
 TPL_0210,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0211,0.26,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0212,,Template is well-optimized,LOW
-TPL_0213,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0214,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0215,,Template is well-optimized,LOW
-TPL_0216,0.0325,"Add personalization (your, you)",HIGH
-TPL_0217,,Template is well-optimized,LOW
+TPL_0211,0.22,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0212,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0213,,Template is well-optimized,LOW
+TPL_0214,,"Add personalization (your, you)",LOW
+TPL_0215,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0216,0.0325,"Add engagement keywords (streak, coins, etc.); Add urgency elements",HIGH
+TPL_0217,,"Add engagement keywords (streak, coins, etc.)",LOW
 TPL_0218,,Template is well-optimized,LOW
-TPL_0219,,"Add personalization (your, you)",LOW
-TPL_0220,,Template is well-optimized,LOW
-TPL_0221,0.0262,Add urgency elements,HIGH
-TPL_0222,,Template is well-optimized,LOW
+TPL_0219,,Template is well-optimized,LOW
+TPL_0220,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0221,0.03,"Add engagement keywords (streak, coins, etc.); Add urgency elements",HIGH
+TPL_0222,,"Add personalization (your, you)",LOW
 TPL_0223,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0224,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0224,,"Add engagement keywords (streak, coins, etc.)",LOW
 TPL_0225,,Template is well-optimized,LOW
-TPL_0226,0.035,"Add engagement keywords (streak, coins, etc.); Add urgency elements",HIGH
+TPL_0226,0.0225,Add urgency elements,HIGH
 TPL_0227,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0228,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0228,,"Add engagement keywords (streak, coins, etc.)",LOW
 TPL_0229,,Template is well-optimized,LOW
 TPL_0230,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0231,0.1433,"Add personalization (your, you)",LOW
-TPL_0232,,Template is well-optimized,LOW
-TPL_0233,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0234,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0235,,Template is well-optimized,LOW
-TPL_0236,0.24,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0237,,Template is well-optimized,LOW
-TPL_0238,,"Add personalization (your, you)",LOW
+TPL_0231,0.204,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0232,,"Add more context; Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0233,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0234,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0235,,Add more context,LOW
+TPL_0236,0.1567,Template is well-optimized,LOW
+TPL_0237,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0238,,Template is well-optimized,LOW
 TPL_0239,,Template is well-optimized,LOW
-TPL_0240,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0241,0.026,Template is well-optimized,HIGH
-TPL_0242,,"Add personalization (your, you)",LOW
-TPL_0243,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0244,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0245,,"Increase positive sentiment; Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0246,0.065,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0247,,"Add personalization (your, you)",LOW
+TPL_0240,,Template is well-optimized,LOW
+TPL_0241,0.065,"Add personalization (your, you)",LOW
+TPL_0242,,Template is well-optimized,LOW
+TPL_0243,,"Add personalization (your, you)",LOW
+TPL_0244,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0245,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0246,0.022,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you); Add urgency elements",HIGH
+TPL_0247,,Template is well-optimized,LOW
 TPL_0248,,Template is well-optimized,LOW
-TPL_0249,,"Add personalization (your, you)",LOW
-TPL_0250,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0251,0.0338,Add urgency elements,HIGH
+TPL_0249,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0250,,Template is well-optimized,LOW
+TPL_0251,0.055,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you); Add urgency elements",HIGH
 TPL_0252,,Template is well-optimized,LOW
-TPL_0253,,"Add more context; Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0253,,"Add personalization (your, you)",LOW
 TPL_0254,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0255,,Template is well-optimized,LOW
-TPL_0256,0.051,"Add engagement keywords (streak, coins, etc.); Add urgency elements",HIGH
-TPL_0257,,"Add personalization (your, you)",LOW
-TPL_0258,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0259,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0260,,Increase positive sentiment,LOW
-TPL_0261,0.26,"Add personalization (your, you)",LOW
-TPL_0262,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0255,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0256,0.0387,Template is well-optimized,HIGH
+TPL_0257,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0258,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0259,,"Add personalization (your, you)",LOW
+TPL_0260,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0261,0.281,"Add personalization (your, you)",LOW
+TPL_0262,,Template is well-optimized,LOW
 TPL_0263,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0264,,"Add personalization (your, you)",LOW
-TPL_0265,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0266,0.042,"Add personalization (your, you); Add urgency elements",HIGH
-TPL_0267,,Template is well-optimized,LOW
-TPL_0268,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0269,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0270,,"Add personalization (your, you)",LOW
-TPL_0271,0.1275,"Add personalization (your, you)",LOW
-TPL_0272,,"Add more context; Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0273,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0274,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0275,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0276,0.1875,"Add personalization (your, you)",LOW
-TPL_0277,,"Add personalization (your, you)",LOW
-TPL_0278,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0279,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0280,,"Add personalization (your, you)",LOW
-TPL_0281,0.044,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you); Add urgency elements",HIGH
+TPL_0264,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0265,,"Add more context; Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0266,0.044,Add urgency elements,HIGH
+TPL_0267,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0268,,"Add personalization (your, you)",LOW
+TPL_0269,,Template is well-optimized,LOW
+TPL_0270,,Template is well-optimized,LOW
+TPL_0271,0.145,"Add personalization (your, you)",LOW
+TPL_0272,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0273,,"Add personalization (your, you)",LOW
+TPL_0274,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0275,,"Add personalization (your, you)",LOW
+TPL_0276,0.1913,Template is well-optimized,LOW
+TPL_0277,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0278,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0279,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0280,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0281,0.046,"Add personalization (your, you); Add urgency elements",HIGH
 TPL_0282,,Template is well-optimized,LOW
 TPL_0283,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0284,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0285,,"Add personalization (your, you)",LOW
-TPL_0286,0.015,"Add personalization (your, you); Add urgency elements",HIGH
-TPL_0287,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0284,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0285,,Template is well-optimized,LOW
+TPL_0286,0.02,Add urgency elements,HIGH
+TPL_0287,,Template is well-optimized,LOW
 TPL_0288,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0289,,"Add personalization (your, you)",LOW
-TPL_0290,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0291,0.065,Template is well-optimized,LOW
-TPL_0292,,Template is well-optimized,LOW
-TPL_0293,,Template is well-optimized,LOW
-TPL_0294,,"Add personalization (your, you)",LOW
-TPL_0295,,Template is well-optimized,LOW
-TPL_0296,0.157,"Add personalization (your, you)",LOW
-TPL_0297,,"Add more context; Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0298,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0299,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0300,,"Add personalization (your, you)",LOW
-TPL_0301,0.1933,"Increase positive sentiment; Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0302,,Increase positive sentiment,LOW
-TPL_0303,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0304,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0305,,"Increase positive sentiment; Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0306,0.0887,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0307,,"Add personalization (your, you)",LOW
+TPL_0289,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0290,,Template is well-optimized,LOW
+TPL_0291,0.07,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0292,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0293,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0294,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0295,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0296,0.166,Template is well-optimized,LOW
+TPL_0297,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0298,,"Add personalization (your, you)",LOW
+TPL_0299,,"Increase positive sentiment; Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0300,,Template is well-optimized,LOW
+TPL_0301,0.0688,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0302,,"Increase positive sentiment; Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0303,,"Add personalization (your, you)",LOW
+TPL_0304,,Template is well-optimized,LOW
+TPL_0305,,"Increase positive sentiment; Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0306,0.2067,"Add personalization (your, you)",LOW
+TPL_0307,,"Increase positive sentiment; Add engagement keywords (streak, coins, etc.)",LOW
 TPL_0308,,Template is well-optimized,LOW
-TPL_0309,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0310,,Template is well-optimized,LOW
-TPL_0311,0.04,"Add personalization (your, you)",HIGH
+TPL_0309,,"Increase positive sentiment; Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0310,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0311,0.044,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you); Add urgency elements",HIGH
 TPL_0312,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0313,,Template is well-optimized,LOW
+TPL_0313,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
 TPL_0314,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0315,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0316,0.1,"Add personalization (your, you)",LOW
-TPL_0317,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0318,,"Increase positive sentiment; Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0319,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0320,,Template is well-optimized,LOW
-TPL_0321,0.04,Add urgency elements,HIGH
-TPL_0322,,Template is well-optimized,LOW
-TPL_0323,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0315,,Template is well-optimized,LOW
+TPL_0316,0.11,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0317,,"Add personalization (your, you)",LOW
+TPL_0318,,"Add more context; Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0319,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0320,,"Add personalization (your, you)",LOW
+TPL_0321,0.1233,Template is well-optimized,LOW
+TPL_0322,,"Add personalization (your, you)",LOW
+TPL_0323,,"Add engagement keywords (streak, coins, etc.)",LOW
 TPL_0324,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0325,,Template is well-optimized,LOW
-TPL_0326,0.1133,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0327,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0328,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0325,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0326,0.034,Add urgency elements,HIGH
+TPL_0327,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0328,,"Increase positive sentiment; Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
 TPL_0329,,Template is well-optimized,LOW
-TPL_0330,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0331,0.02,"Add engagement keywords (streak, coins, etc.); Add urgency elements",HIGH
+TPL_0330,,Template is well-optimized,LOW
+TPL_0331,0.295,"Add engagement keywords (streak, coins, etc.)",LOW
 TPL_0332,,Template is well-optimized,LOW
-TPL_0333,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0334,,Template is well-optimized,LOW
-TPL_0335,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0336,0.26,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0337,,"Add personalization (your, you)",LOW
+TPL_0333,,Template is well-optimized,LOW
+TPL_0334,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0335,,Template is well-optimized,LOW
+TPL_0336,0.0167,Template is well-optimized,HIGH
+TPL_0337,,Template is well-optimized,LOW
 TPL_0338,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
 TPL_0339,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0340,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0341,0.277,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0342,,Template is well-optimized,LOW
-TPL_0343,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0344,,Template is well-optimized,LOW
-TPL_0345,,"Increase positive sentiment; Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0346,0.2967,"Add personalization (your, you)",LOW
-TPL_0347,,"Add more context; Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0348,,Template is well-optimized,LOW
-TPL_0349,,"Add personalization (your, you)",LOW
-TPL_0350,,"Add personalization (your, you)",LOW
-TPL_0351,0.235,Template is well-optimized,LOW
-TPL_0352,,Template is well-optimized,LOW
+TPL_0340,,Add more context,LOW
+TPL_0341,0.31,"Add personalization (your, you)",LOW
+TPL_0342,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0343,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0344,,Increase positive sentiment,LOW
+TPL_0345,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0346,0.299,"Add personalization (your, you)",LOW
+TPL_0347,,Template is well-optimized,LOW
+TPL_0348,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0349,,Template is well-optimized,LOW
+TPL_0350,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0351,0.05,"Add engagement keywords (streak, coins, etc.); Add urgency elements",HIGH
+TPL_0352,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
 TPL_0353,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
 TPL_0354,,Template is well-optimized,LOW
-TPL_0355,,"Increase positive sentiment; Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0356,0.045,"Add engagement keywords (streak, coins, etc.); Add urgency elements",HIGH
-TPL_0357,,"Add personalization (your, you)",LOW
-TPL_0358,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0359,,Template is well-optimized,LOW
+TPL_0355,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0356,0.2675,Template is well-optimized,LOW
+TPL_0357,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0358,,"Add personalization (your, you)",LOW
+TPL_0359,,"Increase positive sentiment; Add engagement keywords (streak, coins, etc.)",LOW
 TPL_0360,,Template is well-optimized,LOW
-TPL_0361,0.1187,"Add personalization (your, you)",LOW
-TPL_0362,,Template is well-optimized,LOW
+TPL_0361,0.1275,"Add personalization (your, you)",LOW
+TPL_0362,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
 TPL_0363,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0364,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0365,,"Add personalization (your, you)",LOW
-TPL_0366,0.04,"Add personalization (your, you); Add urgency elements",HIGH
-TPL_0367,,Template is well-optimized,LOW
-TPL_0368,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0369,,"Add personalization (your, you)",LOW
-TPL_0370,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0371,0.08,Template is well-optimized,LOW
-TPL_0372,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0373,,Template is well-optimized,LOW
-TPL_0374,,Template is well-optimized,LOW
-TPL_0375,,"Increase positive sentiment; Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0376,0.0375,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you); Add urgency elements",HIGH
-TPL_0377,,Template is well-optimized,LOW
-TPL_0378,,Template is well-optimized,LOW
-TPL_0379,,"Add personalization (your, you)",LOW
-TPL_0380,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0381,0.06,"Add personalization (your, you)",LOW
-TPL_0382,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0364,,"Add personalization (your, you)",LOW
+TPL_0365,,Template is well-optimized,LOW
+TPL_0366,0.035,Template is well-optimized,HIGH
+TPL_0367,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0368,,"Add personalization (your, you)",LOW
+TPL_0369,,Template is well-optimized,LOW
+TPL_0370,,Template is well-optimized,LOW
+TPL_0371,0.08,"Add personalization (your, you)",LOW
+TPL_0372,,Template is well-optimized,LOW
+TPL_0373,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0374,,"Add personalization (your, you)",LOW
+TPL_0375,,Add more context,LOW
+TPL_0376,0.0437,Add urgency elements,HIGH
+TPL_0377,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0378,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0379,,Template is well-optimized,LOW
+TPL_0380,,Template is well-optimized,LOW
+TPL_0381,0.0563,"Add personalization (your, you)",LOW
+TPL_0382,,Template is well-optimized,LOW
 TPL_0383,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0384,,"Increase positive sentiment; Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0385,,Template is well-optimized,LOW
-TPL_0386,0.137,"Add personalization (your, you)",LOW
-TPL_0387,,"Add more context; Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0388,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0389,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0390,,"Add personalization (your, you)",LOW
-TPL_0391,0.054,"Add engagement keywords (streak, coins, etc.); Add urgency elements",HIGH
-TPL_0392,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0384,,Template is well-optimized,LOW
+TPL_0385,,"Add more context; Add personalization (your, you)",LOW
+TPL_0386,0.129,"Add personalization (your, you)",LOW
+TPL_0387,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0388,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0389,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0390,,Template is well-optimized,LOW
+TPL_0391,0.059,"Add engagement keywords (streak, coins, etc.); Add urgency elements",HIGH
+TPL_0392,,Template is well-optimized,LOW
 TPL_0393,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0394,,Template is well-optimized,LOW
-TPL_0395,,"Add personalization (your, you)",LOW
-TPL_0396,0.045,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you); Add urgency elements",HIGH
-TPL_0397,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0398,,"Increase positive sentiment; Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0399,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0400,,Template is well-optimized,LOW
+TPL_0394,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0395,,Increase positive sentiment,LOW
+TPL_0396,0.04,Template is well-optimized,HIGH
+TPL_0397,,"Add personalization (your, you)",LOW
+TPL_0398,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0399,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0400,,"Increase positive sentiment; Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
 TPL_0401,0.026,"Add engagement keywords (streak, coins, etc.); Add urgency elements",HIGH
 TPL_0402,,Template is well-optimized,LOW
-TPL_0403,,"Increase positive sentiment; Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0404,,Template is well-optimized,LOW
+TPL_0403,,Template is well-optimized,LOW
+TPL_0404,,"Increase positive sentiment; Add engagement keywords (streak, coins, etc.)",LOW
 TPL_0405,,"Increase positive sentiment; Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0406,0.245,Template is well-optimized,LOW
+TPL_0406,0.264,"Increase positive sentiment; Add engagement keywords (streak, coins, etc.)",LOW
 TPL_0407,,Template is well-optimized,LOW
-TPL_0408,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0409,,"Increase positive sentiment; Add personalization (your, you)",LOW
+TPL_0408,,Template is well-optimized,LOW
+TPL_0409,,Template is well-optimized,LOW
 TPL_0410,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0411,0.02,"Add engagement keywords (streak, coins, etc.)",HIGH
-TPL_0412,,"Add personalization (your, you)",LOW
-TPL_0413,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0414,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0411,0.02,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you); Add urgency elements",HIGH
+TPL_0412,,Template is well-optimized,LOW
+TPL_0413,,"Increase positive sentiment; Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0414,,"Add personalization (your, you)",LOW
 TPL_0415,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0416,0.0225,"Add engagement keywords (streak, coins, etc.)",HIGH
+TPL_0416,0.0187,"Add engagement keywords (streak, coins, etc.); Add urgency elements",HIGH
 TPL_0417,,Template is well-optimized,LOW
-TPL_0418,,Template is well-optimized,LOW
+TPL_0418,,Increase positive sentiment,LOW
 TPL_0419,,"Add engagement keywords (streak, coins, etc.)",LOW
 TPL_0420,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0421,0.159,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0422,,"Add personalization (your, you)",LOW
-TPL_0423,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0421,0.11,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0422,,Template is well-optimized,LOW
+TPL_0423,,Template is well-optimized,LOW
 TPL_0424,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0425,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0426,0.0933,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0427,,Template is well-optimized,LOW
-TPL_0428,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0429,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0430,,"Increase positive sentiment; Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0431,0.043,"Add engagement keywords (streak, coins, etc.); Add urgency elements",HIGH
-TPL_0432,,"Add personalization (your, you)",LOW
-TPL_0433,,"Add personalization (your, you)",LOW
-TPL_0434,,"Add personalization (your, you)",LOW
-TPL_0435,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0436,0.022,"Add personalization (your, you); Add urgency elements",HIGH
-TPL_0437,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0438,,Template is well-optimized,LOW
-TPL_0439,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0425,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0426,0.181,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0427,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0428,,Template is well-optimized,LOW
+TPL_0429,,"Increase positive sentiment; Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0430,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0431,0.027,Add urgency elements,HIGH
+TPL_0432,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0433,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0434,,Increase positive sentiment,LOW
+TPL_0435,,Template is well-optimized,LOW
+TPL_0436,0.043,Add urgency elements,HIGH
+TPL_0437,,Template is well-optimized,LOW
+TPL_0438,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0439,,Template is well-optimized,LOW
 TPL_0440,,Template is well-optimized,LOW
-TPL_0441,0.03,Add urgency elements,HIGH
+TPL_0441,0.015,"Add engagement keywords (streak, coins, etc.); Add urgency elements",HIGH
 TPL_0442,,Template is well-optimized,LOW
-TPL_0443,,Template is well-optimized,LOW
-TPL_0444,,Template is well-optimized,LOW
+TPL_0443,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0444,,"Add engagement keywords (streak, coins, etc.)",LOW
 TPL_0445,,Template is well-optimized,LOW
-TPL_0446,0.015,"Add personalization (your, you); Add urgency elements",HIGH
-TPL_0447,,Template is well-optimized,LOW
+TPL_0446,0.025,"Add engagement keywords (streak, coins, etc.); Add urgency elements",HIGH
+TPL_0447,,"Add engagement keywords (streak, coins, etc.)",LOW
 TPL_0448,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0449,,Template is well-optimized,LOW
-TPL_0450,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0451,0.08,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0449,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0450,,"Increase positive sentiment; Add personalization (your, you)",LOW
+TPL_0451,0.14,"Add engagement keywords (streak, coins, etc.)",LOW
 TPL_0452,,Template is well-optimized,LOW
-TPL_0453,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0453,,"Add engagement keywords (streak, coins, etc.)",LOW
 TPL_0454,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0455,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0456,0.14,"Add personalization (your, you)",LOW
-TPL_0457,,Template is well-optimized,LOW
-TPL_0458,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0459,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0460,,Template is well-optimized,LOW
-TPL_0461,0.158,Template is well-optimized,LOW
-TPL_0462,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0455,,"Increase positive sentiment; Add personalization (your, you)",LOW
+TPL_0456,0.08,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0457,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0458,,Template is well-optimized,LOW
+TPL_0459,,"Add personalization (your, you)",LOW
+TPL_0460,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0461,0.134,Template is well-optimized,LOW
+TPL_0462,,"Add personalization (your, you)",LOW
 TPL_0463,,Template is well-optimized,LOW
 TPL_0464,,Template is well-optimized,LOW
-TPL_0465,,"Increase positive sentiment; Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0466,0.285,"Add personalization (your, you)",LOW
-TPL_0467,,Template is well-optimized,LOW
-TPL_0468,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0469,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0470,,Template is well-optimized,LOW
-TPL_0471,0.01,Add urgency elements,HIGH
-TPL_0472,,Template is well-optimized,LOW
-TPL_0473,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0474,,Template is well-optimized,LOW
-TPL_0475,,Template is well-optimized,LOW
+TPL_0465,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0466,0.325,"Add personalization (your, you)",LOW
+TPL_0467,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0468,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0469,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0470,,"Add personalization (your, you)",LOW
+TPL_0471,0.01,Template is well-optimized,HIGH
+TPL_0472,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0473,,"Add personalization (your, you)",LOW
+TPL_0474,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0475,,"Add engagement keywords (streak, coins, etc.)",LOW
 TPL_0476,0.03,"Add personalization (your, you); Add urgency elements",HIGH
-TPL_0477,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0478,,Template is well-optimized,LOW
-TPL_0479,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0480,,"Add personalization (your, you)",LOW
-TPL_0481,0.057,Template is well-optimized,LOW
-TPL_0482,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0483,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0477,,"Add personalization (your, you)",LOW
+TPL_0478,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0479,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0480,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0481,0.053,Template is well-optimized,LOW
+TPL_0482,,Template is well-optimized,LOW
+TPL_0483,,Template is well-optimized,LOW
 TPL_0484,,Template is well-optimized,LOW
 TPL_0485,,Template is well-optimized,LOW
-TPL_0486,0.016,"Add personalization (your, you); Add urgency elements",HIGH
-TPL_0487,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0486,0.018,"Add personalization (your, you); Add urgency elements",HIGH
+TPL_0487,,"Add personalization (your, you)",LOW
 TPL_0488,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0489,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0490,,"Add more context; Add personalization (your, you)",LOW
-TPL_0491,0.05,Template is well-optimized,HIGH
-TPL_0492,,"Add personalization (your, you)",LOW
-TPL_0493,,Template is well-optimized,LOW
+TPL_0489,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0490,,"Add personalization (your, you)",LOW
+TPL_0491,0.05,Add urgency elements,HIGH
+TPL_0492,,Template is well-optimized,LOW
+TPL_0493,,"Add personalization (your, you)",LOW
 TPL_0494,,Template is well-optimized,LOW
-TPL_0495,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0496,0.028,"Add engagement keywords (streak, coins, etc.); Add urgency elements",HIGH
+TPL_0495,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0496,0.028,Add urgency elements,HIGH
 TPL_0497,,Template is well-optimized,LOW
-TPL_0498,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0499,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0500,,Template is well-optimized,LOW
-TPL_0501,0.042,"Add engagement keywords (streak, coins, etc.); Add urgency elements",HIGH
+TPL_0498,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0499,,Template is well-optimized,LOW
+TPL_0500,,"Add personalization (your, you)",LOW
+TPL_0501,0.0567,"Add engagement keywords (streak, coins, etc.)",LOW
 TPL_0502,,"Increase positive sentiment; Add engagement keywords (streak, coins, etc.)",LOW
 TPL_0503,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0504,,"Increase positive sentiment; Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0505,,Increase positive sentiment,LOW
-TPL_0506,0.0733,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0507,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0508,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0509,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0510,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0511,0.0967,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0512,,"Add personalization (your, you)",LOW
-TPL_0513,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0514,,Template is well-optimized,LOW
-TPL_0515,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0516,0.13,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0504,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0505,,Template is well-optimized,LOW
+TPL_0506,0.048,"Add personalization (your, you)",HIGH
+TPL_0507,,"Increase positive sentiment; Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0508,,Template is well-optimized,LOW
+TPL_0509,,"Increase positive sentiment; Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0510,,"Increase positive sentiment; Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0511,0.0833,Template is well-optimized,LOW
+TPL_0512,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0513,,Template is well-optimized,LOW
+TPL_0514,,"Increase positive sentiment; Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0515,,Template is well-optimized,LOW
+TPL_0516,0.12,"Add personalization (your, you)",LOW
 TPL_0517,,Template is well-optimized,LOW
 TPL_0518,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
 TPL_0519,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0520,,"Add personalization (your, you)",LOW
-TPL_0521,0.0633,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0522,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0523,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0524,,"Add personalization (your, you)",LOW
-TPL_0525,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0526,0.095,Template is well-optimized,LOW
-TPL_0527,,Template is well-optimized,LOW
-TPL_0528,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0529,,Template is well-optimized,LOW
-TPL_0530,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0531,0.0967,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0532,,"Add more context; Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0533,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0534,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0535,,"Add personalization (your, you)",LOW
-TPL_0536,0.086,"Add personalization (your, you)",LOW
-TPL_0537,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0538,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0539,,"Add personalization (your, you)",LOW
+TPL_0520,,"Increase positive sentiment; Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0521,0.06,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0522,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0523,,Template is well-optimized,LOW
+TPL_0524,,Template is well-optimized,LOW
+TPL_0525,,"Increase positive sentiment; Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0526,0.1,Template is well-optimized,LOW
+TPL_0527,,"Add personalization (your, you)",LOW
+TPL_0528,,Template is well-optimized,LOW
+TPL_0529,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0530,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0531,0.11,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0532,,Template is well-optimized,LOW
+TPL_0533,,"Add personalization (your, you)",LOW
+TPL_0534,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0535,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0536,0.073,"Add personalization (your, you)",LOW
+TPL_0537,,Template is well-optimized,LOW
+TPL_0538,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0539,,"Add engagement keywords (streak, coins, etc.)",LOW
 TPL_0540,,Template is well-optimized,LOW
-TPL_0541,0.12,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0542,,"Add more context; Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0543,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0544,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0545,,Add more context,LOW
-TPL_0546,0.238,Template is well-optimized,LOW
-TPL_0547,,Template is well-optimized,LOW
-TPL_0548,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0541,0.13,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0542,,Template is well-optimized,LOW
+TPL_0543,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0544,,Template is well-optimized,LOW
+TPL_0545,,Template is well-optimized,LOW
+TPL_0546,0.22,"Add personalization (your, you)",LOW
+TPL_0547,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0548,,"Add engagement keywords (streak, coins, etc.)",LOW
 TPL_0549,,Template is well-optimized,LOW
-TPL_0550,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0551,0.153,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0550,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0551,0.142,"Add engagement keywords (streak, coins, etc.)",LOW
 TPL_0552,,Template is well-optimized,LOW
-TPL_0553,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0554,,"Increase positive sentiment; Add personalization (your, you)",LOW
-TPL_0555,,Add more context,LOW
-TPL_0556,0.093,"Add personalization (your, you)",LOW
-TPL_0557,,Template is well-optimized,LOW
+TPL_0553,,"Increase positive sentiment; Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0554,,Template is well-optimized,LOW
+TPL_0555,,Increase positive sentiment,LOW
+TPL_0556,0.096,Template is well-optimized,LOW
+TPL_0557,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
 TPL_0558,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0559,,Template is well-optimized,LOW
-TPL_0560,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0561,0.222,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0559,,"Increase positive sentiment; Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0560,,Template is well-optimized,LOW
+TPL_0561,0.188,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
 TPL_0562,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0563,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0563,,Template is well-optimized,LOW
 TPL_0564,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0565,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0566,0.156,Template is well-optimized,LOW
-TPL_0567,,Template is well-optimized,LOW
-TPL_0568,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0565,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0566,0.138,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0567,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0568,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
 TPL_0569,,"Increase positive sentiment; Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0570,,Template is well-optimized,LOW
-TPL_0571,0.09,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0572,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0573,,"Increase positive sentiment; Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0574,,"Add personalization (your, you)",LOW
-TPL_0575,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0576,0.3025,"Add personalization (your, you)",LOW
+TPL_0570,,"Add personalization (your, you)",LOW
+TPL_0571,0.09,"Add personalization (your, you)",LOW
+TPL_0572,,Template is well-optimized,LOW
+TPL_0573,,"Add personalization (your, you)",LOW
+TPL_0574,,"Increase positive sentiment; Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0575,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0576,0.3287,Template is well-optimized,LOW
 TPL_0577,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0578,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0579,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0580,,"Add personalization (your, you)",LOW
-TPL_0581,0.17,"Add more context; Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0582,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0583,,Template is well-optimized,LOW
-TPL_0584,,"Increase positive sentiment; Add personalization (your, you)",LOW
-TPL_0585,,"Increase positive sentiment; Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0586,0.138,"Add personalization (your, you)",LOW
-TPL_0587,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0588,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0589,,"Add engagement keywords (streak, coins, etc.)",LOW
-TPL_0590,,"Add personalization (your, you)",LOW
-TPL_0591,0.034,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you); Add urgency elements",HIGH
+TPL_0578,,Template is well-optimized,LOW
+TPL_0579,,"Increase positive sentiment; Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0580,,Template is well-optimized,LOW
+TPL_0581,0.195,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0582,,Add more context,LOW
+TPL_0583,,"Add personalization (your, you)",LOW
+TPL_0584,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0585,,Template is well-optimized,LOW
+TPL_0586,0.146,Template is well-optimized,LOW
+TPL_0587,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0588,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0589,,"Increase positive sentiment; Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0590,,Add more context,LOW
+TPL_0591,0.028,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you); Add urgency elements",HIGH
 TPL_0592,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0593,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0594,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0595,,Template is well-optimized,LOW
-TPL_0596,0.2525,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0593,,Template is well-optimized,LOW
+TPL_0594,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0595,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0596,0.275,Template is well-optimized,LOW
 TPL_0597,,"Add personalization (your, you)",LOW
-TPL_0598,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0599,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
-TPL_0600,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0598,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0599,,"Add personalization (your, you)",LOW
+TPL_0600,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0601,0.225,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0602,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0603,,"Increase positive sentiment; Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0604,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0605,,Template is well-optimized,LOW
+TPL_0606,0.18,"Add personalization (your, you)",LOW
+TPL_0607,,"Add personalization (your, you)",LOW
+TPL_0608,,Increase positive sentiment,LOW
+TPL_0609,,"Increase positive sentiment; Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0610,,"Increase positive sentiment; Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0611,0.07,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0612,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0613,,Template is well-optimized,LOW
+TPL_0614,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0615,,Template is well-optimized,LOW
+TPL_0616,0.137,Template is well-optimized,LOW
+TPL_0617,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0618,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0619,,"Increase positive sentiment; Add personalization (your, you)",LOW
+TPL_0620,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0621,0.0867,Template is well-optimized,LOW
+TPL_0622,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0623,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0624,,Template is well-optimized,LOW
+TPL_0625,,"Increase positive sentiment; Add personalization (your, you)",LOW
+TPL_0626,0.044,Add urgency elements,HIGH
+TPL_0627,,Template is well-optimized,LOW
+TPL_0628,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0629,,Template is well-optimized,LOW
+TPL_0630,,Template is well-optimized,LOW
+TPL_0631,0.0288,"Add engagement keywords (streak, coins, etc.); Add urgency elements",HIGH
+TPL_0632,,Template is well-optimized,LOW
+TPL_0633,,Template is well-optimized,LOW
+TPL_0634,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0635,,Template is well-optimized,LOW
+TPL_0636,0.225,Template is well-optimized,LOW
+TPL_0637,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0638,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0639,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0640,,Template is well-optimized,LOW
+TPL_0641,0.264,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0642,,Template is well-optimized,LOW
+TPL_0643,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0644,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0645,,Increase positive sentiment,LOW
+TPL_0646,0.111,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0647,,Template is well-optimized,LOW
+TPL_0648,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0649,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0650,,Template is well-optimized,LOW
+TPL_0651,0.027,"Add engagement keywords (streak, coins, etc.); Add urgency elements",HIGH
+TPL_0652,,"Add personalization (your, you)",LOW
+TPL_0653,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0654,,Template is well-optimized,LOW
+TPL_0655,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0656,0.03,Add urgency elements,HIGH
+TPL_0657,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0658,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0659,,"Increase positive sentiment; Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0660,,Template is well-optimized,LOW
+TPL_0661,0.055,"Add personalization (your, you); Add urgency elements",HIGH
+TPL_0662,,"Add personalization (your, you)",LOW
+TPL_0663,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0664,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0665,,"Add personalization (your, you)",LOW
+TPL_0666,0.186,Template is well-optimized,LOW
+TPL_0667,,Template is well-optimized,LOW
+TPL_0668,,"Add personalization (your, you)",LOW
+TPL_0669,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0670,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0671,0.017,"Add personalization (your, you); Add urgency elements",HIGH
+TPL_0672,,"Add personalization (your, you)",LOW
+TPL_0673,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0674,,"Add personalization (your, you)",LOW
+TPL_0675,,"Add more context; Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0676,0.025,Template is well-optimized,HIGH
+TPL_0677,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0678,,Template is well-optimized,LOW
+TPL_0679,,Template is well-optimized,LOW
+TPL_0680,,Template is well-optimized,LOW
+TPL_0681,0.03,"Add personalization (your, you); Add urgency elements",HIGH
+TPL_0682,,Template is well-optimized,LOW
+TPL_0683,,Template is well-optimized,LOW
+TPL_0684,,"Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0685,,Template is well-optimized,LOW
+TPL_0686,0.142,"Add personalization (your, you)",LOW
+TPL_0687,,Template is well-optimized,LOW
+TPL_0688,,"Add personalization (your, you)",LOW
+TPL_0689,,"Increase positive sentiment; Add engagement keywords (streak, coins, etc.); Add personalization (your, you)",LOW
+TPL_0690,,Template is well-optimized,LOW
+TPL_0691,0.08,"Add personalization (your, you)",LOW
+TPL_0692,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0693,,Template is well-optimized,LOW
+TPL_0694,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0695,,Template is well-optimized,LOW
+TPL_0696,0.15,Template is well-optimized,LOW
+TPL_0697,,"Add personalization (your, you)",LOW
+TPL_0698,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0699,,"Add engagement keywords (streak, coins, etc.)",LOW
+TPL_0700,,Template is well-optimized,LOW

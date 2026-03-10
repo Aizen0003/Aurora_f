@@ -1,25 +1,25 @@
 segment_id,segment_name,lifecycle_stage,primary_theme,secondary_theme,theme_rationale
-0,High Risk Inactives,trial,unpredictability,epic_meaning,Re-engage high risk inactives with curiosity and purpose
-0,High Risk Inactives,paid,ownership,accomplishment,Encourage high risk inactives to invest in their progress
-0,High Risk Inactives,churned,loss_avoidance,scarcity,High risk inactives need to fear losing progress to re-engage
-0,High Risk Inactives,inactive,unpredictability,epic_meaning,Re-engage high risk inactives with curiosity and purpose
-1,Social Gamifiers,trial,social_influence,accomplishment,Social gamifiers respond to competition and achievement
-1,Social Gamifiers,paid,social_influence,ownership,Social gamifiers are motivated by social proof and possession
-1,Social Gamifiers,churned,loss_avoidance,social_influence,Social gamifiers fear losing social status and progress
-1,Social Gamifiers,inactive,unpredictability,social_influence,Re-engage social gamifiers with curiosity and social proof
-2,Casual Solo Users,trial,accomplishment,empowerment,Casual solo users need achievement milestones and creativity
-2,Casual Solo Users,paid,ownership,accomplishment,Casual solo users are motivated by possession and progress
-2,Casual Solo Users,churned,loss_avoidance,accomplishment,Casual solo users fear losing progress and achievements
-2,Casual Solo Users,inactive,unpredictability,empowerment,Re-engage casual solo users with curiosity and creativity
-3,Engaged Free Triers,trial,accomplishment,empowerment,Engaged free triers need achievement milestones and creativity
-3,Engaged Free Triers,paid,ownership,accomplishment,Engaged free triers are motivated by possession and progress
-3,Engaged Free Triers,churned,loss_avoidance,accomplishment,Engaged free triers fear losing progress and achievements
-3,Engaged Free Triers,inactive,unpredictability,epic_meaning,Re-engage engaged free triers with curiosity and purpose
-4,Social Power Users,trial,social_influence,accomplishment,Social power users respond to competition and achievement
-4,Social Power Users,paid,social_influence,ownership,Social power users are motivated by social proof and possession
-4,Social Power Users,churned,loss_avoidance,social_influence,Social power users fear losing social status and progress
-4,Social Power Users,inactive,unpredictability,social_influence,Re-engage social power users with curiosity and social proof
-5,Low Engagement Users,trial,unpredictability,empowerment,Low engagement users need curiosity and creativity
-5,Low Engagement Users,paid,accomplishment,ownership,Low engagement users are motivated by progress and possession
-5,Low Engagement Users,churned,loss_avoidance,accomplishment,Low engagement users fear losing progress and achievements
-5,Low Engagement Users,inactive,unpredictability,epic_meaning,Re-engage low engagement users with curiosity and purpose
+0,Low Activity Risks,trial,unpredictability,epic_meaning,High churn risk users need curiosity and purpose to engage
+0,Low Activity Risks,paid,accomplishment,empowerment,Low activity users need progress and creativity to continue
+0,Low Activity Risks,churned,loss_avoidance,social_influence,High churn risk users need to avoid loss and social proof to return
+0,Low Activity Risks,inactive,epic_meaning,unpredictability,Inactive users need purpose and curiosity to re-engage
+1,Social Gamifiers,trial,social_influence,unpredictability,Social gamifiers need competition and curiosity to engage
+1,Social Gamifiers,paid,accomplishment,empowerment,Social gamifiers need progress and creativity to continue
+1,Social Gamifiers,churned,loss_avoidance,social_influence,Social gamifiers need to avoid loss and social proof to return
+1,Social Gamifiers,inactive,social_influence,epic_meaning,Inactive social gamifiers need social proof and purpose to re-engage
+2,Casual Solo Users,trial,unpredictability,epic_meaning,Casual solo users need curiosity and purpose to engage
+2,Casual Solo Users,paid,accomplishment,ownership,Casual solo users need progress and possession to continue
+2,Casual Solo Users,churned,loss_avoidance,empowerment,Churned casual solo users need to avoid loss and have creativity to return
+2,Casual Solo Users,inactive,epic_meaning,unpredictability,Inactive casual solo users need purpose and curiosity to re-engage
+3,Core Feature Fans,trial,accomplishment,ownership,Core feature fans need progress and possession to engage
+3,Core Feature Fans,paid,empowerment,accomplishment,Core feature fans need creativity and progress to continue
+3,Core Feature Fans,churned,loss_avoidance,ownership,Churned core feature fans need to avoid loss and possession to return
+3,Core Feature Fans,inactive,epic_meaning,accomplishment,Inactive core feature fans need purpose and progress to re-engage
+4,Engaged Socialites,trial,social_influence,unpredictability,Engaged socialites need social proof and curiosity to engage
+4,Engaged Socialites,paid,accomplishment,empowerment,Engaged socialites need progress and creativity to continue
+4,Engaged Socialites,churned,loss_avoidance,social_influence,Churned engaged socialites need to avoid loss and social proof to return
+4,Engaged Socialites,inactive,social_influence,epic_meaning,Inactive engaged socialites need social proof and purpose to re-engage
+5,Passive Explorers,trial,unpredictability,epic_meaning,Passive explorers need curiosity and purpose to engage
+5,Passive Explorers,paid,accomplishment,ownership,Passive explorers need progress and possession to continue
+5,Passive Explorers,churned,loss_avoidance,empowerment,Churned passive explorers need to avoid loss and have creativity to return
+5,Passive Explorers,inactive,epic_meaning,unpredictability,Inactive passive explorers need purpose and curiosity to re-engage
