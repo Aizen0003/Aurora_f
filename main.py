@@ -21,11 +21,11 @@ import sys
 import os
 import json
 
-# Force UTF-8 encoding for Windows console
+# Force UTF-8 encoding for Windows console (line-buffered for live output)
 if sys.platform == 'win32':
-    import codecs
-    sys.stdout = codecs.getwriter('utf-8')(sys.stdout.buffer, 'strict')
-    sys.stderr = codecs.getwriter('utf-8')(sys.stderr.buffer, 'strict')
+    import io
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='strict', line_buffering=True)
+    sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8', errors='strict', line_buffering=True)
     os.environ['PYTHONIOENCODING'] = 'utf-8'
 
 # Load .env file if present (for GROQ_API_KEY etc.)
@@ -77,7 +77,7 @@ def display_banner():
     print("  PROJECT AURORA - DOMAIN-GENERIC ML-POWERED ORCHESTRATOR")
     print("=" * 80)
     print("  Features:")
-    print("  * RAG-lite Knowledge Bank (PDF → LLM → TF-IDF Cosine Ranking)")
+    print("  * RAG-lite Knowledge Bank (PDF -> LLM -> TF-IDF Cosine Ranking)")
     print("  * RFM Analysis + Hierarchical Clustering (6-12 MECE segments)")
     print("  * XGBoost Churn Prediction + LightGBM Engagement Models")
     print("  * Multi-Armed Bandit (Thompson Sampling)")
@@ -156,7 +156,7 @@ def run_iteration_0(user_data_path: str, kb_text: str = None, kb_pdf: str = None
         print("\n[Brain] Identified Schema Mapping:")
         for role, col in ingestion_engine.schema_map.items():
             if col:
-                print(f"   • {role:20}: {col}")
+                print(f"   - {role:20}: {col}")
 
     user_data = ingestion_engine.engineer_features(user_data)
     
@@ -296,58 +296,58 @@ def run_iteration_0(user_data_path: str, kb_text: str = None, kb_pdf: str = None
 
 def _display_kb_intelligence(kb_data: dict):
     """Display extracted KB intelligence in the terminal."""
-    print("\n   ╔══════════════════════════════════════════════════════════════════════╗")
-    print("   ║  KNOWLEDGE BANK — EXTRACTED INTELLIGENCE                            ║")
-    print("   ╠══════════════════════════════════════════════════════════════════════╣")
+    print("\n   +" + "=" * 70 + "+")
+    print("   |  KNOWLEDGE BANK -- EXTRACTED INTELLIGENCE                          |")
+    print("   +" + "=" * 70 + "+")
 
     # Domain
     domain = kb_data.get('detected_domain', 'unknown')
-    print(f"   ║  Domain: {domain.upper()}")
+    print(f"   |  Domain: {domain.upper()}")
 
     # North Star Metric
     ns = kb_data.get('north_star', {})
     nsm_name = ns.get('north_star_metric', 'N/A')
     nsm_def = ns.get('definition', 'N/A')
     nsm_evidence = ns.get('evidence', 'N/A')
-    print(f"   ║")
-    print(f"   ║  📊 North Star Metric: {nsm_name}")
-    print(f"   ║     Definition: {nsm_def[:100]}")
+    print(f"   |")
+    print(f"   |  [NS] North Star Metric: {nsm_name}")
+    print(f"   |     Definition: {nsm_def[:100]}")
     if nsm_evidence and nsm_evidence != 'N/A':
-        print(f"   ║     Evidence: {nsm_evidence[:100]}")
+        print(f"   |     Evidence: {nsm_evidence[:100]}")
 
     # Feature-Goal Mappings
     fgm = kb_data.get('feature_goal_map', {})
     features = fgm.get('features', [])
-    print(f"   ║")
-    print(f"   ║  🎯 Feature → Goal Mappings ({len(features)} features):")
+    print(f"   |")
+    print(f"   |  [FG] Feature -> Goal Mappings ({len(features)} features):")
     for f in features[:6]:
         fname = f.get('feature_name', 'N/A')
         fgoal = f.get('primary_goal', 'N/A')
-        print(f"   ║     • {fname} → {fgoal[:80]}")
+        print(f"   |     - {fname} -> {fgoal[:80]}")
     if len(features) > 6:
-        print(f"   ║     ... and {len(features) - 6} more")
+        print(f"   |     ... and {len(features) - 6} more")
 
     # Allowed Tones
     thm = kb_data.get('tone_hook_matrix', {})
     tones = thm.get('allowed_tones', [])
-    print(f"   ║")
-    print(f"   ║  🎵 Allowed Tones: {', '.join(tones) if tones else 'N/A'}")
+    print(f"   |")
+    print(f"   |  [T] Allowed Tones: {', '.join(tones) if tones else 'N/A'}")
 
     # Octalysis Hooks
     hooks = thm.get('octalysis_hooks', {})
-    print(f"   ║")
-    print(f"   ║  🎮 Behavioral Hooks (Octalysis):")
+    print(f"   |")
+    print(f"   |  [H] Behavioral Hooks (Octalysis):")
     for drive, info in hooks.items():
         if isinstance(info, dict) and 'hooks' in info:
             hook_list = info['hooks']
             if hook_list:
                 triggers = [h.get('trigger', '?') for h in hook_list[:2]]
-                print(f"   ║     {drive}: {', '.join(triggers)}")
+                print(f"   |     {drive}: {', '.join(triggers)}")
         elif isinstance(info, str):
-            print(f"   ║     {drive}: {info[:60]}")
+            print(f"   |     {drive}: {info[:60]}")
 
-    print(f"   ║")
-    print("   ╚══════════════════════════════════════════════════════════════════════╝")
+    print(f"   |")
+    print("   +" + "=" * 70 + "+")
 
 
 def run_iteration_1(user_data_path: str, experiment_results_path: str):
@@ -365,10 +365,22 @@ def run_iteration_1(user_data_path: str, experiment_results_path: str):
     
     output_dir = "data/output"
     
+    # Validate iter0 outputs exist
+    required_files = ['message_templates.csv', 'communication_themes.csv', 'user_segments.csv']
+    for rf in required_files:
+        if not Path(f"{output_dir}/{rf}").exists():
+            print(f"\n[ERROR] Missing iter0 output: {output_dir}/{rf}")
+            print("Run iteration0 first.")
+            sys.exit(1)
+
     # Load previous iteration outputs
     print("\nLoading Iteration 0 outputs...")
     templates = pd.read_csv(f"{output_dir}/message_templates.csv")
-    timing_recs = pd.read_csv(f"{output_dir}/timing_recommendations_improved.csv")
+    # Try improved timing first, fall back to base
+    timing_path = f"{output_dir}/timing_recommendations_improved.csv"
+    if not Path(timing_path).exists():
+        timing_path = f"{output_dir}/timing_recommendations.csv"
+    timing_recs = pd.read_csv(timing_path)
     themes = pd.read_csv(f"{output_dir}/communication_themes.csv")
     user_data = pd.read_csv(f"{output_dir}/user_segments.csv")
 
@@ -514,7 +526,8 @@ def run_iteration_1(user_data_path: str, experiment_results_path: str):
     # Log template suppressions
     for loser in winners_losers['losers']:
         perf = experiment_results[experiment_results['template_id'] == loser].iloc[0]
-        ci = bandit_engine.template_bandits.get(loser, {}).get('confidence_interval', 'N/A')
+        ci = bandit_engine.template_bandits.get(loser, {}).get('confidence_interval', (0, 0))
+        ci_str = f"({float(ci[0]):.3f}, {float(ci[1]):.3f})" if isinstance(ci, (tuple, list)) else str(ci)
         changes_log.append({
             'entity_type': 'template',
             'entity_id': loser,
@@ -522,7 +535,7 @@ def run_iteration_1(user_data_path: str, experiment_results_path: str):
             'metric_trigger': f"CTR={perf['ctr']:.3f}, Engagement={perf['engagement_rate']:.3f}",
             'before_value': 'active',
             'after_value': 'suppressed',
-            'explanation': f"Bandit analysis: Consistently underperformed (CTR < 5% or Engagement < 20%). Statistical confidence: {ci}"
+            'explanation': f"Bandit analysis: Consistently underperformed (CTR < 5% or Engagement < 20%). Statistical confidence: {ci_str}"
         })
     
     # Log template promotions
@@ -552,11 +565,29 @@ def run_iteration_1(user_data_path: str, experiment_results_path: str):
     
     # Generate and save delta report
     delta_reporter = DeltaReporter()
-    iter0_stats = {'total_templates': len(templates), 'avg_ctr': 0.0}
-    iter1_stats = classifier.get_summary_stats(experiment_results)
+    # Use raw experiment stats as iter0 baseline (not zeros)
+    iter0_stats = {
+        'total_templates': len(templates),
+        'avg_ctr': experiment_results['ctr'].mean(),
+        'avg_engagement': experiment_results['engagement_rate'].mean(),
+        'avg_uninstall_rate': experiment_results['uninstall_rate'].mean() if 'uninstall_rate' in experiment_results.columns else 0.0,
+        'good_count': len(experiment_results[experiment_results.get('performance_status', pd.Series()) == 'GOOD']) if 'performance_status' in experiment_results.columns else 0,
+        'bad_count': len(experiment_results[experiment_results.get('performance_status', pd.Series()) == 'BAD']) if 'performance_status' in experiment_results.columns else 0,
+    }
+    # iter1 stats: only surviving (non-suppressed) templates
+    surviving = experiment_results[~experiment_results['template_id'].isin(winners_losers['losers'])]
+    iter1_stats = {
+        'total_templates': len(templates_improved),
+        'avg_ctr': surviving['ctr'].mean() if not surviving.empty else 0.0,
+        'avg_engagement': surviving['engagement_rate'].mean() if not surviving.empty else 0.0,
+        'avg_uninstall_rate': surviving['uninstall_rate'].mean() if 'uninstall_rate' in surviving.columns and not surviving.empty else 0.0,
+        'good_count': len(surviving[surviving.get('performance_status', pd.Series()) == 'GOOD']) if 'performance_status' in surviving.columns else 0,
+        'bad_count': len(surviving[surviving.get('performance_status', pd.Series()) == 'BAD']) if 'performance_status' in surviving.columns else 0,
+    }
     
     delta_report = delta_reporter.generate_delta_report(changes_log, iter0_stats, iter1_stats)
     delta_reporter.save_delta_report(output_dir)
+    delta_reporter.print_detailed_summary(iter0_stats, iter1_stats)
     
     # Step 8: Generate Improved Schedule
     print("\n" + "=" * 80)

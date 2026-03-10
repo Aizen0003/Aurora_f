@@ -422,10 +422,10 @@ class SegmentationEngine:
             df['segment_name'] = df['segment_id'].map(segment_names)
             print(f"      [OK] LLM assigned {len(segment_names)} domain-aware segment names")
             for sid, sname in sorted(segment_names.items()):
-                print(f"          Cluster {sid} → {sname}")
+                print(f"          Cluster {sid} -> {sname}")
         else:
             # Fallback to rule-based naming
-            print("      [WARN] LLM naming failed — using rule-based fallback")
+            print("      [WARN] LLM naming failed -- using rule-based fallback")
             df = self._name_segments_fallback(df)
 
         return df
@@ -464,9 +464,9 @@ class SegmentationEngine:
 
     def _display_segment_analysis(self, df: pd.DataFrame):
         """Display comprehensive segment analysis"""
-        print("\n" + "═" * 80)
+        print("\n" + "=" * 80)
         print("SEGMENT ANALYSIS")
-        print("═" * 80)
+        print("=" * 80)
 
         for _, profile in self.segment_profiles.iterrows():
             seg_id = profile['segment_id']
@@ -495,4 +495,4 @@ class SegmentationEngine:
         segment_output = df[cols].copy()
 
         segment_output.to_csv(f"{output_dir}/user_segments.csv", index=False)
-        print(f"\n✅ Saved: {output_dir}/user_segments.csv")
+        print(f"\n[OK] Saved: {output_dir}/user_segments.csv")

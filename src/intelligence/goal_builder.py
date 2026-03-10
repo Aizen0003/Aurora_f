@@ -54,7 +54,7 @@ class GoalBuilder:
         self.segment_goals = pd.DataFrame(goals)
         
         print(f"   [OK] Created {len(goals)} goal definitions")
-        print(f"   [OK] Covering {len(segment_profiles)} segments × 4 lifecycle stages")
+        print(f"   [OK] Covering {len(segment_profiles)} segments x 4 lifecycle stages")
         
         return self.segment_goals
     

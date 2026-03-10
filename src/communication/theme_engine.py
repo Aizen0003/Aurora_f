@@ -63,13 +63,13 @@ class ThemeEngine:
         themes = self._assign_themes_llm(segment_profiles, lifecycle_stages)
 
         if not themes:
-            print("   [WARN] LLM theme assignment failed — using rule-based fallback")
+            print("   [WARN] LLM theme assignment failed -- using rule-based fallback")
             themes = self._assign_themes_fallback(segment_profiles, lifecycle_stages)
 
         self.themes = pd.DataFrame(themes)
 
         print(f"   [OK] Generated {len(themes)} theme mappings")
-        print(f"   [OK] Covering {len(segment_profiles)} segments × {len(lifecycle_stages)} lifecycle stages")
+        print(f"   [OK] Covering {len(segment_profiles)} segments x {len(lifecycle_stages)} lifecycle stages")
 
         # Display theme assignments
         self._display_themes()
@@ -246,21 +246,21 @@ class ThemeEngine:
         if self.themes is None or self.themes.empty:
             return
 
-        print("\n   ┌─────────────────────────────────────────────────────────────────────┐")
-        print("   │  OCTALYSIS THEME ASSIGNMENTS                                       │")
-        print("   ├─────────────────────────────────────────────────────────────────────┤")
+        print("\n   +" + "-" * 69 + "+")
+        print("   |  OCTALYSIS THEME ASSIGNMENTS                                       |")
+        print("   +" + "-" * 69 + "+")
 
         for seg_id in sorted(self.themes['segment_id'].unique()):
             seg_themes = self.themes[self.themes['segment_id'] == seg_id]
             seg_name = seg_themes['segment_name'].iloc[0]
-            print(f"   │  Segment {seg_id}: {seg_name}")
+            print(f"   |  Segment {seg_id}: {seg_name}")
             for _, row in seg_themes.iterrows():
                 lc = row['lifecycle_stage']
                 p = row['primary_theme']
                 s = row['secondary_theme']
-                print(f"   │    {lc:10s} → primary: {p:20s} secondary: {s}")
-            print(f"   │")
-        print("   └─────────────────────────────────────────────────────────────────────┘")
+                print(f"   |    {lc:10s} -> primary: {p:20s} secondary: {s}")
+            print(f"   |")
+        print("   +" + "-" * 69 + "+")
 
     def save_themes(self, output_dir: str):
         """Save themes to CSV"""

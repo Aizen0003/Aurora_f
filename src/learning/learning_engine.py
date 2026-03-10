@@ -53,7 +53,7 @@ class LearningEngine:
     def _learn_templates(self, templates: pd.DataFrame, 
                         experiment_results: pd.DataFrame) -> pd.DataFrame:
         """Learn which templates to suppress/promote"""
-        print("   📝 Learning template performance...")
+        print("   [Learn] Learning template performance...")
         
         templates_improved = templates.copy()
         
@@ -119,8 +119,8 @@ class LearningEngine:
                     templates_improved['template_id'] == template_id, 'weight'
                 ] = 3.0
         
-        print(f"      • Suppressed {len(bad_templates)} BAD templates")
-        print(f"      • Promoted {len(good_templates)} GOOD templates")
+        print(f"      - Suppressed {len(bad_templates)} BAD templates")
+        print(f"      - Promoted {len(good_templates)} GOOD templates")
         
         return templates_improved
     
@@ -178,8 +178,8 @@ class LearningEngine:
                     'rationale': f"Learned: {row['ctr']:.1%} CTR from {int(row['total_sends'])} sends"
                 })
         
-        print(f"      • Optimized timing for {len(window_perf['segment_id'].unique())} segments")
-        print(f"      • Suppressed {changes_count} underperforming windows")
+        print(f"      - Optimized timing for {len(window_perf['segment_id'].unique())} segments")
+        print(f"      - Suppressed {changes_count} underperforming windows")
         
         return pd.DataFrame(timing_improved) if timing_improved else timing_recs
     
@@ -225,7 +225,7 @@ class LearningEngine:
                     ] = best_theme['theme']
                     changes_count += 1
         
-        print(f"      • Updated themes for {changes_count} segments")
+        print(f"      - Updated themes for {changes_count} segments")
         
         return themes_improved
     
@@ -234,7 +234,7 @@ class LearningEngine:
         print("   [Stats] Learning frequency adjustments...")
         
         if 'uninstall_rate' not in experiment_results.columns:
-            print("      ⚠️  No uninstall_rate data available")
+            print("      [WARN] No uninstall_rate data available")
             return []
         
         # Analyze uninstall rate by segment
@@ -261,7 +261,7 @@ class LearningEngine:
                     'reason': f"High uninstall rate: {uninstall_rate:.1%}"
                 })
         
-        print(f"      • Reduced frequency for {len(frequency_changes)} segments")
+        print(f"      - Reduced frequency for {len(frequency_changes)} segments")
         
         return frequency_changes
 

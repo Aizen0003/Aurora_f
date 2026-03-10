@@ -58,14 +58,50 @@ def generate_experiment_results(
             # Assign a random time window
             window = rng.choice(time_windows)
 
-            # Simulate realistic metrics
+            # Assign quality tier so learning engine sees clear winners/losers
+            tier = rng.choice(['GOOD', 'NEUTRAL', 'BAD'], p=[0.20, 0.40, 0.40])
+            if tier == 'GOOD':
+                base_ctr = rng.uniform(0.15, 0.30)
+                engagement_rate = rng.uniform(0.40, 0.70)
+                uninstall_rate = rng.uniform(0.001, 0.015)
+            elif tier == 'NEUTRAL':
+                base_ctr = rng.uniform(0.05, 0.15)
+                engagement_rate = rng.uniform(0.20, 0.40)
+                uninstall_rate = rng.uniform(0.005, 0.025)
+            else:  # BAD
+                base_ctr = rng.uniform(0.01, 0.05)
+                engagement_rate = rng.uniform(0.05, 0.20)
+                uninstall_rate = rng.uniform(0.02, 0.06)
+
+            # Theme modifier (some themes naturally perform better)
+            theme_mod = {
+                'accomplishment': 1.10, 'social_influence': 1.08,
+                'epic_meaning': 1.05, 'ownership': 1.02,
+                'empowerment': 1.0, 'scarcity': 0.95,
+                'loss_avoidance': 0.92, 'unpredictability': 0.90,
+            }.get(str(tpl.get('theme', '')).lower(), 1.0)
+            base_ctr *= theme_mod
+            engagement_rate *= theme_mod
+
+            # Window modifier
+            window_mod = {
+                'evening': 1.12, 'mid_morning': 1.08, 'afternoon': 1.0,
+                'late_afternoon': 0.95, 'early_morning': 0.88, 'night': 0.82,
+            }.get(window, 1.0)
+            base_ctr *= window_mod
+
             total_sends = int(rng.choice([200, 300, 500, 800, 1000]))
-            base_ctr = rng.uniform(0.02, 0.25)
             total_opens = int(total_sends * base_ctr)
-            engagement_rate = rng.uniform(0.10, 0.60)
             total_engagements = int(total_opens * engagement_rate)
             ctr = total_opens / total_sends if total_sends else 0
-            uninstall_rate = rng.uniform(0.001, 0.04)
+
+            # Performance status per PS thresholds
+            if ctr > 0.15 and engagement_rate > 0.40:
+                performance_status = 'GOOD'
+            elif ctr < 0.05 or engagement_rate < 0.20:
+                performance_status = 'BAD'
+            else:
+                performance_status = 'NEUTRAL'
 
             rows.append({
                 "template_id": tpl["template_id"],
@@ -80,6 +116,7 @@ def generate_experiment_results(
                 "ctr": round(ctr, 4),
                 "engagement_rate": round(engagement_rate, 4),
                 "uninstall_rate": round(uninstall_rate, 4),
+                "performance_status": performance_status,
             })
 
     df = pd.DataFrame(rows)
@@ -88,6 +125,6 @@ def generate_experiment_results(
     Path(sample_dir).mkdir(parents=True, exist_ok=True)
     out_path = f"{sample_dir}/experiment_results_sample.csv"
     df.to_csv(out_path, index=False)
-    print(f"   [OK] Generated {len(df)} synthetic experiment rows → {out_path}")
+    print(f"   [OK] Generated {len(df)} synthetic experiment rows -> {out_path}")
 
     return df

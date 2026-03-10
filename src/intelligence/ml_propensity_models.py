@@ -99,22 +99,49 @@ class PropensityModelEngine:
             if col in df.columns:
                 df[col] = df[col].fillna(df[col].median())
         
+        # Add interaction features for richer signal
+        if 'activeness' in df.columns and 'gamification_propensity' in df.columns:
+            df['active_x_gamification'] = df['activeness'] * df['gamification_propensity']
+            feature_cols.append('active_x_gamification')
+        if 'activeness' in df.columns and 'social_propensity' in df.columns:
+            df['active_x_social'] = df['activeness'] * df['social_propensity']
+            feature_cols.append('active_x_social')
+        if 'churn_risk' in df.columns and 'activeness' in df.columns:
+            df['churn_x_active'] = df['churn_risk'] * df['activeness']
+            feature_cols.append('churn_x_active')
+        # Engagement diversity (std dev across propensity scores)
+        propensity_cols = [c for c in ['gamification_propensity', 'social_propensity',
+                                        'ai_tutor_propensity', 'leaderboard_propensity'] if c in df.columns]
+        if len(propensity_cols) >= 2:
+            df['engagement_diversity'] = df[propensity_cols].std(axis=1)
+            feature_cols.append('engagement_diversity')
+
+        feature_cols = list(set(feature_cols))
+
         X = df[feature_cols]
         y = df['churn_target']
         
+        # Handle class imbalance
+        neg_count = (y == 0).sum()
+        pos_count = (y == 1).sum()
+        spw = neg_count / pos_count if pos_count > 0 else 1.0
+
         # Train-test split (handle small data)
         test_size = 0.2 if len(df) >= 10 else 0.5
         X_train, X_test, y_train, y_test = train_test_split(
             X, y, test_size=test_size, random_state=self.random_state, stratify=stratify_val
         )
         
-        # Train XGBoost
+        # Train XGBoost with class-imbalance correction
         self.churn_model = xgb.XGBClassifier(
-            n_estimators=100,
-            max_depth=4,
-            learning_rate=0.1,
+            n_estimators=200,
+            max_depth=5,
+            learning_rate=0.05,
             subsample=0.8,
             colsample_bytree=0.8,
+            min_child_weight=3,
+            gamma=0.1,
+            scale_pos_weight=spw,
             random_state=self.random_state,
             eval_metric='logloss'
         )
@@ -167,7 +194,7 @@ class PropensityModelEngine:
         ))
         
         print(f"   [OK] AUC Score: {auc_score:.4f}")
-        print(f"   [OK] Cross-Val AUC: {cv_scores.mean():.4f} (±{cv_scores.std():.4f})")
+        print(f"   [OK] Cross-Val AUC: {cv_scores.mean():.4f} (+/-{cv_scores.std():.4f})")
         print(f"   [OK] Top Features: {self._get_top_features('churn', 3)}")
         
         return self.churn_model, metrics
@@ -264,7 +291,7 @@ class PropensityModelEngine:
         ))
         
         print(f"   [OK] RMSE: {rmse:.4f}")
-        print(f"   [OK] R² Score: {r2:.4f}")
+        print(f"   [OK] R2 Score: {r2:.4f}")
         print(f"   [OK] Top Features: {self._get_top_features('engagement', 3)}")
         
         return self.engagement_model, metrics

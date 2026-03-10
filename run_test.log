@@ -1,0 +1,352 @@
+﻿
+================================================================================
+  PROJECT AURORA - DOMAIN-GENERIC ML-POWERED ORCHESTRATOR
+================================================================================
+  Features:
+  * RAG-lite Knowledge Bank (PDF ΓåÆ LLM ΓåÆ TF-IDF Cosine Ranking)
+  * RFM Analysis + Hierarchical Clustering (6-12 MECE segments)
+  * XGBoost Churn Prediction + LightGBM Engagement Models
+  * Multi-Armed Bandit (Thompson Sampling)
+  * Survival Analysis for Timing Optimization
+  * NLP-Powered Template Analysis
+  * Bayesian + Frequentist A/B Testing
+  * Domain-Generic Template Generation (Bilingual EN+HI)
+================================================================================
+
+MODE: ITERATION 0 (Training ML Models)
+================================================================================
+
+================================================================================
+STEP 1: KNOWLEDGE BANK EXTRACTION
+================================================================================
+   Using PDF from config: data/input/knowledge_bank.pdf
+
+   [Regex] Using regex-based extraction (no LLM)
+[OK] Knowledge Bank outputs saved to data/output (mode: Regex)
+
+   ΓòöΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòù
+   Γòæ  KNOWLEDGE BANK ΓÇö EXTRACTED INTELLIGENCE                            Γòæ
+   ΓòáΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòú
+   Γòæ  Domain: GENERIC
+   Γòæ
+   Γòæ  ≡ƒôè North Star Metric: Daily Active Users
+   Γòæ     Definition: Primary success metric measuring product-market fit
+   Γòæ
+   Γòæ  ≡ƒÄ» Feature ΓåÆ Goal Mappings (3 features):
+   Γòæ     ΓÇó Core Feature ΓåÆ user_engagement
+   Γòæ     ΓÇó User Dashboard ΓåÆ information_access
+   Γòæ     ΓÇó Notifications ΓåÆ engagement
+   Γòæ
+   Γòæ  ≡ƒÄ╡ Allowed Tones: encouraging, friendly, aspirational, urgent, celebratory, motivational, supportive
+   Γòæ
+   Γòæ  ≡ƒÄ« Behavioral Hooks (Octalysis):
+   Γòæ
+   ΓòÜΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓò¥
+
+================================================================================
+STEP 2:  DATA INGESTION
+================================================================================
+
+[Stats] Loading user data from data/sample/user_data_sample.csv...
+   Loaded 1000 users
+
+[Brain] Analyzing dataset schema via LLM...
+   [OK] Loaded 5 Groq API keys for round-robin rotation
+   [OK] Identified roles: ID=user_id, Features=2
+
+[Find] Validating data quality...
+
+≡ƒº╣ Cleaning data...
+[OK] Data ingestion complete
+
+[Brain] Identified Schema Mapping:
+   ΓÇó user_id             : user_id
+   ΓÇó lifecycle_stage     : lifecycle_stage
+   ΓÇó activeness_metrics  : ['sessions_last_7d', 'exercises_completed_7d', 'notif_open_rate_30d']
+   ΓÇó value_metrics       : ['coins_balance', 'motivation_score']
+   ΓÇó retention_metrics   : ['days_since_signup', 'streak_current']
+   ΓÇó feature_flags       : ['feature_ai_tutor_used', 'feature_leaderboard_viewed']
+
+[Tool] Engineering features via dynamic schema...
+   [OK] Activeness score (mean: 0.34)
+   [OK] Churn risk (mean: 0.60)
+
+Dataset: 1000 users | Avg Active: 0.34 | Avg Churn Risk: 0.60
+   [OK] Enriched feature map with 6 features from data columns
+[OK] Knowledge Bank outputs saved to data/output (mode: Regex)
+
+================================================================================
+STEP 3:  SEGMENTATION (RFM + Hierarchical)
+================================================================================
+
+[*] ML-Powered Segmentation...
+   Users: 1000 | Features: 19
+
+   [Stats] Step 1: RFM Analysis
+      [OK] RFM Distribution:
+rfm_segment
+Needs Attention       254
+Promising             208
+Lost                  182
+At Risk               178
+Potential Loyalist    113
+Loyal                  52
+Champions              13
+   [Tool] Step 2: Feature Engineering
+   [Find] Step 3: Optimal Cluster Count Selection
+      [Stats] Silhouette optimal K: 6 (score: 0.165)
+      [Stats] Davies-Bouldin optimal K: 8 (score: 1.513)
+      [Stats] Elbow optimal K: 8
+      [OK] Optimal K: 6
+   [Tree] Step 4: Hierarchical Clustering
+      [OK] Created 6 segments using hierarchical clustering
+   [List] Step 5: Segment Profiling
+   [Tag]  Step 6: LLM-Powered Domain-Aware Naming
+      [OK] LLM assigned 6 domain-aware segment names
+          Cluster 0 ΓåÆ High Risk Users
+          Cluster 1 ΓåÆ Social Gamifiers
+          Cluster 2 ΓåÆ Casual Users
+          Cluster 3 ΓåÆ Engaged Trialers
+          Cluster 4 ΓåÆ Active Socialites
+          Cluster 5 ΓåÆ Low Engagement Users
+
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+SEGMENT ANALYSIS
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+
+[*] Segment 0: High Risk Users
+   Size: 25 users (2.5%)
+   RFM: 3.68 (Champions)
+   Activeness: 0.39 | Churn Risk: 0.75
+   Gamification: 0.47 | Social: 0.20
+   Lifecycle: Trial 36% | Paid 32% | Churned 16%
+
+[*] Segment 1: Social Gamifiers
+   Size: 220 users (22.0%)
+   RFM: 2.67 (Needs Attention)
+   Activeness: 0.29 | Churn Risk: 0.63
+   Gamification: 0.67 | Social: 1.00
+   Lifecycle: Trial 37% | Paid 35% | Churned 14%
+
+[*] Segment 2: Casual Users
+   Size: 253 users (25.3%)
+   RFM: 2.97 (Promising)
+   Activeness: 0.30 | Churn Risk: 0.67
+   Gamification: 0.49 | Social: 0.00
+   Lifecycle: Trial 41% | Paid 35% | Churned 14%
+
+[*] Segment 3: Engaged Trialers
+   Size: 162 users (16.2%)
+   RFM: 2.63 (Needs Attention)
+   Activeness: 0.43 | Churn Risk: 0.50
+   Gamification: 0.44 | Social: 0.00
+   Lifecycle: Trial 45% | Paid 28% | Churned 15%
+
+[*] Segment 4: Active Socialites
+   Size: 158 users (15.8%)
+   RFM: 2.85 (Needs Attention)
+   Activeness: 0.42 | Churn Risk: 0.55
+   Gamification: 0.72 | Social: 1.00
+   Lifecycle: Trial 43% | Paid 35% | Churned 15%
+
+[*] Segment 5: Low Engagement Users
+   Size: 182 users (18.2%)
+   RFM: 2.21 (Lost)
+   Activeness: 0.28 | Churn Risk: 0.59
+   Gamification: 0.28 | Social: 0.01
+   Lifecycle: Trial 47% | Paid 34% | Churned 13%
+
+Γ£à Saved: data/output/user_segments.csv
+
+================================================================================
+STEP 4: TRAINING ML PROPENSITY MODELS
+================================================================================
+
+[*] Training Churn Prediction Model (XGBoost)...
+   [Tool] Using 14 dynamic features for churn prediction
+   [OK] AUC Score: 0.4252
+   [OK] Cross-Val AUC: 0.4684 (┬▒0.0380)
+   [OK] Top Features: gamification_propensity, coins_balance, streak_current
+
+[*] Training Engagement Propensity Model (LightGBM)...
+   [OK] RMSE: 165.2526
+   [OK] R┬▓ Score: 0.6455
+   [OK] Top Features: gamification_propensity, activeness, churn_risk
+
+[Stats] Generating Propensity Scores...
+   [OK] Generated propensity scores for 1000 users
+   [OK] Avg Churn Propensity: 0.239
+   [OK] Avg Engagement Propensity: 0.455
+   [OK] Saved: data/output/models/churn_model.pkl
+   [OK] Saved: data/output/models/engagement_model.pkl
+   [OK] Saved: data/output/ml_model_performance.csv
+
+================================================================================
+STEP 5: INTELLIGENT GOAL BUILDING
+================================================================================
+
+[*] Building goals and journeys...
+   [OK] Created 198 goal definitions
+   [OK] Covering 6 segments ├ù 4 lifecycle stages
+[OK] Goals saved to data/output/segment_goals.csv
+
+================================================================================
+STEP 6: BEHAVIORAL THEME MAPPING
+================================================================================
+
+[Theme] LLM-Powered Octalysis Theme Mapping...
+   [OK] Generated 24 theme mappings
+   [OK] Covering 6 segments ├ù 4 lifecycle stages
+
+   ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+   Γöé  OCTALYSIS THEME ASSIGNMENTS                                       Γöé
+   Γö£ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöñ
+   Γöé  Segment 0: High Risk Users
+   Γöé    trial      ΓåÆ primary: loss_avoidance       secondary: unpredictability
+   Γöé    paid       ΓåÆ primary: loss_avoidance       secondary: accomplishment
+   Γöé    churned    ΓåÆ primary: loss_avoidance       secondary: scarcity
+   Γöé    inactive   ΓåÆ primary: unpredictability     secondary: epic_meaning
+   Γöé
+   Γöé  Segment 1: Social Gamifiers
+   Γöé    trial      ΓåÆ primary: social_influence     secondary: accomplishment
+   Γöé    paid       ΓåÆ primary: social_influence     secondary: ownership
+   Γöé    churned    ΓåÆ primary: loss_avoidance       secondary: social_influence
+   Γöé    inactive   ΓåÆ primary: unpredictability     secondary: epic_meaning
+   Γöé
+   Γöé  Segment 2: Casual Users
+   Γöé    trial      ΓåÆ primary: accomplishment       secondary: unpredictability
+   Γöé    paid       ΓåÆ primary: accomplishment       secondary: ownership
+   Γöé    churned    ΓåÆ primary: loss_avoidance       secondary: scarcity
+   Γöé    inactive   ΓåÆ primary: unpredictability     secondary: epic_meaning
+   Γöé
+   Γöé  Segment 3: Engaged Trialers
+   Γöé    trial      ΓåÆ primary: accomplishment       secondary: unpredictability
+   Γöé    paid       ΓåÆ primary: accomplishment       secondary: ownership
+   Γöé    churned    ΓåÆ primary: loss_avoidance       secondary: scarcity
+   Γöé    inactive   ΓåÆ primary: unpredictability     secondary: epic_meaning
+   Γöé
+   Γöé  Segment 4: Active Socialites
+   Γöé    trial      ΓåÆ primary: social_influence     secondary: accomplishment
+   Γöé    paid       ΓåÆ primary: social_influence     secondary: ownership
+   Γöé    churned    ΓåÆ primary: loss_avoidance       secondary: social_influence
+   Γöé    inactive   ΓåÆ primary: unpredictability     secondary: epic_meaning
+   Γöé
+   Γöé  Segment 5: Low Engagement Users
+   Γöé    trial      ΓåÆ primary: unpredictability     secondary: epic_meaning
+   Γöé    paid       ΓåÆ primary: accomplishment       secondary: ownership
+   Γöé    churned    ΓåÆ primary: loss_avoidance       secondary: scarcity
+   Γöé    inactive   ΓåÆ primary: unpredictability     secondary: epic_meaning
+   Γöé
+   ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+[OK] Themes saved to data/output/communication_themes.csv
+
+================================================================================
+STEP 7: TEMPLATE GENERATION + NLP OPTIMIZATION
+================================================================================
+
+[Edit] LLM-Powered Template Generation...
+   [OK] Generated 600 bilingual templates
+   [OK] LLM-generated: 120/120 groups | Fallback: 0/120 groups
+   [OK] Each template has English + Hinglish columns
+
+   ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+   Γöé  TOP GENERATED TEMPLATES (Sample)                                    Γöé
+   Γö£ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöñ
+   Γöé
+   Γöé  [TPL_0001] Segment: High Risk Users | churned | loss_avoidance
+   Γöé  EN: Come Back
+   Γöé      You're missing out on Core Feature benefits! ≡ƒÜÇ...
+   Γöé  HI: Wapas Aao
+   Γöé      Aap Core Feature ke fayde se vanchit ho rahe hain!...
+   Γöé  CTA: Rejoin / Wapas Aao
+   Γöé
+   Γöé  [TPL_0101] Segment: Social Gamifiers | churned | loss_avoidance
+   Γöé  EN: Don't Fall
+   Γöé      You're about to lose your leaderboard spot! Log in to save it...
+   Γöé  HI: Girne Na
+   Γöé      Aap leaderboard spot khoone wale hain! Login karke bachayein...
+   Γöé  CTA: Login / Login
+   Γöé
+   Γöé  [TPL_0201] Segment: Casual Users | churned | loss_avoidance
+   Γöé  EN: Come Back!
+   Γöé      You're missing out on Core Feature benefits! ≡ƒÜÇ...
+   Γöé  HI: Wapas Aao!
+   Γöé      Aap Core Feature ke fayde se chuke hain! ≡ƒÜÇ...
+   Γöé  CTA: Rejoin / Wapas Aao
+   Γöé
+   Γöé  [TPL_0301] Segment: Engaged Trialers | churned | loss_avoidance
+   Γöé  EN: Come Back
+   Γöé      You're missing out on Core Feature benefits! ≡ƒÜÇ...
+   Γöé  HI: Wapas Aao
+   Γöé      Aap Core Feature ke fayde se chuke hain! ≡ƒÜÇ...
+   Γöé  CTA: Rejoin / Wapas Aao
+   Γöé
+   Γöé  [TPL_0401] Segment: Active Socialites | churned | loss_avoidance
+   Γöé  EN: Come Back!
+   Γöé      You're missing out on Core Feature updates! ≡ƒÜÇ...
+   Γöé  HI: Wapas Aao!
+   Γöé      Aap Core Feature ki updates se chuke hain! ≡ƒÜÇ...
+   Γöé  CTA: Rejoin / Wapas Aao
+   Γöé
+   Γöé  [TPL_0501] Segment: Low Engagement Users | churned | loss_avoidance
+   Γöé  EN: Come Back!
+   Γöé      You're missing out on Core Feature benefits! ≡ƒÜÇ...
+   Γöé  HI: Wapas Aao!
+   Γöé      Aap Core Feature ke fayde se chuke hain! ≡ƒÜÇ...
+   Γöé  CTA: Rejoin / Wapas Aao
+   Γöé
+   ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+
+≡ƒô¥ NLP Template Analysis...
+   [OK] Analyzed 600 templates
+   [OK] Avg sentiment: 0.051
+   [OK] Avg engagement score: 0.105
+[OK] Templates saved to data/output/message_templates.csv
+
+================================================================================
+STEP 8: TIMING OPTIMIZATION (Behavioral Patterns)
+================================================================================
+
+[Time] Advanced Timing Optimization with Survival Analysis...
+   [Stats] Analyzing user behavioral patterns...
+   [OK] Generated 12 timing recommendations
+
+[+] Optimizing Notification Frequency...
+   [OK] Generated frequency recommendations for 6 segments
+   [OK] Avg daily notifications: 4.7
+
+[OK] Saved: data/output/timing_recommendations.csv
+[OK] Saved: data/output/timing_recommendations_improved.csv
+
+================================================================================
+STEP 9: PERSONALIZED SCHEDULE GENERATION
+================================================================================
+
+≡ƒôà Generating notification schedules for 100 users...
+   [OK] Generated 700 schedule entries
+   [OK] Covering 100 users ├ù 7 days
+[OK] Schedules saved to data/output/user_notification_schedule.csv
+
+================================================================================
+STEP 10: MULTI-ARMED BANDIT INITIALIZATION
+================================================================================
+
+≡ƒÄ░ Initializing Multi-Armed Bandit System...
+   [OK] Initialized 600 bandit arms
+
+Γ£à Saved bandit state: data/output/bandit_state.json
+
+================================================================================
+STEP 11: GENERATING SYNTHETIC EXPERIMENT RESULTS
+================================================================================
+   [OK] Generated 120 synthetic experiment rows ΓåÆ data/sample/experiment_results_sample.csv
+
+================================================================================
+ITERATION 0 COMPLETE - ML MODELS TRAINED
+================================================================================
+
+Outputs saved to: data/output/
+
+Experiment results generated: data/sample/experiment_results_sample.csv
+
+Next: Run Iteration 1 with experiment results for learning

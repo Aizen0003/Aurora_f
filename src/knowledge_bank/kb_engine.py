@@ -128,11 +128,11 @@ class KnowledgeBankEngine:
         # mode == 'regex' → use_rag stays False
 
         if use_rag and pdf_path and PYMUPDF_AVAILABLE:
-            print("\n   [RAG] Using RAG-lite pipeline (PDF → LLM → TF-IDF)")
+            print("\n   [RAG] Using RAG-lite pipeline (PDF -> LLM -> TF-IDF)")
             return self._process_rag_lite(pdf_path)
         elif use_rag and not pdf_path and self.groq_client:
             # Have LLM but no PDF — extract text, still try RAG on raw text
-            print("\n   [RAG] Using RAG-lite pipeline (Text → LLM → TF-IDF)")
+            print("\n   [RAG] Using RAG-lite pipeline (Text -> LLM -> TF-IDF)")
             return self._process_rag_lite_from_text(kb_text)
         else:
             print("\n   [Regex] Using regex-based extraction (no LLM)")
@@ -578,7 +578,7 @@ Return JSON only:"""
             result = parse_json_response(raw)
             if not result:
                 result = json.loads(raw)
-            print(f"   [RAG] LLM extraction complete — company: {result.get('company_name', 'N/A')}")
+            print(f"   [RAG] LLM extraction complete -- company: {result.get('company_name', 'N/A')}")
             return result
         except Exception as e:
             print(f"   [WARN] LLM intelligence extraction failed: {e}")

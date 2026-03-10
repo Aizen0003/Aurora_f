@@ -46,18 +46,18 @@ class DataIngestionEngine:
         validation_result = self.validator.validate_user_data(df)
         
         if not validation_result['valid']:
-            print("\n❌ Validation failed:")
+            print("\n[ERROR] Validation failed:")
             for error in validation_result['errors']:
-                print(f"   • {error}")
+                print(f"   - {error}")
             raise ValueError("Data validation failed")
         
         if validation_result['warnings']:
-            print("\n⚠️  Warnings:")
+            print("\n[WARN] Warnings:")
             for warning in validation_result['warnings']:
-                print(f"   • {warning}")
+                print(f"   - {warning}")
         
         # Step 4: Clean
-        print("\n🧹 Cleaning data...")
+        print("\n[Clean] Cleaning data...")
         df = self.validator.clean_user_data(df, schema_map=self.schema_map)
         
         print("[OK] Data ingestion complete")

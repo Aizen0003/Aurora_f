@@ -99,7 +99,7 @@ def _get_next_key() -> Optional[str]:
 
     # All keys exhausted
     _circuit_open = True
-    print(f"   [WARN] Circuit breaker OPEN — all {len(keys)} API keys exhausted. Skipping LLM calls.")
+    print(f"   [WARN] Circuit breaker OPEN -- all {len(keys)} API keys exhausted. Skipping LLM calls.")
     return None
 
 
@@ -134,7 +134,7 @@ def call_llm_with_retry(
     Returns the raw text response or None on failure.
     """
     if not GROQ_AVAILABLE:
-        print("   [WARN] Groq SDK not available — skipping LLM call")
+        print("   [WARN] Groq SDK not available -- skipping LLM call")
         return None
 
     global _circuit_open, _last_llm_call_time
@@ -143,7 +143,7 @@ def call_llm_with_retry(
 
     keys = _load_api_keys()
     if not keys:
-        print("   [WARN] No GROQ_API_KEY set — skipping LLM call")
+        print("   [WARN] No GROQ_API_KEY set -- skipping LLM call")
         return None
 
     kb_cfg = _load_llm_config(config_path)
@@ -190,7 +190,7 @@ def call_llm_with_retry(
             if is_context_too_long and attempt < max_retries:
                 half = len(current_user_prompt) // 2
                 current_user_prompt = current_user_prompt[:half]
-                print(f"   [WARN] LLM context too large — reducing prompt to {half} chars (attempt {attempt + 1}/{max_retries})")
+                print(f"   [WARN] LLM context too large -- reducing prompt to {half} chars (attempt {attempt + 1}/{max_retries})")
             elif attempt >= max_retries:
                 print(f"   [WARN] LLM call failed: {str(e)[:120]}")
                 return None

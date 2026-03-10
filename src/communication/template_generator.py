@@ -297,9 +297,9 @@ class TemplateGenerator:
         if self.templates is None or self.templates.empty:
             return
 
-        print("\n   ┌──────────────────────────────────────────────────────────────────────┐")
-        print("   │  TOP GENERATED TEMPLATES (Sample)                                    │")
-        print("   ├──────────────────────────────────────────────────────────────────────┤")
+        print("\n   +" + "-" * 70 + "+")
+        print("   |  TOP GENERATED TEMPLATES (Sample)                                    |")
+        print("   +" + "-" * 70 + "+")
 
         # Show one template per segment (first variant only)
         shown = set()
@@ -311,16 +311,16 @@ class TemplateGenerator:
             shown.add(seg_key)
             count += 1
 
-            print(f"   │")
-            print(f"   │  [{t['template_id']}] Segment: {t['segment_name']} | {t['lifecycle_stage']} | {t['theme']}")
-            print(f"   │  EN: {t['message_title_en']}")
-            print(f"   │      {t['message_body_en'][:80]}...")
-            print(f"   │  HI: {t['message_title_hi']}")
-            print(f"   │      {t['message_body_hi'][:80]}...")
-            print(f"   │  CTA: {t['cta_text_en']} / {t['cta_text_hi']}")
+            print(f"   |")
+            print(f"   |  [{t['template_id']}] Segment: {t['segment_name']} | {t['lifecycle_stage']} | {t['theme']}")
+            print(f"   |  EN: {t['message_title_en']}")
+            print(f"   |      {t['message_body_en'][:80]}...")
+            print(f"   |  HI: {t['message_title_hi']}")
+            print(f"   |      {t['message_body_hi'][:80]}...")
+            print(f"   |  CTA: {t['cta_text_en']} / {t['cta_text_hi']}")
 
-        print(f"   │")
-        print("   └──────────────────────────────────────────────────────────────────────┘")
+        print(f"   |")
+        print("   +" + "-" * 70 + "+")
 
     def save_templates(self, output_dir: str):
         """Save templates to CSV"""
