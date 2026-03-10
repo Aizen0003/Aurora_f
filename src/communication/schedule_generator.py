@@ -85,9 +85,10 @@ class ScheduleGenerator:
                 if available_templates.empty:
                     continue
                 
-                # Select templates based on frequency
-                num_notifs = min(frequency, len(available_templates))
-                selected = available_templates.sample(n=num_notifs, replace=False)
+                # Select templates based on frequency (up to 9 per PS)
+                num_notifs = min(frequency, 9)
+                need_replace = num_notifs > len(available_templates)
+                selected = available_templates.sample(n=num_notifs, replace=need_replace)
                 
                 # Get timing windows
                 timing = timing_recs[timing_recs['segment_id'] == user['segment_id']]

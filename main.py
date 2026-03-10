@@ -293,6 +293,9 @@ def run_iteration_0(user_data_path: str, kb_text: str = None, kb_pdf: str = None
     print(f"\nExperiment results generated: data/sample/experiment_results_sample.csv")
     print("\nNext: Run Iteration 1 with experiment results for learning")
 
+    # Export to PS submission folder structure
+    _export_iteration_0(output_dir)
+
 
 def _display_kb_intelligence(kb_data: dict):
     """Display extracted KB intelligence in the terminal."""
@@ -633,6 +636,54 @@ def run_iteration_1(user_data_path: str, experiment_results_path: str):
     
     print(f"\nImproved outputs saved to: {output_dir}/")
     print("\nSystem is now optimized for maximum engagement!")
+
+    # Export to PS submission folder structure
+    _export_iteration_1(output_dir, experiment_results_path)
+
+
+def _export_iteration_0(output_dir: str):
+    """Copy iter0 outputs to PS-required folder structure."""
+    import shutil
+    dest = "iteration_0_before_learning"
+    os.makedirs(dest, exist_ok=True)
+    files = [
+        "company_north_star.json", "feature_goal_map.json",
+        "allowed_tone_hook_matrix.json", "user_segments.csv",
+        "segment_goals.csv", "communication_themes.csv",
+        "message_templates.csv", "timing_recommendations.csv",
+        "user_notification_schedule.csv"
+    ]
+    for f in files:
+        src = os.path.join(output_dir, f)
+        if os.path.exists(src):
+            shutil.copy2(src, os.path.join(dest, f))
+    print(f"\n[Export] Iteration 0 files -> {dest}/")
+
+
+def _export_iteration_1(output_dir: str, experiment_results_path: str):
+    """Copy iter1 outputs to PS-required folder structure."""
+    import shutil
+    dest = "iteration_1_after_learning"
+    os.makedirs(dest, exist_ok=True)
+    mapping = {
+        "user_segments.csv": "user_segments.csv",
+        "message_templates_improved.csv": "message_templates.csv",
+        "timing_recommendations_improved.csv": "timing_recommendations.csv",
+        "user_notification_schedule_improved.csv": "user_notification_schedule.csv",
+    }
+    for src_name, dest_name in mapping.items():
+        src = os.path.join(output_dir, src_name)
+        if os.path.exists(src):
+            shutil.copy2(src, os.path.join(dest, dest_name))
+    # Copy experiment_results and learning_delta_report to root
+    if os.path.exists(experiment_results_path):
+        shutil.copy2(experiment_results_path, "experiment_results.csv")
+    delta_src = os.path.join(output_dir, "learning_delta_report.csv")
+    if os.path.exists(delta_src):
+        shutil.copy2(delta_src, "learning_delta_report.csv")
+    print(f"\n[Export] Iteration 1 files -> {dest}/")
+    print(f"[Export] experiment_results.csv -> ./")
+    print(f"[Export] learning_delta_report.csv -> ./")
 
 
 def main():
