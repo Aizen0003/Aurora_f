@@ -27,8 +27,8 @@ import zipfile
 import os
 import sys
 
-TEAM_NAME = "Technocrats"
-ZIP_NAME = f"SpeakX_AURORA_{TEAM_NAME}.zip"
+TEAM_NAME = ""
+ZIP_NAME = f"SpeakX_AURORA_{TEAM_NAME}.zip" if TEAM_NAME else "SpeakX_AURORA.zip"
 BASE = os.path.dirname(os.path.abspath(__file__))
 OUTPUT = os.path.join(BASE, "data", "output")
 
