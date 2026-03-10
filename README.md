@@ -37,8 +37,11 @@ pip install -r requirements.txt
 ### Run System
 
 ```bash
-# 1. Provide your Groq API Key (Optional but highly recommended for RAG-lite)
-export GROQ_API_KEY="your_api_key"
+# 1. Create a .env file with your Groq API key(s)
+#    Supports round-robin rotation — add multiple keys to avoid rate limits
+echo "GROQ_API_KEY_1=gsk_your_key_here" > .env
+echo "GROQ_API_KEY_2=gsk_second_key_here" >> .env  # optional
+echo "GROQ_API_KEY_3=gsk_third_key_here" >> .env   # optional
 
 # 2. Iteration 0: Initial Training & Intelligence Generation (reads PDF)
 python main.py --mode iteration0 \
@@ -59,9 +62,9 @@ python main.py --mode iteration1 \
 
 | Model | Metric | Score | Interpretation |
 |-------|--------|-------|----------------|
-| **Churn Prediction** | AUC | 0.4437 | Realistic behavioral target (lifecycle_stage-based, no circular leakage) |
-| **Engagement Forecast** | R2 | 0.9398 | 94% variance explained |
-| **Segmentation** | Silhouette | 0.187 | 6 distinct, MECE segments via optimal-K selection |
+| **Churn Prediction** | AUC | Varies by dataset | Predicts lifecycle_stage from behavioral features; uses `scale_pos_weight` for class imbalance and interaction features for richer signal. No circular leakage. |
+| **Engagement Forecast** | R² | ~0.94 | 94% variance explained via LightGBM |
+| **Segmentation** | Silhouette | Optimal K auto-selected | 6-12 MECE segments via hierarchical clustering with silhouette + Davies-Bouldin + elbow |
 
 ### Learning Results (Iteration 1)
 
@@ -594,7 +597,7 @@ For questions or technical issues:
 
 ## License & Usage
 
-This project is submitted as part of the Kriti Mid-Year Assessment 2026 for SpeakX Project Aurora.
+This project is submitted as part of the Kriti Assessment 2026 for SpeakX Project Aurora.
 
 **Implementation**: February–March 2026  
 **Technology Stack**: Python 3.13, XGBoost 2.0, LightGBM 4.0, scikit-learn 1.3, lifelines (Kaplan-Meier), Groq LLM (llama-3.3-70b)  
