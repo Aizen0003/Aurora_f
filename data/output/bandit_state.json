@@ -1,13 +1,13 @@
 {
   "TPL_0001": {
-    "alpha": 22,
-    "beta": 480,
-    "total_sends": 500,
-    "total_clicks": 21,
-    "total_engagements": 6,
-    "estimated_ctr": 0.043824701195219126,
-    "ci_lower": 0.02772091510193554,
-    "ci_upper": 0.06336164724857261
+    "alpha": 63,
+    "beta": 939,
+    "total_sends": 1000,
+    "total_clicks": 62,
+    "total_engagements": 30,
+    "estimated_ctr": 0.06287425149700598,
+    "ci_lower": 0.04869788671561337,
+    "ci_upper": 0.07870195502156217
   },
   "TPL_0002": {
     "alpha": 1,
@@ -50,14 +50,14 @@
     "ci_upper": 1.0
   },
   "TPL_0006": {
-    "alpha": 63,
-    "beta": 939,
-    "total_sends": 1000,
-    "total_clicks": 62,
-    "total_engagements": 30,
-    "estimated_ctr": 0.06287425149700598,
-    "ci_lower": 0.04869788671561337,
-    "ci_upper": 0.07870195502156217
+    "alpha": 22,
+    "beta": 480,
+    "total_sends": 500,
+    "total_clicks": 21,
+    "total_engagements": 6,
+    "estimated_ctr": 0.043824701195219126,
+    "ci_lower": 0.02772091510193554,
+    "ci_upper": 0.06336164724857261
   },
   "TPL_0007": {
     "alpha": 1,
@@ -200,14 +200,14 @@
     "ci_upper": 1.0
   },
   "TPL_0021": {
-    "alpha": 54,
-    "beta": 448,
-    "total_sends": 500,
-    "total_clicks": 53,
-    "total_engagements": 31,
-    "estimated_ctr": 0.10756972111553785,
-    "ci_lower": 0.08201419077821213,
-    "ci_upper": 0.13608451992805176
+    "alpha": 29,
+    "beta": 173,
+    "total_sends": 200,
+    "total_clicks": 28,
+    "total_engagements": 8,
+    "estimated_ctr": 0.14356435643564355,
+    "ci_lower": 0.09880303366084461,
+    "ci_upper": 0.19500253712434426
   },
   "TPL_0022": {
     "alpha": 1,
@@ -250,14 +250,14 @@
     "ci_upper": 1.0
   },
   "TPL_0026": {
-    "alpha": 29,
-    "beta": 173,
-    "total_sends": 200,
-    "total_clicks": 28,
-    "total_engagements": 8,
-    "estimated_ctr": 0.14356435643564355,
-    "ci_lower": 0.09880303366084461,
-    "ci_upper": 0.19500253712434426
+    "alpha": 54,
+    "beta": 448,
+    "total_sends": 500,
+    "total_clicks": 53,
+    "total_engagements": 31,
+    "estimated_ctr": 0.10756972111553785,
+    "ci_lower": 0.08201419077821213,
+    "ci_upper": 0.13608451992805176
   },
   "TPL_0027": {
     "alpha": 1,
@@ -300,14 +300,14 @@
     "ci_upper": 1.0
   },
   "TPL_0031": {
-    "alpha": 120,
-    "beta": 682,
-    "total_sends": 800,
-    "total_clicks": 119,
-    "total_engagements": 34,
-    "estimated_ctr": 0.14962593516209477,
-    "ci_lower": 0.1257984710725832,
-    "ci_upper": 0.17510809340073186
+    "alpha": 89,
+    "beta": 413,
+    "total_sends": 500,
+    "total_clicks": 88,
+    "total_engagements": 28,
+    "estimated_ctr": 0.17729083665338646,
+    "ci_lower": 0.14516314480742012,
+    "ci_upper": 0.21185329755980897
   },
   "TPL_0032": {
     "alpha": 1,
@@ -350,14 +350,14 @@
     "ci_upper": 1.0
   },
   "TPL_0036": {
-    "alpha": 89,
-    "beta": 413,
-    "total_sends": 500,
-    "total_clicks": 88,
-    "total_engagements": 28,
-    "estimated_ctr": 0.17729083665338646,
-    "ci_lower": 0.14516314480742012,
-    "ci_upper": 0.21185329755980897
+    "alpha": 120,
+    "beta": 682,
+    "total_sends": 800,
+    "total_clicks": 119,
+    "total_engagements": 34,
+    "estimated_ctr": 0.14962593516209477,
+    "ci_lower": 0.1257984710725832,
+    "ci_upper": 0.17510809340073186
   },
   "TPL_0037": {
     "alpha": 1,
@@ -400,14 +400,14 @@
     "ci_upper": 1.0
   },
   "TPL_0041": {
-    "alpha": 16,
-    "beta": 186,
-    "total_sends": 200,
-    "total_clicks": 15,
-    "total_engagements": 6,
-    "estimated_ctr": 0.07920792079207921,
-    "ci_lower": 0.046183145691709844,
-    "ci_upper": 0.1200987689974657
+    "alpha": 61,
+    "beta": 741,
+    "total_sends": 800,
+    "total_clicks": 60,
+    "total_engagements": 26,
+    "estimated_ctr": 0.07605985037406483,
+    "ci_lower": 0.058750190769980434,
+    "ci_upper": 0.0953704750897786
   },
   "TPL_0042": {
     "alpha": 1,
@@ -450,14 +450,14 @@
     "ci_upper": 1.0
   },
   "TPL_0046": {
-    "alpha": 61,
-    "beta": 741,
-    "total_sends": 800,
-    "total_clicks": 60,
-    "total_engagements": 26,
-    "estimated_ctr": 0.07605985037406483,
-    "ci_lower": 0.058750190769980434,
-    "ci_upper": 0.0953704750897786
+    "alpha": 16,
+    "beta": 186,
+    "total_sends": 200,
+    "total_clicks": 15,
+    "total_engagements": 6,
+    "estimated_ctr": 0.07920792079207921,
+    "ci_lower": 0.046183145691709844,
+    "ci_upper": 0.1200987689974657
   },
   "TPL_0047": {
     "alpha": 1,
@@ -500,14 +500,14 @@
     "ci_upper": 1.0
   },
   "TPL_0051": {
-    "alpha": 34,
-    "beta": 268,
+    "alpha": 46,
+    "beta": 256,
     "total_sends": 300,
-    "total_clicks": 33,
-    "total_engagements": 18,
-    "estimated_ctr": 0.11258278145695365,
-    "ci_lower": 0.079506342154747,
-    "ci_upper": 0.1505132146249369
+    "total_clicks": 45,
+    "total_engagements": 5,
+    "estimated_ctr": 0.152317880794702,
+    "ci_lower": 0.11410984274632441,
+    "ci_upper": 0.19488447289593977
   },
   "TPL_0052": {
     "alpha": 1,
@@ -550,14 +550,14 @@
     "ci_upper": 1.0
   },
   "TPL_0056": {
-    "alpha": 46,
-    "beta": 256,
+    "alpha": 34,
+    "beta": 268,
     "total_sends": 300,
-    "total_clicks": 45,
-    "total_engagements": 5,
-    "estimated_ctr": 0.152317880794702,
-    "ci_lower": 0.11410984274632441,
-    "ci_upper": 0.19488447289593977
+    "total_clicks": 33,
+    "total_engagements": 18,
+    "estimated_ctr": 0.11258278145695365,
+    "ci_lower": 0.079506342154747,
+    "ci_upper": 0.1505132146249369
   },
   "TPL_0057": {
     "alpha": 1,
@@ -1100,14 +1100,14 @@
     "ci_upper": 1.0
   },
   "TPL_0111": {
-    "alpha": 78,
-    "beta": 924,
+    "alpha": 38,
+    "beta": 964,
     "total_sends": 1000,
-    "total_clicks": 77,
-    "total_engagements": 23,
-    "estimated_ctr": 0.07784431137724551,
-    "ci_lower": 0.06207863661336889,
-    "ci_upper": 0.0952051245880405
+    "total_clicks": 37,
+    "total_engagements": 9,
+    "estimated_ctr": 0.03792415169660679,
+    "ci_lower": 0.027001674823919665,
+    "ci_upper": 0.05059089186220847
   },
   "TPL_0112": {
     "alpha": 1,
@@ -1150,14 +1150,14 @@
     "ci_upper": 1.0
   },
   "TPL_0116": {
-    "alpha": 38,
-    "beta": 964,
+    "alpha": 78,
+    "beta": 924,
     "total_sends": 1000,
-    "total_clicks": 37,
-    "total_engagements": 9,
-    "estimated_ctr": 0.03792415169660679,
-    "ci_lower": 0.027001674823919665,
-    "ci_upper": 0.05059089186220847
+    "total_clicks": 77,
+    "total_engagements": 23,
+    "estimated_ctr": 0.07784431137724551,
+    "ci_lower": 0.06207863661336889,
+    "ci_upper": 0.0952051245880405
   },
   "TPL_0117": {
     "alpha": 1,
@@ -1200,14 +1200,14 @@
     "ci_upper": 1.0
   },
   "TPL_0121": {
-    "alpha": 62,
-    "beta": 240,
-    "total_sends": 300,
-    "total_clicks": 61,
-    "total_engagements": 25,
-    "estimated_ctr": 0.2052980132450331,
-    "ci_lower": 0.16172567764544885,
-    "ci_upper": 0.2525661905904755
+    "alpha": 51,
+    "beta": 751,
+    "total_sends": 800,
+    "total_clicks": 50,
+    "total_engagements": 27,
+    "estimated_ctr": 0.06359102244389027,
+    "ci_lower": 0.04777061799654102,
+    "ci_upper": 0.08147076318664732
   },
   "TPL_0122": {
     "alpha": 1,
@@ -1250,14 +1250,14 @@
     "ci_upper": 1.0
   },
   "TPL_0126": {
-    "alpha": 51,
-    "beta": 751,
-    "total_sends": 800,
-    "total_clicks": 50,
-    "total_engagements": 27,
-    "estimated_ctr": 0.06359102244389027,
-    "ci_lower": 0.04777061799654102,
-    "ci_upper": 0.08147076318664732
+    "alpha": 62,
+    "beta": 240,
+    "total_sends": 300,
+    "total_clicks": 61,
+    "total_engagements": 25,
+    "estimated_ctr": 0.2052980132450331,
+    "ci_lower": 0.16172567764544885,
+    "ci_upper": 0.2525661905904755
   },
   "TPL_0127": {
     "alpha": 1,
@@ -1300,14 +1300,14 @@
     "ci_upper": 1.0
   },
   "TPL_0131": {
-    "alpha": 82,
-    "beta": 720,
-    "total_sends": 800,
-    "total_clicks": 81,
-    "total_engagements": 44,
-    "estimated_ctr": 0.10224438902743142,
-    "ci_lower": 0.08224954254272078,
-    "ci_upper": 0.12411718020194834
+    "alpha": 42,
+    "beta": 160,
+    "total_sends": 200,
+    "total_clicks": 41,
+    "total_engagements": 21,
+    "estimated_ctr": 0.2079207920792079,
+    "ci_lower": 0.15494136470103256,
+    "ci_upper": 0.2663756661980142
   },
   "TPL_0132": {
     "alpha": 1,
@@ -1350,14 +1350,14 @@
     "ci_upper": 1.0
   },
   "TPL_0136": {
-    "alpha": 42,
-    "beta": 160,
-    "total_sends": 200,
-    "total_clicks": 41,
-    "total_engagements": 21,
-    "estimated_ctr": 0.2079207920792079,
-    "ci_lower": 0.15494136470103256,
-    "ci_upper": 0.2663756661980142
+    "alpha": 82,
+    "beta": 720,
+    "total_sends": 800,
+    "total_clicks": 81,
+    "total_engagements": 44,
+    "estimated_ctr": 0.10224438902743142,
+    "ci_lower": 0.08224954254272078,
+    "ci_upper": 0.12411718020194834
   },
   "TPL_0137": {
     "alpha": 1,
@@ -1400,14 +1400,14 @@
     "ci_upper": 1.0
   },
   "TPL_0141": {
-    "alpha": 27,
-    "beta": 175,
+    "alpha": 23,
+    "beta": 179,
     "total_sends": 200,
-    "total_clicks": 26,
-    "total_engagements": 11,
-    "estimated_ctr": 0.13366336633663367,
-    "ci_lower": 0.09042490712334876,
-    "ci_upper": 0.1837628820780474
+    "total_clicks": 22,
+    "total_engagements": 2,
+    "estimated_ctr": 0.11386138613861387,
+    "ci_lower": 0.0739363396466506,
+    "ci_upper": 0.1610149507793866
   },
   "TPL_0142": {
     "alpha": 1,
@@ -1450,14 +1450,14 @@
     "ci_upper": 1.0
   },
   "TPL_0146": {
-    "alpha": 23,
-    "beta": 179,
+    "alpha": 27,
+    "beta": 175,
     "total_sends": 200,
-    "total_clicks": 22,
-    "total_engagements": 2,
-    "estimated_ctr": 0.11386138613861387,
-    "ci_lower": 0.0739363396466506,
-    "ci_upper": 0.1610149507793866
+    "total_clicks": 26,
+    "total_engagements": 11,
+    "estimated_ctr": 0.13366336633663367,
+    "ci_lower": 0.09042490712334876,
+    "ci_upper": 0.1837628820780474
   },
   "TPL_0147": {
     "alpha": 1,
@@ -1500,14 +1500,14 @@
     "ci_upper": 1.0
   },
   "TPL_0151": {
-    "alpha": 56,
-    "beta": 246,
-    "total_sends": 300,
-    "total_clicks": 55,
-    "total_engagements": 9,
-    "estimated_ctr": 0.18543046357615894,
-    "ci_lower": 0.1437060708250878,
-    "ci_upper": 0.23109938654437973
+    "alpha": 49,
+    "beta": 153,
+    "total_sends": 200,
+    "total_clicks": 48,
+    "total_engagements": 14,
+    "estimated_ctr": 0.24257425742574257,
+    "ci_lower": 0.18612160560536037,
+    "ci_upper": 0.3038538335659771
   },
   "TPL_0152": {
     "alpha": 1,
@@ -1550,14 +1550,14 @@
     "ci_upper": 1.0
   },
   "TPL_0156": {
-    "alpha": 49,
-    "beta": 153,
-    "total_sends": 200,
-    "total_clicks": 48,
-    "total_engagements": 14,
-    "estimated_ctr": 0.24257425742574257,
-    "ci_lower": 0.18612160560536037,
-    "ci_upper": 0.3038538335659771
+    "alpha": 56,
+    "beta": 246,
+    "total_sends": 300,
+    "total_clicks": 55,
+    "total_engagements": 9,
+    "estimated_ctr": 0.18543046357615894,
+    "ci_lower": 0.1437060708250878,
+    "ci_upper": 0.23109938654437973
   },
   "TPL_0157": {
     "alpha": 1,
@@ -1600,14 +1600,14 @@
     "ci_upper": 1.0
   },
   "TPL_0161": {
-    "alpha": 16,
-    "beta": 186,
-    "total_sends": 200,
-    "total_clicks": 15,
-    "total_engagements": 2,
-    "estimated_ctr": 0.07920792079207921,
-    "ci_lower": 0.046183145691709844,
-    "ci_upper": 0.1200987689974657
+    "alpha": 31,
+    "beta": 771,
+    "total_sends": 800,
+    "total_clicks": 30,
+    "total_engagements": 8,
+    "estimated_ctr": 0.03865336658354115,
+    "ci_lower": 0.026444633840563947,
+    "ci_upper": 0.053037094901407
   },
   "TPL_0162": {
     "alpha": 1,
@@ -1650,14 +1650,14 @@
     "ci_upper": 1.0
   },
   "TPL_0166": {
-    "alpha": 31,
-    "beta": 771,
-    "total_sends": 800,
-    "total_clicks": 30,
-    "total_engagements": 8,
-    "estimated_ctr": 0.03865336658354115,
-    "ci_lower": 0.026444633840563947,
-    "ci_upper": 0.053037094901407
+    "alpha": 16,
+    "beta": 186,
+    "total_sends": 200,
+    "total_clicks": 15,
+    "total_engagements": 2,
+    "estimated_ctr": 0.07920792079207921,
+    "ci_lower": 0.046183145691709844,
+    "ci_upper": 0.1200987689974657
   },
   "TPL_0167": {
     "alpha": 1,
@@ -1700,14 +1700,14 @@
     "ci_upper": 1.0
   },
   "TPL_0171": {
-    "alpha": 166,
-    "beta": 836,
-    "total_sends": 1000,
-    "total_clicks": 165,
-    "total_engagements": 68,
-    "estimated_ctr": 0.1656686626746507,
-    "ci_lower": 0.14330351974696207,
-    "ci_upper": 0.1892977072451585
+    "alpha": 19,
+    "beta": 183,
+    "total_sends": 200,
+    "total_clicks": 18,
+    "total_engagements": 3,
+    "estimated_ctr": 0.09405940594059406,
+    "ci_lower": 0.057875206996665006,
+    "ci_upper": 0.13783766611521667
   },
   "TPL_0172": {
     "alpha": 1,
@@ -1750,14 +1750,14 @@
     "ci_upper": 1.0
   },
   "TPL_0176": {
-    "alpha": 19,
-    "beta": 183,
-    "total_sends": 200,
-    "total_clicks": 18,
-    "total_engagements": 3,
-    "estimated_ctr": 0.09405940594059406,
-    "ci_lower": 0.057875206996665006,
-    "ci_upper": 0.13783766611521667
+    "alpha": 166,
+    "beta": 836,
+    "total_sends": 1000,
+    "total_clicks": 165,
+    "total_engagements": 68,
+    "estimated_ctr": 0.1656686626746507,
+    "ci_lower": 0.14330351974696207,
+    "ci_upper": 0.1892977072451585
   },
   "TPL_0177": {
     "alpha": 1,
@@ -1800,14 +1800,14 @@
     "ci_upper": 1.0
   },
   "TPL_0181": {
-    "alpha": 141,
-    "beta": 661,
+    "alpha": 135,
+    "beta": 667,
     "total_sends": 800,
-    "total_clicks": 140,
-    "total_engagements": 15,
-    "estimated_ctr": 0.17581047381546136,
-    "ci_lower": 0.15026280555228838,
-    "ci_upper": 0.20288930830826546
+    "total_clicks": 134,
+    "total_engagements": 25,
+    "estimated_ctr": 0.16832917705735662,
+    "ci_lower": 0.1432491914372196,
+    "ci_upper": 0.1949756292984592
   },
   "TPL_0182": {
     "alpha": 1,
@@ -1850,14 +1850,14 @@
     "ci_upper": 1.0
   },
   "TPL_0186": {
-    "alpha": 135,
-    "beta": 667,
+    "alpha": 141,
+    "beta": 661,
     "total_sends": 800,
-    "total_clicks": 134,
-    "total_engagements": 25,
-    "estimated_ctr": 0.16832917705735662,
-    "ci_lower": 0.1432491914372196,
-    "ci_upper": 0.1949756292984592
+    "total_clicks": 140,
+    "total_engagements": 15,
+    "estimated_ctr": 0.17581047381546136,
+    "ci_lower": 0.15026280555228838,
+    "ci_upper": 0.20288930830826546
   },
   "TPL_0187": {
     "alpha": 1,
@@ -1900,14 +1900,14 @@
     "ci_upper": 1.0
   },
   "TPL_0191": {
-    "alpha": 36,
-    "beta": 166,
-    "total_sends": 200,
-    "total_clicks": 35,
-    "total_engagements": 16,
-    "estimated_ctr": 0.1782178217821782,
-    "ci_lower": 0.12870779878446736,
-    "ci_upper": 0.23375845057610256
+    "alpha": 24,
+    "beta": 278,
+    "total_sends": 300,
+    "total_clicks": 23,
+    "total_engagements": 9,
+    "estimated_ctr": 0.07947019867549669,
+    "ci_lower": 0.05175382802912031,
+    "ci_upper": 0.11245069780372877
   },
   "TPL_0192": {
     "alpha": 1,
@@ -1950,14 +1950,14 @@
     "ci_upper": 1.0
   },
   "TPL_0196": {
-    "alpha": 24,
-    "beta": 278,
-    "total_sends": 300,
-    "total_clicks": 23,
-    "total_engagements": 9,
-    "estimated_ctr": 0.07947019867549669,
-    "ci_lower": 0.05175382802912031,
-    "ci_upper": 0.11245069780372877
+    "alpha": 36,
+    "beta": 166,
+    "total_sends": 200,
+    "total_clicks": 35,
+    "total_engagements": 16,
+    "estimated_ctr": 0.1782178217821782,
+    "ci_lower": 0.12870779878446736,
+    "ci_upper": 0.23375845057610256
   },
   "TPL_0197": {
     "alpha": 1,
@@ -2000,14 +2000,14 @@
     "ci_upper": 1.0
   },
   "TPL_0201": {
-    "alpha": 114,
-    "beta": 688,
-    "total_sends": 800,
-    "total_clicks": 113,
-    "total_engagements": 24,
-    "estimated_ctr": 0.14214463840399003,
-    "ci_lower": 0.11885451138123224,
-    "ci_upper": 0.16712473895877053
+    "alpha": 228,
+    "beta": 774,
+    "total_sends": 1000,
+    "total_clicks": 227,
+    "total_engagements": 94,
+    "estimated_ctr": 0.2275449101796407,
+    "ci_lower": 0.20212340490659736,
+    "ci_upper": 0.25399651580196886
   },
   "TPL_0202": {
     "alpha": 1,
@@ -2050,14 +2050,14 @@
     "ci_upper": 1.0
   },
   "TPL_0206": {
-    "alpha": 228,
-    "beta": 774,
-    "total_sends": 1000,
-    "total_clicks": 227,
-    "total_engagements": 94,
-    "estimated_ctr": 0.2275449101796407,
-    "ci_lower": 0.20212340490659736,
-    "ci_upper": 0.25399651580196886
+    "alpha": 114,
+    "beta": 688,
+    "total_sends": 800,
+    "total_clicks": 113,
+    "total_engagements": 24,
+    "estimated_ctr": 0.14214463840399003,
+    "ci_lower": 0.11885451138123224,
+    "ci_upper": 0.16712473895877053
   },
   "TPL_0207": {
     "alpha": 1,
@@ -2100,14 +2100,14 @@
     "ci_upper": 1.0
   },
   "TPL_0211": {
-    "alpha": 94,
-    "beta": 408,
-    "total_sends": 500,
-    "total_clicks": 93,
-    "total_engagements": 51,
-    "estimated_ctr": 0.18725099601593626,
-    "ci_lower": 0.15436830023364778,
-    "ci_upper": 0.22249341109415477
+    "alpha": 32,
+    "beta": 770,
+    "total_sends": 800,
+    "total_clicks": 31,
+    "total_engagements": 5,
+    "estimated_ctr": 0.0399002493765586,
+    "ci_lower": 0.027483489683154876,
+    "ci_upper": 0.0544862874121406
   },
   "TPL_0212": {
     "alpha": 1,
@@ -2150,14 +2150,14 @@
     "ci_upper": 1.0
   },
   "TPL_0216": {
-    "alpha": 32,
-    "beta": 770,
-    "total_sends": 800,
-    "total_clicks": 31,
-    "total_engagements": 5,
-    "estimated_ctr": 0.0399002493765586,
-    "ci_lower": 0.027483489683154876,
-    "ci_upper": 0.0544862874121406
+    "alpha": 94,
+    "beta": 408,
+    "total_sends": 500,
+    "total_clicks": 93,
+    "total_engagements": 51,
+    "estimated_ctr": 0.18725099601593626,
+    "ci_lower": 0.15436830023364778,
+    "ci_upper": 0.22249341109415477
   },
   "TPL_0217": {
     "alpha": 1,
@@ -3000,14 +3000,14 @@
     "ci_upper": 1.0
   },
   "TPL_0301": {
-    "alpha": 180,
-    "beta": 622,
-    "total_sends": 800,
-    "total_clicks": 179,
-    "total_engagements": 20,
-    "estimated_ctr": 0.22443890274314215,
-    "ci_lower": 0.1962460513024155,
-    "ci_upper": 0.25393338128318726
+    "alpha": 64,
+    "beta": 438,
+    "total_sends": 500,
+    "total_clicks": 63,
+    "total_engagements": 23,
+    "estimated_ctr": 0.12749003984063745,
+    "ci_lower": 0.09978582841591493,
+    "ci_upper": 0.1580038863032051
   },
   "TPL_0302": {
     "alpha": 1,
@@ -3050,14 +3050,14 @@
     "ci_upper": 1.0
   },
   "TPL_0306": {
-    "alpha": 64,
-    "beta": 438,
-    "total_sends": 500,
-    "total_clicks": 63,
-    "total_engagements": 23,
-    "estimated_ctr": 0.12749003984063745,
-    "ci_lower": 0.09978582841591493,
-    "ci_upper": 0.1580038863032051
+    "alpha": 180,
+    "beta": 622,
+    "total_sends": 800,
+    "total_clicks": 179,
+    "total_engagements": 20,
+    "estimated_ctr": 0.22443890274314215,
+    "ci_lower": 0.1962460513024155,
+    "ci_upper": 0.25393338128318726
   },
   "TPL_0307": {
     "alpha": 1,
@@ -4200,14 +4200,14 @@
     "ci_upper": 1.0
   },
   "TPL_0421": {
-    "alpha": 124,
-    "beta": 378,
-    "total_sends": 500,
-    "total_clicks": 123,
-    "total_engagements": 37,
-    "estimated_ctr": 0.24701195219123506,
-    "ci_lower": 0.21030220036247063,
-    "ci_upper": 0.2856308513314903
+    "alpha": 75,
+    "beta": 927,
+    "total_sends": 1000,
+    "total_clicks": 74,
+    "total_engagements": 32,
+    "estimated_ctr": 0.0748502994011976,
+    "ci_lower": 0.05938627688680813,
+    "ci_upper": 0.09192071390151078
   },
   "TPL_0422": {
     "alpha": 1,
@@ -4250,14 +4250,14 @@
     "ci_upper": 1.0
   },
   "TPL_0426": {
-    "alpha": 75,
-    "beta": 927,
-    "total_sends": 1000,
-    "total_clicks": 74,
-    "total_engagements": 32,
-    "estimated_ctr": 0.0748502994011976,
-    "ci_lower": 0.05938627688680813,
-    "ci_upper": 0.09192071390151078
+    "alpha": 124,
+    "beta": 378,
+    "total_sends": 500,
+    "total_clicks": 123,
+    "total_engagements": 37,
+    "estimated_ctr": 0.24701195219123506,
+    "ci_lower": 0.21030220036247063,
+    "ci_upper": 0.2856308513314903
   },
   "TPL_0427": {
     "alpha": 1,
@@ -4300,14 +4300,14 @@
     "ci_upper": 1.0
   },
   "TPL_0431": {
-    "alpha": 22,
-    "beta": 180,
-    "total_sends": 200,
-    "total_clicks": 21,
-    "total_engagements": 7,
-    "estimated_ctr": 0.10891089108910891,
-    "ci_lower": 0.06987704450519408,
-    "ci_upper": 0.15526486307372692
+    "alpha": 226,
+    "beta": 776,
+    "total_sends": 1000,
+    "total_clicks": 225,
+    "total_engagements": 66,
+    "estimated_ctr": 0.22554890219560877,
+    "ci_lower": 0.2002119156167295,
+    "ci_upper": 0.2519235329866336
   },
   "TPL_0432": {
     "alpha": 1,
@@ -4350,14 +4350,14 @@
     "ci_upper": 1.0
   },
   "TPL_0436": {
-    "alpha": 226,
-    "beta": 776,
-    "total_sends": 1000,
-    "total_clicks": 225,
-    "total_engagements": 66,
-    "estimated_ctr": 0.22554890219560877,
-    "ci_lower": 0.2002119156167295,
-    "ci_upper": 0.2519235329866336
+    "alpha": 22,
+    "beta": 180,
+    "total_sends": 200,
+    "total_clicks": 21,
+    "total_engagements": 7,
+    "estimated_ctr": 0.10891089108910891,
+    "ci_lower": 0.06987704450519408,
+    "ci_upper": 0.15526486307372692
   },
   "TPL_0437": {
     "alpha": 1,
@@ -4400,14 +4400,14 @@
     "ci_upper": 1.0
   },
   "TPL_0441": {
-    "alpha": 21,
-    "beta": 481,
+    "alpha": 67,
+    "beta": 435,
     "total_sends": 500,
-    "total_clicks": 20,
-    "total_engagements": 5,
-    "estimated_ctr": 0.04183266932270916,
-    "ci_lower": 0.02613093988408013,
-    "ci_upper": 0.06098199411936037
+    "total_clicks": 66,
+    "total_engagements": 9,
+    "estimated_ctr": 0.13346613545816732,
+    "ci_lower": 0.10516542991575274,
+    "ci_upper": 0.1645315395741471
   },
   "TPL_0442": {
     "alpha": 1,
@@ -4450,14 +4450,14 @@
     "ci_upper": 1.0
   },
   "TPL_0446": {
-    "alpha": 67,
-    "beta": 435,
+    "alpha": 21,
+    "beta": 481,
     "total_sends": 500,
-    "total_clicks": 66,
-    "total_engagements": 9,
-    "estimated_ctr": 0.13346613545816732,
-    "ci_lower": 0.10516542991575274,
-    "ci_upper": 0.1645315395741471
+    "total_clicks": 20,
+    "total_engagements": 5,
+    "estimated_ctr": 0.04183266932270916,
+    "ci_lower": 0.02613093988408013,
+    "ci_upper": 0.06098199411936037
   },
   "TPL_0447": {
     "alpha": 1,
@@ -4500,14 +4500,14 @@
     "ci_upper": 1.0
   },
   "TPL_0451": {
-    "alpha": 30,
-    "beta": 172,
-    "total_sends": 200,
-    "total_clicks": 29,
-    "total_engagements": 5,
-    "estimated_ctr": 0.1485148514851485,
-    "ci_lower": 0.10302205175844721,
-    "ci_upper": 0.20059232057894516
+    "alpha": 235,
+    "beta": 767,
+    "total_sends": 1000,
+    "total_clicks": 234,
+    "total_engagements": 137,
+    "estimated_ctr": 0.2345309381237525,
+    "ci_lower": 0.2088201604814899,
+    "ci_upper": 0.2612454119029962
   },
   "TPL_0452": {
     "alpha": 1,
@@ -4550,14 +4550,14 @@
     "ci_upper": 1.0
   },
   "TPL_0456": {
-    "alpha": 235,
-    "beta": 767,
-    "total_sends": 1000,
-    "total_clicks": 234,
-    "total_engagements": 137,
-    "estimated_ctr": 0.2345309381237525,
-    "ci_lower": 0.2088201604814899,
-    "ci_upper": 0.2612454119029962
+    "alpha": 30,
+    "beta": 172,
+    "total_sends": 200,
+    "total_clicks": 29,
+    "total_engagements": 5,
+    "estimated_ctr": 0.1485148514851485,
+    "ci_lower": 0.10302205175844721,
+    "ci_upper": 0.20059232057894516
   },
   "TPL_0457": {
     "alpha": 1,
@@ -4600,14 +4600,14 @@
     "ci_upper": 1.0
   },
   "TPL_0461": {
-    "alpha": 190,
-    "beta": 812,
-    "total_sends": 1000,
-    "total_clicks": 189,
-    "total_engagements": 70,
-    "estimated_ctr": 0.18962075848303392,
-    "ci_lower": 0.16595822425572404,
-    "ci_upper": 0.21445670773594389
+    "alpha": 40,
+    "beta": 162,
+    "total_sends": 200,
+    "total_clicks": 39,
+    "total_engagements": 15,
+    "estimated_ctr": 0.19801980198019803,
+    "ci_lower": 0.1461422203977742,
+    "ci_upper": 0.2555579739698107
   },
   "TPL_0462": {
     "alpha": 1,
@@ -4650,14 +4650,14 @@
     "ci_upper": 1.0
   },
   "TPL_0466": {
-    "alpha": 40,
-    "beta": 162,
-    "total_sends": 200,
-    "total_clicks": 39,
-    "total_engagements": 15,
-    "estimated_ctr": 0.19801980198019803,
-    "ci_lower": 0.1461422203977742,
-    "ci_upper": 0.2555579739698107
+    "alpha": 190,
+    "beta": 812,
+    "total_sends": 1000,
+    "total_clicks": 189,
+    "total_engagements": 70,
+    "estimated_ctr": 0.18962075848303392,
+    "ci_lower": 0.16595822425572404,
+    "ci_upper": 0.21445670773594389
   },
   "TPL_0467": {
     "alpha": 1,
@@ -4700,14 +4700,14 @@
     "ci_upper": 1.0
   },
   "TPL_0471": {
-    "alpha": 72,
-    "beta": 930,
+    "alpha": 139,
+    "beta": 863,
     "total_sends": 1000,
-    "total_clicks": 71,
-    "total_engagements": 21,
-    "estimated_ctr": 0.0718562874251497,
-    "ci_lower": 0.05670155287586346,
-    "ci_upper": 0.08862866160654365
+    "total_clicks": 138,
+    "total_engagements": 29,
+    "estimated_ctr": 0.13872255489021956,
+    "ci_lower": 0.1180264742416161,
+    "ci_upper": 0.1607842919443162
   },
   "TPL_0472": {
     "alpha": 1,
@@ -4750,14 +4750,14 @@
     "ci_upper": 1.0
   },
   "TPL_0476": {
-    "alpha": 139,
-    "beta": 863,
+    "alpha": 72,
+    "beta": 930,
     "total_sends": 1000,
-    "total_clicks": 138,
-    "total_engagements": 29,
-    "estimated_ctr": 0.13872255489021956,
-    "ci_lower": 0.1180264742416161,
-    "ci_upper": 0.1607842919443162
+    "total_clicks": 71,
+    "total_engagements": 21,
+    "estimated_ctr": 0.0718562874251497,
+    "ci_lower": 0.05670155287586346,
+    "ci_upper": 0.08862866160654365
   },
   "TPL_0477": {
     "alpha": 1,
@@ -4800,14 +4800,14 @@
     "ci_upper": 1.0
   },
   "TPL_0481": {
-    "alpha": 45,
-    "beta": 157,
-    "total_sends": 200,
-    "total_clicks": 44,
-    "total_engagements": 9,
-    "estimated_ctr": 0.22277227722772278,
-    "ci_lower": 0.16823431374701428,
-    "ci_upper": 0.28250783685843184
+    "alpha": 81,
+    "beta": 721,
+    "total_sends": 800,
+    "total_clicks": 80,
+    "total_engagements": 36,
+    "estimated_ctr": 0.10099750623441396,
+    "ci_lower": 0.08111945657410044,
+    "ci_upper": 0.1227593672035865
   },
   "TPL_0482": {
     "alpha": 1,
@@ -4850,14 +4850,14 @@
     "ci_upper": 1.0
   },
   "TPL_0486": {
-    "alpha": 81,
-    "beta": 721,
-    "total_sends": 800,
-    "total_clicks": 80,
-    "total_engagements": 36,
-    "estimated_ctr": 0.10099750623441396,
-    "ci_lower": 0.08111945657410044,
-    "ci_upper": 0.1227593672035865
+    "alpha": 45,
+    "beta": 157,
+    "total_sends": 200,
+    "total_clicks": 44,
+    "total_engagements": 9,
+    "estimated_ctr": 0.22277227722772278,
+    "ci_lower": 0.16823431374701428,
+    "ci_upper": 0.28250783685843184
   },
   "TPL_0487": {
     "alpha": 1,
@@ -4900,14 +4900,14 @@
     "ci_upper": 1.0
   },
   "TPL_0491": {
-    "alpha": 39,
-    "beta": 463,
-    "total_sends": 500,
-    "total_clicks": 38,
-    "total_engagements": 10,
-    "estimated_ctr": 0.07768924302788845,
-    "ci_lower": 0.055938095443575905,
-    "ci_upper": 0.10262333836727676
+    "alpha": 114,
+    "beta": 888,
+    "total_sends": 1000,
+    "total_clicks": 113,
+    "total_engagements": 43,
+    "estimated_ctr": 0.11377245508982035,
+    "ci_lower": 0.09486545635547856,
+    "ci_upper": 0.1341392601320476
   },
   "TPL_0492": {
     "alpha": 1,
@@ -4950,14 +4950,14 @@
     "ci_upper": 1.0
   },
   "TPL_0496": {
-    "alpha": 114,
-    "beta": 888,
-    "total_sends": 1000,
-    "total_clicks": 113,
-    "total_engagements": 43,
-    "estimated_ctr": 0.11377245508982035,
-    "ci_lower": 0.09486545635547856,
-    "ci_upper": 0.1341392601320476
+    "alpha": 39,
+    "beta": 463,
+    "total_sends": 500,
+    "total_clicks": 38,
+    "total_engagements": 10,
+    "estimated_ctr": 0.07768924302788845,
+    "ci_lower": 0.055938095443575905,
+    "ci_upper": 0.10262333836727676
   },
   "TPL_0497": {
     "alpha": 1,
@@ -5000,14 +5000,14 @@
     "ci_upper": 1.0
   },
   "TPL_0501": {
-    "alpha": 39,
-    "beta": 163,
-    "total_sends": 200,
-    "total_clicks": 38,
-    "total_engagements": 16,
-    "estimated_ctr": 0.19306930693069307,
-    "ci_lower": 0.14176253316587759,
-    "ci_upper": 0.2501292116270757
+    "alpha": 69,
+    "beta": 733,
+    "total_sends": 800,
+    "total_clicks": 68,
+    "total_engagements": 36,
+    "estimated_ctr": 0.08603491271820449,
+    "ci_lower": 0.0676403811450842,
+    "ci_upper": 0.10638359643849901
   },
   "TPL_0502": {
     "alpha": 1,
@@ -5050,14 +5050,14 @@
     "ci_upper": 1.0
   },
   "TPL_0506": {
-    "alpha": 69,
-    "beta": 733,
-    "total_sends": 800,
-    "total_clicks": 68,
-    "total_engagements": 36,
-    "estimated_ctr": 0.08603491271820449,
-    "ci_lower": 0.0676403811450842,
-    "ci_upper": 0.10638359643849901
+    "alpha": 39,
+    "beta": 163,
+    "total_sends": 200,
+    "total_clicks": 38,
+    "total_engagements": 16,
+    "estimated_ctr": 0.19306930693069307,
+    "ci_lower": 0.14176253316587759,
+    "ci_upper": 0.2501292116270757
   },
   "TPL_0507": {
     "alpha": 1,
@@ -5100,14 +5100,14 @@
     "ci_upper": 1.0
   },
   "TPL_0511": {
-    "alpha": 7,
-    "beta": 295,
-    "total_sends": 300,
-    "total_clicks": 6,
-    "total_engagements": 3,
-    "estimated_ctr": 0.023178807947019868,
-    "ci_lower": 0.009400000025566837,
-    "ci_upper": 0.042879840335294225
+    "alpha": 249,
+    "beta": 753,
+    "total_sends": 1000,
+    "total_clicks": 248,
+    "total_engagements": 33,
+    "estimated_ctr": 0.24850299401197604,
+    "ci_lower": 0.2222431863874538,
+    "ci_upper": 0.27571368642772404
   },
   "TPL_0512": {
     "alpha": 1,
@@ -5150,14 +5150,14 @@
     "ci_upper": 1.0
   },
   "TPL_0516": {
-    "alpha": 249,
-    "beta": 753,
-    "total_sends": 1000,
-    "total_clicks": 248,
-    "total_engagements": 33,
-    "estimated_ctr": 0.24850299401197604,
-    "ci_lower": 0.2222431863874538,
-    "ci_upper": 0.27571368642772404
+    "alpha": 7,
+    "beta": 295,
+    "total_sends": 300,
+    "total_clicks": 6,
+    "total_engagements": 3,
+    "estimated_ctr": 0.023178807947019868,
+    "ci_lower": 0.009400000025566837,
+    "ci_upper": 0.042879840335294225
   },
   "TPL_0517": {
     "alpha": 1,
@@ -5600,14 +5600,14 @@
     "ci_upper": 1.0
   },
   "TPL_0561": {
-    "alpha": 27,
-    "beta": 975,
-    "total_sends": 1000,
-    "total_clicks": 26,
-    "total_engagements": 7,
-    "estimated_ctr": 0.02694610778443114,
-    "ci_lower": 0.017848982548673106,
-    "ci_upper": 0.037827526129560335
+    "alpha": 79,
+    "beta": 423,
+    "total_sends": 500,
+    "total_clicks": 78,
+    "total_engagements": 22,
+    "estimated_ctr": 0.15737051792828685,
+    "ci_lower": 0.12687268995780696,
+    "ci_upper": 0.19045315264833623
   },
   "TPL_0562": {
     "alpha": 1,
@@ -5650,14 +5650,14 @@
     "ci_upper": 1.0
   },
   "TPL_0566": {
-    "alpha": 79,
-    "beta": 423,
-    "total_sends": 500,
-    "total_clicks": 78,
-    "total_engagements": 22,
-    "estimated_ctr": 0.15737051792828685,
-    "ci_lower": 0.12687268995780696,
-    "ci_upper": 0.19045315264833623
+    "alpha": 27,
+    "beta": 975,
+    "total_sends": 1000,
+    "total_clicks": 26,
+    "total_engagements": 7,
+    "estimated_ctr": 0.02694610778443114,
+    "ci_lower": 0.017848982548673106,
+    "ci_upper": 0.037827526129560335
   },
   "TPL_0567": {
     "alpha": 1,
@@ -5700,14 +5700,14 @@
     "ci_upper": 1.0
   },
   "TPL_0571": {
-    "alpha": 43,
-    "beta": 159,
-    "total_sends": 200,
-    "total_clicks": 42,
-    "total_engagements": 14,
-    "estimated_ctr": 0.21287128712871287,
-    "ci_lower": 0.15936010868047557,
-    "ci_upper": 0.2717653121692947
+    "alpha": 33,
+    "beta": 969,
+    "total_sends": 1000,
+    "total_clicks": 32,
+    "total_engagements": 17,
+    "estimated_ctr": 0.03293413173652695,
+    "ci_lower": 0.022799476006970115,
+    "ci_upper": 0.04483137071022372
   },
   "TPL_0572": {
     "alpha": 1,
@@ -5750,14 +5750,14 @@
     "ci_upper": 1.0
   },
   "TPL_0576": {
-    "alpha": 33,
-    "beta": 969,
-    "total_sends": 1000,
-    "total_clicks": 32,
-    "total_engagements": 17,
-    "estimated_ctr": 0.03293413173652695,
-    "ci_lower": 0.022799476006970115,
-    "ci_upper": 0.04483137071022372
+    "alpha": 43,
+    "beta": 159,
+    "total_sends": 200,
+    "total_clicks": 42,
+    "total_engagements": 14,
+    "estimated_ctr": 0.21287128712871287,
+    "ci_lower": 0.15936010868047557,
+    "ci_upper": 0.2717653121692947
   },
   "TPL_0577": {
     "alpha": 1,
@@ -5800,14 +5800,14 @@
     "ci_upper": 1.0
   },
   "TPL_0581": {
-    "alpha": 74,
-    "beta": 428,
+    "alpha": 39,
+    "beta": 463,
     "total_sends": 500,
-    "total_clicks": 73,
-    "total_engagements": 35,
-    "estimated_ctr": 0.14741035856573706,
-    "ci_lower": 0.11779340878923854,
-    "ci_upper": 0.17968709452821063
+    "total_clicks": 38,
+    "total_engagements": 12,
+    "estimated_ctr": 0.07768924302788845,
+    "ci_lower": 0.055938095443575905,
+    "ci_upper": 0.10262333836727676
   },
   "TPL_0582": {
     "alpha": 1,
@@ -5850,14 +5850,14 @@
     "ci_upper": 1.0
   },
   "TPL_0586": {
-    "alpha": 39,
-    "beta": 463,
+    "alpha": 74,
+    "beta": 428,
     "total_sends": 500,
-    "total_clicks": 38,
-    "total_engagements": 12,
-    "estimated_ctr": 0.07768924302788845,
-    "ci_lower": 0.055938095443575905,
-    "ci_upper": 0.10262333836727676
+    "total_clicks": 73,
+    "total_engagements": 35,
+    "estimated_ctr": 0.14741035856573706,
+    "ci_lower": 0.11779340878923854,
+    "ci_upper": 0.17968709452821063
   },
   "TPL_0587": {
     "alpha": 1,
@@ -5900,14 +5900,14 @@
     "ci_upper": 1.0
   },
   "TPL_0591": {
-    "alpha": 160,
-    "beta": 842,
-    "total_sends": 1000,
-    "total_clicks": 159,
-    "total_engagements": 34,
-    "estimated_ctr": 0.1596806387225549,
-    "ci_lower": 0.13766579478215485,
-    "ci_upper": 0.18298200112123814
+    "alpha": 66,
+    "beta": 736,
+    "total_sends": 800,
+    "total_clicks": 65,
+    "total_engagements": 7,
+    "estimated_ctr": 0.08229426433915212,
+    "ci_lower": 0.06429666740398847,
+    "ci_upper": 0.1022635776053597
   },
   "TPL_0592": {
     "alpha": 1,
@@ -5950,14 +5950,14 @@
     "ci_upper": 1.0
   },
   "TPL_0596": {
-    "alpha": 66,
-    "beta": 736,
-    "total_sends": 800,
-    "total_clicks": 65,
-    "total_engagements": 7,
-    "estimated_ctr": 0.08229426433915212,
-    "ci_lower": 0.06429666740398847,
-    "ci_upper": 0.1022635776053597
+    "alpha": 160,
+    "beta": 842,
+    "total_sends": 1000,
+    "total_clicks": 159,
+    "total_engagements": 34,
+    "estimated_ctr": 0.1596806387225549,
+    "ci_lower": 0.13766579478215485,
+    "ci_upper": 0.18298200112123814
   },
   "TPL_0597": {
     "alpha": 1,

@@ -41,94 +41,102 @@
       "inviting"
     ]
   },
-  "detected_domain": "ecommerce",
+  "detected_domain": "generic",
   "octalysis_hooks": {
     "epic_meaning": {
       "description": "Be part of something bigger",
       "examples": [
-        "Shop smart, save big",
-        "Join happy shoppers",
-        "Best deals await"
+        "Join millions",
+        "Be part of something big",
+        "Transform your experience"
       ],
       "best_for_segments": [
-        "all"
+        "aspirational",
+        "purpose_driven"
       ]
     },
     "accomplishment": {
       "description": "Make progress and achieve",
       "examples": [
-        "100 orders placed",
-        "Platinum member",
-        "Top reviewer"
+        "Complete goals",
+        "Earn rewards",
+        "Level up"
       ],
       "best_for_segments": [
-        "all"
+        "achievers",
+        "goal_oriented"
       ]
     },
     "empowerment": {
       "description": "Have control and experiment",
       "examples": [
-        "Shop your way",
-        "Easy returns",
-        "Your choices"
+        "Your way",
+        "Your choice",
+        "Customize"
       ],
       "best_for_segments": [
-        "all"
+        "casual",
+        "explorers"
       ]
     },
     "ownership": {
       "description": "Build something valuable",
       "examples": [
-        "Your wishlist",
-        "Your rewards",
-        "Your savings"
+        "Your progress",
+        "Your achievements",
+        "Your journey"
       ],
       "best_for_segments": [
-        "all"
+        "achievers",
+        "collectors"
       ]
     },
     "social_influence": {
       "description": "Others are doing it",
       "examples": [
-        "Best seller",
-        "Highly rated",
-        "Others bought"
+        "Others are here",
+        "Join top users",
+        "Trending"
       ],
       "best_for_segments": [
-        "all"
+        "social",
+        "community_driven"
       ]
     },
     "scarcity": {
       "description": "Limited time or availability",
       "examples": [
-        "Only 3 left",
-        "Sale ends soon",
-        "Flash deal"
+        "Limited time",
+        "Act now",
+        "Ends soon"
       ],
       "best_for_segments": [
-        "all"
+        "achievers",
+        "fomo_driven"
       ]
     },
     "unpredictability": {
       "description": "What will happen next",
       "examples": [
-        "Mystery discount",
-        "Surprise offer",
-        "Lucky coupon"
+        "Surprise waiting",
+        "Discover more",
+        "What's next"
       ],
       "best_for_segments": [
-        "all"
+        "explorers",
+        "casual"
       ]
     },
     "loss_avoidance": {
       "description": "Don't lose what you have",
       "examples": [
-        "Price drop alert",
-        "Cart expiring",
-        "Almost sold out"
+        "Don't miss out",
+        "Keep going",
+        "Stay active"
       ],
       "best_for_segments": [
-        "all"
+        "achievers",
+        "at_risk"
       ]
     }
   },

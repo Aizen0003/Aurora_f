@@ -1,9 +1,8 @@
 {
-  "north_star_metric": "Purchase Conversion Rate",
-  "definition": "Primary success metric measuring ecommerce performance",
-  "why_it_matters": "Core indicator of ecommerce success and value delivery",
-  "evidence": null,
-  "measurement": "Metric tracking for Purchase Conversion Rate",
+  "north_star_metric": "Daily Active Users",
+  "definition": "Primary success metric measuring product-market fit",
+  "why_it_matters": "Core indicator of product success and user satisfaction",
+  "measurement": "Metric tracking for Daily Active Users",
   "key_drivers": [
     "User engagement",
     "Feature adoption",

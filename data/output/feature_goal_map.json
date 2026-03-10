@@ -1,6 +1,51 @@
 {
   "features": [
     {
+      "feature_name": "Core Feature",
+      "feature_id": "core_feature",
+      "primary_goal": "user_engagement",
+      "secondary_goals": [
+        "engagement",
+        "retention",
+        "satisfaction"
+      ],
+      "user_segments_most_relevant": [
+        "all"
+      ],
+      "engagement_driver_score": 0.75,
+      "description": "Feature enabling core feature functionality"
+    },
+    {
+      "feature_name": "User Dashboard",
+      "feature_id": "user_dashboard",
+      "primary_goal": "information_access",
+      "secondary_goals": [
+        "engagement",
+        "retention",
+        "satisfaction"
+      ],
+      "user_segments_most_relevant": [
+        "all"
+      ],
+      "engagement_driver_score": 0.78,
+      "description": "Feature enabling user dashboard functionality"
+    },
+    {
+      "feature_name": "Notifications",
+      "feature_id": "notifications",
+      "primary_goal": "engagement",
+      "secondary_goals": [
+        "engagement",
+        "retention",
+        "satisfaction"
+      ],
+      "user_segments_most_relevant": [
+        "all"
+      ],
+      "engagement_driver_score": 0.81,
+      "description": "Feature enabling notifications functionality"
+    },
+    {
       "feature_name": "Ai Tutor",
       "feature_id": "ai_tutor",
       "primary_goal": "skill_development",

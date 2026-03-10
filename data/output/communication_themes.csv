@@ -1,25 +1,25 @@
 segment_id,segment_name,lifecycle_stage,primary_theme,secondary_theme,theme_rationale
-0,Ecommerce Needs Attention,trial,unpredictability,epic_meaning,Activeness=0.27 → needs discovery triggers; Secondary 'epic_meaning' for complementary motivation
-0,Ecommerce Needs Attention,paid,unpredictability,epic_meaning,Activeness=0.27 → needs discovery triggers; Secondary 'epic_meaning' for complementary motivation
-0,Ecommerce Needs Attention,churned,unpredictability,epic_meaning,Activeness=0.27 → needs discovery triggers; Secondary 'epic_meaning' for complementary motivation
-0,Ecommerce Needs Attention,inactive,unpredictability,epic_meaning,Activeness=0.27 → needs discovery triggers; Secondary 'epic_meaning' for complementary motivation
-1,Ecommerce At-Risk Users,trial,loss_avoidance,scarcity,Churn=0.77 → retention urgency; Secondary 'scarcity' for complementary motivation
-1,Ecommerce At-Risk Users,paid,loss_avoidance,scarcity,Churn=0.77 → retention urgency; Secondary 'scarcity' for complementary motivation
-1,Ecommerce At-Risk Users,churned,loss_avoidance,scarcity,Churn=0.77 → retention urgency; Secondary 'scarcity' for complementary motivation
-1,Ecommerce At-Risk Users,inactive,loss_avoidance,scarcity,Churn=0.77 → retention urgency; Secondary 'scarcity' for complementary motivation
-2,Ecommerce Social Engagers,trial,accomplishment,ownership,Gamification=0.68 → achievement drive; Secondary 'ownership' for complementary motivation
-2,Ecommerce Social Engagers,paid,accomplishment,ownership,Gamification=0.68 → achievement drive; Secondary 'ownership' for complementary motivation
-2,Ecommerce Social Engagers,churned,accomplishment,ownership,Gamification=0.68 → achievement drive; Secondary 'ownership' for complementary motivation
-2,Ecommerce Social Engagers,inactive,accomplishment,ownership,Gamification=0.68 → achievement drive; Secondary 'ownership' for complementary motivation
-3,Ecommerce Segment 3,trial,accomplishment,unpredictability,Gamification=0.32 → achievement drive; Secondary 'unpredictability' for complementary motivation
-3,Ecommerce Segment 3,paid,accomplishment,ownership,Gamification=0.32 → achievement drive; Secondary 'ownership' for complementary motivation
-3,Ecommerce Segment 3,churned,loss_avoidance,unpredictability,Churn=0.49 → retention urgency; Secondary 'unpredictability' for complementary motivation
-3,Ecommerce Segment 3,inactive,unpredictability,empowerment,Activeness=0.46 → needs discovery triggers; Secondary 'empowerment' for complementary motivation
-4,Ecommerce Active Users,trial,accomplishment,unpredictability,Gamification=0.54 → achievement drive; Secondary 'unpredictability' for complementary motivation
-4,Ecommerce Active Users,paid,accomplishment,ownership,Gamification=0.54 → achievement drive; Secondary 'ownership' for complementary motivation
-4,Ecommerce Active Users,churned,loss_avoidance,unpredictability,Churn=0.67 → retention urgency; Secondary 'unpredictability' for complementary motivation
-4,Ecommerce Active Users,inactive,unpredictability,empowerment,Activeness=0.53 → needs discovery triggers; Secondary 'empowerment' for complementary motivation
-5,Ecommerce Social Engagers,trial,accomplishment,ownership,Gamification=0.74 → achievement drive; Secondary 'ownership' for complementary motivation
-5,Ecommerce Social Engagers,paid,accomplishment,ownership,Gamification=0.74 → achievement drive; Secondary 'ownership' for complementary motivation
-5,Ecommerce Social Engagers,churned,accomplishment,ownership,Gamification=0.74 → achievement drive; Secondary 'ownership' for complementary motivation
-5,Ecommerce Social Engagers,inactive,accomplishment,ownership,Gamification=0.74 → achievement drive; Secondary 'ownership' for complementary motivation
+0,High Risk Inactives,trial,unpredictability,epic_meaning,Re-engage high risk inactives with curiosity and purpose
+0,High Risk Inactives,paid,accomplishment,ownership,Encourage engagement with progress and possession
+0,High Risk Inactives,churned,loss_avoidance,scarcity,Prevent churn with fear of loss and limited time offers
+0,High Risk Inactives,inactive,unpredictability,epic_meaning,Re-engage high risk inactives with curiosity and purpose
+1,Social Gamifiers,trial,social_influence,accomplishment,Social gamifiers respond to competition and achievement
+1,Social Gamifiers,paid,social_influence,empowerment,Encourage social interaction and creativity
+1,Social Gamifiers,churned,loss_avoidance,social_influence,Prevent churn with fear of loss and social proof
+1,Social Gamifiers,inactive,unpredictability,social_influence,Re-engage social gamifiers with curiosity and social interaction
+2,Casual Solo Users,trial,accomplishment,ownership,Casual solo users respond to progress and possession
+2,Casual Solo Users,paid,accomplishment,empowerment,Encourage engagement with progress and creativity
+2,Casual Solo Users,churned,loss_avoidance,accomplishment,Prevent churn with fear of loss and achievement
+2,Casual Solo Users,inactive,unpredictability,accomplishment,Re-engage casual solo users with curiosity and progress
+3,Engaged Free Trials,trial,accomplishment,ownership,Engaged free trials respond to progress and possession
+3,Engaged Free Trials,paid,accomplishment,empowerment,Encourage engagement with progress and creativity
+3,Engaged Free Trials,churned,loss_avoidance,accomplishment,Prevent churn with fear of loss and achievement
+3,Engaged Free Trials,inactive,unpredictability,epic_meaning,Re-engage engaged free trials with curiosity and purpose
+4,Social Power Users,trial,social_influence,accomplishment,Social power users respond to competition and achievement
+4,Social Power Users,paid,social_influence,empowerment,Encourage social interaction and creativity
+4,Social Power Users,churned,loss_avoidance,social_influence,Prevent churn with fear of loss and social proof
+4,Social Power Users,inactive,unpredictability,social_influence,Re-engage social power users with curiosity and social interaction
+5,Low Engagement Users,trial,unpredictability,accomplishment,Low engagement users need curiosity and progress
+5,Low Engagement Users,paid,accomplishment,ownership,Encourage engagement with progress and possession
+5,Low Engagement Users,churned,loss_avoidance,accomplishment,Prevent churn with fear of loss and achievement
+5,Low Engagement Users,inactive,unpredictability,epic_meaning,Re-engage low engagement users with curiosity and purpose
