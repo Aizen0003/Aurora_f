@@ -420,7 +420,7 @@ def run_iteration_1(user_data_path: str, experiment_results_path: str):
     
     # Step 2: Statistical Testing
     print("\n" + "=" * 80)
-    print("STEP 2: BAYESIAN STATISTICAL ANALYSIS")
+    print("STEP 2: BAYESIAN AND FREQUENTIST STATISTICAL ANALYSIS")
     print("=" * 80)
     
     stats_framework = StatisticalTestingFramework()

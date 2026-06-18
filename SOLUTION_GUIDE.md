@@ -23,9 +23,8 @@
    - 4.11 [Performance Classifier](#411-performance-classifier)
    - 4.12 [Multi-Armed Bandit Engine](#412-multi-armed-bandit-engine)
    - 4.13 [Statistical Testing Framework](#413-statistical-testing-framework)
-   - 4.14 [Learning Engine](#414-learning-engine)
-   - 4.15 [Delta Reporter](#415-delta-reporter)
-   - 4.16 [Utility Modules](#416-utility-modules-metrics--validation)
+   - 4.14 [Delta Reporter](#414-delta-reporter)
+   - 4.15 [Utility Modules](#415-utility-modules-metrics--validation)
 5. [Theories, Algorithms & Strategies Explained](#5-theories-algorithms--strategies-explained)
    - 5.1 [RFM Analysis](#51-rfm-analysis)
    - 5.2 [Hierarchical Clustering (Ward's Method)](#52-hierarchical-clustering-wards-method)
@@ -115,7 +114,7 @@ Build the messaging layer:
 Build the feedback loop:
 1. **Schedule Generator** — Output user-wise notification schedules with gradual journey progression
 2. **Performance Classifier** — Classify templates as GOOD/NEUTRAL/BAD from experiment results
-3. **Learning Engine** — Suppress bad templates, promote good ones, learn better timing/themes/frequency
+3. **Intelligent Template Filtering** — Suppress bad templates, promote good ones, and learn better timing
 4. **Delta Reporter** — Document every change with causal reasoning
 
 ### The Two-Phase Demo
@@ -137,7 +136,7 @@ Build the feedback loop:
               │                                   │
     ┌─────────▼──────────┐              ┌─────────▼──────────┐
     │   ITERATION 0      │              │   ITERATION 1      │
-    │   (10 Steps)       │              │   (8 Steps)        │
+    │   (11 Steps)       │              │   (8 Steps)        │
     └────────────────────┘              └────────────────────┘
 
 ITERATION 0 PIPELINE:
@@ -316,7 +315,7 @@ Uses **Agglomerative Clustering with Ward's linkage** instead of K-Means. Why?
 
 **Step 5 — Segment Naming**:
 Each segment gets a human-readable name based on its behavioral profile:
-- High activeness + high gamification → "Power Gamers"
+- High activeness + high gamification → "Power Users"
 - Low activeness + high churn risk → "At-Risk Users"
 - High social propensity → "Social Learners"
 - etc.
@@ -339,7 +338,7 @@ Each user gets assigned a `segment_id` and `segment_name`, along with all their 
 - **Target**: Users whose `lifecycle_stage` is `'churned'` or `'inactive'` — a genuine behavioral signal. This avoids circular leakage (previous versions used a derived `churn_risk > threshold` which was computed from the same features, inflating AUC to artificial 1.0).
 - **Features**: Dynamically resolved via `schema_map` — activeness metrics, value metrics, and retention metrics from the dataset
 - **Evaluation**: AUC-ROC (for discrimination quality) + 5-fold cross-validation (for robustness)
-- **Realistic AUC**: ~0.44 on sample data — this is genuine predictive power, not circular target leakage
+- **Realistic AUC**: ~0.44 on sample data — this churn model shows essentially no usable signal on this small synthetic sample (AUC ≈ chance), so evaluation focuses on the engagement model.
 - **Hyperparameters**: max_depth=4, n_estimators=100, learning_rate=0.1, subsample=0.8
 
 #### Model 2: Engagement Prediction (LightGBM Regressor)
@@ -459,7 +458,7 @@ Each template has:
 |-------|-------------|---------|
 | `template_id` | Unique ID (TPL_0001 format) | TPL_0042 |
 | `segment_id` | Target segment | 3 |
-| `segment_name` | Human-readable segment | "Power Gamers" |
+| `segment_name` | Human-readable segment | "Power Users" |
 | `lifecycle_stage` | trial/paid/churned/inactive | trial |
 | `goal` | What this should achieve | activation |
 | `theme` | Octalysis core drive | accomplishment |
@@ -762,55 +761,7 @@ When comparing more than 2 templates simultaneously, uses **Bonferroni correctio
 
 ---
 
-### 4.14 Learning Engine
-
-**File**: `src/learning/learning_engine.py` (~216 lines)  
-**Purpose**: Apply learnings from experiment results to improve all system outputs
-
-#### Four Learning Dimensions
-
-**1. Template Learning** (`_learn_templates`):
-- BAD templates → **suppressed** (filtered from active set)
-- GOOD templates → **promoted** (weight multiplied by 3×)
-- NEUTRAL templates → unchanged
-- Every suppression/promotion is logged with full causal reasoning
-
-**2. Timing Learning** (`_learn_timing`):
-- Computes composite score per (segment, time_window)
-- Suppresses windows with scores in the bottom quartile
-- Keeps top 2 windows per segment
-- Reports changes: "Removed 'early_morning' window for segment 3: composite score -0.05"
-
-**3. Theme Learning** (`_learn_themes`):
-- For each segment, finds the best-performing theme from experiment data
-- If that theme differs from the current primary theme AND has CTR > 12%, updates it
-- Example: "Changed primary theme for segment 2 from 'accomplishment' to 'social_influence' — experiment CTR 18.5%"
-
-**4. Frequency Learning** (`_learn_frequency`):
-- Groups experiment data by segment
-- If any segment has mean uninstall_rate > 2% → reduces frequency by 2/day
-- This is the same guardrail from the timing optimizer, but now applied based on actual experiment evidence
-
-#### Changes Log
-
-Every learning action is recorded in a `changes_log` list containing:
-```python
-{
-    'entity_type': 'template' | 'timing' | 'theme' | 'frequency',
-    'entity_id': <which specific entity changed>,
-    'change_type': 'suppression' | 'promotion' | 'optimization',
-    'metric_trigger': <the metric that caused the change>,
-    'before_value': <old state>,
-    'after_value': <new state>,
-    'explanation': <causal reasoning string>
-}
-```
-
-These are the exact 7 fields required by the PS for the Delta Reporter.
-
----
-
-### 4.15 Delta Reporter
+### 4.14 Delta Reporter
 
 **File**: `src/learning/delta_reporter.py` (~100 lines)  
 **Purpose**: Document all changes between Iteration 0 and Iteration 1
@@ -839,7 +790,7 @@ This is the **proof that learning happened** — evaluators will read this file 
 
 ---
 
-### 4.16 Utility Modules (Metrics & Validation)
+### 4.15 Utility Modules (Metrics & Validation)
 
 #### MetricsCalculator (`src/utils/metrics.py`, ~168 lines)
 
@@ -1273,7 +1224,7 @@ communication:
 ### Iteration 0 Data Flow
 
 ```
-Input: user_data_sample.csv (500 users) + pdf_content.txt (Knowledge Bank)
+Input: user_data_sample.csv (1000 users) + pdf_content.txt (Knowledge Bank)
                               │
     ┌─────────────────────────┼───────────────────────────────┐
     │ KnowledgeBankEngine     │                               │
@@ -1293,7 +1244,7 @@ Input: user_data_sample.csv (500 users) + pdf_content.txt (Knowledge Bank)
     │ • Engineers 6 propensity scores                   │       │
     │ • Normalizes all scores to [0,1]                  │       │
     └──────┬──────────────────────────────────────────┘       │
-           │ Engineered user data (500 users × 20+ features)  │
+           │ Engineered user data (1000 users × 20+ features)  │
            ▼                                                   │
     ┌──────────────────────────────┐                           │
     │ SegmentationEngine           │                           │
@@ -1302,7 +1253,7 @@ Input: user_data_sample.csv (500 users) + pdf_content.txt (Knowledge Bank)
     │ • Hierarchical clustering    │                           │
     │ • Segment naming             │                           │
     └──────┬───────────────────────┘                           │
-           │ user_segments.csv (500 users × segment_id)        │
+           │ user_segments.csv (1000 users × segment_id)        │
            ▼                                                   │
     ┌──────────────────────────────┐                           │
     │ PropensityModelEngine        │                           │

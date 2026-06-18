@@ -218,7 +218,7 @@ Traditional RFM focuses on monetary value. Aurora adapts it for any engagement d
 
 Schema mapping is done via LLM — no hardcoded column names. Falls back to heuristic column matching when LLM is unavailable.
 
-**Result**: Business-aligned segments (Champions, Loyal, At-Risk, Lost)
+**Result**: Business-aligned segments (Power Users, Active Users, Social Engagers, At-Risk Users)
 
 ### 2. Multi-Armed Bandit with Thompson Sampling
 
@@ -351,9 +351,9 @@ python main.py --mode iteration1 \
 
 ```
 MECE segments identified via optimal-K Silhouette selection:
-  Champions:          Top-tier power users (highest RFM)
-  Loyal:              Consistently engaged, high value
-  Potential Loyalist: Rising stars with growth potential
+  Power Users:        Top-tier users (high activeness and RFM)
+  Active Users:       Consistently engaged
+  Social Engagers:    Users with high social propensity
   Needs Attention:    Declining engagement, re-engage soon
   At Risk:            High churn probability
   Lost:               Inactive, need win-back campaigns
@@ -364,7 +364,7 @@ Exact segment count (K=6–12) is auto-selected to maximize Silhouette score.
 ### Template Rankings (Post-Learning)
 
 ```
-Template T0042: "Day 5 streak! Complete today's exercise"
+Template TPL_0042: "Day 5 streak! Complete today's exercise"
   CTR: 18.7% (95% CI: [16.5%, 21.0%])
   Status: WINNER
   Action: PROMOTE (weight = 2.0)
@@ -378,7 +378,7 @@ Template T0089: "Practice now"
 ### Learning Delta Example
 
 ```
-Entity: Template T0042
+Entity: Template TPL_0042
 Type: Promotion
 Metric: CTR=0.187, Engagement=0.423
 Change: weight: 1.0 -> 2.0
