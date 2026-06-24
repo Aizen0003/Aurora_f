@@ -162,13 +162,15 @@ Step 9: Schedule Generator
    ↓ (User-wise 7-day Notification Schedules)
 Step 10: Multi-Armed Bandit Initialization
    ↓ (Beta(1,1) priors for all templates)
+Step 11: Synthetic Experiment Results (for demo/testing)
+   ↓ (experiment_results_sample.csv — feeds iteration 1)
 
 ITERATION 1 PIPELINE:
 ═══════════════════════════════════════════════════════════════
 
 Step 1: Performance Classifier (GOOD/NEUTRAL/BAD)
    ↓
-Step 2: Bayesian Statistical Analysis
+Step 2: Bayesian + Frequentist Statistical Analysis
    ↓
 Step 3: Multi-Armed Bandit Learning (Thompson Sampling)
    ↓
@@ -314,11 +316,14 @@ Uses **Agglomerative Clustering with Ward's linkage** instead of K-Means. Why?
 - Produces a dendrogram structure that's interpretable
 
 **Step 5 — Segment Naming**:
-Each segment gets a human-readable name based on its behavioral profile:
-- High activeness + high gamification → "Power Users"
-- Low activeness + high churn risk → "At-Risk Users"
-- High social propensity → "Social Learners"
-- etc.
+Each segment gets a human-readable `segment_name`. This is **generated dynamically**, so names vary by dataset and run:
+
+- **Primary (LLM)**: an LLM assigns domain-aware names from each cluster's behavioral profile. A recent sample run produced *Social Gamifiers*, *Engaged Socialites*, *Core Feature Fans*, *Passive Explorers*, *Casual Solo Users*, *Low Activity Risks*.
+- **Fallback (no LLM / circuit breaker open)**: a deterministic rule labels by profile — high activeness + gamification → "Power Users", consistent engagement → "Active Users", high social propensity → "Social Engagers", low activeness + high churn risk → "At-Risk Users", declining → "Needs Attention".
+
+Because names are data-dependent, the docs quote them only as examples — do not expect a fixed list.
+
+A separate `rfm_segment` column holds the classic RFM bucket derived from the composite RFM score (see §5.1).
 
 #### Output: `user_segments.csv`
 
@@ -328,7 +333,7 @@ Each user gets assigned a `segment_id` and `segment_name`, along with all their 
 
 ### 4.4 ML Propensity Models
 
-**File**: `src/intelligence/ml_propensity_models.py` (~247 lines)  
+**File**: `src/intelligence/ml_propensity_models.py` (~405 lines)  
 **Purpose**: Train gradient-boosted models for churn prediction and engagement forecasting
 
 #### Model 1: Churn Prediction (XGBoost Classifier)
@@ -337,9 +342,9 @@ Each user gets assigned a `segment_id` and `segment_name`, along with all their 
 - **Task**: Binary classification — will this user churn? (yes/no)
 - **Target**: Users whose `lifecycle_stage` is `'churned'` or `'inactive'` — a genuine behavioral signal. This avoids circular leakage (previous versions used a derived `churn_risk > threshold` which was computed from the same features, inflating AUC to artificial 1.0).
 - **Features**: Dynamically resolved via `schema_map` — activeness metrics, value metrics, and retention metrics from the dataset
-- **Evaluation**: AUC-ROC (for discrimination quality) + 5-fold cross-validation (for robustness)
-- **Realistic AUC**: ~0.44 on sample data — this churn model shows essentially no usable signal on this small synthetic sample (AUC ≈ chance), so evaluation focuses on the engagement model.
-- **Hyperparameters**: max_depth=4, n_estimators=100, learning_rate=0.1, subsample=0.8
+- **Evaluation**: AUC-ROC (for discrimination quality) + stratified cross-validation (up to 5 folds, capped at the minority-class count)
+- **AUC on sample data**: ≈0.5 (near chance — recent runs land around 0.43–0.48). The churn model shows essentially no usable signal on this small synthetic sample, so evaluation focuses on the engagement model and the learning loop. We fixed the earlier target leakage honestly; we do **not** claim predictive power the holdout doesn't support.
+- **Hyperparameters**: n_estimators=200, max_depth=5, learning_rate=0.05, subsample=0.8, colsample_bytree=0.8, min_child_weight=3, gamma=0.1, plus `scale_pos_weight` set automatically from the class ratio
 
 #### Model 2: Engagement Prediction (LightGBM Regressor)
 
@@ -347,8 +352,8 @@ Each user gets assigned a `segment_id` and `segment_name`, along with all their 
 - **Task**: Regression — predict the user's engagement level (0 to 1)
 - **Target**: Primary activeness/value metric (dynamically resolved via `schema_map.value_metrics` or `schema_map.activeness_metrics`)
 - **Features**: Same dynamic feature set as churn model
-- **Evaluation**: RMSE + R² + 5-fold cross-validation
-- **Hyperparameters**: num_leaves=31, learning_rate=0.05, n_estimators=200, early_stopping_rounds=10
+- **Evaluation**: RMSE + R² on a held-out split (R² ≈ 0.94 on the sample, likely a synthetic-data artifact — see README Limitations)
+- **Hyperparameters**: n_estimators=100, max_depth=4, learning_rate=0.1, num_leaves=31, early_stopping_rounds=10
 
 #### Why Two Different Frameworks?
 
@@ -708,8 +713,10 @@ This is much more rigorous than just looking at the raw CTR — a template with 
 
 ### 4.13 Statistical Testing Framework
 
-**File**: `src/learning/statistical_testing.py` (~277 lines)  
+**File**: `src/learning/statistical_testing.py` (~422 lines)  
 **Purpose**: Rigorous statistical validation of template performance differences
+
+> **What the iteration-1 pipeline actually runs**: `analyze_template_experiments()` and `generate_experiment_report()`, which exercise the **Bayesian A/B test**, the **frequentist two-proportion z-test**, **Cohen's h** effect size, and the **combined verdict**. The Sequential Testing and Multi-Variant (Bonferroni) methods below are implemented in this module and available, but are **not** called in the demo pipeline — don't present them as something the live run performs.
 
 #### Bayesian A/B Testing
 
@@ -824,11 +831,16 @@ All column mappings are resolved through the LLM schema mapper or heuristic fall
 
 **Scoring**: Each dimension is scored 1-5 using **quantile binning** (pd.qcut). This maps any distribution to a uniform 1-5 scale. The composite score (average of R, F, M) gives a 1.0-5.0 engagement quality score.
 
-**RFM Segment Labels**: Based on composite score:
-- Score > 4.0 → "Champions" (best users)
-- Score > 3.0 → "Loyal" (solid users)
-- Score > 2.0 → "Potential" (could go either way)
-- Score ≤ 2.0 → "Lost" (at risk or already gone)
+**RFM Segment Labels** (`rfm_segment` column, from the composite score in `_rfm_segment_label`):
+- Score ≥ 4.5 → "Champions"
+- Score ≥ 4.0 → "Loyal"
+- Score ≥ 3.5 → "Potential Loyalist"
+- Score ≥ 3.0 → "Promising"
+- Score ≥ 2.5 → "Needs Attention"
+- Score ≥ 2.0 → "At Risk"
+- Score < 2.0 → "Lost"
+
+This is distinct from `segment_name` (the LLM/fallback cluster label, see §4.3) — `rfm_segment` is a fixed score bucket, `segment_name` is the behavioral cluster.
 
 ---
 
@@ -888,12 +900,13 @@ Since we need 6-12 segments, we need to decide the exact K. Three methods:
 3. Add the new tree's predictions (weighted by learning rate) to the ensemble
 4. Repeat for N trees
 
-**Key Features Used in Our Implementation**:
-- `max_depth=4`: Trees are shallow to prevent overfitting
-- `learning_rate=0.1`: Each tree contributes a small update
-- `n_estimators=100`: 100 sequential trees
-- `subsample=0.8`: Each tree sees 80% of data (reduces overfitting)
-- `scale_pos_weight`: Handles class imbalance (if churners are rare)
+**Key Features Used in Our Churn Implementation**:
+- `max_depth=5`: Shallow trees to limit overfitting
+- `learning_rate=0.05`: Each tree contributes a small update
+- `n_estimators=200`: More trees to compensate for the small learning rate
+- `subsample=0.8`, `colsample_bytree=0.8`: Each tree sees 80% of rows/columns (reduces overfitting)
+- `min_child_weight=3`, `gamma=0.1`: Extra regularization for the small sample
+- `scale_pos_weight`: Handles class imbalance (set automatically from the class ratio)
 
 **Why XGBoost for Churn?**
 - Handles tabular data extremely well (consistently wins Kaggle competitions)
@@ -911,10 +924,11 @@ Since we need 6-12 segments, we need to decide the exact K. Three methods:
 
 2. **Exclusive Feature Bundling (EFB)**: Bundles mutually exclusive features together, reducing dimensionality.
 
-**Our Implementation**:
+**Our Engagement Implementation**:
 - `num_leaves=31`: Controls tree complexity (leaf-based growth instead of depth-based)
-- `learning_rate=0.05`: Smaller steps for finer optimization
-- `n_estimators=200`: More trees to compensate for smaller learning rate
+- `max_depth=4`: Caps tree depth
+- `learning_rate=0.1`: Step size per tree
+- `n_estimators=100`: Number of boosting rounds
 - `early_stopping_rounds=10`: Stops training if validation loss doesn't improve for 10 rounds
 
 **Why LightGBM for Engagement?**
@@ -1159,7 +1173,7 @@ This is computationally elegant — no complex integrals needed. Just add observ
 - **Pocock**: Spends alpha equally across all checks. Easier to stop early but slightly less powerful.
   - Formula: α_k = α (constant at each check)
 
-**In Our System**: Sequential testing is used for ongoing experiments where we want to stop testing underperforming templates early without waiting for full sample size.
+**In Our System**: Sequential testing is *implemented* (`StatisticalTestingFramework.sequential_test`) and available for ongoing experiments where you'd want to stop testing underperforming templates early. Note: the iteration-1 demo pipeline runs single-shot Bayesian + frequentist analysis per template rather than interim sequential checks, so this path is not exercised by the sample run.
 
 ---
 
@@ -1224,7 +1238,7 @@ communication:
 ### Iteration 0 Data Flow
 
 ```
-Input: user_data_sample.csv (1000 users) + pdf_content.txt (Knowledge Bank)
+Input: user_data_sample.csv (1000 users) + knowledge_bank.pdf (Knowledge Bank)
                               │
     ┌─────────────────────────┼───────────────────────────────┐
     │ KnowledgeBankEngine     │                               │
@@ -1399,7 +1413,6 @@ Input: experiment_results_sample.csv + all Iteration 0 outputs
 
 | File | Purpose |
 |------|---------|
-| `communication_themes_improved.csv` | Themes after learning |
 | `message_templates_improved.csv` | Templates after suppression/promotion |
 | `timing_recommendations_improved.csv` | Timing after experiment-based optimization |
 | `frequency_recommendations.csv` | Base frequency recommendations |
@@ -1516,13 +1529,16 @@ The Delta Report proves it:
 
 They're safely ignored. The bandit engine only processes template IDs that match its internal state. Unknown template IDs are skipped during update.
 
-### Q: "Why do we need both LearningEngine and MultiArmedBanditEngine?"
+### Q: "Where does the learning logic actually live in iteration 1?"
 
-They serve different purposes:
-- **LearningEngine**: Applies broad, rule-based improvements (suppress BAD, promote GOOD, adjust timing/themes/frequency) — makes system-wide decisions
-- **MultiArmedBanditEngine**: Does fine-grained, probabilistic template ranking — optimizes which individual template to send next
+There is no separate `LearningEngine` in the pipeline — the learning is split across a few focused components that `main.py` runs in sequence:
 
-The `main.py` iteration1 pipeline uses both in sequence: the bandit identifies winners/losers, then the filtering logic applies those decisions.
+- **MultiArmedBanditEngine**: probabilistic template ranking (Thompson Sampling) and `identify_winners_losers()` — winners have a 95% CI lower bound above the good-CTR threshold, losers an upper bound below the bad-CTR threshold.
+- **Inline filtering (iteration-1 Step 6)**: applies those decisions — drops losers and sets `weight = 2.0` on winners.
+- **StatisticalTestingFramework / NLPTemplateOptimizer / TimingOptimizer**: provide the supporting analysis (significance, copy recommendations, re-optimized timing).
+- **DeltaReporter**: records every change with its causal explanation.
+
+(An older `src/learning/learning_engine.py` rule-based class was refactored out and removed; if you find references to it elsewhere, they are stale.)
 
 ### Q: "What's the difference between timing_recommendations.csv and timing_recommendations_improved.csv?"
 

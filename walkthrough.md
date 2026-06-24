@@ -8,7 +8,7 @@ This guide will help you structure your final presentation and successfully demo
 3. **Dynamic Bilingual Templates**: Message templates dynamically generate English and Hinglish titles/bodies by injecting the specific features identified by the KB Engine.
 4. **Advanced ML & Statistics**: XGBoost Churn (with behavioral lifecycle_stage target, no circular leakage) / LightGBM Engagement modeling, Kaplan-Meier Survival Analysis for timing, 6-12 dynamic MECE segmentation via Hierarchical Clustering, and Multi-Armed Bandit Learning.
 5. **KB-Driven Goals**: Goal Builder derives feature names from the Knowledge Bank (`feature_goal_map.json`), not hardcoded strings.
-6. **Complete Output Suite**: Generates all 18+ deliverables exactly as requested in the rubric.
+6. **Full Output Suite**: Generates the deliverables — segments, goals, themes, bilingual templates, timing/frequency, schedules, plus the learning-loop outputs (statistical analysis, bandit rankings, delta report) — in `data/output/`.
 
 ---
 
@@ -39,8 +39,8 @@ python main.py --mode iteration0 --user-data data/sample/user_data_sample.csv --
 *   **Knowledge Bank Extraction**: Replaces manual rule-setting. Point out how the system uses the LLM (with circuit breaker fallback) to identify the "North Star Metric" and feature-to-goal mappings directly from the `knowledge_bank.pdf`. Saves `kb_metadata.json` with the detected domain.
 *   **LLM Schema Mapping**: The data ingestion engine dynamically maps CSV columns to semantic roles using the LLM, making it work with any dataset schema.
 *   **Segmentation (K=6-12)**: Shows RFM + Hierarchical Clustering generating segments with distinct attributes.
-*   **ML Models**: XGBoost churn uses `lifecycle_stage` as a behavioral target (realistic AUC ~0.44, not artificially inflated). LightGBM engagement uses dynamic feature columns.
-*   **Template Generation**: Explain that the 600 bilingual templates generated are not hardcoded but constructed dynamically using the features extracted by the KB Engine.
+*   **ML Models**: XGBoost churn uses `lifecycle_stage` as a behavioral target (no circular leakage). On this small synthetic sample the churn AUC is ≈0.5 (near chance — essentially no usable signal), so lean on the engagement model and the learning loop rather than the churn AUC. LightGBM engagement uses dynamic feature columns.
+*   **Template Generation**: Explain that the bilingual templates (≈600 on the sample run; the count scales with segments × lifecycle × goal × theme × 5 variants) are not hardcoded but constructed dynamically using the features extracted by the KB Engine.
 *   **Timing Optimization**: Describe how Kaplan-Meier Survival Analysis (via lifelines) determines the optimal notification windows.
 
 **Expected Key Output Files (`data/output/`):**
@@ -73,7 +73,7 @@ python main.py --mode iteration1 --user-data data/sample/user_data_sample.csv --
 
 ## ✅ Deliverable Checklist Verification
 
-During your presentation, explicitly mention that **all requested files from the rubric are generated in the `data/output/` directory**.
+During your presentation, point out that the deliverables are generated in the `data/output/` directory (and mirrored to the `iteration_0_before_learning/` and `iteration_1_after_learning/` folders for submission).
 
 | Category | File | Verified |
 | :--- | :--- | :---: |
@@ -96,4 +96,4 @@ During your presentation, explicitly mention that **all requested files from the
 | | `message_templates_improved.csv` | ✅ |
 | | `user_notification_schedule_improved.csv`| ✅ |
 
-Good luck with the presentation! The project is now airtight, highly sophisticated, and perfectly aligned with all rubric requirements.
+Good luck with the presentation! Know where each output file is and what it contains, and be ready to explain the "why" behind each component — that's what makes the demo convincing.

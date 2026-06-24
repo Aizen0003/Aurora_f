@@ -14,7 +14,7 @@ Core capabilities:
 - **Machine Learning Models**: XGBoost churn prediction, LightGBM engagement forecasting
 - **Multi-Armed Bandit Learning**: Thompson Sampling for continuous template optimization
 - **Advanced Segmentation**: RFM-based hierarchical clustering with automatic K selection
-- **Statistical Testing**: Bayesian + Frequentist A/B testing with sequential analysis
+- **Statistical Testing**: Bayesian + Frequentist A/B testing (Cohen's h effect size)
 - **NLP**: Sentiment analysis, TF-IDF vectorization, engagement scoring
 - **Survival Analysis**: Kaplan-Meier time-to-event modeling for timing optimization
 
@@ -77,7 +77,7 @@ COMMUNICATION LAYER
 LEARNING LAYER
 - Multi-armed bandit -> Thompson Sampling (Beta priors)
 - Statistical testing -> Bayesian + Frequentist dual
-- Winner detection -> P(better) > 0.95
+- Winner detection -> 95% credible-interval bounds vs CTR thresholds
 - Template filtering -> suppress bad, promote good
 - Delta reporting -> explainable changes with causality
 
@@ -218,7 +218,7 @@ Traditional RFM focuses on monetary value. Aurora adapts it for any engagement d
 
 Schema mapping is done via LLM — no hardcoded column names. Falls back to heuristic column matching when LLM is unavailable.
 
-**Result**: Business-aligned segments (Power Users, Active Users, Social Engagers, At-Risk Users)
+**Result**: Business-aligned segments whose names are generated dynamically. When the LLM is available it assigns domain-aware names (e.g., a recent sample run produced *Social Gamifiers*, *Engaged Socialites*, *Core Feature Fans*); the deterministic fallback labels segments by behavioral profile (*Power Users*, *Active Users*, *Social Engagers*, *At-Risk Users*, *Needs Attention*). A separate `rfm_segment` column holds the classic RFM bucket (Champions / Loyal / … / Lost).
 
 ### 2. Multi-Armed Bandit with Thompson Sampling
 
@@ -279,11 +279,11 @@ Beyond segment-level rules:
 
 ### Task 2: Communication & Timing
 
-- [x] `communication_themes.csv` — Theme mappings (36 entries)
+- [x] `communication_themes.csv` — Theme mappings per segment × lifecycle (≈24 rows on the sample run)
 - [x] `message_templates.csv` — Bilingual templates (EN + HI)
-- [x] `timing_recommendations.csv` — 6 time window rules
-- [x] `timing_recommendations_improved.csv` — 18 timing rules (post-learning)
-- [x] `user_notification_schedule.csv` — 100 user schedules
+- [x] `timing_recommendations.csv` — Ranked time windows per segment × lifecycle
+- [x] `timing_recommendations_improved.csv` — Re-ranked time windows (post-learning)
+- [x] `user_notification_schedule.csv` — Per-user schedules (first 100 users, via `max_users`)
 - [x] **BONUS**: `frequency_recommendations.csv` — Dynamic frequency per segment
 - [x] **BONUS**: `templates_nlp_analysis.csv` — Sentiment, engagement scores
 
@@ -337,8 +337,8 @@ python main.py --mode iteration1 \
 1. Performance classification (GOOD / NEUTRAL / BAD)
 2. Bayesian A/B tests with credible intervals
 3. MAB update: Beta posteriors from experiment data
-4. Winner identification: P(better) > 0.95
-5. Loser suppression: P(better) < 0.05
+4. Winner identification: 95% CI lower bound > 15% CTR threshold
+5. Loser suppression: 95% CI upper bound < 5% CTR threshold
 6. Timing re-optimization via composite scoring
 7. NLP recommendations (shorten, add urgency, etc.)
 8. Delta report: explained changes per template
@@ -350,27 +350,29 @@ python main.py --mode iteration1 \
 ### Segment Distribution
 
 ```
-MECE segments identified via optimal-K Silhouette selection:
-  Power Users:        Top-tier users (high activeness and RFM)
-  Active Users:       Consistently engaged
-  Social Engagers:    Users with high social propensity
-  Needs Attention:    Declining engagement, re-engage soon
-  At Risk:            High churn probability
-  Lost:               Inactive, need win-back campaigns
+MECE segments identified via optimal-K Silhouette selection.
+Segment names are generated dynamically, so they vary per dataset/run:
+
+  With LLM (domain-aware), a sample run produced:
+    Social Gamifiers, Engaged Socialites, Core Feature Fans,
+    Passive Explorers, Casual Solo Users, Low Activity Risks
+  Deterministic fallback (no LLM) labels by behavioral profile:
+    Power Users, Active Users, Social Engagers, At-Risk Users, Needs Attention
 ```
 
-Exact segment count (K=6–12) is auto-selected to maximize Silhouette score.
+Exact segment count (K=6–12) is auto-selected to maximize Silhouette score, so both
+the number of segments and their names change with the input data.
 
 ### Template Rankings (Post-Learning)
 
 ```
 Template TPL_0042: "Day 5 streak! Complete today's exercise"
-  CTR: 18.7% (95% CI: [16.5%, 21.0%])
+  CTR: 18.7% (95% CI: [16.5%, 21.0%])   # lower bound > 15% good threshold
   Status: WINNER
   Action: PROMOTE (weight = 2.0)
 
-Template T0089: "Practice now"
-  CTR: 3.2% (95% CI: [1.8%, 5.1%])
+Template TPL_0089: "Practice now"
+  CTR: 3.2% (95% CI: [1.8%, 4.6%])       # upper bound < 5% bad threshold
   Status: LOSER
   Action: SUPPRESS
 ```
@@ -395,26 +397,18 @@ Edit `config/config.yaml` to customize:
 
 ```yaml
 segmentation:
-  n_clusters: 8              # Initial K (will optimize to best)
-  min_segment_size: 50
+  n_clusters: 8              # Initial K (auto-optimized within the range below)
+  min_clusters: 6            # Minimum K considered
+  max_clusters: 12           # Maximum K considered
+  min_segment_size: 0.05     # Fraction of users (5%), not an absolute count
   random_state: 42
 
-ml_models:
-  churn:
-    n_estimators: 100
-    max_depth: 4
-    learning_rate: 0.1
-  engagement:
-    n_estimators: 100
-    max_depth: 4
-    learning_rate: 0.1
-
-bandit:
-  exploration_factor: 1.0    # Higher = more exploration
-
-statistical_testing:
-  alpha: 0.05                # Significance level
-  power: 0.8                 # Statistical power
+performance:
+  good_ctr: 0.15             # CTR threshold for GOOD
+  good_engagement: 0.40
+  bad_ctr: 0.05              # CTR threshold for BAD
+  bad_engagement: 0.20
+  min_sends_significance: 100
 
 time_windows:
   early_morning: [6, 9]
@@ -424,6 +418,11 @@ time_windows:
   evening: [18, 21]
   night: [21, 24]
 ```
+
+> See `config/config.yaml` for the full set (frequency rules, tone matrices, knowledge-bank
+> settings). ML hyperparameters live in `src/intelligence/ml_propensity_models.py` and the
+> statistical-test defaults (`alpha=0.05`, `power=0.8`) in `src/learning/statistical_testing.py`;
+> they are not read from `config.yaml`.
 
 ---
 
